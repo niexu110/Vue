@@ -1,0 +1,101 @@
+<<<<<<<<<<<<<<<<<<<<<-----------使用node安装------------>>>>>>>>>>>>>>>>>>>>
+ node  cls请屏幕   install 简写 i --save-dev 简写-D
+1:npm安装 使用淘宝镜像  方法:npm install -g cnpm;
+2:安装 vue包            方法:cnpm instal -g vue-cli
+3:安装 webpack          方法:vue init webpack +项目名称
+4: cd进入项目 安装依赖 方法:cnpm install  
+5 运行 程序   cnpm run dev
+  
+http://jspang.com/2017/04/13/vue-router/
+http://jspang.com/2017/05/22/vuedemo/
+
+http://jspang.com
+    <<<<<<<<<----------- VUE晋级---技术胖--初级学习----->>>>>>>>>>>>>>>>>>>>
+    <<<<<<<----------使用编辑器 visual Studio Code------->>>>>>>>>>>>>>>>>
+  创建项目文件夹 然后
+  安装步骤 先安装 npm install -g cnpm;
+  然后 安装 服务 npm install -g live-server
+  初始化项目 npm init
+
+<<<<<<<<<<<<<<<<<<<<<vue-cli>>>>>>>>>>>>
+1 安装 npm install vue-cli -g
+2:安装 webpack          方法:vue init webpack +项目名称
+3: cd进入项目 安装依赖 方法:cnpm install  
+4 运行 程序   cnpm run dev
+5 项目打包 npm run build  打包后有一个dist
+<<<<<<<<<<<实战一个pos系统 >>>>>>>>>>>>
+初始化项目
+http://iconfont.cn/ 使用这里的icon
+开始侧边栏
+使用element封印快速开发
+进入项目 npm install element-ui --save
+安装成功后 在main.js 引入
+import ElementUI from 'element-ui'
+
+import 'element-ui/lib/theme-default/index.css'
+Vue.use(ElementUI)
+与后台交互问题
+ 先要安装Axios  npm install axios --save
+最后需要设置打包路径
+config文件下的index.js 把路劲改为 assetsPublicPath: './',
+
+！！！！！！！！！！！！-----VUEX----！！！！！！！！！！！
+****vuex数据仓库，状态管理器
+安装 npm install vuex --save
+在vuex文件下的store.js 引入
+import Vue from 'vue'
+import Vuex from 'vuex'
+
+Vue.use(Vuex)
+在对应的模板引入
+import store from '@/vuex/store'
+在data下面暴露出去 store
+使用store里面的方法固定套路$store.commit('add')
+
+动态更换title
+cnpm install vue-wechat-title --save
+main.js
+import VueWechatTitle from 'vue-wechat-title'
+
+Vue.use(VueWechatTitle)
+router里面添加
+meta: {
+        'title': '关于我们'
+      }
+每个页面 最外层 添加 v-wechat-title='$route.meta.title'
+
+  <<<<<<<<<<<<____________VSC配置>>>>>>>>>>>>>>>>>>>!!!!!!!!
+
+
+HTML Snippets 
+- 支持HTML5的标签提示
+
+HTML CSS support 
+- css自动补齐
+
+JS-CSS-HTML Formatter 
+格式化
+
+jQuery Code Snippets 
+jquery 自动提示
+
+Path Autocomplete 
+- 路径自动补齐
+
+Npm Intellisense 
+- npm包代码提示
+
+ESLint 
+- 检测JS必备
+
+Auto Rename Tag 
+- 自动同步修改标签
+
+Bootstrap 3 Snippets 
+- bootstrap必备
+
+Vue 2 Snippets 
+- vue必备
+lua -for -vscode: lua自动补全提示
+
+

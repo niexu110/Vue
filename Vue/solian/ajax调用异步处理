@@ -1,0 +1,4 @@
+ajax: async function (...arg) {
+    const res = await this.$htp.get(arg[0])
+    const res = await this.$htp.post(arg[0],arg[1])                  
+},

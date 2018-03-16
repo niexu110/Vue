@@ -1,0 +1,368 @@
+ 全局安装 cnpm install webpack -g
+  初始项目  	npm init
+ 目录安装webpack 
+  npm install --save-dev webpack
+创建两个文件夹 dist src
+打包 webpack src/xxx.js dist/bundle.js
+创建配置webpack.config.js
+const path=require('path');
+
+module.exports={
+     // 入口 多入口  打包webpack就行了
+      entry:{
+          //  名字自定义
+           entry:'./src/entry.js',
+           entry2:'./src/entry2.js'
+      },
+     //  出口 多出口
+      output:{
+          //  node的语法 path绝对路径
+           path:path.resolve(__dirname,'dist'),
+          //  打包名字 多出口[xxx].js,单出口bundle.js
+           filename:'[name].js'
+           
+      },
+     //模块，如解读css,图片如何转换，压缩  
+     module:{},
+     // 插件  用户生产模块和各项功能
+     plugins:[],
+     // 配置webpack开发服务功能
+     devServer:{
+          // 基本目录结构
+          contentBase: path.resolve(__dirname, 'dist'),
+          // 服务器地址
+          host:'192.168.1.107',
+          // 服务器压缩
+          compress:true,
+          // 端口
+          port:8010
+     }
+}
+
+安装服务 
+cnpm install webpack-dev-server --save-dev
+packjage.json 修改 scripts{
+  "dev":"webpack-dev-server"
+}
+
+/
+/
+/
+/
+/
+/
+打包css  引入 在入口文件引入.js里面
+创建 css文件夹创建xxx.css
+import css from './css/xxx.css'; //相对路径
+安装 style-loader
+cnpm install style-loader --save
+安装 css-loader
+cnpm install css-loader --save
+config 里面配置 module
+   // use  可以是loader  可以是 use[{loader:"xxxx-loader"}]
+      rules:[
+               {
+                    test:/\.css$/,
+                    use:['style-loader','css-loader']
+               }
+            ] 
+
+/
+/
+/
+/
+/
+打包js  在config
+const uglify=require('uglifyjs-webpack-plugin');
+在  plugins: new uglify()
+html 打包
+安装
+
+cnpm install --save-dev html-webpack-plugin 
+引入
+const htmlPlugin = require('html-webpack-plugin')
+
+ // 去引号
+            minify:{
+                removeAttributeQuotes:true
+            },
+            // 参数防止缓存
+            hash:true,
+            // 模板路径
+            template:'./src/index.html'
+
+/
+/
+/
+/
+/
+/
+图片处理 在css 中引入
+安装
+npm install --save-dev file-loader url-loader
+在module
+//    图片处理
+               {
+                  test:/\.(png|jpg|gif)/,
+                  use:[{
+                    //   
+                      loader:'url-loader',
+                      //5000内显示图片500000是base64
+                      options:{
+                          limit:5000
+                          optputPath:'iamge/' 
+                      }
+                  }]
+               }
+/
+/
+/
+标签img 图片找不到需安装
+cnpm install --save-dev html-withimg-loader
+         {
+                   test:/\.(htm|html)$/i,
+                   use:['html-withimg-loader']
+               }
+/
+/
+/
+/
+css 分离 安装  extract 插件
+cnpm install --save-dev extract-text-webpack-plugin
+const extractText=require('extract-text-webpack-plugin')
+new extractText('/css/index.css')
+分离之后 出现图片路径错误解决方法
+在出口设置公用路径
+ var website={
+     publicPath:'http://192.168.1.98:1258/'
+ }
+//output里面添加
+publicPath:website.publicPath
+/
+/
+/
+/
+打包和分离 less
+安装 less 和less-loader
+之后的跟 css分离差不多
+ //    不分离less
+             /*  {
+                   test:/\.less$/,
+                   use:[{
+                       loader:'style-loader'
+                   },{
+                       loader:'css-loader'
+                   },{
+                       loader:'less-loader'
+                   }]
+               },*/
+  //    分离
+              {
+                  test: /\.less$/,
+                  use: extractText.extract({
+                      use:[{
+                          loader:'css-loader'
+                      },{
+                          loader:'less-loader'
+                      }],
+                      fallback: "style-loader", 
+                  })
+              },
+//
+/
+/
+/
+/
+/
+css3前缀自动添加 postcss
+cnpm install --save-dev postcss-loader autoprefixer
+配置一个 postcss.config.js
+module.exports={
+     plugins:[
+          require('autoprefixer')
+     ]
+}
+然后在module 中在css里面追加 postcss-loader 打包一下就完成
+/
+/
+/
+/
+/
+/
+消除css没有用的css   *purifycss*  
+安装cnpm i -D purifycss-webpack purify-css
+const glob=require('glob');
+const PurifyCss=require('purifyCss-webpack')
+
+ // 去掉没用的css插件
+        new PurifyCss({
+            // 配置 搜索src 下的所有html
+            paths:glob.sync(path.join(__dirname,'src/*.html'))
+        })
+
+/
+/
+/
+/
+/
+/
+/
+配置babel转换成所有浏览器支持的js
+安装3个包
+cnpm i -D babel-core babel-loader babel-preset-es2015 babel-preset-react
+需要解析react就安装  babel-preset-react
+添加loader 
+   {
+                  test:/\.(jsx|js)$/,
+                  use:[{
+                      loader:'babel-loader',
+                      options:{
+                          presets:['es2015','react']
+                      }
+                  }],
+                //   去除掉node_modules文件里面
+                  exclude:'/node_modules/'
+              }
+项目配置一个新的先删除
+                  options:{
+                          presets:['es2015','react']
+                      }
+然后创建一个babelrc文件
+安装 cnpm i -D babel-preset-env
+ {
+      "presets":["react","env"]
+ }
+这样就可以支持所有的es6 es7 es8转换
+/
+/
+/
+/
+/
+打包后的代码调试
+// 
+
+devtool调试模式  打包调试 项目上线必须去除devtool
+    // source-map 独立 map 打包慢，详细 行列
+    // cheap-moudle-source-map 独立 map 不包括列告诉你在哪行出错
+    // eval-source-map  开发阶段打包，性能存在安全隐患  小的项目
+    // cheap-moudle-eval-source-map 列
+    devtool:'cheap-moudle-source-map',
+/
+/
+/
+/
+/
+/
+/
+开发环境和生产环境并行
+安装开发环境依赖
+cnpm install --production
+packjson设置
+ "scripts": {
+   
+ "server": "webpack-dev-server --open",
+  
+  "dev": "set type=1&webpack",
+  
+  "build": "set type=2&webpack"
+  
+},
+config里面设置
+if(process.env.type==2){
+    var website = {
+        publicPath: 'http://jspang.com:1717/'
+    } 
+}else{
+    // 绝对路径 防止出现找不到图片
+    var website = {
+        publicPath: 'http://192.168.1.98:1258/'
+    }
+}
+/
+/
+/
+/
+/
+/
+/
+/模块化配置
+
+
+、
+、
+、
+、
+打包第三方类库 引入 比如jquery
+const webpack=require('webpack');
+ new webpack.ProvidePlugin({
+             $:"jquery",    
+          }),
+、
+、
+、
+、
+、
+watch 正确使用方法 自动打包配合开发
+ 命令：webpack --watch
+ //   监测自动打包
+      watchOptions:{
+          //   检测修改时间
+          poll:1000,
+        //   禁止重复打包
+          aggregateTimeout:500,
+        //   不包括什么
+          ignored:/node_modules/
+      }
+/
+/
+/
+/
+/
+
+版权插件
+要引入 webpack 引入过就不用再次
+直接 new webpack.BannerPlugin('前端开发人员：xxxxx')
+/
+/
+/
+/
+//
+
+优化黑科技
+抽离第三方库
+  入口文件修改
+  比如：jquery:'jquery'，vue:"vue"
+ //   第三方库抽离开插件
+          new webpack.optimize.CommonsChunkPlugin({
+             name:['jquery','vue'],
+             filename:"assets/js/[name].min.js",
+             minChunks:2
+          }),
+/
+/
+/
+//
+/
+/
+/
+/
+静态资源集中输出
+安装
+cnpm i -D copy-webpack-plugin
+
+const copyWebpackPlugin=require('copy-webpack-plugin')；
+ //   静态资源集中处理
+         new copyWebpackPlugin([{
+             from:__dirname+'/src/public',
+             to:'./public'
+         }]),
+
+、
+、
+、
+、
+、
+、
+json引用配置
+在入口文件中js
+var json=require("../config.json")

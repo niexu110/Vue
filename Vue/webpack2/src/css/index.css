@@ -1,0 +1,16 @@
+body{
+     background:#f2f3ee1c;
+     color:#999;
+     font-size:26px;
+     text-align: center;
+}
+#img{
+     background:url('../image/user.png')no-repeat center;
+     background-size:300px;margin:auto;border:2px solid #ccc;
+     width:300px;height:300px;
+     transform:rotate(45deg);box-shadow: 1px 1px 0 rgba(0,0,0,.6) 
+}
+#aaa{
+     color:#ccc;
+     font-size:28px;
+}

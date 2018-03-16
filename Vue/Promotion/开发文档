@@ -1,0 +1,6 @@
+1 所有项目东西全部写在 src里面
+2 如果需要安装一些插件依赖提前说明
+3 image 放在/src/assets里面,模板可以在自定义模板套用的放在src自定义文件下，路由配置router里面
+4 http请求方法在uitil里面 css写在less里面，少部分的css就直接写入模板里面，共用部分css声明一下写在index.less里面
+5 状态脱机管理在vuex里面，里面有4个函数，
+6 main.js全局配置文件
