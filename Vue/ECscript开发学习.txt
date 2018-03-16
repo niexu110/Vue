@@ -1,0 +1,21 @@
+  http://jspang.com/2017/06/03/es6/  第七节
+使用VS code编辑工具
+创建两个文件 dist  和src两个
+终端 安装 npm init -y初始化项目
+ 1. 全局安装Babel-cli
+  npm install -g babel-cli
+2.安装 npm install -save-dev babel-preset-es2015 babel-cli
+3 在文件根目录 创建 .babelrc 文件里面填写
+{
+     "presets": [
+          "es2015"
+     ],
+     "plugins": []
+}
+4.命令行转换 babel src/index.js -o dist/index.js 这样就可以转换为ES5
+4.转换 ES5 快捷转换 在 package.json 文件修改下
+  "scripts": {
+    "build": "babel src/index.js -o dist/index.js"
+  },
+然后运行 npm run build 进行转换
+
