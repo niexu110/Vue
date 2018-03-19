@@ -1,0 +1,144 @@
+.d_headtop{
+	padding: 0.3rem 0.6rem 0 0.2rem;
+	margin-top: 0.9rem;
+	height: 1.0rem;
+}
+.d_headsrc{
+	float: left;
+	height:0.8rem;
+	width:0.8rem;
+	border-radius: 0.06rem;
+	margin-right: 0.2rem;
+}
+.d_topcenter{
+	float: left;
+	width:4.3rem
+}
+.d_topcenter h2{
+	font-size: 0.28rem;
+	color: #111;
+	font-weight: bold;
+	line-height: 0.48rem;
+}
+.d_sexage{
+	float: left;
+	width: 0.56rem;
+	height: 0.24rem;
+	background:#feb3c5;
+	border-radius: 0.06rem;
+}
+.d_sexage img{
+	float: left;
+	height:0.14rem;
+	width:0.14rem;
+	margin: 0.05rem 0.08rem;
+}
+.d_sexage p{
+	float: left;
+	font-size: 0.16rem;
+	line-height: 0.24rem;
+	color: #fff;
+}
+.d_meili{
+	float: left;
+	padding-left: 0.2rem;
+	font-size: 0.2rem;
+	color: #666;
+}
+.d_fbtime{
+	float: right;
+	font-size: 0.22rem;
+	color: #999;
+	line-height: 0.56rem;
+}
+.d_statetext{
+	padding-left: 1.2rem;
+	padding-right: 0.6rem;
+	font-size: 0.28rem;
+	color: #333;
+	line-height: 0.5rem;
+}
+.d_content{
+	padding-left: 1.2rem;
+	padding-right: 0.6rem;
+	border-bottom: solid 1px #E6E6E6;
+}
+.d_content img{
+	width: 3.6rem;
+	height:3.6rem;
+}
+.d_address{
+	font-size: 0.22rem;
+	color: #5793DD;
+	line-height: 0.6rem;
+}
+.d_zan{
+	height: 0.7rem;
+}
+.d_zan p{
+	float: left;
+	padding-right: 0.22rem;
+	font-size: 0.22rem;
+	color: #999;
+	line-height: 0.7rem;
+}
+.d_zan img{
+	margin-top: 0.1rem;
+	float: right;
+	height: 0.36rem;
+	width: 0.4rem;
+	margin-left: 0.4rem;
+}
+.d_pheadimg{
+	padding: 0 0.25rem;
+	height: 1.22rem;
+	border-bottom: solid 1px #E6E6E6;
+}
+.d_pheadimgleft{
+	float: left;
+	text-align: center;
+	width: 1.0rem;
+	line-height: 0.4rem;
+	font-size: 0.24rem;
+	border-right: solid 1px #E6E6E6;
+	margin: 0.2rem 0;
+}
+.d_pheadimgleft span{
+	display: block;
+	color: #ed7273;
+	font-weight: bold;
+}
+.d_pheadimgleft p{
+	color: #666;
+}
+.d_pheadimgcenter{
+	float: left;
+	width: 5.7rem;
+	height: 1.22rem;
+	text-align: center;
+	overflow: hidden;
+}
+.d_pheadimgcenter img{
+	width: 0.7rem;
+	height:0.7rem;
+	margin: 0.25rem 0.15rem;
+	border-radius: 50%;
+}
+.d_pheadimgright{
+	float: right;
+}
+.d_pheadimgright img{height:0.28rem;width: 0.15rem;margin-top: 0.46rem;}
+.d_centerson{
+	height: 1.8rem;
+	margin: 0 0.2rem;
+}
+.d_centersonleft{
+	float: left;
+	width: 1.0rem;
+}
+.d_centersonleft img{
+	width: 0.7rem;
+	height:0.7rem;
+	border-radius: 50%;
+	margin-top: 0.3rem;
+}

@@ -1,0 +1,212 @@
+/* pages/pay/pay.wxss */
+.pay_container {
+    width: 100%;
+    height: 100%;
+}
+.pay_title {
+    width: 100%;
+    height: 80rpx;
+    border-top: 1px solid #e6e6e6;
+}
+.pay_title_text {
+    font-size: 30rpx;
+    font-weight: 800;
+    line-height: 80rpx;
+    margin-left: 40rpx;
+}
+.pay_title image {
+    float: right;
+    width: 25rpx;
+    height: 25rpx;
+    margin-top: 27rpx;
+    border-radius: 50%;
+}
+.pay_title_soulianB {
+    float: right;    
+    line-height: 80rpx;
+    font-size: 26rpx;
+    color: #5793dd;
+    margin-right: 40rpx;
+    font-weight: 800;
+}
+.pay_body {
+    width: 95%;
+    float: right;
+}
+.pay_placeInfo {
+    width: 100%;
+    height: 170rpx;
+    border-bottom: 1px solid  #e6e6e6;
+    border-top:  1px solid  #e6e6e6;
+}
+.pay_placeInfo_img image {
+    width: 175rpx;
+    height: 130rpx;
+    border-radius: 5%;
+    margin-top: 20rpx;
+}
+.pay_placeInfo_text {
+    margin-left: 175rpx;
+    margin-top: -130rpx;    
+}
+.pay_placeInfo_placeName {
+    font-size: 28rpx;
+    margin-left: 20rpx;
+    padding-right: 20rpx;
+    border-right: 1px solid  #e6e6e6;
+}
+.pay_placeInfo_placeWhere {
+    font-size: 28rpx;   
+    padding-left: 20rpx;
+}
+.pay_placeInfo_placeNo {
+    margin-left: 195rpx;
+    margin-top: 35rpx;
+    font-size: 25rpx;
+}
+.pay_needMoney {
+    height: 80rpx;
+    border-bottom: 1px solid  #e6e6e6;
+}
+.pay_needMoney_prompt {
+    line-height: 80rpx;
+    font-size: 30rpx;
+}
+.pay_needMoney_howMoney {
+    float: right;
+    line-height: 80rpx;
+    font-size: 26rpx;
+    margin-right: 40rpx;
+}
+.pay_mySoulianB {
+    height: 85rpx;
+    line-height: 85rpx;
+    font-size: 30rpx;
+}
+.pay_mySoulianB_img {
+    width: 25rpx;
+    height: 25rpx;
+    margin-top: 27rpx;    
+    margin-left: 35rpx;
+    border-radius: 50%;
+}
+.pay_mySoulianB_have {
+    font-size: 26rpx;
+    margin-left: 8rpx;
+    color: #5793dd;
+    font-weight: 800;
+}
+.pay_mySoulianB_recharge {
+    float: right;
+    color: #5793dd;
+    width: 85rpx;
+    height: 40rpx;
+    margin-right: 40rpx;
+    margin-top: 20rpx;
+    border:  1px solid  #5793dd;
+}
+.pay_mySoulianB_recharge text{
+    font-size: 26rpx;
+    position: absolute;
+    margin-top: -20rpx;
+    margin-left: 15rpx;
+}
+.pay_button_size {
+    width: 100%;
+    margin-top: 400rpx;
+    justify-content: center;  
+}
+.pay_button{
+    width: 90%;
+    background-color: #5793dd;  
+    color: #fff;
+} 
+/*成功页面*/
+.pay_success {
+    position:absolute;
+    width:100%;
+    top:0;
+    left:0;
+    height:100%;
+    z-index:10;
+    background:rgba(0,0,0,.5);
+    display: flex;
+}
+.paySuccess_keynote {
+    width: 535rpx;
+    height: 585rpx;
+    margin: auto;
+    border-radius: 2%; 
+    background-color: #fff;
+    text-align: center;
+}
+.paySuccess_circle {
+    width: 150rpx;
+    height: 150rpx; 
+    margin-top: -60rpx;
+    background-color: #fff;
+    border-top-left-radius:50%;
+    border-top-right-radius: 50%;
+    margin-left: 193rpx;
+}
+.paySuccess_icon {
+    margin-top: -150rpx;
+}
+.paySuccess_success {
+    margin-top: 30rpx;
+    font-size: 38rpx;
+    font-weight: 800;
+}
+.paySuccess_money {
+    margin-top: 30rpx;
+    font-size: 25rpx;
+}
+.paySuccess_if {
+    margin-top: 5rpx;
+}
+.paySuccess_if image{
+    width: 16rpx;
+    height: 16rpx;
+}
+.paySuccess_back {
+    font-size: 24rpx;
+    margin-left: 12rpx;
+}
+.paySuccess_number {
+    margin-top: 20rpx;
+}
+.paySuccess_your {
+    font-size: 30rpx;
+}
+.paySuccess_num {
+    font-size: 30rpx;
+    color: #5793dd;
+}
+.paySuccess_service {
+    margin-top: 15rpx;
+}
+.paySuccess_canGo {
+    font-size: 25rpx;
+}
+.paySuccess_myOrder {
+    font-size: 25rpx;    
+    color: #feb3c5;    
+}
+.paySuccess_make {
+    font-size: 25rpx;
+}
+.paySuccess_jump {
+    margin-top: 40rpx;
+    display: flex;
+    justify-content: space-around;
+    color: #feb3c5;    
+    font-size: 30rpx;  
+}
+.paySuccess_backUp {
+    border: 1px solid #feb3c5;
+    padding: 10rpx;
+}
+.paySuccess_my {
+    border: 1px solid #feb3c5;
+    padding: 10rpx;
+}

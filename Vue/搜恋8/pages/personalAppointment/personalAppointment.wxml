@@ -1,0 +1,115 @@
+<!--pages/personalAppointment/personalAppointment.wxml-->
+<view class="container">
+<!--快速发布-->
+<view class="fixed" bindtap="{{bindtap}}">
+    <image src="{{photo1}}"></image>
+<text>{{text}}</text>
+</view>
+    <!--分类-->
+    <view class="header_box">
+        <view class="header_container">
+            <block wx:for="{{list}}">
+                <view class="header_img" catchtap="anchor" data-cat_id="{{item.cat_id}}" id="{{index}}">
+                    <image mode="aspectFit" src="{{item.mobileimg}}"></image>
+                    <view class="header_text">{{item.cat_name}}</view>  
+                </view>
+            </block> 
+        </view>
+    </view>   
+    <view class="title" wx:if="{{hidden}}">
+    </view> 
+      <view class="titles" wx:if="{{hiddens}}">
+        <view class="title-box">
+            <view class="title_left lt">
+                <text>{{titleBox[index]}}</text>
+            </view>
+        </view>
+    </view> 
+    <block wx:for="{{content}}">
+        <view class="banner" wx:if="{{banner}}">
+            <view class="banner_box">
+                <!--定位-->
+                <view class="Aname" wx:if="{{item.type!=='1'}}">
+                    <text>AA制</text>
+                </view>
+                <view class="Bname" wx:if="{{item.type==='1'}}">
+                    <text>我买单</text>
+                </view>
+                <!--banner_top-->
+                <view class="banner_top" bindtap="clickheadimg" data-uid="{{item.fid}}" data-user="{{item.nickname}}">
+                    <view class="banner_img lt">
+                        <image mode="aspectFill" src="{{item.image}}"></image>
+                    </view>
+                    <view class="banner_title lt">
+                        <view class="banner_nick">
+                            <text>{{item.nickname}}</text>
+                    </view> 
+                    <view class="banner_charm">
+                        <text>魅力值:{{item.charm}}</text>
+                         <view class="banner_age" wx:if="{{item.sex==='1'}}">
+                                <image src="{{boy}}" ></image>
+                                <text>{{item.age}}</text>
+                            </view>
+                        <view class="banner_age" wx:if="{{item.sex==='2'}}">
+                            <image src="{{girl}}" ></image>
+                            <text>{{item.age}}</text>
+                        </view>
+                    </view>
+                    <view class="banner_constellatory">
+                        <view class="banner_constellatory_left lt">
+                            <text>{{item.constellation}}</text>
+                            <text class="banner_constellatory_text">{{item.marry}}</text>
+                        </view>
+                        <view class="banner_constellatory_right rt">
+                            <text>距离:[{{item.juli}}km]</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <!--banner_banner-->
+            <view class="banner_content" bindtap="clickGoods" data-id="{{item.id}}"  >
+                <view class="content_left lt">
+                    <view class="content_title">{{item.goods_name}}</view>
+                        <view class="content_time"><text>约会时间:{{item.add_time}}</text></view>
+                        <view class="content_text"><text>约会宣言:[{{item.mood}}]</text></view>
+                        <view class="content_num" wx:if="{{item.pick==='0'}}">
+                        <text wx:if="{{item.sex1==='0'}}">男女不限</text>
+                        <text wx:if="{{item.sex1==='1'}}">仅限男士</text>
+                        <text wx:if="{{item.sex1==='2'}}">仅限女士</text>
+                        <text>不负责接送</text></view>
+                        <view class="content_num" wx:if="{{item.pick!=='0'}}">
+                        <text wx:if="{{item.sex1==='0'}}">男女不限</text>
+                        <text wx:if="{{item.sex1==='1'}}">仅限男士</text>
+                        <text wx:if="{{item.sex1==='2'}}">仅限女士</text>
+                        <text>负责接送</text>
+                        </view>
+                    </view>
+                    <view class="content_right lt">
+                        <image src="{{item.goods_img}}"></image>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </block>
+    <!--发布约会-->
+    <view class="scene" wx:if="{{scene}}">
+        <view class="scene_box" >
+            <block wx:for="{{sceneCount}}">
+                <view class="scene_container" bindtap="click" data-id="{{item.goods_id}}" data-title="{{item.goods_name}}">
+                    <view class="scene_img">
+                        <image mode="aspectFill"  src="{{item.mobileimg}}"></image>
+                    </view>
+                    <view class="scene_title">
+                        <text>{{item.goods_name}}</text>
+                    </view>
+                    <view class="scene_price">
+                        价格:<text>{{item.shop_price}}元/人</text>
+                    </view>
+                    <view class="scene_num">
+                        <text>购买人数:{{item.buy_count}}</text>
+                    </view>
+                </view>
+            </block>
+        </view>
+    </view>
+</view>

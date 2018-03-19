@@ -1,0 +1,89 @@
+<!--pages/giftGiving/giftGiving.wxml-->
+<view class="giftGiving_container">
+    <!--送礼对象-->
+    <view class="giftGiving_header">
+        <!--对象头像，礼物明细，礼物说明-->
+        <view class="giftGiving_header_first" bindtap="bindInfo">
+            <view class="giftGiving_header_photo">
+                <image src="{{photo}}"></image>
+            </view>
+            <!--<view class="giftGiving_header_info" bindtap="giftList">
+                <text>礼物明细</text>
+            </view>-->
+            <view class="giftGiving_header_explain">
+                <image src="{{explain}}"></image>
+            </view>
+            <view class="giftGiving_header_text" bindtap="giftstate">
+                <text>礼物说明</text>
+            </view>           
+        </view>
+        <!--特别的爱给-->
+        <view class="giftGiving_header_second">
+            <text class="giftGiving_header_love">特别的爱给特别的</text>
+            <text class="giftGiving_header_name">{{getname}}</text>
+        </view>
+        <view class="giftGiving_header_addcharm">
+            <text>赠送礼物可相互增加魅力值哦!</text>
+        </view>
+        <view class="giftGiving_header_charm">
+            <text class="giftGiving_header_soulian">我的搜恋币:</text>
+            <text class="giftGiving_header_number">{{soulianbi}}</text>
+            <text class="giftGiving_header_goplay" bindtap="playMoney">\r去充值</text>
+        </view>
+    </view>
+    <!--挑选礼物-->
+    <view class="giftGiving_body">     
+        <block wx:for="{{giftList}}">
+            <view class="giftGiving_body_change" bindtap="{{changeclick}}">
+                <view class="giftInfo" id="{{index}}" >
+                    <view class="unitPrice">{{item.gift_money}}"搜恋币"</view>
+                    <view class="charm">{{item.charm}}</view>
+                </view>
+                <image src="{{item.gift_photo}}"></image>
+                <icon class="giftGiving_body_success" type="success" size="20" color="#5793dd" wx:if="{{item.click}}"/>
+                <view class="giftText">
+                    <text>{{item.gift_name}}</text>
+                </view>
+            </view>
+        </block>
+    </view>
+    <!--确认赠送-->
+    <view class="giftGiving_end">
+        <view class="giftGiving_end_num">
+            数量：
+            <text class="add" bindtap="jian">-</text> 
+            {{num}}
+            <text class="add" bindtap="jia">+</text>
+        </view>
+        <text class="giftGiving_end_red" bindtap="recordList">赠\r送</text>
+    </view>
+    <!--赠送礼物副页面-->
+    <view class="success" wx:if="{{paySuccess}}">
+        <view class="keynote">
+            <view class="circle"></view>
+            <view class="icon">
+                <icon type="success" size="65" color="pink"/>
+            </view>
+            <view class="paySuccess_success">赠送礼物</view>
+            <view class="paySuccess_money">您要赠送{{num}}份礼物<text style="color:#feadc1">“{{getgiftList}}”</text>给{{getname}}吗？</view>
+            <view class="paySuccess_jump">
+                <view class="paySuccess_backUp" bindtap="back">确定</view>
+                <view class="paySuccess_my" bindtap="myOrder">取消</view>
+            </view>
+        </view>
+    </view>
+    <!--赠送成功页面-->
+    <view class="success" wx:if="{{payOk}}">
+        <view class="keynote">
+            <view class="circle"></view>
+            <view class="icon">
+                <icon type="success" size="65" color="pink"/>
+            </view>
+            <view class="paySuccess_success">赠送成功</view>
+            <view class="paySuccess_money">赠送成功，您的魅力值增加了{{sumcharm}}点</view>
+            <view class="paySuccess_jump">
+                <view class="paySuccess_backUp" bindtap="givingOk">确定</view>
+            </view>
+        </view>
+    </view>
+</view>

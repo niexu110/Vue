@@ -1,0 +1,73 @@
+/* pages/incomeInfo/incomeInfo.wxss */
+.incomeInfo_container {
+    width: 100%;
+    height: 100%;
+}
+.incomeInfo_header {
+    width: 100%;
+    height: 100rpx;
+    border-top:  1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;  
+}
+.incomeInfo_data {
+    font-size: 32rpx;
+    font-weight: 800;
+    margin-top: 35rpx;
+    margin-left: 40rpx;
+
+}
+.incomeInfo_sum {
+    font-size: 32rpx;
+    font-weight: 800;
+    text-align: center;
+    margin-top: -35rpx;
+}
+.incomeInfo_sum image {
+    width: 30rpx;
+    height: 25rpx;
+    border-radius: 50%;
+}
+.incomeInfo_income {
+    font-size: 32rpx;
+    font-weight: 800;
+    float: right;
+    margin-right: 40rpx;
+    margin-top: -35rpx;
+}
+.incomeInfo_income image {
+    width: 24rpx;
+    height: 30rpx;  
+    border: 1px; 
+}
+.incomeInfo_content {
+    width: 100%;
+    height: 80rpx;
+}
+.incomeInfo_content_list {
+    float: right;
+    width: 95%;
+    height: 80rpx;
+    border-bottom: 1px solid #e6e6e6;
+ 
+}
+.incomeInfo_content_date {
+    font-size: 22rpx;
+    font-weight: 800;
+    color: #cdcdcd;
+    margin-top: 29rpx;
+}
+.incomeInfo_content_sum {
+    text-align: center;
+    font-size: 28rpx;
+    font-weight: 800;
+    color: #fec8d5;  
+    margin-top: -30rpx; 
+}
+.incomeInfo_content_income {
+    float: right;
+    font-size: 28rpx;
+    font-weight: 800;
+    color: #3d7dcb;
+    margin-right: 40rpx;
+    margin-top: -30rpx;
+}

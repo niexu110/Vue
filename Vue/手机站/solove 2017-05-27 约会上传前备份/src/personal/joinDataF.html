@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>查看约会</title>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/personal/joinData.css"/>
+    <script type="text/javascript" src="../../js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src='../../js/MD5.js'></script>
+    <script type="text/javascript" src='../../js/ajaxHttp.js'></script>
+    <script>
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+    </script>
+</head>
+<body>
+<div id="RE_fixeds">
+    <span>&times;</span>
+    <h2></h2>
+</div>
+<div id="JO_fixed">
+    <div class="JO_fixed_box">
+        <div id="bBox"><span>√</span></div>
+        <h3>接受约会</h3>
+        <h4>您已经同意了用户<em>COODADA</em>的约会请求等待对方确认约会对象</h4>
+        <h4 style="color:#FEB3C5;"><span>(约会信用度高,想和他约会的人就更多)</span></h4>
+        <h4>邀请人确定完毕后,我们会消息通知您。</h4>
+     <a href="../../src/myself/mydate.html"class="join_cha">查看详情</a>
+    </div>
+</div>
+<div class="SL_nav">
+     <span class="top"></span>
+    <a href="javascript:history.go(-1);" class="pull-left" style="margin-left:0.4rem;">
+        <img src="../../img/icon/d_leftboult.png" class="IMG">
+    </a>
+    <!-- <s class="more">更多</s> -->
+</div>
+<div class="join_container">
+    <div class="join_top_box">
+        <div class="join_user_box">
+            <div class="join_user_content">
+                <div class="join_left_title">
+                    <h3>约会信用值</h3>
+                    <p></p>
+                </div>
+                <div class="join_middle_img">
+                    <img src="../../img/n_FBTC.png" >
+                </div>
+                <div class="join_right_title">
+                    <h3>已接受邀请</h3>
+                    <p>0</p>
+                </div>
+            </div>
+            <div class="join_user_nick_box">
+                <h2><span>未知</span></h2>
+                <div>
+                    <span class="join_nick_img"><img src="../../img/icon/n_girls.png" alt=""><em> 未知</em></span>
+                    <span class="join_constellatory">未知</span>
+                    <span class="join_single">未知</span>
+                    <span><img class="info" src="../../img/icon/x_boyapprove_icon.png" alt="" /></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="join_min_box">
+        <div class="join_img_list">
+            <ul>
+                <li class="li">
+                    <img src="../../img/n_bbgg.png">
+                    <p>未知</p>
+                </li>
+                <li class="li2">
+                    <img src="../../img/n_AA.png">
+                    <p>未知</p>
+                </li>
+                <li class="li3">
+                    <img src="../../img/n_bjs.png">
+                    <p>未知</p>
+                </li>
+            </ul>
+        </div>
+        <div class="join_min_shop_box">
+            <ul class="list">
+            	<li>
+            		<span>约会主题</span>
+            		<em>约人吃饭</em>
+            	</li>
+            	<li id="scene">
+            		<span>约会场景</span>
+            		<em></em>
+            	</li>
+            	<li>
+            		<span>约会地点</span>
+            		<em></em>
+            	</li>
+            	<li>
+            		<span>约会时间</span>
+            		<em></em>
+            	</li>
+            	<li>
+            		<span>约会说明</span>
+            		<em id="explain"></em>
+            	</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="joinBtn">	
+	<div id="joinBtn">参加约会</div>
+	<div id="joinbtn">联系TA</div>
+</div>
+<div class="cover">
+	<div>
+		<p class="report">举报</p>
+	</div>
+	<p class="close">取消</p>
+</div>
+<!--空提示弹框-->
+<div class="d_popupbox"></div>
+<!--成功弹框-->
+<div class="box">
+	<div class="success">
+		<img class="img" src="../../img/icon/x_giftchoice_icon.png"/>
+		<h3>接受约会</h3>
+		<p>您已经发布了精品场景约会</p>
+		<p>请等待约会对象</p>
+		<p>(约会信用度高，想和你约会的人就更多)</p>
+		<p>邀请人确认完毕后，我们会消息通知您</p>
+		<div class="btn_b">查看约会进度</div>
+	</div>
+</div>
+</body>
+<script type="text/javascript" src="../../js/solove.js"></script>
+<script type="text/javascript" src="../../js/personal/joinDataF.js"></script>
+</html>

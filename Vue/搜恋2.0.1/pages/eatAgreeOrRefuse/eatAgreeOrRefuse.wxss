@@ -1,0 +1,303 @@
+/* pages/eatAgreeOrRefuse/eatAgreeOrRefuse.wxss */
+.eatAgreeOrRefuse_container {
+    width: 100%;
+    height: 100%;
+    border-top:1px solid #e6e6e6;
+}
+.eatAgreeOrRefuse_allText {
+    width: 95%;
+}
+.eatAgreeOrRefuse_releasePeople {
+    width: 100%;
+    height: 160rpx;
+    margin-left: 20rpx;
+    border-bottom: 1px solid #e6e6e6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.eatAgreeOrRefuse_releaseImg image{
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 5%;
+    margin-left: 20rpx;
+    margin-top: 20rpx;
+}
+.sexWoman {
+    width: 20rpx;
+    height: 20rpx;    
+}
+.sexman {
+    width: 20rpx;
+    height: 20rpx;        
+}
+.eatAgreeOrRefuse_usertitle , .eatAgreeOrRefuse_username {
+    font-size: 30rpx;
+    font-weight: 800;
+}
+.eatAgreeOrRefuse_userInfo_first {
+    margin-top: 30rpx;
+} 
+.eatAgreeOrRefuse_userInfo_second {
+    margin-top: 20rpx;
+    font-size: 25rpx;
+}
+.eatAgreeOrRefuse_userage {
+    margin-left: 10rpx;
+}
+.eatAgreeOrRefuse_constellation {
+    margin-left: 30rpx;
+}
+.eatAgreeOrRefuse_userstate {
+    margin-left: 17rpx;
+}
+.eatAgreeOrRefuse_trustworthiness {
+    margin-right: 10rpx;
+    margin-top: 50rpx;
+    font-size: 25rpx;
+    color: #5793dd;
+    text-align: center;
+}
+.eatAgreeOrRefuse_two {
+    margin-top: 10rpx;   
+}
+.eatAgreeOrRefuse_body {
+    width: 100%;
+    margin-left: 20rpx;
+    border-bottom: 1px solid #e6e6e6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+}
+
+.eatAgreeOrRefuse_onlyBoy {
+    font-size: 24rpx;
+    color: #5793dd;
+    margin-bottom: 20rpx;
+}
+.onlyBoy {
+    padding-right: 50rpx;
+}
+.eatAgreeOrRefuse_situation {
+    width: 100%;
+    height: 85rpx;
+    margin-left: 20rpx;
+    border-bottom: 1px solid #e6e6e6;
+    display: flex;
+    justify-content: space-between;
+}
+.eatAgreeOrRefuse_placeImg image{
+    width: 260rpx;
+    height: 195rpx;
+    border-radius: 5%;    
+    margin-right: 20rpx;
+    margin-top: 70rpx;
+}
+.eatAgreeOrRefuse_text {
+    margin-left: 20rpx;
+    margin-top: 20rpx;
+}
+.eatAgreeOrRefuse_textfirst {
+    font-size: 30rpx;
+    font-weight: 800;
+    margin-top: 50rpx;
+}
+.eatAgreeOrRefuse_place {
+    font-size: 26rpx;   
+    margin-top: 10rpx; 
+}
+.eatAgreeOrRefuse_time {
+    font-size: 25rpx;   
+    margin-top: 10rpx;     
+}
+.eatAgreeOrRefuse_pay {
+    font-size: 25rpx;   
+    line-height: 50rpx;
+}
+.eatAgreeOrRefuse_number {
+    margin-left: 20rpx;    
+    font-size: 25rpx;   
+    line-height: 85rpx; 
+}
+.eatAgreeOrRefuse_find {
+    font-size: 25rpx;  
+    color: #5793dd; 
+    line-height: 85rpx;
+    float: right;
+    margin-right: 20rpx;      
+}
+.eatAgreeOrRefuse_find text{
+    border-bottom: 1px solid #5793dd; 
+}
+.eatAgreeOrRefuse_note {
+    color: #feb3c5;    
+    font-size: 25rpx;  
+    text-align: center;  
+    margin-top: 35rpx;
+}
+.eatAgreeOrRefuse_agreeOrRefuse {
+    width: 100%;
+    height: 90rpx;
+    margin-left: 20rpx;
+    border-bottom: 1px solid #e6e6e6;
+}
+.eatAgreeOrRefuse_jindu {
+    width: 100%;
+    height: 90rpx;
+    margin-left: 20rpx;
+    border-bottom: 1px solid #e6e6e6;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ask {
+    line-height: 90rpx;
+    font-size: 24rpx;
+    margin-left: 20rpx;
+}
+.yuehui{
+    line-height: 90rpx;
+    font-size: 30rpx;
+    margin-left: 20rpx;   
+}
+.exit {
+    color: #ffffff;
+    font-size: 30rpx;
+    background-color: #5793dd;
+    border-radius: 5%;
+    float: right;
+    margin-right: 20rpx;
+    padding: 15rpx;
+}
+.daojishi {
+    font-size: 24rpx;
+    color: #5793dd;
+}
+.agree {
+    color: #ffffff;
+    font-size: 30rpx;
+    background-color: #5793dd;
+    border-radius: 5%;
+    float: right;
+    margin-right: 15px;
+    margin-top: 20rpx;
+}
+.refuse {
+    color: #ffffff;
+    font-size: 30rpx;
+    background-color: #5793dd;
+    border-radius: 5%;
+    float: right;
+    margin-right: 20rpx;
+    margin-top: 20rpx;
+}
+.eatAgreeOrRefuse_prompt {
+    width: 100%;
+    height: 160rpx;
+    margin-left: 20rpx;
+    border-bottom: 1px solid #e6e6e6;
+}
+.prompt {
+    color: #5793dd;
+    font-size: 24rpx;
+    margin-left: 20rpx;
+    line-height: 64rpx;
+}
+.promptText {
+    font-size: 22rpx;  
+    margin-left: 20rpx;  
+    line-height: 33rpx;
+    margin-right: 20rpx;
+}
+.eatAgreeOrRefuse_schedule {
+    width: 93%;
+    border-left: 1px solid #e6e6e6;
+    margin-left: 40rpx;
+    margin-top: 30rpx;
+    display: flex;
+    flex-direction: column;
+}
+.eatAgreeOrRefuse_circle {
+    width: 16rpx;
+    height: 16rpx;
+    border-radius: 50%;  
+    background-color: #c1c1c1;
+    margin-left: -10rpx;
+}
+.eatAgreeOrRefuse_second {
+    width: 16rpx;
+    height: 16rpx;
+    border-radius: 50%;
+    background-color: #c1c1c1;
+    margin-left: -9rpx;
+}
+.eatAgreeOrRefuse_third {
+    width: 16rpx;
+    height: 16rpx;
+    border-radius: 50%;
+    background-color: #c1c1c1;
+    margin-left: -9rpx;
+}
+.eatAgreeOrRefuse_last {
+    width: 16rpx;
+    height: 16rpx;
+    border-radius: 50%;
+    background-color: #c1c1c1;
+    margin-left: -9rpx;
+}
+
+.eatAgreeOrRefuse_cancel {
+    width: 100%;
+    height: 130rpx;
+}
+.eatAgreeOrRefuse_text {
+    font-size: 24rpx;
+    line-height: 40rpx;
+    margin-top: -20rpx;
+}
+.eatAgreeOrRefuse_times {
+    font-size: 24rpx;   
+    margin-left: 20rpx; 
+}
+.eatAgreeOrRefuse_contact {
+    width: 100%;
+    height: 150rpx;
+}
+.eatAgreeOrRefuse_agree {
+    width: 100%;
+    height: 100rpx;
+}
+.eatAgreeOrRefuse_invite {
+    width: 100%;
+    height: 150rpx;     
+}
+.eatAgreeOrRefuse_second_text {
+    font-size: 24rpx;
+    line-height: 40rpx;
+    margin-top: -20rpx;    
+    margin-left: 20rpx;
+}
+.heOrShe{
+    color: #5793dd;
+    border-bottom: 1px solid #5793dd;
+}
+.eatAgreeOrRefuse_third_text {
+    font-size: 24rpx;
+    line-height: 40rpx;
+    margin-top: -20rpx;    
+    margin-left: 20rpx;    
+}
+.eatAgreeOrRefuse_last_text {
+    font-size: 24rpx;
+    line-height: 40rpx;
+    margin-top: -20rpx;    
+    margin-left: 20rpx;    
+}
+.eatAgreeOrRefuse_schedule_refuse {
+    width: 93%;
+    border-left: 1px solid #e6e6e6;
+    margin-left: 40rpx;
+    margin-top: 30rpx;
+    display: flex;
+    flex-direction: column;
+}

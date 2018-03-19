@@ -1,0 +1,116 @@
+/* pages/myDate/myDate.wxss */
+.container{
+    width:100%;
+    height:auto;
+}
+.ltttt{
+    display: block;
+    width: 280rpx;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;  
+}
+.nav{
+    width:90%;
+    margin:20rpx auto;
+    font-size:30rpx;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+}
+.choiceList view{
+    flex:1;
+    text-align: center;
+    color:#111111;
+}
+.choiceList view.addColor{
+    color:#4b85cc;
+}
+.line{
+    display: block;
+    width:120rpx;
+    height:1px;
+    margin:10rpx auto 0;
+    background-color: #4b85cc;
+}
+.addColor{
+    color:#4b85cc;
+    text-align:center; 
+}
+.banner{
+    margin-top:20rpx;
+    border-top:1rpx solid #F5F5F5;
+    width:100%;
+    height:auto;
+}
+.box{
+    width:100%;
+    min-height:200rpx;
+    border-bottom:1rpx solid #F5F5F5;
+}
+.banner_box{
+    width:90%;
+    margin:20rpx auto;
+    min-height:180rpx;
+}
+
+.img{
+    width:210rpx;
+    height:160rpx;
+    border-radius:10rpx; 
+}
+.box_content{
+    clear:both; 
+    padding-top:14rpx;
+    width:100%;
+    height:188rpx;
+}
+.content_left{
+    width:35%;
+    height:140rpx;
+}
+.content_right{
+    width:65%;
+    height:140rpx;
+}
+.content_title{
+    width:100%;
+    margin-top:20rpx;
+    font-size:30rpx;
+    font-weight:bold;
+}
+.content_title .content_ascertain{
+    color:#4b85cc;
+}
+.content_img{
+    width:20rpx;
+    height:28rpx;
+}
+.content_time{
+    width:100%;
+    font-size:24rpx;
+    margin-top:20rpx;
+    color:#7F7F7F; 
+}
+.content_price{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    color:#666;
+    margin-top:20rpx;
+    font-size:24rpx;
+}
+.content_text{
+    width:95rpx;
+    height:47rpx;
+    text-align:center;
+    line-height:47rpx;
+    background:#FEB3C5;
+    color:#fff;  
+}
+
+.dabaokiu{
+    margin-top: 100rpx;
+    width: 700rpx;
+    
+}

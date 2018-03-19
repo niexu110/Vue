@@ -1,0 +1,7 @@
+{
+    "navigationBarBackgroundColor": "#0f0f0f",
+    "navigationBarTitleText": "注册账号",
+    "backgroundColor":"#ffffff",
+    "navigationBarTextStyle": "#ffffff",
+    "enablePullDownRefresh":false
+}

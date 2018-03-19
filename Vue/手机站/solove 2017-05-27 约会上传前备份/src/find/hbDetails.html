@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>红包详情</title>
+	<meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+	<!--<link rel="stylesheet" href="../../css/mui.min.css">-->
+	<link href="../../css/mui.picker.css" rel="stylesheet" />
+	<link href="../../css/mui.poppicker.css" rel="stylesheet" />
+	<!--<link rel="stylesheet" type="text/css" href="../../css/headerFoot.css">-->
+	<link rel="stylesheet" type="text/css" href="../../css/find/hbDetails.css">
+    <script type="text/javascript" src='../../js/jquery-2.1.4.min.js'></script>
+    <script type="text/javascript" src='../../js/MD5.js'></script>
+    <script>
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+    </script>
+</head>
+<body>
+	<header>
+		<div class="title">
+			<a href="javascript:history.go(-1);">关闭</a>
+			红包详情
+		</div>
+		<div class="userPhoto">
+			<img class="userInfo" src="##" alt="" />
+		</div>
+		<p>DEML</p>
+		<div class="friend">
+			<a href="###" id="care"><img src="../../img/icon/h_care.png" alt="" /><em>关注</em></a>
+			<a href="###" id="friend"><img src="../../img/icon/h_friend.png" alt="" /><em>加好友</em></a>
+		</div>
+	</header>
+	<div class="hbInfo">
+		<p class='moneyT'></p>
+		<p><em id="money"></em>元</p>
+		<a href="../../src/myself/mywallet.html">可到“我的钱包”-“零钱”中查看</a>
+	</div>
+	<div class="detail">
+		<div class="people">
+			领取<i class="number"></i>/<em class="count"></em>个
+		</div>
+		<!--列表-->
+		<div class="infoList"></div>
+		<!--加载更多弹框-->
+		<h5 id="bottomS"></h5>
+	</div>
+	<div class="d_popupbox"></div>
+	<script src="../../js/find/hbDetails.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

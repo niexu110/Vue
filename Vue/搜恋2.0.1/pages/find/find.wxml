@@ -1,0 +1,179 @@
+<view class="container">
+    <!--推荐、附近、晒单-->
+    <view class="header">
+        <view class="headerLeft"></view>
+        <view class="headerMiddle">
+            <view class="{{proposeName}}" catchtap="chociepropose">推荐
+                <text class="line" wx:if="{{propose}}"></text>
+            </view>
+            <view class="{{nearName}}" catchtap="chocienear">附近
+                <text class="line" wx:if="{{near}}"></text>
+            </view>
+        </view>
+        <view class="headerRight" bindtap="filter">筛选</view>
+    </view>
+    <!--banner-->
+    <swiper class="banner" autoplay="auto" interval="3000" duration="1000" circular="true">
+        <block wx:for="{{imgUrl}}">
+            <swiper-item>
+                <image src="{{item.pcimg_path}}"></image>
+            </swiper-item>
+        </block>
+    </swiper>
+    <!--内容展示区域-->
+    <view class="main">
+        <!--推荐-->
+        <view class="propose" wx:if="{{proposeClose}}">
+           <block wx:for="{{proposeMsg}}">
+                <!--用户列表-->
+                <view class="proposeList" bindtap="clickthis" data-uid="{{item.uid}}" data-user="{{item.nickname}}">
+                    <!--用户头像-->
+                    <view class="proposeLeft">
+                        <image mode="aspectFill" src="{{item.image}}"></image>
+                    </view>
+                    <!--右边信息部分-->
+                    <view class="proposeRight">
+                        <!--昵称-->
+                        <view class="proposeNicky">
+                            <text>{{item.nickname}}</text>
+                        </view>
+                        <!--性别性别/年纪/星座-->
+                        <view class="proposeMsg">
+                            <view class="proposeAge"  wx:if="{{item.sex==='2'}}"> 
+                                <image src="{{imgxgirl}}"></image>
+                                <text>{{item.age}}岁</text>
+                                <text class="proposeAsterism">{{item.constellation}}</text>
+                            </view>
+                            <view class="proposeAge"  wx:elif="{{item.sex==='1'}}"> 
+                                <image src="{{imgxboy}}"></image>
+                                <text>{{item.age}}岁</text>
+                                <text class="proposeAsterism">{{item.constellation}}</text>
+                            </view>
+                        </view>
+                        <!--魅力值-->
+                        <view class="proposeGlamour">
+                            <view class="glamourAge"  wx:if="{{item.sex==='2'}}"> 
+                                <image src="{{img1}}"></image>
+                                <text>{{item.charm}}</text>
+                            </view>
+                            <view class="glamourAge"  wx:elif="{{item.sex==='1'}}"> 
+                                <image src="{{img2}}"></image>
+                                <text>{{item.charm}}</text>
+                            </view>
+                        </view>
+                        <!--距离-->
+                        <view class="proposeDistance">
+                             <view class="Distance"  wx:if="{{item.sex==='2'}}"> 
+                                <image src="{{img3}}"></image>
+                                <text>{{item.distance}}km</text>
+                            </view>
+                            <view class="Distance"  wx:elif="{{item.sex==='1'}}"> 
+                                <image src="{{img4}}"></image>
+                                <text>{{item.distance}}km</text>
+                            </view>
+                        </view>
+                        <!--爱情宣言-->
+                        <view class="proposeMessage">
+                            <text>{{item.aboutme}}</text>
+                        </view>
+                    </view>
+                </view>
+           </block>
+        </view>
+        <!--附近-->
+        <view class="nearly" wx:if="{{nearClose}}">
+             <block wx:for="{{userMsg}}">
+             <!--用户列表-->
+                <view class="nearlyList" bindtap="clickthis" data-uid="{{item.uid}}" data-user="{{item.nickname}}">
+                    <!--用户头像-->
+                    <view class="nearlyLeft">
+                        <image mode="aspectFill" src="{{item.image}}"></image>
+                    </view>
+                    <!--右边信息-->
+                    <view class="nearlyRight">
+                        <!--昵称和距离-->
+                        <view class="nearlyMessage">
+                            <text class="nearlyNicky">{{item.nickname}}</text>
+                            <text class="nearlyDistance">{{item.distance}}km</text>
+                        </view>
+                        <!--年龄/性别/星座星座/魅力值-->
+                        <view class="nearlyAge">
+                            <view class="age girls"  wx:if="{{item.sex==='2'}}"> 
+                                <image src="{{imgxgirls}}"></image>
+                                <text>{{item.age}}</text>
+                            </view>
+                            <view class="age boys"  wx:elif="{{item.sex==='1'}}"> 
+                                <image src="{{imgxboys}}"></image>
+                                <text>{{item.age}}</text>
+                            </view>
+                            <view class="nearlyAsterism">{{item.constellation}}</view>
+                            <view class="nearlyGlamour">魅力值:{{item.charm}}</view>
+                        </view>
+                        <!--爱情宣言-->
+                        <view class="nearlyMsg">
+                            <text>{{item.aboutme}}</text>
+                        </view>
+                    </view>
+                </view>
+           </block>
+        </view>
+    </view>
+    <!--筛选表单-->
+    <view class="formFilter"  wx:if="{{filter}}" bindsubmit="formSubmit">
+        <!--想看的用户-->
+        <view class="bgColor" >
+            <view class="bgSize" >
+                <view class="icon" bindtap="exit" ><icon type="clear" size="25"color="#5793dd"></icon></view>
+                <view class="choiceSex">
+                    <text class="titleText">想看的用户</text>
+                    <input id="hideInput" value="{{val}}" />
+                    <view class="choiceItem">
+                        <text bindtap="changeInputVal" class="{{val==0?'all':''}}" id="0">全部</text>
+                        <text bindtap="changeInputVal" class="{{val==1?'boy':''}}" id="1">男生</text>
+                        <text bindtap="changeInputVal" class="{{val==2?'girl':''}}" id="2">女生</text>
+                    </view>
+                </view>
+                <!--按条件筛选-->
+                <view class="fCondition">
+                    <view class="titleText" bindtap="showHide">
+                        <text>按条件筛选</text> 
+                        <image animation="{{animationData}}" src="{{img5}}" class="{{showHide==1?'updown':''}}"></image> 
+                    </view>
+                </view>
+                <!--筛选列表-->
+                <view class="choiceList" wx:if="{{showHide==1}}">
+                    <!--地区-->
+                    <view class="changeGps">
+                        <view class="changeGps_left">
+                            <text class="gps">地区</text>
+                            <view class="gps_right">
+                                <picker bindchange="provinceChange" id="province" value="{{province}}" name="province" range="{{provinces}}" class="province"><text>{{provinces[province]}}</text></picker>
+                                <picker bindchange="cityChange" id="city" value="{{city}}" name="city" range="{{citys}}" class="city"><text>{{citys[city]}}</text></picker>
+                            </view>   
+                        </view> 
+                        <image src="{{img6}}"></image>
+                    </view>
+                    <!--年龄-->
+                    <view class="changeGps">
+                        <text class="hei">年龄</text>
+                        <image src="{{img6}}"></image>
+                        <picker value="{{day}}" name="ages"  id="day" range="{{ages}}" bindchange="change2">
+                            <text class="heiNo">{{ages[day]}}</text> 
+                        </picker>
+                    </view>
+                    <!--身高-->
+                    <view class="changeGps">
+                        <text class="hei">身高</text>
+                        <image src="{{img6}}"></image>
+                        <picker value="{{stat}}" name="height" id="stat" range="{{height}}" bindchange="change3">
+                            <text class="heiNo">{{height[stat]}}</text>
+                        </picker>
+                    </view>
+                </view>
+                <view class="button" bindtap="submiButtont" data-ages="{{ages}}">
+                    <button class="changeSubmit" formType="submit">确定</button>
+                </view>
+            </view>
+        </view>
+    </view> 
+</view>

@@ -1,0 +1,205 @@
+@charset "utf-8";
+.d_myissueBox{
+	width: 100%;
+}
+.d_topBox{
+	margin-top: 0.9rem;
+	height:0.8rem;
+	padding: 0 0.4rem;
+	line-height: 0.8rem;
+}
+.d_topBox p{
+	float: left;
+	font-size: 0.28rem;
+	color: #333333;
+}
+.d_topBox span{
+	float: right;
+	font-size: 0.24rem;
+	color: #5793DD;
+}
+.d_contentBox{
+	padding-right: 0.4rem;
+	margin-left: 0.4rem;
+	height: 2.0rem;
+	border-bottom: solid 1px #E6E6E6;
+}
+.d_contentleft{
+	float: left;
+	width: 4.0rem;
+}
+.d_contentright{
+	float: right;
+}
+.d_contentright img{
+	height: 1.9rem;
+	width: 2.6rem;
+	margin-top: -0.1rem;
+	border-radius: 0.06rem;
+}
+.d_goodsname{
+	font-size: 0.24rem;
+	color: #333333;
+	padding-bottom: 0.14rem;
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+}
+.d_time{
+	font-size: 0.22rem;
+	color: #666666;
+	line-height: 0.48rem;
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+}
+.d_contentleftbom{
+	color: #5793DD;
+	font-size: 0.22rem;
+}
+.d_contentleftbom p{
+	float: left;
+	padding-right: 0.46rem;
+}
+.d_contentleftbom span{
+	float: left;
+}
+.d_headimgBox{
+	min-height: 0.7rem;
+	margin-left: 0.4rem;
+	padding-right: 0.4rem;
+	font-size: 0.22rem;
+	color: #666666;
+	line-height: 0.7rem;
+}
+.d_headimgBox span{
+	color: #5793DD;
+}
+.d_imgArr img{
+	height: 1.1rem;
+	width: 1.1rem;
+	border-radius: 0.06rem;
+	float: left;
+	margin: 0.1rem;
+}
+.d_issue{
+	clear: both;
+	height: 0.8rem;
+	padding-right: 0.4rem;
+	margin-left: 0.4rem;
+	border-bottom: solid 1px #E6E6E6;
+	border-top: solid 1px #E6E6E6;
+}
+.d_issue p{
+	float: left;
+	font-size: 0.28rem;
+	color: #333333;
+	line-height: 0.8rem;
+}
+.d_issue span{
+	float: right;
+	font-size: 0.22rem;
+	color: #DD524D;
+	line-height: 0.8rem;
+}
+.d_issue div{
+	float: right;
+	font-size: 0.22rem;
+	color: #FFFFFF;
+	width: 1.2rem;
+	height:0.54rem;
+	background: #5793DD;
+	text-align: center;
+	line-height: 0.54rem;
+	border-radius: 0.06rem;
+	margin-top: 0.13rem;
+}
+.d_bottom{
+	margin: 0.4rem;
+	min-height: 1.3rem;
+}
+.d_bottom h3{
+	font-size: 0.24rem;
+	color: #5793DD;
+}
+.d_bottom p{
+	font-size: 0.2rem;
+	color: #666666;
+	line-height: 0.38rem;
+}
+.d_okuser{
+	padding: 0 0.4rem;
+}
+.d_contenttitle{
+	font-size: 0.26rem;
+	color: #333333;
+	line-height: 0.6rem;
+}
+.d_okuserleft{
+	float: left;
+}
+.d_okuserright{
+	float: right;
+	text-align: center;
+	padding-top: 0.3rem;
+	font-size: 0.22rem;
+	color: #5793DD;
+}
+.d_userimg{
+	float: left;
+	width: 1.2rem;
+	height:1.2rem;
+	margin-right: 0.2rem;
+	margin-bottom: 0.2rem;
+}
+.d_userright{
+	float: left;
+	line-height: 0.6rem;
+}
+.d_user{
+	font-size: 0.24rem;
+	color: #333333;
+	line-height: 0.6rem;
+}
+.d_sexord{
+	font-size: 0.22rem;
+	color: #666666;
+}
+.d_sexord img{
+	width: 0.17rem;
+	height:0.17rem;
+	float: left;
+	margin-top: 0.21rem;
+	margin-right: 0.1rem;
+}
+.d_sexord span{
+	float: left;
+}
+.d_sexord p{
+	float: left;
+	padding-left: 0.3rem;
+}
+.d_fixedbox{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 14.0rem;
+	background: rgba(50,50,50,0.5);
+}
+.d_fixed{
+	position: fixed;
+	bottom: 0.2rem;
+	left: 0.4rem;
+	width: 6.7rem;
+}
+.d_fixed p{
+	height: 0.6rem;
+	background: #FFFFFF;
+	margin-top: 0.05rem;
+	border-radius: 0.06rem;
+	font-size: 0.24rem;
+	color:#80626e;
+	text-align: center;
+	line-height:0.6rem ;
+}

@@ -1,0 +1,63 @@
+<!--pages/missionDetail/missionDetail.wxml-->
+<view class="container">
+  <view class="nav"> 
+  <image src="{{images}}"></image>
+  </view>
+  <view class="banner">
+     <view class="banner_title">
+      <text>{{name}}</text>
+     </view>
+     <view class="banner_img">
+        <view class="banner_img_middle">
+            <image src="{{photo1}}" class="love"></image>
+            <block wx:for="{{imgUrl}}">
+                <image src="{{item.images}}" class="img"  bindtap="clickimg"></image>
+            </block>
+        </view>
+        <image src="{{photo2}}" class="right" bindtap="clickimg"></image>
+     </view>
+     <view class="banner_man">
+       <view class="group_boy">
+        <image src="{{boy}}"></image>
+        <text class="group_pre">{{man}}</text>
+       </view> 
+       <view class="group_girl">
+        <image src="{{girl}}"></image>
+        <text class="group_pre1">{{women}}</text>
+       </view>
+       <text class="group_text">(限定各{{sites}}人)</text>
+       <text class="group_text">已报名{{sumnumber}}人</text>
+     </view>
+     <view class="kong"></view>
+     <view class="banner_box">
+        <image src="{{photo3}}" class="image"></image>
+        <text>{{abort_time}}</text>
+        <text>(报名截止:{{date_time}})</text>
+     </view>
+      <view class="banner_box">
+        <image src="{{photo4}}" class="image"></image>
+        <text>{{site}}</text>
+     </view>
+     <view class="banner_box">
+        <image src="{{photo5}}" class="image"></image>
+        <text>{{price}}元</text>
+     </view>
+     <view class="banner_box" bindtap="clickPhoto">
+        <image src="{{photo6}}" class="image"></image>
+        <text class="blue">{{photo}}</text>
+     </view>
+      <view class="banner_box">
+        <image src="{{photo7}}" class="image"></image>
+        <text>{{sponsor}}(已成功举办<text class="blues">{{title}}</text>次活动,共<text class="blues">{{toto}}</text>人参加)</text>
+     </view>
+     <view class="banner_box">
+        <image src="{{photo8}}" class="image"></image>
+        <text>{{label}}</text>
+     </view>
+        <view class="banner_box1">
+            <image src="{{photo9}}" class="image"></image>
+            <text>{{event_detail}}</text>
+        </view>
+    </view>
+    <button class="btn" bindtap="clickbtn" data-id="{{id}}">参加</button>
+</view>

@@ -1,0 +1,24 @@
+<!--pages/changeShop/changeShop.wxml-->
+<view class="container">
+    <view class="scene">
+      <view class="scene_box" >
+       <block wx:for="{{sceneCount}}">
+          <view class="scene_container" bindtap="{{item.click}}" data-id="{{item.id}}" data-title="{{item.title}}">
+            <view class="scene_img">
+             <image mode="aspectFill" src="{{item.image}}"></image>
+            </view>
+            <view class="scene_title">
+             <text>{{item.title}}</text>
+            </view>
+            <view class="scene_price">
+              价格:<text>{{item.pirce}}元/人</text>
+            </view>
+            <view class="scene_num">
+             <text>购买人数:{{item.totle}}</text>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+</view>
+

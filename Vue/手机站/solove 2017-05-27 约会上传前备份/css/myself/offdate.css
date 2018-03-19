@@ -1,0 +1,136 @@
+@charset "utf-8";
+.d_offdateBox{
+	width: 100%;
+	height: 100%;
+}
+.d_see{
+	margin-top: 0.9rem;
+	height:0.7rem;
+	background: #d5e8ff;
+	color: #5793DD;
+	font-size: 0.24rem;
+	line-height: 0.7rem;
+	text-align: center;
+}
+.d_contentBox{
+	height: 1.8rem;
+	margin: 0.3rem 0.4rem;
+}
+.d_left{
+	float: left;
+	max-width: 3.4rem;
+}
+.d_left p{
+	font-size: 0.3rem;
+	color: #333333;
+	line-height: 0.48rem;
+}
+.d_left span{
+	display: inline-block;
+	max-width: 3.4rem;
+	font-size: 0.22rem;
+	color: #666666;
+	line-height: 0.44rem;
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+}
+.d_left .d_spanClass{
+	color: #5793DD;
+}
+.d_contentBox img{
+	float: right;
+	height:1.9rem;
+	width: 2.6rem;
+	border-radius: 0.06rem;
+}
+.d_offmoney{
+	height:0.88rem;
+	margin-left: 0.4rem;
+	padding-right: 0.4rem;
+	border-bottom: solid 1px #E6E6E6;
+}
+.d_offmoney span{
+	float: left;
+	color: #333;
+	font-size: 0.3rem;
+	line-height: 0.88rem;
+}
+.d_offmoney div{
+	float: right;
+	width: 3.0rem;
+}
+.d_offmoney div img{
+	float: right;
+	margin-top: 0.31rem;
+	height: 0.26rem;
+	width: 0.26rem;
+	margin-right: 0.05rem;
+}
+.d_offmoney div p{
+	float: right;
+	font-size: 0.24rem;
+	color: #FEB3C5;
+	line-height: 0.88rem;
+}
+.d_offway{
+	height:0.88rem;
+	margin-left: 0.4rem;
+	padding-right: 0.4rem;
+	border-bottom: solid 1px #E6E6E6;
+}
+.d_offway p{
+	color: #333;
+	font-size: 0.3rem;
+	line-height: 0.88rem;
+}
+.d_offway p span{
+	color: #5793DD;
+	font-size: 0.24rem;
+}
+.d_textcontent{
+	height: 1.4rem;
+	width: 6.7rem;
+	margin-left: 0.4rem;
+	border: solid 1px #999;
+	border-radius: 0.06rem;
+}
+.d_cause{
+	margin-left: 0.4rem;
+	padding-right: 0.4rem;
+	width: 6.7rem;
+	margin-bottom: 1.5rem;
+}
+.d_li{height:0.7rem;border-bottom: solid 1px #E6E6E6;width: 6.7rem;}
+.d_li p{
+	float: left;line-height: 0.7rem;color: #666;font-size: 0.24rem;
+}
+.d_cause .d_li .d_wai{
+	float: right;
+	margin-top: 0.2rem;
+	height: 0.3rem;
+	width: 0.3rem;
+	background: #FFF;
+	border: solid 1px #999;
+	border-radius: 50%;
+}
+.d_nei{
+	width: 0.18rem;height:0.18rem;
+	border: solid 1px #999;
+	border-radius: 50%;
+	margin: 0.03rem;
+	background: #999;
+}
+.d_btn{
+	width: 6.7rem;
+	height:0.9rem ;
+	color: #fff;
+	font-size: 0.3rem;
+	text-align: center;
+	line-height: 0.9rem;
+	background: #5793DD;
+	border-radius: 0.06rem;
+	position: fixed;
+	bottom: 0.4rem;
+	left: 0.4rem;
+}

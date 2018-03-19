@@ -1,0 +1,132 @@
+.d_banner{
+	margin-top: 0.9rem;
+	width: 7.5rem;
+	height: 3.0rem;
+}
+.d_banner img{
+	width: 7.5rem;
+	height: 3.0rem;
+}
+.d_marquee{
+	height: 0.74rem;
+	background: #f3f3f3;
+}
+.d_marquee span{
+	line-height: 0.74rem;
+	margin: 0 1.33rem;
+	font-size: 0.24rem;
+	color: #5793DD;
+}
+.d_recommend p{
+	margin:0.3rem 0.24rem;
+	padding:0 0.24rem;
+	font-size: 0.3rem;
+	color: #333333;
+	border-left: solid 0.04rem #5793DD;
+}
+.d_headarr{
+	width: 7.5rem;
+	height: 2.96rem;
+	overflow-x:auto;
+	overflow-y:hidden;
+}
+.d_headarr ul{
+	height: 2.96rem;
+	width: 22.5rem;
+}
+.d_headarr ul li{
+	float: left;
+	margin-left: 0.24rem;
+}
+.d_headimg{
+	height: 2.96rem;
+	width: 2.18rem;
+}
+.d_headsrc{
+	height: 2.18rem;
+	width: 2.18rem;
+	border-radius: 0.06rem;
+}
+.d_nickname{
+	font-size: 0.24rem;
+	color: #333333;
+	line-height: 0.76rem;
+}
+.d_srcbox{
+	position: relative;
+	height: 2.18rem;
+	width: 2.18rem;
+}
+.d_hot{
+	width: 0.8rem;
+	height:0.8rem;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.sexage{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background: #ED7273;
+	width: 0.6rem;
+	/*height: 0.3rem;*/
+	border-radius: 0.06rem;
+	text-align: center;
+}
+.sexage img{
+	float: left;
+	height: 0.14rem;
+	width: 0.14rem;
+	margin: 0.05rem;
+}
+.sexage span{
+	display: inline-block;
+	font-size: 0.22rem;
+	line-height: 0.3rem;
+	text-align: center;
+	color: #ffffff;
+}
+.d_heng{
+	height: 0.36rem;
+	width: 7.5rem;
+	text-align: center;
+}
+.d_heng span{
+	display: inline-block;
+	margin:0 0.03rem;
+	width: 0.26rem;
+	height:0.06rem;
+	background: #5793DD;
+	border-radius: 0.06rem;
+	border: solid 1px #5793DD;
+}
+.d_heng .d_span{
+	background: #ffffff;
+	border: solid 1px #5793DD;
+}
+.d_chengpage{
+	float: right;
+	color: #5793DD;
+}
+.d_headarr2{
+	width: 7.5rem;
+	height: 6.2rem;
+}
+.d_headarr2 ul li{
+	float: left;
+	margin-left: 0.24rem;
+}
+.d_btn{
+	margin-left: 0.24rem;
+	height: 1.1rem;
+	width: 7.02rem;
+	background: url(../../img/icon/x_btnBj_icon.png);
+	background-size: 100% 100%;
+	color: #ffffff;
+	font-size: 0.4rem;
+	text-align: center;
+	line-height: 1.1rem;
+	border-radius: 0.06rem;
+	margin-bottom: 1.38rem;
+}

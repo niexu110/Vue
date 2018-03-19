@@ -1,0 +1,59 @@
+<view class="container">
+   <swiper class="banner" autoplay="auto" interval="3000" duration="1000" circular="true">
+        <block wx:for="{{imgUrl}}">
+            <swiper-item>
+                <image mode="aspectFill" src="{{item.pcimg_path}}"></image>
+            </swiper-item>
+        </block>
+   </swiper>
+   <view class="group_flex1">
+     <block wx:for="{{lists}}">
+       <view class="group_box1" bindtap="{{item.anchor}}" >
+         <image mode="aspectFill" src="{{item.img}}"></image>
+         <view class="group_text">
+          <text class="group_title">{{item.title}}</text>
+          <text>{{item.text}}</text>
+         </view>
+       </view>
+     </block>
+   </view>
+   <view class="line2"></view>
+   <view class="group_flex">
+     <block wx:for="{{list}}">
+       <view class="group_box" bindtap="{{item.anchor}}">
+         <image mode="aspectFill" src="{{item.mobileimg}}"></image>
+         <!--style="height:90rpx;width:90rpx" -->
+         <text>{{item.cat_name}}</text> 
+         <!--美食家  等二级页面标题注释-->
+       </view>
+     </block>
+   </view>
+   <!--团约内容-->
+   <view class="line"></view>
+  <block wx:for="{{obj}}">
+   <view class="group_banner">
+     <view class="group_banner_top">
+        <image src="{{user}}" class="img"></image>
+         <view class="group_banner_box">
+            <view class="group_banner_title">{{item.name}}</view>
+             <text class="lt group_banner_text">{{item.abort_time}}</text>
+         </view>
+     </view>
+     <view class="group_banner_banner">
+      <image mode="widthFix" src="{{item.images}}" bindtap="{{item.clickcontent}}" data-id="{{item.id}}" data-name="{{item.name}}"></image>
+     </view>
+     <view class="group_banner_footer">
+       <text class="group_banner_city">{{item.address}}</text>
+       <view class="group_boy">
+        <image src="{{boy}}"></image>
+        <text class="group_pre">{{item.man}}/{{item.number}}</text>
+       </view> 
+       <view class="group_girl">
+        <image src="{{girl}}"></image>
+        <text class="group_pre">{{item.woman}}/{{item.number}}</text>
+       </view> 
+       <text class="group_price">￥{{item.price}}元</text>
+     </view>
+   </view>
+  </block>
+</view>

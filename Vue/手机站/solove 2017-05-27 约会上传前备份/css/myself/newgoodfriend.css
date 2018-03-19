@@ -1,0 +1,103 @@
+@charset "utf-8";
+.d_goodfriendBox{
+	width: 100%;
+}
+.d_goodslist{
+	margin-top: 0.9rem;
+}
+.d_goodF{
+	height: 1.6rem;
+	border-radius: 0.06rem;
+	border-bottom: solid 1px #E6E6E6;
+	margin-left: 0.4rem;
+	padding-right: 0.4rem;
+}
+.d_goodF img {
+	float: left;
+	margin-top: 0.28rem;
+	width: 1.04rem;
+	height:1.04rem;
+	border-radius: 0.06rem;
+}
+.d_goodFrigth{
+	float: right;
+	margin-top: 0.28rem;
+	width: 5.36rem;
+}
+.d_goodFcenter{
+	float: left;
+	height: 1.04rem;
+}
+.d_agree{
+	float: right;
+	margin-top: 0.3rem;
+	background: #5793DD;
+	font-size: 0.24rem;
+	width: 0.8rem;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	color: #fff;
+	text-align: center;
+	border-radius: 0.06rem;
+}
+.d_goodFcenter h2{
+	font-size: 0.32rem;
+	color: #333333;
+	line-height: 0.52rem;
+	/*font-weight: bold;*/
+}
+.d_goodFcenter p{
+	font-size: 0.24rem;
+	color: #999999;
+	line-height: 0.52rem;
+	width: 2.8rem;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.d_hint{
+	height:0.24rem;
+	width: 0.24rem;
+	border-radius: 50%;
+	background: #111111;
+	font-size: 0.14rem;
+	line-height: 0.24rem;
+	text-align: center;
+	color: #FFFFFF;
+}
+.d_goodFlist{
+	margin-top: 0;
+}
+.d_newgood{
+	align-items: center;
+}
+.d_newgood h2{float: left;}
+.d_agesex{
+	float: left;
+	margin: 0;
+	margin: 0.05rem;
+	margin-left: 0.16rem;
+	margin-top: 0.15rem;
+	width: 0.56rem;
+	height: 0.24rem;
+	border-radius: 0.06rem;
+	background: #5793DD;
+}
+.d_agesex img{
+	float: left;
+	margin: 0;
+	margin: 0.07rem;
+	width: 0.14rem;
+	height: 0.14rem;
+}
+.d_addimg{
+	background: #feb3c5;
+}
+.d_newgood .d_agesex span{
+	float: right;
+	display: inline-block;
+	font-size: 0.14rem;
+	line-height: 0.26rem;
+	color: #FFFFFF;
+	margin-right: 0.07rem;
+}

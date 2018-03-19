@@ -1,0 +1,8 @@
+.single_box{  width:6.7rem;  height:auto; margin:1.7rem auto 0;}
+.single_user_box{width:5rem;height:2.3rem;margin:0 auto;}
+.single_user_box div img,.single_user_box div{width:1.6rem;height:1.6rem;border-radius: 4px;text-align: center;}
+.single_user_box div p{color:#b1b1b1;font-size:.26rem; }
+.single_user_box div.single_middle>img{width:.7rem;height:.65rem;margin-top:.47rem;margin-left:.2rem;}
+.single_box h2{width:5rem;height:.7rem;line-height: .7rem;text-align: center; margin: 0 auto;font-size: .3rem;color:#666;font-weight:bold; }
+.btn{width:6.7rem;height:.9rem;line-height:.9rem;text-align: center;margin-top:2rem;font-size:.3rem;font-weight: bold;background:#FEB3C5;color:#fff;}
+

@@ -1,0 +1,184 @@
+html,body{
+	height: 100%;
+	background: #fff;
+}
+i{
+	font-style: normal;
+}
+header{
+	width: 7.5rem;
+	height: auto;
+	background: #e74d41;
+	border-bottom: none;
+	text-align: center;
+	color: #ffedbb;
+	position: relative;
+	padding-bottom: .3rem;
+}
+header p{
+	font-weight: 600;
+}
+.title{
+	width: 100%;
+	height: .9rem;
+	line-height: .9rem;
+	font-size: .34rem;
+	font-weight: bold;
+	position: relative;
+}
+.title a{
+	position: absolute;
+	left: .24rem;
+	color: #ffedbb;
+	font-size: .3rem;
+}
+/*用户头像*/
+.userPhoto{
+	width: 1.2rem;
+	height: 1.2rem;
+	border: 1px solid #ffedbb;
+	border-radius: 4px;
+	margin: .3rem auto;
+}
+.userPhoto img{
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+}
+/*加关注、加好友*/
+.friend{
+	width: 3rem;
+	margin: .3rem auto 0;
+	overflow: hidden;
+}
+.friend a{
+	float: left;
+	width: 1.3rem;
+	height: .5rem;
+	text-align: center;
+	line-height: .5rem;
+	border: 1px solid #ffedbb;
+	box-sizing: border-box;
+	font-size: .22rem;
+	color: #ffedbb;
+	border-radius: 2px;
+}
+.friend a:last-child{
+	float: right;
+}
+.friend a img{
+	width: .24rem;
+	height: .2rem;
+	margin-right: .1rem;
+	border-radius: 2px;
+}
+/*领取详情*/
+.hbInfo{
+	width: 7.5rem;
+	height: 3.62rem;
+	text-align: center;
+}
+.hbInfo p:first-child{
+	padding-top: .4rem;
+	font-size: .3rem;
+	color: #333;
+	font-weight: 600;
+}
+.hbInfo p:nth-of-type(2){
+	padding-top: .5rem;
+	color: #111;
+	font-size: .3rem;
+	font-weight: 600;
+}
+.hbInfo p:nth-of-type(2) em{
+	font-size: 1.2rem;
+}
+.hbInfo a{
+	font-size: .24rem;
+	color: #5397dd;
+}
+/*领取列表*/
+.detail{
+	width: 7.26rem;
+	margin-left: .24rem;
+	box-sizing: border-box;
+}
+.people{
+	height: 1rem;
+	line-height: 1.24rem;
+	font-size: .24rem;
+}
+.infoList .list{
+	height: 1.18rem;
+	width: 100%;
+	border-bottom: 1px solid #e6e6e6;
+	padding: .24rem 0;
+	box-sizing: border-box;
+	margin: 0;
+	position: relative;
+}
+.list p:first-child{
+	float: left;
+	width: .7rem;
+	height: .7rem;
+	border-radius: 2px;
+}
+.list p:first-child img{
+	width: 100%;
+	border-radius: 2px;
+}
+.list p:nth-of-type(2){
+	float: right;
+	margin-left: .16rem;
+	width: 6.16rem;
+	height: 100%;
+	padding-right: .24rem;
+}
+.list p:nth-of-type(2) .infoText{
+	display: block;
+	font-size: .28rem;
+	color: #111;
+	font-weight: 600;
+}
+.list p:nth-of-type(2) .infoTime{
+	display: block;
+	font-size: .24rem;
+	color: #999;
+}
+.list b{
+	position: absolute;
+	right: .24rem;
+	line-height: .7rem;
+	font-size: .28rem;
+	color: #111;
+}
+/*弹框*/
+.d_popupbox{
+	display: none;
+	width: 4.0rem;
+	padding: 0.2rem;
+	border-radius: 0.06rem;
+	font-size: 0.26rem;
+	color: #fff;
+	position: fixed;
+	bottom:10%;
+	left: 1.75rem;
+	background: rgba(50,50,50,0.5);
+	text-align: center;
+}
+/*加载更多*/
+#bottomS{
+
+	width:100%;
+
+	height:.6rem;
+
+	line-height: .6rem;
+
+	text-align: center;
+
+	color:#5793dd;
+
+	font-size: .3rem;
+
+}

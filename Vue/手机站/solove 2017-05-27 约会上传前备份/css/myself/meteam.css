@@ -1,0 +1,92 @@
+@charset "utf-8";
+.d_meteamBox{
+	width: 100%;
+}
+.d_topBox{
+	margin-top: 0.9rem;
+	margin-left: 0.4rem;
+	padding-right: 0.4rem;
+	border-bottom: solid 1px #E6E6E6;
+	height: 1.6rem;
+}
+.d_topBox img{
+	margin-top: 0.2rem;
+	margin-right: 0.2rem;
+	height: 1.2rem;
+	width: 1.2rem;
+	float: left;
+	border-radius: 0.06rem;
+}
+.d_toprigth{
+	float: left;
+}
+.d_toprigth p{
+	margin-top: 0.2rem;
+	font-size: 0.28rem;
+	color: #333333;
+	line-height: 0.6rem;
+}
+.d_toprigth span{
+	font-size: 0.22rem;
+	color: #666666;
+	line-height: 0.6rem;
+}
+.d_contenttitle{
+	margin-left: 0.4rem;
+	padding-right: 0.4rem;
+	border-bottom: solid 1px #E6E6E6;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	font-size: 0.28rem;
+	color: #333333;
+}
+.d_contenbox{
+	height: 2.3rem;
+	margin-left: 0.4rem;
+	padding-right: 0.4rem;
+	border-bottom: solid 1px #E6E6E6;
+}
+.d_contentleft{
+	float: left;
+	width: 4.0rem;
+}
+.d_contentleft p{
+	font-size: 0.24rem;
+	color: #333333;
+	line-height: 0.6rem;
+	margin-top: 0.4rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.d_contentleft span{
+	font-size: 0.22rem;
+	color: #666666;
+	line-height: 0.6rem;
+}
+.d_contenbox img{
+	height: 1.9rem;
+	width: 2.6rem;
+	border-radius: 0.06rem;
+	margin-top: 0.2rem;
+	float: right;
+}
+.d_bottom{
+	height: 0.9rem;
+	margin-left: 0.4rem;
+	padding-right: 0.4rem;
+	border-bottom: solid 1px #E6E6E6;
+	line-height: 0.9rem;
+	font-size: 0.22rem;
+}
+.d_sum{
+	float: left;
+	color: #333333;
+}
+.d_sum span{
+	color: #5793DD;
+}
+.d_more{
+	float: right;
+	color: #5793DD;
+}

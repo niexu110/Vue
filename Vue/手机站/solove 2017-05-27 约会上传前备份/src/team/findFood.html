@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>周末单身</title>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/headerFoot.css" />
+    <link rel="stylesheet" href="../../css/team/findFood.css" />
+    <script type="text/javascript" src="../../js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src='../../js/MD5.js'></script>
+    <script>
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+    </script>
+</head>
+	<body>
+		<header>
+			<div class="head">
+				<div class="headLeft">
+					<a  href="javascript:void(0)" onclick="javascript:history.go(-1);" ><img src=""/></a>
+				</div>
+				<div class="headMiddle">
+					周末单身
+				</div>
+				<div class="headRight">
+					<span></span>
+				</div>
+			</div>	
+		</header>
+		<div class="f_containers">	
+			<div class="f_banner">
+				<img src="../../img/t_findFood.jpg"/>
+			</div>
+			<div id="f_classify">
+				<div class="new">最新发布<hr class="changeNew" color="#4b85cc"></hr></div>
+				<div class="cheap">价格最低<hr class="changeCheap" color="#4b85cc"></hr></div>
+			</div>
+			<!--商品列表-->
+			<div class="f_newList"><ul></ul><h5 id="newLoading"></h5></div>
+			<div class="f_cheapList"><ul></ul><h5 id="cheapLoading"></h5></div>
+		</div> 
+	</body>
+	<script type="text/javascript" src='../../js/team/findFood.js'></script>
+</html>

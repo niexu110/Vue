@@ -1,0 +1,131 @@
+<!--pages/issueDate/issueDate.wxml-->
+<form bindsubmit="formSubmit">
+    <!-- 约会场所 -->
+    <view class="secondStepDate_top">
+        <view class="secondStepDate_top_title">
+            <view>请添加约会场景</view>
+            <text bindtap="clickscene" class="scene">场景选择</text>
+        </view>
+        <view class="secondStepDate_top_content">
+            <image src="{{list.src}}" style="height:160rpx;width:220rpx;"></image>
+            <view class="top_content">
+                <view class="secondStepDate_top_content_title">
+                    <text>{{list.title}}</text>
+                    <view class="more">
+                        <text>推荐</text>
+                    </view>
+                </view>
+                <view class="site">
+                    <text>{{list.site}}</text>
+                </view>
+                <view class="moneyBox">
+                    <text>价格：<text class="money">{{list.money}}元</text></text>
+                    <text class="number">购买人数：<text>{{list.num}}</text></text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 约会具体信息 -->
+    <view>
+        <view class="newtime">
+            <text>请选择约会时间</text>
+            <!--<image src="http://img.qinyikou.cc/icons/x_date_icon.png" style="height:36rpx;width:36rpx;"></image>-->
+        </view>
+        <view class="newtime2">
+            <view class="newtime2_1">
+                <view>
+                    <picker mode="date" value="{{date}}" name="val1" start="2017-01-01" end="2017-09-01" bindchange="bindDateChange">
+                        <view class="picker">
+                        {{date}}
+                        </view>
+                    </picker>
+                </view>
+                <view>
+                    <picker mode="time" value="{{time}}" name="val2"  start="09:01" end="21:01" bindchange="bindTimeChange">
+                        <view class="picker">
+                        {{time}}
+                        </view>
+                    </picker>
+                </view>
+            </view>
+            <text>（请您确认好您的空余时间）</text>
+        </view>
+    </view>
+    <!-- 约会对象 -->
+    <view  class="dateBox">
+        <text class="dateBox_title">约会对象</text>
+        
+            <radio-group name="radio1" class="date1">
+                <view class="date1 date2">
+                    <view bindtap="clickobj1" class="date1_1 datetoptext">
+                            <label><radio class="date1_1" value="{{value}}" checked="{{checked1}}">{{text5}}</radio></label>
+                        
+                        <view bindtap="dateSex1" class="{{sex1}}">
+                            <text>男女不限</text>
+                        </view>
+                        <view bindtap="dateSex2" class="{{sex2}}">
+                            <text>男</text>
+                        </view>
+                        <view bindtap="dateSex3" class="{{sex3}}">
+                            <text>女</text>
+                        </view>
+                    </view>
+                    <view bindtap="clickobj2" class="date1_1 datetoptext">
+                        <label><radio class="date1_1" value="{{userName}}"  checked="{{checked2}}">{{text6}}</radio></label>
+                        <view class="getFriend" bindtap="addgood"><text>添加好友</text></view>
+                        <view wx:if="{{userName!==''}}" class="userNameBox">
+                            <text>{{userName}}</text>
+                            <view class="clearuserName" bindtap="clickClear"><text>×</text></view>
+                        </view>
+                        <view wx:else></view>
+                    </view>
+                </view>
+            </radio-group>
+    </view>
+    <!-- 负责接送 -->
+    <view  class="dateBox">
+        <text class="dateBox_title">负责接送</text>
+        <radio-group name="radio2" class="date1">
+            <label><radio class="date1_1 date1_2" value="{{text3}}">{{text3}}</radio></label>
+            <label><radio class="date1_1 date1_2" value="{{text4}}">{{text4}}</radio></label>
+        </radio-group>
+        <text class="datetext">负责接送对方需提前和邀请对象联系，不选即不负责接送</text>
+    </view>
+    <!-- 约会方式 -->
+    <view  class="dateBox">
+        <text class="dateBox_title">约会方式</text>
+        <radio-group name="radio3" class="date1" bindchange="radioChange">
+            <label><radio class="date1_1" value="{{text1}}" checked="checked">{{text1}}</radio></label>
+            <label><radio class="date1_1" value="{{text2}}">{{text2}}</radio></label>
+        </radio-group>
+    </view>
+    <!-- 约会费用 -->
+    <view class="content_bottom">
+        <view class="dateMoney dateBox_title">
+            <text>约会费用</text>
+        </view>
+        <view class="content_bottom1">
+            <view class="content_bottom1_1">
+                我:<text class="money">{{myMoney}}元</text>
+            </view>
+            <view class="content_bottom1">
+                接收人:<text>{{youMoney}}元</text>
+            </view>
+        </view>
+    </view>
+    <view class="date_content">
+        <text class="dateHeart dateBox_title">约会心情</text>
+        <text class="dataState">(将显示到约会主页,请认真选择或填写,打动对方的心)</text>
+        <view class="dataState_text">
+            <textarea name="textarea" class="dateSay" value="{{value2}}" bindinput="bindinput" maxlength="50"/>
+            <view class="count"><text>{{numLength}}/50</text></view>
+        </view>
+            <text class="date_contenttext" bindtap="clicktext7">{{text7}}</text>
+            <text class="date_contenttext" bindtap="clicktext8">{{text8}}</text>
+            <text class="date_contenttext" bindtap="clicktext9">{{text9}}</text>
+    </view>
+    <!-- 下一步  提交按钮 -->
+    <view>
+        <button class="submitClass" formType="submit">下一步</button>
+    </view>
+</form>

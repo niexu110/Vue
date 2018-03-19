@@ -1,0 +1,7 @@
+<!--pages/questuin/questuin.wxml-->
+<view class="header">
+    <image src="{{img}}"></image>
+</view>
+<view class="content">
+    <text>{{content}}</text>
+</view>

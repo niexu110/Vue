@@ -1,0 +1,99 @@
+/* pages/traveller/traveller.wxss */
+.traveller_container {
+    width: 100%;
+    height: 100%;
+}
+.traveller_banner {
+    width: 100%;
+    height:260rpx;
+}
+.traveller_banner_pic{
+    width:100%;
+    height:100%;
+}
+.traveller_changePage {
+    width: 100%;
+    height: 90rpx;
+    display: flex;
+    flex:row nowrap;
+    justify-content:space-around;
+    border-bottom: 1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;    
+}
+.traveller_package {
+    width:100%;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+    align-content: center;
+    text-align: center;
+    margin-top: 30rpx;
+}
+.traveller_package view {
+    flex:1;
+    font-size:30rpx;
+    color:#121212;  
+}
+.line {
+    width:47%;
+    height:2px;
+    background-color: #4b85cc;
+    display: block;
+    margin:3px auto 0;    
+}
+.traveller_content {
+    width: 100%;
+    position: absolute;
+}
+.traveller_new_content {
+    width: 100%;
+    height: 300rpx;
+    margin-top: 10rpx;
+}
+.traveller_new_list {
+    width: 670rpx;
+    height: 260rpx;
+    padding-top: 20rpx;
+    margin: auto;
+}
+.traveller_new_contentImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 1%;
+}
+.traveller_play_content {
+    position: absolute;
+    width: 670rpx;
+    height: 260rpx;
+    box-shadow:inset 0 0 200px black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.traveller_filter {
+    color: #ffffff;
+    font-size: 26rpx;
+    line-height: 50rpx;
+    margin-left: 60rpx;
+}
+.traveller_first {
+    font-size: 34rpx;
+    font-weight: bold;
+}
+.traveller_second image , .traveller_third image{
+    width: 26rpx;
+    height: 26rpx;   
+}
+.traveller_right {
+    float: right;
+    margin-right: 40rpx;
+}
+.traveller_new_likeImg {
+    position: relative;
+    float: right;
+    width: 35rpx;
+    height: 30rpx; 
+    margin-right: 30rpx;
+    margin-top: -80rpx;
+}

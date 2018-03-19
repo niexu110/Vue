@@ -1,0 +1,97 @@
+html,body{
+	height: 100%;
+}
+header{
+	width: 7.5rem;
+	height: 5.9rem;
+	text-align: center;
+	line-height: .9rem;
+	background: url(../../img/h_Vipbg.png) 100%;
+	background-size: 100% 100%;
+}
+.head a{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: .24rem;
+}
+.headMiddle{
+	font-size: .34rem;
+	font-weight: bold;
+}
+.content{
+	padding: 0 .24rem .15rem;
+}
+header h6{
+	text-align: left;
+	font-size: .32rem;
+	color: #333;
+	margin-top: 4.13rem;
+	margin-left: .24rem;
+}
+.content div{
+	margin-top: .24rem;
+	padding-left: .3rem;
+	height: .94rem;
+	border-radius: 3px;
+}
+.content div p{
+	float: left;
+}
+.content div p:first-child{
+	width: .4rem;
+	height: .4rem;
+	margin-top: .27rem;
+}
+.content div p:first-child img{
+	width: 100%;
+}
+.content div p:last-child{
+	line-height: .94rem;
+	padding-left: .3rem;
+	font-size: .3rem;
+	font-weight: normal;
+}
+.content div:nth-of-type(1){
+	margin-top: 0;
+	background: #e9f6fe;
+}
+.content div:nth-of-type(2){
+	background: #fdf4e5;
+}
+.content div:nth-of-type(3){
+	background: #fde5fc;
+}
+.content div:nth-of-type(4){
+	background: #e9f8f3;
+}
+.content div:nth-of-type(5){
+	background: #f8e9e9;
+}
+.content div:nth-of-type(1) p:last-child{
+	color: #5793dd;
+}
+.content div:nth-of-type(2) p:last-child{
+	color: #f2a44e;
+}
+.content div:nth-of-type(3) p:last-child{
+	color: #f33aeb;
+}
+.content div:nth-of-type(4) p:last-child{
+	color: #07a670;
+}
+.content div:nth-of-type(5) p:last-child{
+	color: #d61a1a;
+}
+input[type="button"]{
+	border: none;
+	background: url(../../img/h_btnbg.png) repeat;
+	background-size: 100% 100%;
+	width: 7.01rem;
+	height: 1.1rem;
+	border-radius: .55rem;
+	margin: .42rem auto 0;
+	font-size: .4rem;
+	color: #fff;
+	outline: none;
+}

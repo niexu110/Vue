@@ -1,0 +1,19 @@
+<!--pages/intercalate/intercalate.wxml-->
+<view class="intercalate_container">
+    <view class="intercalate_boxs">
+        <view class="intercalate_box">
+            <block wx:for="{{msg}}">
+                <view class="intercalate_title" bindtap="{{item.anchor}}">
+                    <text class="intercalate_title_left_one" id="../basic/basic">{{item.title}}</text>
+                    <image class="intercalate_title_right"src="{{img}}"></image>
+                    <text class="intercalate_title_left_two">{{item.text}}</text>
+                </view>
+            </block>
+            <view class="intercalate_title">
+                <text class="intercalate_title_lefts">版本信息</text>
+                <text class="intercalate_title_rights">版本1.1.0</text>
+            </view>
+        </view> 
+    </view>
+    <button class="btn" bindtap="back">退出当前</button>
+</view>

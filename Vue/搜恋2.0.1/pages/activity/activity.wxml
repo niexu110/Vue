@@ -1,0 +1,16 @@
+<!--pages/activity/activity.wxml-->
+<view class="activity_container">
+    <view class="activity_head_img">
+        <image src="{{headImg}}"></image>
+    </view>
+    <view class="activity_body">
+        <view class="activity_body_title">{{title}}</view>
+        <view class="activity_body_introduction">{{introduction}}</view>
+        <view class="activity_body_date">活动时间：{{date}}</view>
+        <view class="activity_body_place">活动地点：{{place}}</view>
+    </view>
+    <view class="activity_content">
+        <view class="activity_name">活动内容：</view>
+        <view class="activity_specific">{{content}}</view>
+    </view>
+</view>

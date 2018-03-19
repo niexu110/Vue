@@ -1,0 +1,56 @@
+<!--pages/refundImfo/refundImfo.wxml-->
+<view class="refundImfo_container">
+    <view class="refundImfo_position">
+        <!--退款金额-->
+        <view class="refundImfo_money">退款金额
+            <text>{{money}}元</text>
+        </view>
+        <!--退回账户-->
+        <view class="refundImfo_account">退回账户
+            <text>{{wallet}}</text>
+        </view>
+        <!--退款流程-->
+        <view class="refundImfo_flow">退款流程
+            <contact-button type="default-light" session-from="weapp" class="refundImfo_service">联系客服</contact-button>
+        </view>
+        <!--退款状态-->
+        <view class="refundImfo_status">
+            <!--申请已提交-->
+            <view class="refundImfo_status_submit">
+                <view class="refundImfo_status_first_light" wx:if="{{status==='1'}}"></view>
+                <view class="refundImfo_status_first" wx:else></view>
+                <view class="refundImfo_status_title" wx:if="{{status==='1'}}">申请已提交</view>
+                <view class="refundImfo_status_title_light" wx:else>申请已提交</view>
+                <view class="refundImfo_status_body">您的退款申请已成功提交</view>
+                <view class="refundImfo_status_time">{{submitTimes}}</view>
+            </view>
+            <!--申请处理中-->
+            <view class="refundImfo_status_dispose">
+                <view class="refundImfo_status_second_light" wx:if="{{status==='2'}}"></view>
+                <view class="refundImfo_status_second" wx:else></view>
+                <view class="refundImfo_dispose_title" wx:if="{{status==='2'}}">申请处理中</view>
+                <view class="refundImfo_dispose_title_light" wx:else>申请处理中</view>
+                <view class="refundImfo_status_body">您的退款申请已受理，搜恋会尽快完成审核</view>
+                <view class="refundImfo_status_time">{{disposeTimes}}</view>                
+            </view>
+            <!--搜恋后台处理完成-->
+            <view class="refundImfo_status_finish">
+                <view class="refundImfo_status_second_light" wx:if="{{status==='3'}}"></view>
+                <view class="refundImfo_status_third" wx:else></view>
+                <view class="refundImfo_finish_title" wx:if="{{status==='3'}}">搜恋后台处理完成</view>
+                <view class="refundImfo_finish_title_light" wx:else>搜恋后台处理完成</view>
+                <view class="refundImfo_status_body">搜恋审核通过后退款申请后台将会在1~3个工作日内完成处理。</view>
+                <view class="refundImfo_status_time">{{finishTimes}}</view>                 
+            </view>
+        </view>    
+        <!--退款成功-->
+        <view class="refundImfo_status_success">
+            <view class="refundImfo_status_last_light" wx:if="{{status==='4'}}"></view>
+            <view class="refundImfo_status_last" wx:else></view>
+            <view class="refundImfo_success_title" wx:if="{{status==='4'}}">退款成功</view>
+            <view class="refundImfo_success_title_light" wx:else>退款成功</view>
+            <view class="refundImfo_status_body">搜恋已将1225搜恋币返还至您的钱包账户余额，您可到我的钱包查看到账情况，请注意查收。</view>
+            <view class="refundImfo_status_time">{{successTimes}}</view>              
+        </view>
+    </view>
+</view>

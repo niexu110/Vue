@@ -1,0 +1,111 @@
+<!--pages/myDate/myDate.wxml-->
+<view class="container">
+  <view class="nav">
+            <view bindtap="addLine" class="{{all==true?'addColor':''}}" data-id="1">
+                <text id="all">邀请我的</text>
+                <text class="line"  wx:if="{{all==true}}"></text>
+            </view>
+            <view bindtap="addLine"  class="{{pay==true?'addColor':''}}" data-id="2">
+                <text id="pay">我发起的</text>
+                <text class="line" wx:if="{{pay==true}}"></text>
+            </view>
+            <view bindtap="addLine" class="{{apply==true?'addColor':''}}" data-id="3">
+                <text id="apply">团体约会</text>
+                <text class="line"  wx:if="{{apply==true}}"></text>
+            </view> 
+  </view>
+   <view class="banner">
+   <!--邀请我的-->
+    <block wx:for="{{list}}">
+     <view class="box" wx:if="{{alls}}">
+        <view class="banner_box">
+            <view class="box_content" bindtap="requestMe" data-id="{{item.id}}">
+              <view class="content_left lt">
+              <image src="{{item.image}}" class="img" ></image>
+              </view>
+              <view class="content_right lt">
+               <view class="content_title lt">
+                <text class="lt">{{item.goods_name}}</text>
+                <text class="rt content_ascertain" wx:if="{{item.status==='0'}}">确认中</text>
+                <text class="rt content_ascertain" wx:if="{{item.status==='1'}}">已同意</text>
+                <text class="rt content_ascertain" wx:if="{{item.status==='2'}}">已拒绝</text>
+               </view>
+                <view class="content_price lt">
+                 <image src="{{item.photo1}}" class="lt content_img"></image>
+                 <text class="ltttt">{{item.address}}</text>
+                 <text class="rt" wx:if="{{item.type==='1'}}">[已付款]</text>
+                 <text class="rt" wx:if="{{item.type!=='1'}}">[AA制]</text>
+                </view>
+                <view class="content_time lt">
+                 <text class="lt">{{item.time}}</text>
+                 <text class="rt">{{item.price}}元</text>
+                </view>
+              </view>
+            </view>
+        </view>
+     </view>
+    </block>
+    <!--我发布的-->
+      <block wx:for="{{listMy}}">
+      <view class="box" wx:if="{{pays}}">
+        <view class="banner_box">
+            <view class="box_content" bindtap="myPlan" data-id="{{item.id}}" data-fb_type="{{item.fb_type}}">
+              <view class="content_left lt">
+              <image src="{{item.mobileimg}}" class="img" ></image>
+              </view>
+              <view class="content_right lt">
+               <view class="content_title lt">
+                <text class="lt">{{item.goods_name}}</text>
+                <text class="rt content_ascertain" wx:if="{{item.status==='0'}}">确认中</text>
+                <text class="rt content_ascertain" wx:if="{{item.status==='1'}}">已同意</text>
+                <text class="rt content_ascertain" wx:if="{{item.status==='2'}}">已拒绝</text>
+               </view>
+                <view class="content_price lt">
+                 <image src="{{item.photo1}}" class="lt content_img"></image>
+                 <text class="ltttt">{{item.address}}</text>
+                 <text class="rt" wx:if="{{item.type==='1'}}">[已付款]</text>
+                 <text class="rt" wx:if="{{item.type!=='1'}}">[AA制]</text>
+                </view>
+                <view class="content_time lt">
+                 <text class="lt">{{item.add_time}}</text>
+                 <text class="rt">{{item.money}}元</text>
+                </view>
+              </view>
+            </view>
+        </view>
+     </view>
+    </block>
+     <!--团体约会-->
+      <block wx:for="{{apply1}}">
+        <view class="box" wx:if="{{applys}}">
+         <view class="banner_box">
+          <view class="box_content" bindtap="team" data-g_id="{{item.g_id}}" data-abort_time="{{item.abort_time}}"  data-time="{{item.time}}" data-date_time="{{item.date_time}}">
+            <view class="content_left lt">
+            <image src="{{item.small_img}}" class="img" ></image>
+            </view>
+            <view class="content_right lt">
+              <view class="content_title lt">
+              <text class="lt">{{item.name}}</text>
+              <text class="rt content_ascertain" wx:if="{{item.status==='0'}}">确认中</text>
+              <text class="rt content_ascertain" wx:if="{{item.status==='1'}}">已同意</text>
+              <text class="rt content_ascertain" wx:if="{{item.status==='2'}}">已拒绝</text>
+              </view>
+              <view class="content_price lt">
+                <image src="{{item.photo1}}" class="lt content_img"></image>
+                <text class="lt ltttt">{{item.site}}</text>
+              </view>
+              <view class="content_time lt">
+                <text class="lt">{{item.time}}</text>
+                <text class="rt">{{item.price}}元</text>
+              </view>
+            </view>
+          </view>
+        </view>
+     </view>
+    </block>
+   </view>
+   <view wx:if="{{dabaokiu}}">
+    <image mode="aspectFit" class="dabaokiu" src="{{zanwu}}"></image>
+   </view>
+</view>
+

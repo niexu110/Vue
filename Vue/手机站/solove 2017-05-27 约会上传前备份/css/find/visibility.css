@@ -1,0 +1,23 @@
+.d_list{
+	margin-top: 0.9rem;
+}
+.d_list li{
+	margin-left: 0.24rem;
+	padding-right: 0.24rem;
+	height: 1.0rem;
+	border-bottom: solid 1px #E6E6E6;
+}
+.d_list li p{
+	float: left;
+	line-height: 1.0rem;
+	font-size: 0.3rem;
+	color: #333333;
+}
+.d_list li p span{color: #999999;margin-left: 0.12rem;}
+.d_list li img{
+	float: right;
+	width: 0.38rem;
+	height: 0.26rem;
+	margin-top: 0.36rem;
+}
+.d_dui{display: none;}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人名片</title>
+	<meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../../css/headerFoot.css">
+    <link rel="stylesheet" type="text/css" href="../../css/find/personalcarte.css">
+	<script type="text/javascript" src='../../js/jquery-2.1.4.min.js'></script>
+    <script type="text/javascript" src='../../js/MD5.js'></script>
+    <script>
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+    </script>
+</head>
+<body>
+<div id="RE_fixeds">
+	<span>&times;</span>
+	<h2></h2>
+</div>
+<!-- 用户基本信息 -->
+<div class='headMessage'>
+	<img id='userImg' src="" alt="">
+	<div class="userMask"></div>
+	<!-- userMessage -->
+	<div class="userMessage">
+		<div class="SL_nav">
+			<i></i>
+			<a href="javascript:history.go(-1);" class="pull-left">
+				<img src="../../img/icon/x_leftWhite_icon.png" class="IMG"></a>
+			<span></span>
+		</div>
+		<img class='userImg' src="" alt="">
+		<!-- 昵称 -->
+		<h4 class="nick"><s></s> <img id="support" src="../../img/icon/x_addconcern_icon.png" alt=""></h4>
+		<!-- 用户星座等 -->
+		<div class="ageasterism">
+			<div>
+				<span><img id="userSex" src="" alt=""><s id="age"></s></span>
+				<span id="constellation"></span>
+				<span id="marry"></span>
+			</div>
+		</div>
+		<!-- love -->
+		<ul>
+			<li><i>关注</i><s id="concern"></s></li>
+			<li><i>魅力值</i><s id="glamour"></s></li>
+			<li><i>信用值</i><s id="credit"></s></li>
+		</ul>
+	</div>
+</div>
+<!-- 个人签名等 -->
+<div class="idiographItem">
+	<div><span>个性签名</span><p id="idiograph"></p></div>
+	<div><span>职&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;业</span><p id="job"></p></div>
+	<div><span>居&nbsp;住&nbsp;地</span><p id="address"></p></div>
+</div>
+<!-- 相册 -->
+<div class="albumPhotos">
+	<h3>我的相册</h3>
+	<ul id="album"></ul>
+</div>
+<!-- 动态 -->
+<div class="trend">
+	<div class="trendLeft">
+		<h3>他的动态</h3>
+		<span></span>
+	</div>
+	<div class="trendRight">
+		<img class="first" src="" alt="">
+		<p></p>
+		<img class="tright" src="../../img/icon/d_rightHui.jpg" alt="">
+	</div>
+</div>
+<!-- 基本资料 -->
+<div class="base">
+	<h3>基本资料</h3>
+	<ul>
+		<li><span>身份：</span><s id="marrys"></s></li>
+		<li><span>收入：</span><s id="income"></s></li>
+		<li><span>身高：</span><s id="height"></s></li>
+		<li><span>体重：</span><s id="weight"></s></li>
+		<li><span>民族：</span><s id="nation"></s></li>
+		<li><span>信仰：</span><s id="belief"></s></li>
+	</ul>
+</div>
+<!-- 兴趣爱好 -->
+<div class="hobbyapprove">
+	<div class="hobby">
+		<span>兴趣爱好</span>
+		<p id="hobby"></p>
+	</div>
+	<div class="approve">
+		<span>我的认证</span>
+		<p id="approve">
+			<s><img src="../../img/icon/x_phoneapprove_icon.png" alt="">手机已认证</s>
+			<a href="javascript:void(0);" id="x_href">
+				<img id="approveimg" src="" alt=""><i></i>
+				<img class="right" src="../../img/icon/d_rightHui.png">
+			</a>
+		</p>
+	</div>
+</div>
+<!-- 我的礼物 -->
+<div class="gift">
+	<h2>
+		<span>我收到的礼物</span> &nbsp;&nbsp;&nbsp;x <s id="count"></s>
+		<img src="../../img/icon/d_rightHui.png" alt="">
+	</h2>
+	<ul>
+		<li>极致之选，倾心以载。至上之选，以礼倾城。</li>
+		<li>最好的礼物给最好的你！</li>
+		<li>送她礼物真表情！</li>
+	</ul>
+</div>
+<!-- 我喜欢的类型 -->
+<div class="lovetype">
+	<div>
+		<h3>我喜欢的异性类型</h3>
+		<ul></ul>
+	</div>
+</div>
+<p class="datingBtn">我要和Ta约见</p>
+<div class="d_bgcolor">
+	<div class="d_minwindow">
+		<div class="d_minwindowbox">
+			<img src="../../img/icon/d_min_window.png" />
+			<div class="d_min_content">
+				<p class="d_title">安排约会</p>
+				<span>想要和TA线下约见吗？</span>
+				<p class="d_windowcontent">对方同意后专属红娘会和双方取得联系，安排约见！</p>
+				<div class="d_surebox">
+					<div class="d_menowant">我在想想</div>
+					<div class="d_mewant">迫不及待</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="d_popupbox"></div>
+<div class="mask"></div>
+<div class="showImg">
+	<ul></ul>
+</div>
+<!-- 举报 -->
+<div class="report">
+	<a href="##">举报</a>
+	<span class="black">拉黑</span>
+	<span class="cancel">取消</span>
+</div>
+<!-- 拉黑弹框 -->
+<div class="blackSure">
+	<h2>提示</h2>
+	<p>拉黑后您将无法收到对方的消息。可在“设置”-“黑名单”中解除。是否继续？</p>
+	<span class="noSure">取消</span><span class="sure">确定</span>
+</div>
+<!-- 拉黑结果提示 -->
+<p class="blackResult"></p>
+</body>
+<script type="text/javascript" src='../../js/find/personalcarte.js'></script>
+</html>

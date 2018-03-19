@@ -1,0 +1,7 @@
+{     
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "服务条款",
+    "backgroundColor":"#ffffff",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh":false
+}

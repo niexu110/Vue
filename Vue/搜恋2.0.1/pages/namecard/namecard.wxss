@@ -1,0 +1,312 @@
+/* pages/namecard/namecard.wxss */
+.contentbox{
+    height:100%;
+    width:100%;
+    background: #f8f8f8;
+}
+
+.top2{
+    background:transparent;
+    padding-top:40rpx;
+    height:410rpx;
+    width: 100%;
+    background-color:rgba(50,50,50,0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.headline{
+    display: flex;
+    flex-direction: row;
+}
+.headimg image{
+    height:200rpx;
+    width:200rpx;
+    border-radius:50%;
+}
+.love{
+    width:20rpx;
+    height:20rpx;
+    margin-top: 8rpx;
+}
+.goods{
+    width: 145rpx;
+    height:60 rpx;
+    border:solid 1px #fff;
+    font-size: 22rpx;
+    color: #fff;
+    margin: 30rpx 40rpx;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius:8rpx;
+}
+.goods image{
+    height: 40rpx;
+    width: 30rpx;
+}
+.goods text{
+    line-height: 62rpx;
+}
+/* 头部列表*/
+.headlist{
+    display: flex;
+    color: #fff;
+    font-size: 22rpx;
+}
+.list{
+    width: 170rpx;
+    height: 54rpx;
+    border-right: solid 1px #fff;
+    text-align: center
+}
+.list1{
+    margin-left: 60rpx;
+    text-align: left;
+}
+.list1text{
+    margin-left: 50rpx;
+}
+.list4{
+    border: none;
+}
+/*年龄、星座、情况*/
+.agelistbox,.agelistbox2{
+    height:70rpx;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    font-size: 22rpx;
+    color: #fff;
+    background: #f8f8f8;
+}
+.agelist{
+    height:40rpx;
+    width: 80rpx;
+    background: #feb3c5;
+    border-radius:4px;
+    margin: 0 15rpx;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.agelist image{
+    height:20rpx;
+    width:20rpx;
+}
+.agelistbox2 .agelist{
+    background: #8cc0ff;
+}
+/*个性签名、职业、居住地*/
+.content1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #fff;
+    min-height:82rpx;
+    font-size: 28rpx;
+    line-height: 50rpx;
+    color:#999;
+    padding-left: 40rpx;
+    padding-right: 40rpx;
+    border-bottom: solid 1px #e6e6e6;
+}
+.content1 .content1-1{
+    display: block;
+    height:82rpx;
+    width: 180rpx;
+    line-height: 82rpx;
+    color:#333;
+}
+
+/*相册*/
+.photoBox{
+    background: #fff;
+    min-height:82rpx;
+    margin-top: 20rpx;
+    padding-left: 40rpx;
+    padding-right: 40rpx;
+}
+.myphoto{
+    display: flex;
+    justify-content: space-between;
+    font-size: 28rpx;
+    color:#333;
+    height:100rpx;
+    line-height: 100rpx;
+}
+.morephoto{
+    font-size: 26rpx;
+    color: #707070;
+}
+.photo{
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+}
+.phonemore{
+    height:160rpx;
+    overflow: hidden;
+}
+.photo image{
+    height:150rpx;
+    width: 150rpx;
+    margin: 0 8rpx;
+}
+
+/*基本资料*/
+.message{
+    padding-left: 40rpx;
+    padding-right: 40rpx;
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+    background: #fff;
+    min-height:226rpx;
+}
+.messagetitle{
+    display: block;
+    height: 64rpx;
+    line-height: 64rpx;
+    font-size: 28rpx;
+    color:#333;
+}
+.messagecontent{
+    display: flex;
+    flex-direction: row;
+}
+.message1{
+    display: flex;
+    flex-direction: column;
+    min-height:150rpx;
+    width: 300rpx;
+    font-size: 26rpx;
+    color: #666;
+}
+.message2{
+    display: flex;
+    flex-direction: column;
+    min-height:150rpx;
+    width: 350rpx;
+    font-size: 26rpx;
+    color: #666;
+}
+.message1 text{
+    line-height: 50rpx;
+    display: block;
+}
+/*兴趣爱好*/
+.content1 image{
+    height:30rpx;
+    width: 35rpx;
+}
+.renzheng{
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+.renzhengImg{
+    margin-left: 20rpx;
+}
+/*收到的礼物*/
+.getGiftBox{
+    padding-left: 40rpx;
+    padding-right: 40rpx;
+    background: #fff;
+    height:230rpx;
+    margin-top: 20rpx;
+}
+.getGift1{
+    height:72rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 28rpx;
+    color: #333;
+}
+.gift{
+    color:#fb8eb7;
+}
+.getGift2{
+    display: flex;
+    flex-direction: column;
+    font-size: 24rpx;
+    color:#999;
+}
+.getGift2 text{
+    line-height: 46rpx;
+}
+/*我喜欢的异性类*/
+.likeSetBox{
+    min-height:150rpx;
+    margin-top: 20rpx;
+    margin-bottom: 90rpx;
+    background: #fff;
+    border-bottom: solid 1px #e6e6e6;
+    padding-left: 40rpx;
+    padding-right: 40rpx;
+}
+.likeSet{
+    font-size: 28rpx;
+    color: #333;
+    line-height: 80rpx;
+}
+.kindlistBox,.kindlistBox2{
+    display: flex;
+    flex-flow: wrap;
+}
+.kindlist{
+    display: block;
+    margin: 5rpx 10rpx;
+    padding:5rpx 10rpx;
+    border-radius:10rpx;
+    height:40rpx;
+    background: #8cc0ff;
+    text-align: center;
+    line-height: 40rpx;
+    font-size: 24rpx;
+    color:#fff;
+}
+.kindlistBox2 .kindlist{
+    background: #feb3c5;
+}
+/*其他*/
+.elseBox{
+    min-height:140rpx;
+    background: #fff;
+    padding-left: 40rpx;
+    padding-right: 40rpx;
+    font-size: 28rpx;
+    color: #999;
+}
+.else{
+    font-size: 28rpx;
+    color: #333;
+    line-height: 80rpx;
+}
+/*底层 聊天、送礼、约会*/
+.bottomBox{
+    height:96rpx;
+    background: #252525;
+    display: flex;
+    font-size: 26rpx;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+}
+.bottom{
+    padding: 0 30rpx;
+    width: 190rpx;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-right: solid 1px #666;
+}
+.bottom image{
+    height:40rpx;
+    width: 40rpx
+}
+.bottom3{
+    border:none;
+}

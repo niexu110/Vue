@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>赠送礼物</title>
+	<meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../css/headerFoot.css">
+    <link rel="stylesheet" type="text/css" href="../../css/find/givepresent.css">
+    <script type="text/javascript" src='../../js/jquery-2.1.4.min.js'></script>
+    <script type="text/javascript" src='../../js/MD5.js'></script>
+    <script>
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+    </script>
+</head>
+<body>
+<header>
+	<div class="head">
+		<div class="headLeft">
+			<a  href="javascript:history.go(-1);"></a>  
+		</div>
+		<div class="headMiddle">
+			赠送礼物
+		</div>
+		<div class="headRight">
+			<span>礼物明细</span>
+		</div>
+	</div>	
+</header>
+<!-- 赠送对象 -->
+<div class="presentObj">
+	<div class="presentItem">
+		<img id="userimg" src="" alt="">
+		<a class="caption" href="javascript:void(0);">礼物说明</a>
+		<h1>特别的爱给特别的<span id="nickname"></span></h1>
+		<p>赠送礼物可相互增加魅力值哦!</p>
+		<p class="soulianmoney">我的搜恋币: <span></span> <a href="../../src/myself/soulovemoney.html">去充值</a></p>
+	</div>
+</div>
+<!-- 礼物列表 -->
+<div class="presentGift">
+	<form>
+		<ul></ul>	
+	</form>
+</div>
+<!-- 赠送 -->
+<div class="foot">
+	<div class="footLeft">
+		数量：<s id="minus">-</s><span id="money">1</span><s id="plus">+</s>
+	</div>
+	<div class="footRight">
+		<span>赠&nbsp;&nbsp;送</span>
+	</div>
+</div>
+<div class="mask"></div>
+<!-- 搜恋币金额不够 -->
+<h5 class="nomoney">对不起<br>您的搜恋币不够，请充值</h5>
+<!-- 确认购买 -->
+	<div class="sureBuy">
+		<img src="../../img/icon/x_surebuypresent_icon.png">
+		<h1>赠送礼物</h1>
+		<p>您要赠送<s></s>份“<span></span>”<br>给<i></i>吗？</p>
+		<div class="sureOrcancel"><span class="sure">确定</span><span class="cancel">取消</span></div>
+		
+	</div>
+
+<!-- 购买成功-->
+<div class="buyFail">
+	<img src="../../img/icon/x_buy_icon.png" alt="">
+	<h1>赠送成功</h1>
+	<p>赠送成功,您的魅力值增加了<br><span></span>点</p>
+	<span class="sueccessBuy">确定</span>
+</div>
+</body>
+<script type="text/javascript" src="../../js/find/givepresent.js"></script>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>筛选</title>
+	<meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+	<link rel="stylesheet" href="../../css/mui.min.css">
+	<link href="../../css/mui.picker.css" rel="stylesheet" />
+	<link href="../../css/mui.poppicker.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="../../css/headerFoot.css">
+	<link rel="stylesheet" type="text/css" href="../../css/find/filter.css">
+    <script type="text/javascript" src='../../js/jquery-2.1.4.min.js'></script>
+    <script type="text/javascript" src='../../js/MD5.js'></script>
+    <script>
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+    </script>
+</head>
+<body>
+<header>
+	<div class="head">
+		<div class="headLeft">
+			<a  href="javascript:history.go(-1);"></a>  
+		</div>
+		<div class="headMiddle">
+			筛选
+		</div>
+		<div class="headRight">
+			<span>确定</span>
+		</div>
+	</div>	
+</header>
+<!-- 遮罩层 -->
+<div class="mask"></div>
+<!-- 筛选弹窗 -->
+<div class="filter">
+	<!-- 关闭按钮 -->
+	<img src="" alt="">
+	<div class="filterC">
+		<h2>想看的用户</h2>
+		<div class="sexChoice">
+			<span class="all">全部</span>
+			<span class="boys">男生</span>
+			<span class="girls">女生</span>
+		</div>
+		<h2>按条件筛选</h2>
+		<ul class="filterFactor">
+			<li class="address" id='showCityPicker'><span>地区</span><s id="cityResult">不限</s></li>
+			<li class="age"><span>年龄</span><s>不限</s></li>
+			<li class="height"><span>身高</span><s>不限</s></li>
+			
+		</ul>
+	</div>	
+</div>
+<!-- 弹窗 -->
+<div class="filterargument">
+	<ul></ul>
+	<p>取消</p>
+
+</div>
+</body>
+<script src="../../js/find/mui.min.js"></script>
+<script src="../../js/find/mui.picker.js"></script>
+<script src="../../js/find/mui.poppicker.js"></script>
+<script src="../../js/find/city.data.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/find/city.data-3.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src='../../js/find/filter.js'></script>
+<script type="text/javascript">
+	//地区选择
+	(function(ss, doc) {
+				ss.init();
+				ss.ready(function() {
+					var cityPicker = new ss.PopPicker({
+						layer: 2
+					});
+					cityPicker.setData(cityData);
+					var showCityPickerButton = doc.getElementById('showCityPicker');
+					var cityResult = doc.getElementById('cityResult');
+					showCityPickerButton.addEventListener('tap', function(event) {
+						cityPicker.show(function(items) {
+							cityResult.innerText = items[0].text + "-" + items[1].text;
+						});
+					}, false);
+				});
+					
+			})(mui, document)
+			
+</script>
+</html>

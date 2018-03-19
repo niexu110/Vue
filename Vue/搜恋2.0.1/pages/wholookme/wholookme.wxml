@@ -1,0 +1,63 @@
+<!--pages/wholookme/wholookme.wxml-->
+<view>
+<!-- 导航 -->
+    <view class="click_nav">
+        <view bindtap="whoclickme" class="{{click_nav1}}">
+            <text>来访者</text>
+        </view>
+        <view bindtap="meclickwho" class="{{click_nav2}}">
+            <text>我看过谁</text>
+        </view>
+    </view>
+<!-- 内容 -->
+    <view class="contentBox">
+        <!-- 访问者 -->
+        <block wx:if="{{hidden}}"> 
+            <view class="click_nav_content" wx:for="{{message}}" catchtap="lockY" data-uid="{{item.uid}}" >
+                <image mode="aspectFill" class="hearsrc lt" src="{{item.image}}" ></image>
+                <view class="centerbox lt" >
+                    <view class="click_nav_content_center lt">
+                        <text class="text lt">{{item.nickname}}</text>
+                        <!-- 男女转化   女 -->
+                        <view wx:if="{{item.sex==2}}" class="ageClass lt" style="background: #feb3c5;">
+                            <image src="{{girl}}"></image>
+                            <view>{{item.age}}</view>
+                        </view>
+                        <!-- 男女转化   男 -->
+                        <view wx:if="{{item.sex==1}}" class="ageClass lt" style="background: #4b85cc;">
+                            <image src="{{boy}}"></image>
+                            <view>{{item.age}}</view>
+                        </view>
+                    </view>
+                    <view class="timeClass lt">
+                        <text>{{item.times}}</text>
+                    </view>
+                </view>
+            </view>
+        </block>
+        <!-- 我看过谁 -->
+        <block wx:else>
+            <view class="click_nav_content" wx:for="{{message2}}" data-uid="{{item.uid}}" catchtap="lockY">
+                <image mode="aspectFill"  class="hearsrc lt" src="{{item.image}}" ></image>
+                <view class="centerbox lt" >
+                    <view class="click_nav_content_center lt">
+                        <text class="text lt">{{item.nickname}}</text>
+                         <!-- 男女转化   女 -->
+                        <view wx:if="{{item.sex==2}}" class="ageClass lt" style="background: #feb3c5;">
+                            <image src="{{girl}}"></image>
+                            <view>{{item.age}}</view>
+                        </view>
+                        <!-- 男女转化   男 -->
+                        <view wx:if="{{item.sex==1}}" class="ageClass lt" style="background: #4b85cc;">
+                            <image src="{{boy}}"></image>
+                            <view>{{item.age}}</view>
+                        </view>
+                    </view>
+                    <view class="timeClass lt">
+                        <text>{{item.times}}</text>
+                    </view>
+                </view>
+            </view>
+        </block>     
+    </view>
+</view>

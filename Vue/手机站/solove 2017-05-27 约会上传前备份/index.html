@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>发现</title>
+	<meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/headerFoot.css">
+    <link rel="stylesheet" type="text/css" href="css/find/index.css">
+    <script type="text/javascript" src='js/jquery-2.1.4.min.js'></script>
+    <script type="text/javascript" src='js/MD5.js'></script>
+		<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.3&key=8619e455336d29412f7513282925d7c4"></script>
+    <script>
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+    </script>
+</head>
+<body>
+<header>
+	<div class="head">
+		<div class="headLeft">
+		<span></span>
+		</div>
+		<div class="headMiddle">
+			<p class="prop color">
+				推荐<s class="propose"></s>
+			</p>
+			<p class="near">
+				附近<s class="nearby"></s>
+			</p>
+			<p class="love">
+				恋圈<s class="lovely"></s>
+			</p>
+		</div>
+		<div class="headRight">
+			<span>筛选</span>
+		</div>
+	</div>	
+</header>
+<div class="container">
+	<div class="banner">
+		<ul></ul>
+		<p style="display: none;"></p>
+	</div>
+	<!-- 推荐 -->
+	<div class="proposePeople">
+		<ul></ul>
+		<h5 id="bottomS"></h5>
+
+	</div>
+	<!-- 附近 -->
+	<div class="nearbyPeople">
+		<ul></ul>
+		<h5 id="bottom"></h5>
+	</div>
+	<!-- 恋圈 -->
+	<div class="lovePeople">
+		<ul class='loveTotal'>
+			
+		</ul>
+		<h5 id="bottomSS"></h5>
+	</div>
+	<!--悬浮红包-->
+	<div class="suspend">
+		<a href="##"><img src="img/h_suspend.png"/></a>
+		<!-- 发布 -->
+		<a href="##" class="fahongbao"></a>
+		<a href="##" class="fabu"></a>
+	</div>
+</div>
+<!--领取红包、遮罩层__@start__-->
+<!--<div class="receive">
+	<div class="open">
+		<div class="close">
+			<img src="img/icon/h_close.png"/>
+		</div>
+		<div class="info">
+			<div>
+				<img src="img/temp/info-1.png"/>
+			</div>
+			<p class="text">DEMI的红包</p>
+			<p class="userInfo"><i><img src="img/icon/h_sexWomen.png"/> 26</i><span>魅力值：<em>5521</em></span></p>
+		</div>
+		<div class="btn">
+			<a href="###"><img src="img/icon/h_friend.png"/>加好友</a>
+			<a href="###"><img src="img/icon/h_care.png"/>关注</a>
+		</div>
+		<h5>恭喜发财，我们来约！</h5>
+		<div class="turnOn">
+			<img src="img/icon/h_turnOn.png" alt="" />
+		</div>
+		<span>想结交更多的朋友！</span>
+	</div>
+</div>-->
+<!--领取红包、遮罩层__@end__-->
+<footer>
+	<ul>
+		<li><a href="index.html">
+
+				<img src="img/icon/x_find_icons.png" alt="">
+
+				<p class="choiceColor">发现</p>
+
+			</a></li>
+
+			<li><a href="src/personal/personalIndex.html">
+
+				<img src="img/icon/x_love_icon.png" alt="">
+
+				<p>约会</p>
+
+			</a></li>
+
+			<li><a href="src/myself/goodfriend.html">
+
+				<img src="img/icon/x_friends_icon.png" alt="">
+
+				<p>好友</p>
+
+			</a></li>
+
+			<li><a href="src/myself/mypage.html">
+
+				<img src="img/icon/x_myself_icon.png" alt="">
+
+				<p>我的</p>
+
+			</a></li>
+	</ul>
+</footer>
+<div class="mask"></div>
+<!-- 点击查看大图 -->
+<div class="showImg">
+	<ul></ul>
+</div>
+<!-- 金币下落 -->
+<div class="containerss">
+    <audio style="display: none;" id='music' controls="controls">
+          <source src="img/765.mp3" type="audio/mp3" />
+    </audio>
+    <div class="con"></div>
+</div>
+</body>
+
+<script type="text/javascript" src='js/find/index1.js'></script>
+</html>

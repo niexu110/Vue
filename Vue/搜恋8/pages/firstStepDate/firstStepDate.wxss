@@ -1,0 +1,40 @@
+/* pages/firstStepDate/firstStepDate.wxss */
+.firstStepDate_top{
+    height:360rpx;
+    padding: 0 40rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heatBox{
+    display: flex;
+    flex-direction: column;
+    font-size: 36rpx;
+    color: #999;
+    text-align: center
+}
+.heatimg{
+    margin:30rpx 40rpx;
+    height:160rpx;
+    width:160rpx;
+}
+.firstStepDate_center{
+    padding: 0 40rpx;
+    line-height: 74rpx;
+    font-size: 36rpx;
+    color:#666;
+    text-align: center;
+    height:354rpx;
+}
+.textClass{
+    color: #feb3c5;
+}
+.firstStepDate_bottom{
+    height: 90rpx;
+    margin: 0 40rpx;
+    background: #feb3c5;
+    color:#fff;
+    font-size: 40rpx;
+    text-align: center;
+    line-height: 90rpx;
+}

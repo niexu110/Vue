@@ -1,0 +1,53 @@
+/* pages/dateInform/dateInform.wxss */
+.listBox{
+    padding: 0 40rpx;
+}
+.timeClass{
+    height:70rox;
+    text-align: center;
+    line-height: 70rpx;
+    font-size: 26rpx;
+    color:#999;
+}
+.contentBox{
+    padding: 0 20rpx;
+    border: solid 1px #e6e6e6;
+}
+.contentTop{
+    height: 70rpx;
+    font-size: 36rpx;
+    font-weight: 600;
+    color:#333;
+    line-height: 70rpx;
+}
+.contentContent{
+    height:50rpx;
+    font-size: 28rpx;
+    color: #666;
+}
+.contentCenter{
+    display: flex;
+    border-bottom: solid 1px #e6e6e6;
+    font-size: 34rpx;
+    color:#333;
+    line-height: 60rpx;
+    font-weight: 600;
+}
+.contentCenter image{
+    height:120rpx;
+    width: 170rpx;
+    margin: 0 20rpx 20rpx 0;
+}
+.dataTime{
+    font-size: 28rpx;
+    color:#666;
+    line-height: 40rpx;
+    font-weight: 100;
+}
+.chakan{
+    height:70rpx;
+    line-height: 70rpx;
+    color:#5793dd;
+    font-size: 36rpx;
+    text-align: center;
+}

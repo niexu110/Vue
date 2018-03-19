@@ -1,0 +1,38 @@
+<!--pages/apply/apply.wxml-->
+    <view class="container">
+        <!--好友列表-->
+        <view class="friendList">
+                <block wx:for="{{list}}"> 
+                    <view class="list" bindtap="click" data-uid="{{item.uid}}" data-user="{{item.name}}">    
+                        <view class="listLeft">
+                            <image src="{{item.images}}"></image>
+                        </view>
+                        <view class="listRight">
+                            <view class='nickyName'>
+                                <text class="nicks">{{item.name}}</text>
+                                <view class="boy"  wx:if="{{item.sex==1}}"> <!--sex为获取的用户数据的sex值：{{itemitem.xse==0}} -->
+                                    <image src="{{imgboy}}"></image>
+                                    <text>{{item.age}}</text>
+                                </view>
+                                <view class="girl" wx:if="{{item.sex==2}}">
+                                    <image src="{{imggirl}}"></image>
+                                    <text>{{item.age}}</text>
+                                </view>
+                                <!--魅力值-->
+                                <view>
+                                    <view class="glamourAge"  wx:if="{{item.sex==='2'}}"> 
+                                        <image style="height:26rpx;width:26rpx;" src="{{img1}}"></image>
+                                        <text style="font-size:28rpx;color:#999;">{{item.charm}}</text>
+                                    </view>
+                                    <view class="glamourAge"  wx:elif="{{item.sex==='1'}}"> 
+                                        <image style="height:26rpx;width:26rpx;" src="{{img2}}"></image>
+                                        <text style="font-size:28rpx;color:#999;">{{item.charm}}</text>
+                                    </view>
+                                </view>
+                            </view>
+                            <text class="rightText">[{{item.count}}]</text>
+                        </view>
+                    </view>
+                </block> <!--list为用户数据循环 -->   
+        </view>
+    </view>

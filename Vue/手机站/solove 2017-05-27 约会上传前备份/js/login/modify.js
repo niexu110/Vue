@@ -1,0 +1,128 @@
+window.onload=function(){
+	function showError(){
+		setTimeout(function(){
+			$('.error').html('').hide();
+		},1500);
+	}
+	//获取验证码
+	var code='';
+	var stop=true;
+	var count=60;
+	$('#code').on('click',function(){
+		if(stop){
+			stop=false;
+			var timer=setInterval(function(){
+				count--;
+				if(count<=0){
+					count=60;
+					clearInterval(timer);
+					$('#code').html('重新获取');
+					stop=true;
+				}else{
+					$('#code').html(count+'秒后再获取');
+				}
+			},1000);
+			if($('#userPhone').val()==''){
+				$('.error').html('手机号为空').show();
+				clearInterval(timer);
+				setTimeout(function(){
+					$('.error').html('').hide();
+					stop=true;
+				},1500);
+			}else{
+				$.ajax({
+					type:'post',
+					url:d_http+'index.php/Home/Index/phone',
+					data:{
+						tel:$('#userPhone').val(),
+						token:MD5(SL)
+					},
+					success:function(data){
+						if(data.code==200){
+							code=data.data.code;
+							stop=true;
+						}else{
+							$('.error').html(data.massage).show();
+							showError();
+							clearInterval(timer);
+							$('#code').html('获取验证码');
+							stop=true;
+						}
+					}
+				});
+			}	
+		}
+	});
+	// 失去焦点函数
+	function inputBlur(obj){
+		if(obj.val()==''){
+			if(obj.attr('id')=='userPhone'){
+				$('.error').html('手机号不能为空。').show();
+				showError();
+				return;
+			}
+			if(obj.attr('id')=='userCode'){
+				$('.error').html('密码不能为空。').show();
+				showError();
+				return;
+			}
+			if(obj.attr('id')=='modifyCode'){
+				$('.error').html('验证码不能为空。').show();
+				showError();
+				return;
+			}
+		}else{
+			if(obj.attr('id')=='userPhone'){
+				if(obj.val().length!=11){
+					$('.error').html('手机号输入有误。').show();
+					showError();
+					return;
+				}
+			}
+			if(obj.attr('id')=='userCode'){
+				if(obj.val().length<6 || obj.val().length>18){
+					$('.error').html('密码输入有误。').show();
+					showError();
+					return;
+				}
+			}
+			if(obj.attr('id')=='modifyCode'){
+				if(obj.val()!=code){
+					$('.error').html('验证码输入有误。').show();
+					showError();
+					return;
+				}
+			}
+		}
+	}
+	$('input').on('blur',function(){
+		inputBlur($(this));	
+	});
+
+	// 提交表单
+	$('#submitBtn').on('click',function(){
+		if($('.error').html()==''){
+			$.ajax({
+				type:'post',
+				url:d_http+'index.php/Home/User/wpassword',
+				data:{
+					member:$('#userPhone').val(),
+					password:$('#userCode').val(),
+					token:MD5($('#userPhone').val()+$('#userCode').val()+SL)
+				},
+				success:function(data){
+					if(data.code==200){
+						$('.error').html('修改密码成功').show();
+						showError();
+						location.href='login.html';
+					}else{
+						$('.error').html(data.massage).show();
+						showError();
+					}
+				}
+			})
+		}else{
+			return;
+		}
+	});
+}

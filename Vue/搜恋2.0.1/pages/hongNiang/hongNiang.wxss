@@ -1,0 +1,5 @@
+/* pages/hongNiang/hongNiang.wxss */
+.banner{
+    height:1200rpx;
+    width: 750rpx;
+}

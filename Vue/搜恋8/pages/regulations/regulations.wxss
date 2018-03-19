@@ -1,0 +1,19 @@
+/*pages/regulations/regulations.wxss*/
+.regulations_container {
+    width: 100%;
+    height:auto;
+}
+.redulations_header {
+    text-align: center;
+    margin-top:68rpx;
+    font-size: 28rpx;
+    font-weight: bold;
+    color:#444;
+}
+.redulations_text {
+    width: 90%;
+    font-size: 26rpx;
+    line-height: 35rpx;
+    color:#3d3d3d;
+    margin: 40rpx auto;
+}

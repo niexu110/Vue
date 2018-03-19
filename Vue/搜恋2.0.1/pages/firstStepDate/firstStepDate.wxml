@@ -1,0 +1,20 @@
+<!--pages/firstStepDate/firstStepDate.wxml-->
+<view>
+    <view class="firstStepDate_top">
+        <view class="heatBox">
+            <image class="heatimg" src="{{img}}"></image>
+            <text>{{heattext}}</text>
+        </view>
+        <view><image src="{{imgloves}}" style="height:62rpx;width:67rpx;"></image></view>
+        <view class="heatBox">
+            <image class="heatimg" src="{{heatimg}}"></image>
+            <text>{{heattext2}}</text>
+        </view>
+    </view>
+    <view class="firstStepDate_center">
+        <text>您要邀请<text class="textClass">{{heattext2}}</text>进行心动的约会吗？\r\n仅需三个步骤即可完成邀约！～</text>
+    </view>
+    <view bindtap="nextStep" class="firstStepDate_bottom">
+        <text>下一步</text>
+    </view>
+</view>

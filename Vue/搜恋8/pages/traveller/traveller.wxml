@@ -1,0 +1,57 @@
+<!--pages/traveller/traveller.wxml-->
+<view class="traveller_container">
+    <!--轮播图-->
+    <swiper class="traveller_banner" autoplay="auto" interval="3000" duration="1000" circular="true">
+        <image class="traveller_banner_pic" src="{{img}}"></image>
+    </swiper>
+    <!--最新发布，离我最近，价格最低-->
+    <view class="traveller_changePage">
+        <view class="traveller_package">
+            <view class="newList" catchtap="changeNew">
+                最新发布
+                <text class="line" wx:if="{{clickNew}}"></text>
+            </view>
+            <view class="cheapList" catchtap="changeCheap">
+                价格最低
+                <text class="line" wx:if="{{clickCheap}}"></text>
+            </view> 
+        </view>
+    </view>
+    <!--内容-->
+    <view class="traveller_content">
+        <!--最新发布的内容-->
+        <view class="traveller_new_content" wx:if="{{newClose}}">
+            <block wx:for="{{newMsg}}">
+                <view class="traveller_new_list" bindtap="{{item.clickOtherPage}}" data-id="{{item.id}}" data-name="{{item.name}}">
+                    <view class="traveller_play_content">
+                        <view class="traveller_filter">
+                            <view class="traveller_first">{{item.name}}</view>
+                            <view class="traveller_second"><image src="{{timeImg}}"></image>\n{{item.abort_time}}-{{item.date_time}}</view>
+                            <view class="traveller_third"><image src="{{gpsImg}}"></image>\n{{item.address}}</view>
+                            <view class="traveller_last"><text style="color:#d4969c;">{{item.price}}元</text>/人</view>
+                        </view>
+                        <view class="traveller_right"><image src="{{image}}" style="width: 30rpx;height: 50rpx;"></image></view>
+                    </view>
+                    <image class="traveller_new_contentImg" src="{{item.images}}"></image>
+                </view>
+            </block>
+        </view>
+        <!--价格最低的内容-->
+        <view class="traveller_cheap_content" wx:if="{{cheapClose}}">
+            <block wx:for="{{cheapMsg}}">
+                <view class="traveller_new_list" bindtap="{{item.clickOtherPage}}" data-id="{{item.id}}" data-name="{{item.name}}">
+                <view class="traveller_play_content">
+                    <view class="traveller_filter">
+                        <view class="traveller_first">{{item.name}}</view>
+                        <view class="traveller_second"><image src="{{timeImg}}"></image>\n{{item.abort_time}}-{{item.date_time}}</view>
+                        <view class="traveller_third"><image src="{{gpsImg}}"></image>\n{{item.address}}</view>
+                        <view class="traveller_last"><text style="color:#d4969c;">{{item.price}}人民币</text>/人</view>
+                    </view>
+                    <view class="traveller_right"><image src="{{image}}" style="width: 30rpx;height: 50rpx;"></image></view>
+                    </view>
+                    <image class="traveller_new_contentImg" src="{{item.images}}"></image>
+                </view>
+            </block>
+        </view>
+    </view>
+</view>

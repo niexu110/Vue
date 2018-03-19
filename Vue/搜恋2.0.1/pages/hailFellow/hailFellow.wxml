@@ -1,0 +1,118 @@
+<!--pages/hailFellow/hailFellow.wxml-->
+<view class="container">
+    <!--选择好友/我喜欢/喜欢我-->
+    <view class="choice">
+        <view class="choiceList">
+            <view bindtap="addLine" class="{{friend==true?'addColor':''}}">
+                <text id="friend">好友</text>
+                <text class="line"  wx:if="{{friend==true}}"></text>
+            </view>
+            <view bindtap="addLine"  class="{{loveMe==true?'addColor':''}}">
+                <text id="loveMe">我喜欢的</text>
+                <text class="line" wx:if="{{loveMe==true}}"></text>
+            </view>
+            <view bindtap="addLine" class="{{meLove==true?'addColor':''}}">
+                <text id="meLove">喜欢我的</text>
+                <text class="line"  wx:if="{{meLove==true}}"></text>
+            </view>
+        </view>   
+    </view>
+    <!--搜索/新的好友-->
+    <view class="goodFriend" wx:if="{{goodFriend}}">
+        <!--搜索-->
+        <!--<view class="searchAdd">
+            <view class="search">
+                <image src="http://img.qinyikou.cc/icons/x_search_icon.png"></image>
+                <input type="text" placeholder-class="place" disabled="true" placeholder="相互标记喜欢即可成为好友" />
+            </view>
+        </view>-->
+        <!--新的好友-->
+        <view class="newFriend" bindtap='addsF'>
+            <view class="left">
+                <image src="{{img1}}" ></image>
+            </view>
+            <view class="middle">
+                <text class="nicky">新的好友</text>
+                <text>添加新的好友.附近.推荐</text>
+            </view>
+            <view class="right">
+                <text>{{msg}}</text>
+            </view>
+        </view>
+    </view>
+    <!--好友列表-->
+    <view class="friendList" wx:if="{{friends}}">
+        <block wx:for="{{list}}">
+            <view class="list" catchtap="look" data-uid="{{item.uid}}">    
+                <view class="listLeft">
+                    <image src="{{img2}}" wx:if="{{item.image===''}}"></image>
+                    <image mode="aspectFill" src="{{item.image}}" wx:if="{{item.image!==''}}"></image>
+                </view>
+                <view class="listRight">
+                    <view class='nickyName'>
+                        <text class="nicks">{{item.nickname}}</text>
+                        <view class="boy"  wx:if="{{item.sex==='1'}}">
+                            <image src="{{imgboy}}"></image>
+                            <text>{{item.age}}</text>
+                        </view>
+                        <view class="girl" wx:if="{{item.sex!=='1'}}">
+                            <image src="{{imggirl}}"></image>
+                            <text>{{item.age}}</text>
+                        </view>
+                    </view>
+                    <text class="rightText">{{item.myideal}}</text>
+                </view>
+            </view>
+        </block> 
+    </view>
+     <!--我喜欢的-->
+    <view class="friendList tops" wx:if="{{meloves}}">
+        <block wx:for="{{lovemy}}">
+            <view class="list" catchtap="look" data-uid="{{item.uid}}">    
+                <view class="listLeft">
+                    <image src="{{img2}}" wx:if="{{item.image===null}}"></image>
+                    <image mode="aspectFill" src="{{item.image}}" wx:if="{{item.image!==null}}"></image>
+                </view>
+                <view class="listRight">
+                    <view class='nickyName'>
+                        <text class="nicks">{{item.nickname}}</text>
+                        <view class="boy"  wx:if="{{item.sex==='1'}}">
+                            <image src="{{imgboy}}"></image>
+                            <text>{{item.age}}</text>
+                        </view>
+                        <view class="girl" wx:if="{{item.sex!=='1'}}">
+                            <image src="{{imggirl}}"></image>
+                            <text>{{item.age}}</text>
+                        </view>
+                    </view>
+                    <text class="rightText">{{item.myideal}}</text>
+                </view>
+            </view>
+        </block> 
+    </view>
+     <!--喜欢我的-->
+    <view class="friendList tops" wx:if="{{loveMes}}">
+        <block wx:for="{{mylove}}">
+            <view class="list" catchtap="look" data-uid="{{item.uid}}">    
+                <view class="listLeft">
+                    <image src="{{img2}}" wx:if="{{item.image===null}}"></image>
+                    <image mode="aspectFill" src="{{item.image}}" wx:if="{{item.image!==null}}"></image>
+                </view>
+                <view class="listRight">
+                    <view class='nickyName'>
+                        <text class="nicks">{{item.nickname}}</text>
+                        <view class="boy"  wx:if="{{item.sex==='1'}}">
+                            <image src="{{imgboy}}"></image>
+                            <text>{{item.age}}</text>
+                        </view>
+                        <view class="girl" wx:if="{{item.sex!=='1'}}">
+                            <image src="{{imggirl}}"></image>
+                            <text>{{item.age}}</text>
+                        </view>
+                    </view>
+                    <text class="rightText">{{item.myideal}}</text>
+                </view>
+            </view>
+        </block> 
+    </view>
+</view>

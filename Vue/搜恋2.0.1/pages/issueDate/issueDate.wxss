@@ -1,0 +1,275 @@
+/* pages/issueDate/issueDate.wxss */
+.secondStepDate_top_title{
+    height:80rpx;
+    padding: 0 40rpx;
+    display: flex;
+    justify-content: space-between;
+    line-height: 80rpx;
+    font-size: 36rpx;
+    color:#666;
+    border-bottom: solid 1px #e6e6e6;
+}
+.scene{
+    color:#5793dd;
+    font-size: 30rpx;
+}
+.top_content{
+    width: 450rpx;
+}
+.secondStepDate_top_content{
+    padding: 26rpx 40rpx;
+    display: flex;
+}
+.secondStepDate_top_content_title{
+    padding-left: 20rpx;
+    display: flex;
+    justify-content: space-between;
+    font-size: 32rpx;
+    color:#666;
+    line-height: 54rpx;
+}
+.more{
+    text-align: center;
+    line-height: 40rpx;
+    height:40rpx;
+    width: 80rpx;
+    background: #5793dd;
+    font-size: 28rpx;
+    color:#fff;
+    border-radius:2px;
+}
+.site{
+    padding-left: 20rpx;
+    font-size: 24rpx;
+    line-height: 54rpx;
+    color: #999;
+    height:110rpx;
+}
+.moneyBox{
+    margin-left: -200rpx;
+    display: flex;
+    justify-content: space-between;
+    font-size: 28rpx;
+    color:#666;
+    line-height: 44rpx;
+}
+.money{
+    color:#feb3c5;
+}
+.number{
+    color:#999;
+}
+/*约会具体信息*/
+.newtime{
+    padding: 0 40rpx;
+    height:80rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 36rpx;
+    color:#666;
+    border-bottom: solid 1px #e6e6e6;
+}
+.newtime2{
+    padding: 0 40rpx;
+    height:130rpx;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 22rpx;
+    color:#999;
+    border-bottom: solid 1px #e6e6e6;
+}
+.newtime2_1{
+    height:60rpx;
+    width:300rpx;
+    border:solid 1px #999;
+    border-radius:4px;
+    color:#666;
+    font-size: 30rpx;
+    line-height: 60rpx;
+    display: flex;
+    justify-content: space-around;
+}
+/* 约会 按键设置*/
+.key_wai,.key_wai1{
+    height:34rpx;
+    width:34rpx;
+    background: #5793dd;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.key_zhong,.key_nei2,.key_zhong1,.key_nei21{
+    height:26rpx;
+    width:26rpx;
+    background: #fff;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.key_nei,.key_nei1{
+    height:18rpx;
+    width:18rpx;
+    background: #5793dd;
+    border-radius:50%;
+}
+.key_wai2,.key_wai21{
+    height:34rpx;
+    width:34rpx;
+    background: #9c9c9c;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dateBox{
+    padding: 40rpx 40rpx 0 40rpx;
+    font-size: 32rpx;
+    color:#333;
+}
+.dateBox_title{
+    font-weight: 900;
+}
+.date1{
+    display: flex;
+}
+.date2{
+    display: flex;
+    flex-direction: column;
+}
+.date1_1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height:100rpx;
+    width:240rpx;
+    color:#666;
+}
+.date1_2{
+    height:100rpx;
+    width:350rpx;
+}
+/*负责接送*/
+.key_wai1,.key_wai21,.key_nei1,.key_zhong1,.key_nei21{
+    border-radius:0;
+}
+.datetext{
+    font-size: 24rpx;
+    color:#5793dd;
+}
+/* 约会对象 */
+.sex1{
+    padding: 0 10rpx;
+    margin: 0 15rpx;
+    border: solid 1px #5793dd;
+    background: #5793dd;
+    height:40rpx;
+    min-width: 60rpx;
+    border-radius: 2px;
+    line-height: 40rpx;
+    color:#fff;
+}
+.sex2{
+    padding: 0 10rpx;
+    margin: 0 15rpx;
+    border: solid 1px #5793dd;
+    background: #fff;
+    height:40rpx;
+    min-width: 60rpx;
+    border-radius: 2px;
+    line-height: 40rpx;
+    color: #5793dd;
+}
+.datetoptext{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.getFriend{
+    color:#5793dd;
+    padding: 0 20rpx;
+}
+.userNameBox{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+   
+}
+.clearuserName{
+    height:30rpx;
+    width:30rpx;
+    background: #999;
+    color: #fff;
+    border-radius:50%;
+    text-align: center;
+    line-height: 30rpx;
+    font-size: 24rpx;
+}
+/*约会费用*/
+.content_bottom{
+     padding: 0 40rpx;
+}
+.dateMoney{
+   height:90rpx; 
+   font-size: 36rpx;
+   color:#333;
+   line-height: 90rpx;
+}
+.content_bottom1{
+    display: flex;
+    font-size: 36rpx;
+    color:#666;
+}
+.content_bottom1_1{
+    height:80rpx;
+    width: 334rpx;
+}
+.submitClass{
+    margin: 0 40rpx;
+    background: #feb3c5;
+    color: #fff;
+    font-size: 36rpx;
+}
+.date_content{
+    padding: 10rpx 40rpx;
+    border-bottom: solid 1px #e6e6e6
+}
+.dateHeart{
+    display: block;
+    font-size: 36rpx;
+    color:#666;
+    line-height: 60rpx;
+}
+.dataState{
+    font-size: 24rpx;
+    color: #5793dd;
+    line-height: 58rpx;
+}
+.dateSay{
+    width: 670rpx;
+    height:176rpx;
+    border: solid 1px #666;
+    border-radius:4px;
+    font-size: 32rpx;
+    color:#666;
+}
+.dataState_text{
+    position: relative;
+}
+/*计数*/
+.count{
+    position: absolute;
+    right: 20rpx;
+    bottom: 20rpx;
+    color: #999;
+}
+.date_contenttext{
+    display: block;
+    font-size: 28rpx;
+    color: #5793dd;
+    line-height: 40rpx;
+}

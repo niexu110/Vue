@@ -1,0 +1,207 @@
+/* pages/eatFriend/eatFriend.wxss */
+.navClass{
+    width: 750rpx;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:90rpx;
+    font-size: 36rpx;
+    color: #666;
+    border-bottom: solid 1px #e6e6e6;
+    position: fixed;
+    top: 0;
+}
+.contentBox{
+    margin-top: 92rpx;
+}
+.nav1{
+    border-bottom: solid 1px #5793dd;
+    color: #5793dd;
+}
+.nav2{
+    border: none;
+    color: #666;
+}
+/* 活动简介 */
+.banner{
+    width: 100%;
+    height:300rpx;
+}
+.eatFriend_content{
+    min-height:100rpx;
+    padding-right:40rpx;
+    margin-left: 40rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #e6e6e6;
+}
+.leftImg{
+    height:28rpx;
+    width: 28rpx;
+    margin-right: 40rpx;
+}
+.textcontent{
+    width:600rpx;
+    color: #666;
+    font-size: 26rpx;
+    line-height: 50rpx;
+    display: flex;
+    justify-content: space-between;
+}
+.sexImg{
+    height:20rpx;
+    width:20rpx;
+}
+/* 精彩瞬间 */
+.splendidTitle{
+    padding: 20rpx 40rpx;
+    min-height: 100rpx;
+    line-height: 60rpx;
+    text-align: center;
+    font-size: 36rpx;
+    color: #333;
+    font-weight: bolder;
+}
+
+.bigImg{
+    width: 100%;
+    height:320rpx;
+}
+.splendidContent{
+    padding: 20rpx 40rpx;
+    min-height:70rpx;
+    line-height: 50rpx;
+    font-size: 30rpx;
+    color:#666;
+    text-align: center;
+}
+/*评论*/
+.comment_top{
+    margin: 0 40rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100rpx;
+    border-bottom: solid 1px #e6e6e6;
+}
+.gradeBox{
+    padding-right: 30rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 26rpx;
+    color:#999;
+}
+.grade{
+    font-size: 36rpx;
+    color:#feb3c5;
+}
+.starBox image{
+    margin: 0 10rpx;
+    width: 50rpx;
+    height: 50rpx;
+}
+.comment_nav{
+    padding: 0 40rpx;
+    height:100rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30rpx;
+    color: #666;
+}
+.comment_nav_start{
+    display: flex;
+    justify-content: flex-start;
+    width: 420rpx;
+    height:60rpx;
+    border: solid 1px #5793dd;
+    font-size: 30rpx;
+    text-align: center;
+    line-height: 60rpx;
+    border-radius:2px;
+}
+.allComment{
+    background: #5793dd;
+    width: 210rpx;
+    color:#fff;
+    border-radius:2px;
+}
+.imgComment{
+    width: 210rpx;
+    color:#5793dd;
+}
+/*星级评价*/
+.starComment{
+    position: relative;
+    border: solid 1px #ddd;
+    height:60rpx;
+    width: 210rpx;
+    text-align: center;
+    line-height: 60rpx;
+}
+.commentRankBox{
+    position: absolute;
+    top:60rpx;
+    left: 0;
+    background: #fff;
+}
+.commentRank{
+    border: solid 1px #ddd;
+    height:60rpx;
+    width: 210rpx;
+    text-align: center;
+    line-height: 60rpx;
+}
+.commentContent{
+    padding-right: 40rpx;
+    margin-left: 40rpx;
+    border-bottom: solid 1px #e6e6e6;
+}
+.userstar image{
+    width: 22rpx;
+    height:22rpx;
+    margin: 0 5rpx;
+}
+.commentContent_top{
+    height:100rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.commentContent_top_center{
+    width: 570rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 26rpx;
+    color:#666;
+}
+.userNameClass{
+    font-size: 32rpx;
+    color:#333;
+    font-weight: bold;
+}
+.headimg{
+    height:80rpx;
+    width:80rpx;
+    border-radius:50%;
+}
+.commentImgBox{
+    padding-left: 86rpx;
+    display: flex;
+}
+.commentText{
+    padding-left: 96rpx;
+    min-height: 60rpx;
+    line-height: 40rpx;
+    font-size: 28rpx;
+    color:#666;
+}
+.commentImg{
+    height:180rpx;
+    width:180rpx;
+    margin: 10rpx;
+}

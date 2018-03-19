@@ -1,0 +1,118 @@
+@charset "utf-8";
+.f_containers {
+	margin-top: .9rem;
+	width: 7.5rem;
+	height: auto;
+}
+
+.f_outBorder {
+	width: 7.26rem;
+	float: right;
+}
+
+.f_name {
+	width: 7.26rem;
+	height: .8rem;
+	border-bottom: 1px solid #E6E6E6;
+}
+
+.f_goods {
+	float: left;
+	font-size: .3rem;
+	color: #333333;
+	line-height: .8rem;
+}
+
+.f_moneies {
+	float: right;
+	margin-right: .24rem;
+	font-size: .26rem;
+	color: #FEB3C5;
+	line-height: .8rem;
+}
+
+.f_name img {
+	float: right;
+	width: .24rem;
+	height: .24rem;
+	border-radius: 50%;
+	margin-top: .27rem;
+	margin-right: .1rem;
+}
+
+.f_information {
+	height: 1.7rem;
+	padding-top: .3rem;
+	border-bottom: 1px solid #E6E6E6;
+}
+
+.f_leftImg {
+	float: left;
+	width: 1.75rem;
+	height: 1.4rem;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.f_left_Img {
+	position: relative;
+	width: 2.75rem;
+	height: 100%;
+
+}
+
+.f_rightInfo {
+	width: 4.9rem;
+	margin-top: .2rem;
+	margin-left: 1.95rem;
+	line-height: .35rem;
+}
+
+.f_goodsName {
+	font-size: .28rem;
+	color: #333333;
+	margin-right: .4rem;
+}
+
+.f_time,
+.f_number {
+	font-size: .24rem;
+	color: #666666;
+}
+
+.f_validateNum {
+	padding-top: .3rem;
+}
+
+.f_title {
+	font-size: .3rem;
+	color: #666666;
+}
+
+.f_content {
+	margin-top: .3rem;
+	letter-spacing: .1rem;
+	font-size: .4rem;
+	color: #5793dd;
+	padding: .4rem 1.7rem;
+	border: 1px solid #5793DD;
+	border-radius: .02rem;
+	margin-right: .24rem;
+}
+
+.f_last {
+	margin-top: .3rem;
+}
+
+.f_important {
+	float: left;
+	color: #5793DD;
+	font-size: .24rem;
+}
+
+.f_importantInfo {
+	float: left;
+	margin-left: .1rem;
+	font-size: .24rem;
+	color: #666666;
+}

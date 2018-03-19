@@ -1,0 +1,247 @@
+/* pages/shopDetails/shopDetails.wxss */
+.navClass{
+    margin: 0 40rpx;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:90rpx;
+    font-size: 36rpx;
+    color: #666;
+    border-bottom: solid 1px #e6e6e6;
+}
+.nav1{
+    border-bottom: solid 1px #5793dd;
+    color: #5793dd;
+}
+.nav2{
+    border: none;
+    color: #666;
+}
+/* 服务 */
+.serveBox_top{
+    padding: 20rpx 40rpx 20rpx 0;
+    display: flex;
+    height:230rpx;
+    width:100%;
+    margin-left: 40rpx;
+}
+.serveBox_topImg{
+    width:230rpx;
+    height:230rpx;
+    margin-right: 20rpx;
+}
+.serveBox_topContent{
+    display: flex;
+    flex-direction: column;
+    width:416rpx;
+}
+.serveBox_topContent_1{
+    height:58rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30rpx;
+    color:#666;
+}
+.servetitle{
+    color: #5793dd;
+}
+.servename{
+    font-size: 36rpx;
+    color:#333;
+    font-weight: bold;
+}
+.tel{
+    width:30rpx;
+    height:30rpx;
+}
+.textBox{
+    padding-top: 20rpx;
+    padding-bottom: 20rpx;
+    margin-left: 40rpx;
+    padding-right: 40rpx;
+    border-top: solid 1px #e6e6e6;
+    font-size: 28rpx;
+    color:#666;
+    line-height: 46rpx;
+}
+.text_title{
+    font-size: 36rpx;
+    color:#333;
+    line-height: 40rpx;
+    font-weight: bold;
+}
+.serve_bottom{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height:90rpx;
+    width: 100%;
+    background: #5793dd;
+    font-size: 36rpx;
+    color: #fff;
+    text-align: center;
+    line-height: 90rpx;
+}
+.address{
+    display: block;
+    width: 400rpx;
+}
+/* 商家环境 */
+.merchant_top{
+    padding: 5rpx 40rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height:70rpx;
+    color:#666;
+    font-size: 36rpx;
+}
+.servesClass{
+    width: 600rpx;
+    line-height: 40rpx;
+}
+.merchant_top image{
+    height:30rpx;
+    width: 30rpx;
+}
+.serveimg{
+    width: 100%;
+    padding: 0 20rpx;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.serveimg image{
+    width: 310rpx;
+    height:230rpx;
+    margin:20rpx;
+}
+/*评论*/
+.comment_top{
+    margin: 0 40rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100rpx;
+    border-bottom: solid 1px #e6e6e6;
+}
+.gradeBox{
+    padding-right: 30rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 26rpx;
+    color:#999;
+}
+.grade{
+    font-size: 36rpx;
+    color:#feb3c5;
+}
+.starBox image{
+    margin: 0 10rpx;
+    width: 50rpx;
+    height: 50rpx;
+}
+.comment_nav{
+    padding: 0 40rpx;
+    height:100rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30rpx;
+    color: #666;
+}
+.comment_nav_start{
+    display: flex;
+    justify-content: flex-start;
+    width: 420rpx;
+    height:60rpx;
+    border: solid 1px #5793dd;
+    font-size: 30rpx;
+    text-align: center;
+    line-height: 60rpx;
+    border-radius:2px;
+}
+.allComment{
+    background: #5793dd;
+    width: 210rpx;
+    color:#fff;
+    border-radius:2px;
+}
+.imgComment{
+    width: 210rpx;
+    color:#5793dd;
+}
+/*星级评价*/
+.starComment{
+    position: relative;
+    border: solid 1px #ddd;
+    height:60rpx;
+    width: 210rpx;
+    text-align: center;
+    line-height: 60rpx;
+}
+.commentRankBox{
+    position: absolute;
+    top:60rpx;
+    left: 0;
+    background: #fff;
+}
+.commentRank{
+    border: solid 1px #ddd;
+    height:60rpx;
+    width: 210rpx;
+    text-align: center;
+    line-height: 60rpx;
+}
+.commentContent{
+    padding-right: 40rpx;
+    margin-left: 40rpx;
+    border-bottom: solid 1px #e6e6e6;
+}
+.userstar image{
+    width: 22rpx;
+    height:22rpx;
+    margin: 0 5rpx;
+}
+.commentContent_top{
+    height:100rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.commentContent_top_center{
+    width: 570rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 26rpx;
+    color:#666;
+}
+.userNameClass{
+    font-size: 32rpx;
+    color:#333;
+    font-weight: bold;
+}
+.headimg{
+    height:80rpx;
+    width:80rpx;
+    border-radius:50%;
+}
+.commentImgBox{
+    padding-left: 86rpx;
+    display: flex;
+}
+.commentText{
+    padding-left: 96rpx;
+    min-height: 60rpx;
+    line-height: 40rpx;
+    font-size: 28rpx;
+    color:#666;
+}
+.commentImg{
+    height:180rpx;
+    width:180rpx;
+    margin: 10rpx;
+}

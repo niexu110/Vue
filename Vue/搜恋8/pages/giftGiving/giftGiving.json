@@ -1,0 +1,7 @@
+{
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "赠送礼物",
+    "backgroundColor":"#ffffff",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh":false
+}

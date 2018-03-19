@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta charset="UTF-8">
+
+		<title>个人信息</title>
+
+		<meta http-equiv="pragma" content="no-cache">
+
+	    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+
+	    <meta http-equiv="expires" content="-1">
+
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+
+	    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+
+	    <meta name="format-detection" content="telephone=no">
+
+	    <link rel="stylesheet" href="../../css/reset.css" />
+		<!--<link rel="stylesheet" href="../../css/mui.min.css">-->
+		<link href="../../css/mui.picker.css" rel="stylesheet" />
+		<link href="../../css/mui.poppicker.css" rel="stylesheet" />
+
+	    <link rel="stylesheet" href="../../css/myself/personage.css" />
+
+	    <link rel="stylesheet" href="../../css/myself/d_gongzong.css" />
+
+	    <script type="text/javascript" src="../../js/jquery-2.1.4.min.js"></script>
+
+	    <script type="text/javascript" src="../../js/myself/d_gongzong.js"></script>
+
+	    <script type="text/javascript" src="../../js/myself/personage.js"></script>
+
+		<script type="text/javascript" src='../../js/MD5.js'></script>
+		<script type="text/javascript" src="../../js/find/city.data-3.js"></script>
+		<script type="text/javascript" src="../../js/find/city.data.js"></script>
+		<script type="text/javascript" src="../../js/find/mui.min.js"></script>
+		<script type="text/javascript" src="../../js/find/mui.picker.js"></script>
+		<script type="text/javascript" src="../../js/find/mui.poppicker.js"></script>
+
+	    <script>
+
+	        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+
+	    </script>
+
+	</head>
+
+	<body>
+
+		<div class="d_personageBox">
+
+			<div class="d_titleBox">
+
+				<a href="mypage.html"><img src="../../img/icon/d_leftboult.png"  /></a>
+
+				<p>个人信息</p>
+
+				<span class="d_save">保存</span>
+
+			</div>
+
+			<!--内容-->
+
+			<div>
+
+				<div class="d_topBox">
+
+					<div class="d_headImg"> 
+
+						<p class="d_text1">头像</p>
+
+						<img class="d_inpImg" src="../../img/icon/d_head.png" />
+
+					</div>
+
+					<div class="d_topinp d_line2"> 
+
+						<p>昵称</p>
+
+						<div class="d_topinpRight">
+
+							<span class="d_text2">请输入昵称</span>
+
+							<img class="d_rightHui" src="../../img/icon/d_rightHui.jpg" />
+
+						</div>
+
+					</div>
+
+					<div class="d_topinp d_line3"> 
+
+						<p>个性签名</p>
+
+						<div class="d_topinpRight">
+
+							<span class="d_text3">请输入个性签名</span>
+
+							<img class="d_rightHui" src="../../img/icon/d_rightHui.jpg" />
+
+						</div>
+
+					</div>
+
+					<div class="d_topinp" style="border:none"> 
+
+						<p>性别（选定后不得更改）</p>
+
+						<div class="d_topinpRight">
+
+							<span class="d_text4">性别</span>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="d_sky"></div>
+
+				<div class="d_photoBox">
+
+					<div class="d_phototitle">
+
+						<p>我的相册</p>
+
+						<span class="d_text5 d_line5">展开</span>
+
+					</div>
+
+					<div class="d_photo">
+						<form class="d_setimg" id="form" enctype="multipart/form-data">
+						<input type="hidden" class="d_uid" name="uid" value="">
+						<input type="hidden" class="d_token" name="token" value=""> 
+							<input type="file" id="d_btn" class="d_he" runat="server" name='image' onchange="he()"/>
+							<img class="d_firstphoto" src="../../img/icon/d_getphoto.png" />
+						</form>
+						<ul>
+
+						</ul>
+					</div>
+
+				</div>
+
+				<div class="d_sky"></div>
+
+				<div>
+
+					<div class="d_topinp"> 
+
+						<p>生日（选定后不得更改）</p>
+
+						<div class="d_topinpRight">
+
+							<span class="d_text6"></span>
+
+						</div>
+
+					</div>
+
+					<div class="d_topinp"> 
+
+						<p>星座</p>
+
+						<div class="d_topinpRight">
+
+							<span class="d_text7"></span>
+
+						</div>
+
+					</div>
+
+					<div class="d_topinp d_line8"> 
+
+						<p>身份</p>
+
+						<div class="d_topinpRight">
+
+							<span class="d_text8"></span>
+
+							<img class="d_rightHui" src="../../img/icon/d_rightHui.jpg" />
+
+						</div>
+
+					</div>
+
+					<div class="d_topinp d_line9"> 
+
+						<p>身高</p>
+
+						<div class="d_topinpRight">
+
+							<span class="d_text9"></span>
+
+							<img class="d_rightHui" src="../../img/icon/d_rightHui.jpg" />
+
+						</div>
+
+					</div>
+
+					<div class="d_topinp d_line10"  style="border:none"> 
+
+						<p>体重</p>
+
+						<div class="d_topinpRight">
+
+							<span class="d_text10"></span>
+
+							<img class="d_rightHui" src="../../img/icon/d_rightHui.jpg" />
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="d_sky"></div>
+
+				<div>
+
+					<div class="d_topinp d_line11"> 
+
+						<p>住房</p>
+
+						<div class="d_topinpRight">
+
+							<span class="d_text11"></span>
+
+							<img class="d_rightHui" src="../../img/icon/d_rightHui.jpg" />
+
+						</div>
+
+					</div>
+
+					<div class="d_topinp d_line12" id="showCityPicker"> 
+
+						<p>常住地</p>
+
+						<div class="d_topinpRight">
+
+							<span id="d_text12"></span>
+
+							<img class="d_rightHui" src="../../img/icon/d_rightHui.jpg" />
+
+						</div>
+
+					</div>
+
+					<div class="d_topinp d_line13"> 
+
+						<p>私家车</p>
+
+						<div class="d_topinpRight">
+
+							<span class="d_text13"></span>
+
+							<img class="d_rightHui" src="../../img/icon/d_rightHui.jpg" />
+
+						</div>
+
+					</div>
+
+					<div class="d_topinp d_line14"> 
+
+						<p>职业</p>
+
+						<div class="d_topinpRight">
+
+							<span class="d_text14"></span>
+
+							<img class="d_rightHui" src="../../img/icon/d_rightHui.jpg" />
+
+						</div>
+
+					</div>
+
+					<div class="d_topinp d_line15"  style="border:none"> 
+
+						<p>收入</p>
+
+						<div class="d_topinpRight">
+
+							<span class="d_text15"></span>
+
+							<img class="d_rightHui" src="../../img/icon/d_rightHui.jpg" />
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="d_sky"></div>
+
+				<div>
+
+					<div class="d_topinp d_line16"> 
+
+						<p>民族</p>
+
+						<div class="d_topinpRight">
+
+							<span class="d_text16"></span>
+
+							<img class="d_rightHui" src="../../img/icon/d_rightHui.jpg" />
+
+						</div>
+
+					</div>
+
+					<div class="d_topinp d_line17"> 
+
+						<p>信仰</p>
+
+						<div class="d_topinpRight">
+
+							<span class="d_text17"></span>
+
+							<img class="d_rightHui" src="../../img/icon/d_rightHui.jpg" />
+
+						</div>
+
+					</div>
+
+					<div class="d_topinp d_line18"> 
+
+						<p>兴趣爱好</p>
+
+						<div class="d_topinpRight">
+
+							<span class="d_text18"></span>
+
+							<img class="d_rightHui" src="../../img/icon/d_rightHui.jpg" />
+
+						</div>
+
+					</div>
+
+					<div class="d_topinp d_line19" style="border:none"> 
+
+						<p>我喜欢的异性类型</p>
+
+						<div class="d_topinpRight">
+
+							<span class="d_text19"></span>
+
+							<img class="d_rightHui" src="../../img/icon/d_rightHui.jpg" />
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class='d_windowbg'>
+
+			<div class='d_window'>
+
+				<b>昵称</b>
+
+				<h3>请输入3-7字的昵称</h3>
+
+				<input type='text' maxlength="8" value='' placeholder='例如：执着的承诺'/>
+
+				<div class='d_click'>
+
+					<div class='clickoff'>取消</div>
+
+					<p class="clickon">确定</p>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<!--个性签名-->
+
+		<div class='d_windowbg2'>
+
+			<div class='d_window'>
+
+				<b>个性签名</b>
+
+				<h3>30字以内</h3>
+
+				<input type='text' maxlength="30" value='' placeholder='例如：我在搜恋一定要找到我的另一半！！'/>
+
+				<div class='d_click'>
+
+					<div class='clickoff'>取消</div>
+
+					<p class="clickon2">确定</p>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<!--身高-->
+
+		<div class='d_windowbg3'>
+
+			<div class='d_window'>
+
+				<b>身高</b>
+
+				<h3>请输入您的身高</h3>
+
+				<input type='number' value='' placeholder='单位：/cm'/>
+
+				<div class='d_click'>
+
+					<div class='clickoff'>取消</div>
+
+					<p class="clickon3">确定</p>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<!--体重-->
+
+		<div class='d_windowbg4'>
+
+			<div class='d_window'>
+
+				<b>体重</b>
+
+				<h3>请输入您的身高</h3>
+
+				<input type='number' value='' placeholder='单位：/kg'/>
+
+				<div class='d_click'>
+
+					<div class='clickoff'>取消</div>
+
+					<p class="clickon4">确定</p>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<!--兴趣爱好-->
+
+		<div class='d_windowbg12'>
+
+			<div class='d_window'>
+
+				<b>兴趣爱好</b>
+
+				<h3>您的兴趣爱好是什么呢？</h3>
+
+				<input type='text' value='' placeholder='最多30个字'/>
+
+				<div class='d_click'>
+
+					<div class='clickoff'>取消</div>
+
+					<p class="clickon5">确定</p>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<!--身份-->
+
+		<div class='d_windowbg5'>
+
+			<div class="d_windowmin">
+
+			</div>
+
+			<div class="d_calloff">取消</div>
+
+		</div>
+
+		<!--住房-->
+
+		<div class='d_windowbg6'>
+
+			<div class="d_windowmin2">
+
+			</div>
+
+			<div class="d_calloff">取消</div>
+
+		</div>
+
+		<!--车子-->
+
+		<div class='d_windowbg7'>
+
+			<div class="d_windowmin3">
+
+			</div>
+
+			<div class="d_calloff">取消</div>
+
+		</div>
+
+		<!--职业-->
+
+		<div class='d_windowbg8'>
+
+			<div class="d_windowmin4">
+
+			</div>
+
+			<div class="d_calloff">取消</div>
+
+		</div>
+
+		<!--收入-->
+
+		<div class='d_windowbg9'>
+
+			<div class="d_windowmin5">
+
+			</div>
+
+			<div class="d_calloff">取消</div>
+
+		</div>
+
+		<!--民族-->
+
+		<div class='d_windowbg10'>
+
+			<div class="d_windowmin6">
+
+			</div>
+
+			<div class="d_calloff">取消</div>
+
+		</div>
+
+		<!--信仰-->
+
+		<div class='d_windowbg11'>
+
+			<div class="d_windowmin7">
+
+			</div>
+
+			<div class="d_calloff">取消</div>
+
+		</div>
+
+		<!--我喜欢的异性类-->
+		<div class="d_opposite">
+			<div class="d_oppositeBox">
+				<div class="d_oppositetop">
+					<p class="d_oppositep">添加你喜欢的异性类型！<span>(最多可选10个)</span></p>
+					<span class="d_oppositespan">×</span>
+				</div>
+				<div class="d_oppositecontent">
+					
+				</div>
+				<div class="d_oppositebottom">
+					确定
+				</div>
+			</div>
+		</div>
+		<!--图片放置-->
+		<div class="d_popupbox"></div>
+			<div class="mask"></div>
+	
+			<div class="showImg">
+	
+			<ul></ul>
+
+		</div>
+		<!--兴趣爱好-->
+		<div class="d_like">
+			<div class="d_likeBox">
+				<div class="d_liketop">
+					<p class="d_likep">添加你的兴趣爱好吧！<span>(最多可选10个)</span></p>
+					<span class="d_likespan">×</span>
+				</div>
+				<div class="d_likecontent">
+					
+				</div>
+				<div class="d_likebottom">
+					确定
+				</div>
+			</div>
+		</div>
+		
+	</body>
+	
+</html>
+

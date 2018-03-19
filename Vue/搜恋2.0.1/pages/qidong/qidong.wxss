@@ -1,0 +1,6 @@
+/* pages/qidong/qidong.wxss */
+page,view,image{
+    display: block;
+    width:100%;
+    height: 100%;
+}

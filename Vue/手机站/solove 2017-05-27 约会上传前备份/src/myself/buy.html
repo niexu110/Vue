@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>充值</title>
+		<meta http-equiv="pragma" content="no-cache">
+	    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+	    <meta http-equiv="expires" content="-1">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+	    <meta name="format-detection" content="telephone=no">
+	    <link rel="stylesheet" href="../../css/reset.css" />
+	    <link rel="stylesheet" href="../../css/myself/buy.css" />
+	    <link rel="stylesheet" href="../../css/myself/d_gongzong.css" />
+	    <script type="text/javascript" src="../../js/jquery-2.1.4.min.js"></script>
+	    <script type="text/javascript" src="../../js/myself/buy.js"></script>
+	    <script type="text/javascript" src="../../js/myself/d_gongzong.js"></script>
+		<script type="text/javascript" src='../../js/MD5.js'></script>
+	    <script>
+	        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+	    </script>
+	</head>
+	<body>
+		<div class="d_buyBox">
+			<div class="d_titleBox">
+				<img class="d_back" src="../../img/icon/d_leftboult.png"  />
+				<p>支付购买</p>
+				<span class="d_save"></span>
+			</div>
+			<div class="d_buyTop">
+				<div class="d_buytopleft">
+					<img src="../../img/icon/d_soulianmoney.png" />
+					<p></p>
+				</div>
+				<span></span>
+			</div>
+			<!--<div class="d_buytoptwo">
+				<p>优惠券</p>
+				<div>
+					<span>无优惠券可用</span>
+					<img src="../../img/icon/d_rightHui.jpg" />
+				</div>
+			</div>-->
+			<div class="d_buytoptwo">
+				<p>付款</p>
+				<span class="d_money"></span>
+			</div>
+			<!--<div class="d_fukuan">请选择付款方式</div>
+			<div class="d_contentBox">
+				<div class="d_wxand d_clear1 d_liang">
+					<img src="../../img/icon/d_wxliang.png" />
+					<span>微信</span>
+				</div>
+				<div class="d_wxand d_hidden d_clear2">
+					<img src="../../img/icon/d_wxhui.png" />
+					<span>微信</span>
+				</div>
+				<div class="d_zhifu d_clear1">
+					<img src="../../img/icon/d_zhifubaohui.png" />
+					<span>支付宝</span>
+				</div>
+				<div class="d_zhifu d_hidden d_clear2 d_liang">
+					<img src="../../img/icon/d_zhifubaoliang.png" />
+					<span>支付宝</span>
+				</div>
+			</div>-->
+			
+			<form class="d_form" action="http://back.qinyikou.cc/index.php/Mobile/lsit_index" method="post">
+				<input type="hidden" class="d_inphidden" name="order_number" value="" />
+				<input class="d_bottoms" type="button" value="确认" />
+			</form>
+		</div>
+	</body>
+</html>

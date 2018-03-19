@@ -1,0 +1,412 @@
+<!--pages/eatFriend/eatFriend.wxml-->
+<view>
+    <view class="navClass">
+        <view class="{{nav1}}" bindtap="clickActivity">活动简介</view>
+        <view class="{{nav2}}" bindtap="clickSplendid">精彩瞬间</view>
+        <view class="{{nav3}}" bindtap="clickComment">评论</view>
+    </view>
+    <!-- 活动简介 -->
+    <view class="contentBox" wx:if="{{hidden1}}">
+        <view>
+            <image mode="aspectFill" class="banner" src="{{activity.banner}}"></image>
+        </view>
+        <view class="eatFriend_content">
+            <image class="leftImg" src="{{img03}}"></image>
+            <view class="textcontent">
+                <text>{{activity.text1}}</text>
+                <view>
+                    <image class="sexImg" src="{{imgboy}}"></image>
+                    <text style="color:#79a9e4;width:40rpx;display:inline-block">{{activity.text2}}</text>
+                    <image class="sexImg" src="{{imggirl}}"></image>
+                    <text style="color:#fec2d1;width:40rpx;display:inline-block">{{activity.text3}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="eatFriend_content">
+            <image class="leftImg" src="{{img06}}"></image>
+            <view class="textcontent">
+                <view>
+                    <text>{{activity.time}}</text>
+                </view>
+                <text>{{activity.timeState}}</text>
+            </view>
+        </view>
+        <view class="eatFriend_content">
+            <image class="leftImg" src="{{img08}}"></image>
+            <view class="textcontent">
+                <view>
+                    <text>{{activity.address}}</text>
+                </view>
+                <text>></text>
+            </view>
+        </view>
+        <view class="eatFriend_content">
+            <image class="leftImg" src="{{img10}}"></image>
+            <view class="textcontent">
+                <view>
+                    <text>{{activity.souMoney}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="eatFriend_content" bindtap="clickTel">
+            <image class="leftImg" src="{{img12}}"></image>
+            <view class="textcontent">
+                <view>
+                    <text>{{activity.tel}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="eatFriend_content">
+            <image class="leftImg" src="{{img14}}"></image>
+            <view class="textcontent">
+                <view>
+                    <text>{{activity.details}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="eatFriend_content">
+            <image class="leftImg" src="{{img16}}"></image>
+            <view class="textcontent">
+                <view>
+                    <text>{{activity.annotation}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 精彩瞬间 -->
+    <view class="contentBox" wx:elif="{{hidden2}}">
+        <block  >
+            <!--<view class="splendidTitle">
+                <text>{{splendidTitle}}</text>
+            </view>-->
+            <view class="splendidContentBox">
+                <view class="splendidContent"><text>{{contentText}}</text></view>
+                <!--<image class="bigImg" src="{{item.banner}}"></image>-->
+            </view>
+        </block>
+    </view>
+    <!-- 评论 -->
+    <view class="contentBox" wx:elif="{{hidden3}}">
+        <!--<view class="comment_top">
+            <view class="gradeBox">
+                <view class="grade">{{starNum}}.0</view>
+                <text>总体评价</text>
+            </view>
+            <view>
+                <view wx:if="{{starNum==5}}" class="starBox">
+                    <image src="{{img3}}"></image>
+                    <image src="{{img3}}"></image>
+                    <image src="{{img3}}"></image>
+                    <image src="{{img3}}"></image>
+                    <image src="{{img3}}"></image>
+                </view>
+                <view wx:elif="{{starNum==4}}" class="starBox">
+                    <image src="{{img3}}"></image>
+                    <image src="{{img3}}"></image>
+                    <image src="{{img3}}"></image>
+                    <image src="{{img3}}"></image>
+                    <image src="{{img5}}"></image>
+                </view>
+                <view wx:elif="{{starNum==3}}" class="starBox">
+                    <image src="{{img3}}"></image>
+                    <image src="{{img3}}"></image>
+                    <image src="{{img3}}"></image>
+                    <image src="{{img5}}"></image>
+                    <image src="{{img5}}"></image>
+                </view>
+                <view wx:elif="{{starNum==2}}" class="starBox">
+                    <image src="{{img3}}"></image>
+                    <image src="{{img3}}"></image>
+                    <image src="{{img5}}"></image>
+                    <image src="{{img5}}"></image>
+                    <image src="{{img5}}"></image>
+                </view>
+                <view wx:elif="{{starNum==1}}" class="starBox">
+                    <image src="{{img3}}"></image>
+                    <image src="{{img5}}"></image>
+                    <image src="{{img5}}"></image>
+                    <image src="{{img5}}"></image>
+                    <image src="{{img5}}"></image>
+                </view>
+            </view>
+        </view>-->
+                            <!-- 全部评价、晒图评价   星级评价 -->
+        <!--<view class="comment_nav">
+            <view class="comment_nav_start">
+                <view bindtap="allComment" class="{{allComment}}">全部评价</view>
+                <view bindtap="imgComment" class="{{imgComment}}">晒图评价</view>
+            </view>
+            <view class="starComment" bindtap="starComment">星级评价 ﹀
+                <view class="commentRankBox" wx:if="{{hide}}">
+                    <view bindtap="goodComment" class="commentRank">好评（{{good}}）</view>
+                    <view bindtap="findComment" class="commentRank">中评（{{find}}）</view>
+                    <view bindtap="badComment" class="commentRank">差评（{{bad}}）</view>
+                </view>
+            </view>
+        </view>-->
+                            <!-- 评价内容 -->
+                            <!-- 全部评价 -->
+        <block wx:if="{{rank==1}}">                    
+        <view class="commentContent" wx:for="{{commentContent}}">
+            <view class="commentContent_top">
+                <image class="headimg" src="{{item.image}}"></image>
+                <view class="commentContent_top_center">
+                    <view>
+                        <text class="userNameClass">{{item.nickname}}</text>
+                        <view>{{item.addtime}}</view>
+                    </view>
+                    <view>
+                        <view wx:if="{{item.xingxing==5}}" class="userstar">
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                        </view>
+                        <view wx:elif="{{item.xingxing==4}}" class="userstar">
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                        </view>
+                        <view wx:elif="{{item.xingxing==3}}" class="userstar">
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                        </view>
+                        <view wx:elif="{{item.xingxing==2}}" class="userstar">
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                        </view>
+                        <view wx:elif="{{item.xingxing==1}}" class="userstar">
+                            <image src="{{img10}}"></image>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="commentText">
+                <text>{{item.content}}</text>
+            </view>
+            <view>
+                <view wx:if="{{item.src==''}}">
+                </view>
+                <view wx:else class="commentImgBox">
+                 <block wx:for="{{item.src}}">
+                    <image class="commentImg" src="{{item}}"></image>
+                 </block>   
+                </view>
+            </view>
+        </view>
+        </block>
+                        <!-- 晒图评价 -->
+        <block wx:if="{{rank==2}}">
+        <view class="commentContent" wx:for="{{arrimgs}}">
+            <view class="commentContent_top">
+                <image class="headimg" src="{{item.image}}"></image>
+                <view class="commentContent_top_center">
+                    <view>
+                        <text class="userNameClass">{{item.nickname}}</text>
+                        <view>{{item.addtime}}</view>
+                    </view>
+                    <view>
+                        <view wx:if="{{item.xingxing==5}}" class="userstar">
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                        </view>
+                        <view wx:elif="{{item.xingxing==4}}" class="userstar">
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                        </view>
+                        <view wx:elif="{{item.xingxing==3}}" class="userstar">
+                           <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                        </view>
+                        <view wx:elif="{{item.xingxing==2}}" class="userstar">
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                        </view>
+                        <view wx:elif="{{item.xingxing==1}}" class="userstar">
+                            <image src="{{img10}}"></image>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="commentText">
+                <text>{{item.content}}</text>
+            </view>
+            <view>
+                <view class="commentImgBox">
+                 <block wx:for="{{item.src}}">
+                    <image class="commentImg" src="{{item}}"></image>
+                 </block>   
+                </view>
+            </view>
+        </view>
+        </block>
+                            <!-- 好评 -->
+        <block wx:if="{{rank==3}}">
+        <view class="commentContent" wx:for="{{arrgoods}}">
+            <view class="commentContent_top">
+                <image class="headimg" src="{{item.image}}"></image>
+                <view class="commentContent_top_center">
+                    <view>
+                        <text class="userNameClass">{{item.nickname}}</text>
+                        <view>{{item.addtime}}</view>
+                    </view>
+                    <view>
+                        <view wx:if="{{item.xingxing==5}}" class="userstar">
+                           <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                        </view>
+                        <view wx:elif="{{item.xingxing==4}}" class="userstar">
+                           <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                        </view>
+                        <view wx:elif="{{item.xingxing==3}}" class="userstar">
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                        </view>
+                        <view wx:elif="{{item.xingxing==2}}" class="userstar">
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                        </view>
+                        <view wx:elif="{{item.xingxing==1}}" class="userstar">
+                            <image src="{{img10}}"></image>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="commentText">
+                <text>{{item.content}}</text>
+            </view>
+            <view>
+                <view wx:if="{{item.src==''}}">
+                </view>
+                <view wx:else class="commentImgBox">
+                 <block wx:for="{{item.src}}">
+                    <image class="commentImg" src="{{item}}"></image>
+                 </block>   
+                </view>
+            </view>
+        </view>
+        </block>
+         <!-- 中评 -->
+        <block wx:if="{{rank==4}}">
+        <view class="commentContent" wx:for="{{arrfinds}}">
+            <view class="commentContent_top">
+                <image class="headimg" src="{{item.image}}"></image>
+                <view class="commentContent_top_center">
+                    <view>
+                        <text class="userNameClass">{{item.nickname}}</text>
+                        <view>{{item.addtime}}</view>
+                    </view>
+                    <view>
+                        <view wx:if="{{item.xingxing==5}}" class="userstar">
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                        </view>
+                        <view wx:elif="{{item.xingxing==4}}" class="userstar">
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                        </view>
+                        <view wx:elif="{{item.xingxing==3}}" class="userstar">
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                        </view>
+                        <view wx:elif="{{item.xingxing==2}}" class="userstar">
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                        </view>
+                        <view wx:elif="{{item.xingxing==1}}" class="userstar">
+                            <image src="{{img10}}"></image>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="commentText">
+                <text>{{item.content}}</text>
+            </view>
+            <view>
+                <view wx:if="{{item.src==''}}">
+                </view>
+                <view wx:else class="commentImgBox">
+                 <block wx:for="{{item.src}}">
+                    <image class="commentImg" src="{{item}}"></image>
+                 </block>   
+                </view>
+            </view>
+        </view>
+        </block>
+         <!-- 差评 -->
+        <block wx:if="{{rank==5}}">
+        <view class="commentContent" wx:for="{{arrbads}}">
+            <view class="commentContent_top">
+                <image class="headimg" src="{{item.image}}"></image>
+                <view class="commentContent_top_center">
+                    <view>
+                        <text class="userNameClass">{{item.nickname}}</text>
+                        <view>{{item.addtime}}</view>
+                    </view>
+                    <view>
+                        <view wx:if="{{item.xingxing==5}}" class="userstar">
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                        </view>
+                        <view wx:elif="{{item.xingxing==4}}" class="userstar">
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                        </view>
+                        <view wx:elif="{{item.xingxing==3}}" class="userstar">
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                        </view>
+                        <view wx:elif="{{item.xingxing==2}}" class="userstar">
+                            <image src="{{img10}}"></image>
+                            <image src="{{img10}}"></image>
+                        </view>
+                        <view wx:elif="{{item.xingxing==1}}" class="userstar">
+                            <image src="{{img10}}"></image>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="commentText">
+                <text>{{item.content}}</text>
+            </view>
+            <view>
+                <view wx:if="{{item.src==''}}">
+                </view>
+                <view wx:else class="commentImgBox">
+                 <block wx:for="{{item.src}}">
+                    <image class="commentImg" src="{{item}}"></image>
+                 </block>   
+                </view>
+            </view>
+        </view>
+        </block>
+    </view>
+</view>

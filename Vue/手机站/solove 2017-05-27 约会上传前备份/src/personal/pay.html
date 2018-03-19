@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>支付</title>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/personal/personalAppointment.css">
+    <script type="text/javascript" src="../../js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../../js/personal/pay.js"></script>
+    <script type="text/javascript" src='../../js/MD5.js'></script>
+    <script>
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+    </script>
+</head>
+<body>
+<div id="FB_fixed">
+    <div class="ZF_fixed_box">
+        <div id="abBox">
+            <span><i></i></span>
+        </div>
+        <h3>放弃支付</h3>
+        <h4>您要放弃本次美丽的约会吗?</h4>
+        <div class="ZF_fixed_box_a">
+            <a href="../../src/myself/mypage.html"class="pull-left pay_over">忍痛放弃</a>
+            <a  class="pull-right pay_look">我在想想</a>
+        </div>
+    </div>
+</div>
+<div class="SL_nav">
+    <em>支付</em>
+    <span class="pull-left" style="margin-left:0.4rem;">
+        <img src="../../img/icon/d_leftboult.png" class="IMG" id="btnImg"></span>
+</div>
+<div class="pay_box">
+    <div class="pay_top">
+        <span class="pull-left ltSpan" style="color:#333;"></span>
+        <span class="pull-right rtSpan" style="color:#5793dd;"></span>
+    </div>
+    <div class="pay_img_box">
+        <div class="pay_img pull-left"><img src="" ></div>
+        <div class="pay_imgs pull-right">
+            <p></p>
+        </div>
+    </div>
+    <div class="pay_price">
+        <span class="pull-left">您本次需支付</span>
+        <span class="pull-right rtSpan2" style="color:#5793dd;"></span>
+    </div>
+</div>
+<!--<div class="pay_zhifu">-->
+     <!--<span id="WXZF"> <img src="../../img/icon/n_wx_1.png" ></span>-->
+     <!--<span id="ZFB"> <img src="../../img/icon/n_wxs.png" ></span>-->
+<!--</div>-->
+<form class="d_form" action="http://back.qinyikou.cc/index.php/Mobile/lsit_index" method="post">
+	<input type="hidden" class="d_inphidden" name="order_number" value="" />
+    <button id="payBtn" type="submit" style="margin: 0.4rem;"> 确认支付</button>
+</form>
+</body>
+</html>

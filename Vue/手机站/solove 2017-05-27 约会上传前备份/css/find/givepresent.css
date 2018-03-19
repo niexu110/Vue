@@ -1,0 +1,285 @@
+@charset "utf-8";
+header{border-bottom:1px solid #e6e6e6;}
+.headLeft,.headRight{
+	width:1.5rem;
+}
+.headRight span{float:right;}
+.headMiddle{width:3.5rem;}
+.presentObj{
+	margin-top:.9rem;
+	width:100%;
+}
+.presentItem{
+	width:7.1rem;
+	margin:0 auto;
+	padding:.4rem 0;
+	box-sizing: border-box;
+	position: relative;
+}
+.presentItem img{
+	display: block;
+	width:1.2rem;
+	height:1.2rem;
+	border-radius: 4px;
+	border:1px solid #e6e6e6;
+	margin:0 auto;
+}
+.presentItem a.caption{
+	position: absolute;
+	top:.4rem;
+	right:.2rem;
+	color:#666666;
+	font-size:.22rem;
+	padding-left:.3rem;
+	background: url(../../img/icon/x_present_icon.png) no-repeat;
+	background-position: left center;
+	background-size: .22rem .22rem;
+}
+.presentItem h1{
+	margin-top:.3rem;
+	color:#5793dd;
+	font-size:.3rem;
+	text-align: center;
+}
+.presentItem h1 span{color:#feadc1;}
+.presentItem p{
+	text-align: center;
+	color:#666666;
+	font-size:.24rem;
+	margin:.25rem 0;
+}
+.presentItem p.soulianmoney{
+	text-align: center;
+	font-size: .24rem;
+	color:#666666;
+}
+.presentItem p.soulianmoney span{
+	color:#fcacbf;
+}
+.presentItem p.soulianmoney a{
+	color:#5793dd;
+	margin-left:.2rem;
+}
+
+.presentGift{
+	width:7.5rem;
+}
+.presentGift ul{
+	width:7.1rem;
+	margin:0 auto;
+	overflow: hidden;
+	/*display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;*/
+	padding-bottom:.98rem;
+}
+.presentGift ul li{
+	position: relative;
+	width:2.2rem;
+	border-radius: 6px;
+	overflow: hidden;
+	float:left;
+}
+.presentGift ul li:not(:nth-child(3n)){
+	margin-right:.25rem;
+}
+.presentGift ul li h2{
+	width:100%;
+	height:.6rem;
+	line-height: .6rem;
+	text-align: center;
+	color:#333333;
+	font-size: .3rem
+}
+.presentGift ul li .giftImg{
+	position: relative;
+	width:2.2rem;
+	border-radius: 6px;
+	overflow: hidden;
+}
+/*.presentGift ul li .giftImg input{
+	position: absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	opacity: 0;
+	z-index: 10;
+}*/
+.presentGift ul li .giftImg img{
+	display: block;
+	width:100%;
+	height:100%;
+}
+.presentGift ul li .giftImg span{
+	display: none;
+	position: absolute;
+	top:.2rem;
+	right:.2rem;
+	width:.4rem;
+	height:.4rem;
+	border-radius: 50%;
+	background: url('../../img/icon/x_giftchoice_icon.png') no-repeat;
+	background-size: 100% 100%;
+	z-index: 9;
+}
+.presentGift ul li .giftImg h1{
+	width:100%;
+	position: absolute;
+	bottom:.52rem;
+	left:0;
+	color:#feb3c5;
+	font-size: .24rem;
+	text-align: center;
+	z-index: 8;
+}
+.presentGift ul li .giftImg p{
+	width:100%;
+	position: absolute;
+	bottom:.2rem;
+	left:0;
+	color:#ffffff;
+	font-size: .24rem;
+	text-align: center;
+	z-index: 8;
+}
+.presentGift ul li .giftImg div{ 
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index: 7;
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) , rgba(0,0,0,1))
+}
+
+.foot{
+	width:7.5rem;
+	height:.98rem;
+	box-sizing: border-box;
+	background-color: #f9f9f9;
+	position: fixed;
+	bottom:0;
+	left:0;
+	padding:.14rem .2rem;
+	z-index: 90;
+}
+.footLeft{
+	float:left;
+	height:.7rem;
+	line-height: .7rem;
+	font-size:.26rem;
+}
+.footLeft s,.footLeft i,.footLeft span{display: inline-block;}
+.footLeft span{padding:0 .2rem;}
+.footLeft s,.footLeft i{
+	padding:0 .1rem;
+	width:.4rem;
+	text-align: center;
+}
+.footLeft span{
+	text-align: center;
+}
+.footRight{
+	float:right;
+}
+.footRight span{
+	display: block;
+	width:2.2rem;
+	height:.7rem;
+	line-height: .7rem;
+	text-align: center;
+	color:#ffffff;
+	border-radius: 4px;
+	background-color: #5793dd;
+	font-size:.3rem;
+}
+
+
+.mask{
+	display: none;
+	position: fixed;
+	top:0;left:0;bottom:0;right:0;
+	margin:auto;
+	background-color: rgba(0,0,0,.5);
+	z-index: 101;
+}
+.nomoney{
+	display: none;
+	position: absolute;
+	top:0;left:0;bottom:0;right:0;
+	margin:auto;
+	width:4rem;
+	height:1.2rem;
+	line-height: .6rem;
+	border-radius: 4px;
+	background-color: rgba(0,0,0,.8);
+	color:#ffffff;
+	font-size: .26rem;
+	text-align: center;
+	z-index: 100;
+}
+s,i{text-decoration: none;font-style:normal;}
+.sureBuy,.buyFail{
+	display: none;
+	position: fixed;
+	top:0;left:0;bottom:0;right:0;
+	margin:auto;
+	width:5.26rem;
+	height:4.5rem;
+	background-color: #ffffff;
+	z-index: 102;
+	text-align: center;
+}
+.sureBuy img,.buyFail img{
+	position: absolute;
+	top:-.6rem;
+	left:0;right:0;
+	margin:0 auto;
+	width:1.2rem;
+	height:1.2rem;
+}
+.sureBuy h1,.buyFail h1{
+	margin-top:1.1rem;
+	width:100%;
+	font-size: .38rem;
+	color:#333333;
+	font-weight:bold;
+	margin-bottom:.6rem;
+}
+.sureBuy p,.buyFail p{
+	font-size:.28rem;
+	color:#666666;
+}
+.sureBuy p span,.buyFail p span{color:#feb3c5;}
+.sueccessBuy{
+	display: block;
+	margin:0 auto;
+	width:1.6rem;
+	height:.6rem;
+	line-height: .6rem;
+	text-align: center;
+	color:#ffffff;
+	background-color: #feb3c5;
+	border-radius: 4px;
+	margin-top:.4rem;
+}
+.sureOrcancel{
+	width:3.8rem;
+	margin:.4rem auto 0;
+	overflow: hidden;
+	font-size: .32rem;
+	text-align: center;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+}
+.sureOrcancel span{
+	width:1.6rem;
+	height:.6rem;
+	line-height: .5rem;
+	border-radius: 6px;
+	box-sizing: border-box;
+}
+.sureOrcancel span.sure{color:#ffffff;background-color: #feb3c5;border:2px solid #feb3c5;}
+.sureOrcancel span.cancel{color:#feb3c5;border:2px solid #feb3c5;}

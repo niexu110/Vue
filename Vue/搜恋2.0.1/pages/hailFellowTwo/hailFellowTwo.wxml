@@ -1,0 +1,44 @@
+<!--pages/hailFellowTwo/hailFellowTwo.wxml-->
+<form bindsubmit="formSubmit">
+    <view class="container">
+        <!--搜索/新的好友-->
+        <view class="goodFriend" wx:if="{{goodFriend}}">
+            <!--搜索-->
+            <view class="searchAdd">
+                <button class="sureClass" formType="submit" bindtap="clicksure" style="background:{{backg}}">
+                    <text>确定</text>
+                </button> 
+            </view>
+            
+        </view>
+        <!--好友列表-->
+        <view class="friendList">
+            <radio-group class="radio-group" name="radio" bindchange="radioChange">
+                <block wx:for="{{array}}"> 
+                    <radio value="{{item.uid}}" >
+                    <view class="list">    
+                        <view class="listLeft">
+                            <image src="{{item.image}}"></image>
+                        </view>
+                        <view class="listRight">
+                            <view class='nickyName'>
+                                <text class="nicks">{{item.nickname}}</text>
+                                <view class="boy"  wx:if="{{item.sex==0}}"> <!--sex为获取的用户数据的sex值：{{itemitem.xse==0}} -->
+                                    <image src="{{boyImg}}"></image>
+                                    <text>{{item.age}}</text>
+                                </view>
+                                <view class="girl" wx:if="{{item.sex==1}}">
+                                    <image src="{{girlImg}}"></image>
+                                    <text>{{item.age}}</text>
+                                </view>
+                            </view>
+                            <text class="rightText">{{item.myideal}}</text>
+                        </view>
+                    </view>
+                    </radio>
+                    
+                </block> <!--list为用户数据循环 -->   
+            </radio-group >    
+        </view>
+    </view>
+</form>

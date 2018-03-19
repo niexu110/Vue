@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>发布约会</title>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/personal/releaseDatas.css"/>
+    <script type="text/javascript" src="../../js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src='../../js/MD5.js'></script>
+    <script type="text/javascript" src="../../js/personal/descritions.js"></script>
+    <script>
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+    </script>
+</head>
+<body>
+<div id="RE_fixed">
+     <span>&times;</span>
+     <h2></h2>
+</div>
+<div class="SL_nav">
+    <em>发布约会</em>
+    <a href="javascript:history.go(-1);" class="pull-left" style="margin-left:0.4rem;">
+        <img src="../../img/icon/d_leftboult.png" class="IMG"></a>
+</div>
+<div class="release_box">
+    <p class="p_scene">
+        <span class="pull-left">请添加约会场景</span>
+        <span class="pull-right"><em id="optScene">场景选择</em></span>
+    </p>
+    <div class="release_content">
+        <div class="release_content_box">
+            <div class="release_left_img">
+                <img src="../../img/n_FBTC.png" >
+            </div>
+            <div class="release_left_txt">
+                <p class="p1"></p>
+                <p class="p2"></p>
+                <p class="p5"><span class="pull-left p3"></span> <span class="pull-right p4"></span></p>
+            </div>
+        </div>
+        <p class="p6">
+            <span class="pull-left">请选择约会时间</span>
+            <span class="pull-right"><img src="../../img/icon/n_my_date.png" ></span>
+        </p>
+    </div>
+</div>
+<form method="post" id="formData">
+    <div class="form_data">
+        <span id="timer"></span>
+        <input  type="datetime-local" value="" class="release_data" id="dates">
+        <span>(请确认好您的空余时间)</span>
+    </div>
+    <div class="release_hail">
+        <h2>负责接送</h2>
+        <p class="release_p">
+            <i class="pull-left"><label for="ye2">
+                <input type="radio" name="jiesong" id="ye2"  class="radio" value="1">
+                我是汉子，我负责</label></i>
+            <i class="pull-right"><label for="ye3"><input type="radio" name="jiesong" id="ye3" class="radio" value="2">
+                我是妹子，你负责</label></i>
+        </p>
+        <h4 style="color:#5793dd;font-size:.26rem;">负责接送对方需提前和邀请对象联系,不选即不负责接送</h4>
+    </div>
+    <div class="release_hail">
+        <h2>约会方式</h2>
+        <p class="release_p">
+            <i ><label for="ye4">
+                <input type="radio" name="price" id="ye4" checked="checked" class="radio" value="1">
+                我请客</label></i>
+            <i style="margin-left: .7rem;"><label for="ye5"><input type="radio" name="price" id="ye5" class="radio" value="2">
+                AA制</label></i>
+        </p>
+    </div>
+    <div class="release_hail">
+        <h2>约会费用</h2>
+        <p class="release_p">
+           <span class="release_moneys">我:<em></em></span>
+           <span class="release_money">接收人:<em>0元</em></span>
+        </p>
+    </div>
+    <div class="release_hail" >
+        <h2>约会心情</h2>
+        <h4 style="color:#5793dd;font-size:.26rem;margin-bottom:0.1rem;">(将显示到约会主页,请认真选择或填写,打动对方的心)</h4>
+        <p class="release_p">
+            <textarea name="textarea" id="textarea" maxlength="50" placeholder="50字节"
+                      style="width:6.7rem;height:1.5rem;outline: none;color:#5793dd;font-size:.26rem;resize: none;margin-top:.1rem;"></textarea>
+        </p>
+         <div class="release_text" style="border-bottom: 1px solid #efefef;margin-top:1.2rem;">
+             <ul>
+                 <li>我们总在最不懂爱情的年代,遇见最美好的爱情。</li>
+                 <li>我不贪心,我只有一个小小的愿望,生命中永远有你。</li>
+                 <li>不管过去如何，过去的已经过去,最好的总在未来等你。</li>
+                 <li>下辈子，我要做你的一颗牙，至少，我难受，你也会疼。</li>
+                 <li>愿得一人心，白头终不离。</li>
+                 <li>遇见你是我这辈子最大的惊喜。</li>
+             </ul>
+         </div>
+    </div>
+    <button id="btn" type="button">下一步</button>
+</form>
+</body>
+</html>

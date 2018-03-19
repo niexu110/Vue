@@ -1,0 +1,27 @@
+/* pages/FAQ/FAQ.wxss */
+.content{
+    background: #f9f9f9;
+}
+.faq_bj{
+    height:262rpx;
+    width: 100%;
+}
+.faq_bj image{
+    height:100%;
+    width: 100%;
+}
+/*疑难解答部分*/
+.faq_listBox{
+    background-color: #fff;
+}
+.faq_list{
+    padding-right:40rpx;
+    margin-left: 40rpx;
+    height:100rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:solid 1px #e6e6e6;
+    font-size: 36rpx;
+    color: #666;
+}

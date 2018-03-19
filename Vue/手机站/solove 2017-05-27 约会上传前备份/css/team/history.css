@@ -1,0 +1,141 @@
+@charset "utf-8";
+body {
+	background-color: #f9f9f9;
+}
+.f_containers {
+	background-color: #FFFFFF;
+	width: 7.5rem;
+	margin-top: .9rem;
+	border-top: 1px solid #e6e6e6;
+}
+.bgColor {
+	width: 7.5rem;
+	height: 2.1rem;	
+	background-color: #FFFFFF;
+}
+.f_content {
+	width: 7.1rem;
+	height: 1.9rem;
+	float: right;
+	margin-top: .2rem;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.f_bigPic {
+	float: left;
+}
+
+.f_center {
+	float: right;
+	width: 4.8rem;
+}
+
+.f_bigPic_img {
+	width: 2.1rem;
+	height: 1.65rem;
+	border-radius: .04rem;
+}
+
+.f_center {
+	margin-left: .2rem;
+}
+
+.f_left {
+	line-height: .6rem;
+}
+
+.f_right_name {
+	font-size: .3rem;
+	color: #333333;
+}
+
+.f_right_number {
+	float: right;
+	font-size: .24rem;
+	color: #999999;
+	margin-right: .4rem;
+}
+
+.f_right {
+	line-height: .5rem;
+}
+
+.f_right_time {
+	float: left;
+	font-size: .24rem;
+	color: #999999;
+}
+
+.f_pirce {
+	float: right;
+	margin-right: .4rem;
+	font-size: .24rem;
+	color: #FEB3C5;
+}
+.f_money {
+	width: 4.8rem;
+	float: right;
+}
+.f_money img {
+	float: right;
+	width: .23rem;
+	height: .23rem;
+	border-radius: 50%;
+	margin-top: .05rem;
+}
+#noMore {
+	background-color: #f9f9f9;
+	line-height: .6rem;
+	text-align: center;
+	color: #5793DD;
+	font-size: .3rem;
+	height: .6rem;
+	
+}
+
+
+/*加载动画*/
+
+#noMore span {
+	width: .15rem;
+	height: .15rem;
+	margin-left: .05rem;
+	border-radius: 50%;
+	background: #5793DD;
+	display: inline-block;
+	-webkit-animation: load 1.04s ease infinite;
+}
+
+#noMore:last-child {
+	margin-right: 0px;
+}
+
+@-webkit-keyframes load {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+#noMore span:nth-child(1) {
+	-webkit-animation-delay: 0.13s;
+}
+
+#noMore span:nth-child(2) {
+	-webkit-animation-delay: 0.26s;
+}
+
+#noMore span:nth-child(3) {
+	-webkit-animation-delay: 0.39s;
+}
+
+
+/*#noMore:nth-child(4) {
+	-webkit-animation-delay: 0.52s;
+}
+
+#noMore:nth-child(5) {
+	-webkit-animation-delay: 0.65s;
+}*/

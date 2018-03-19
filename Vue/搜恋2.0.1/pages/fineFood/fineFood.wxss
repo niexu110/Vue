@@ -1,0 +1,173 @@
+/* pages/fineFood/fineFood.wxss */
+.fineFood_container {
+    width: 100%;
+    height: 100%;
+}
+.fineFood_banner {
+    width: 100%;
+    height:260rpx;
+}
+.fineFood_banner_pic{
+    width:100%;
+    height:100%;
+}
+.fineFood_changePage {
+    width: 100%;
+    height: 90rpx;
+    display: flex;
+    flex:row nowrap;
+    justify-content:space-around;
+    border-bottom: 1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;    
+}
+.fineFood_package {
+    width:100%;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+    align-content: center;
+    text-align: center;
+    margin-top: 30rpx;
+}
+.fineFood_package view {
+    flex:1;
+    font-size:30rpx;
+    font-weight: 800;
+    color:#121212;  
+}
+.line {
+    width:47%;
+    height:2px;
+    background-color: #4b85cc;
+    display: block;
+    margin:3px auto 0;    
+}
+.fineFood_content {
+    width: 100%;
+    position: absolute;
+}
+.fineFood_new_content {
+    width: 100%;
+}
+.fineFood_new_list {
+    width: 100%;
+    height: 690rpx;
+    border-bottom: 1px solid #e6e6e6;
+}
+.fineFood_new_img {
+    width: 90%;
+    height: 400rpx;
+    margin: auto;
+}
+.fineFood_new_contentImg {
+    width: 100%;
+    height: 360rpx;
+    border-radius: 1%;
+    margin-top: 30rpx;
+}
+.fineFood_new_likeImg {
+    float: right;
+    width: 40rpx;
+    height: 38rpx; 
+    margin-right: 30rpx;
+    margin-top: -80rpx;
+    position: relative;
+}
+
+.fineFood_new_title {
+    width: 90%;
+    height: 120rpx; 
+    margin: auto;
+}
+.fineFood_new_title image {
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 50%;
+    margin-top: 20rpx;
+}
+.fineFood_new_placeName {
+    margin-top: 20rpx;
+    margin-left: 20rpx;
+    font-size: 36rpx;
+    font-weight: 800;
+    position: absolute;
+}
+.fineFood_new_beCollected {
+    font-size: 25rpx;
+    margin-left: 20rpx;
+    color: #999999;
+    margin-top: 70rpx;
+    position: absolute;
+}
+.fineFood_new_note {
+    width: 90%;
+    margin: auto; 
+}
+.fineFood_new_noteImg {
+    font-size: 28rpx;
+    font-weight: 800;
+}
+.fineFood_new_date {
+    width: 90%;
+    margin: auto; 
+    padding-top: 5rpx;
+}
+.fineFood_new_date image {
+    width: 22rpx;
+    height: 22rpx;
+    border-radius: 50%;    
+}
+.fineFood_new_time {
+    font-size: 26rpx;
+    margin-left: 12rpx;
+}
+.fineFood_new_timeInfo {
+    font-size: 26rpx; 
+}
+.fineFood_new_have {
+    width: 90%;
+    height: 30rpx;
+    margin: auto;  
+    padding-top: 8rpx;
+
+}
+.fineFood_new_money {
+    font-size: 30rpx;
+    color: #feb3c5;
+}
+.fineFood_new_word {
+    font-size: 30rpx; 
+}
+.fineFood_new_manImg {
+    width: 22rpx;
+    height: 22rpx;   
+    margin-left: 65rpx;
+}
+.fineFood_new_manNum {
+    font-size: 30rpx;
+    color: #7bade8;
+    margin-left:10rpx;
+}
+.fineFood_new_manAllNum {
+    font-size: 30rpx;
+    color: #7bade8;
+}
+.fineFood_new_womanImg {
+    width: 22rpx;
+    height: 22rpx; 
+    margin-left: 20rpx;      
+}
+.fineFood_new_womanNum {
+    font-size: 30rpx;
+    color: #feb3c5;
+    margin-left:10rpx;    
+}
+.fineFood_new_womanAllNum {
+    font-size: 30rpx;
+    color: #feb3c5;
+}
+.fineFood_new_place {
+    float: right;
+    font-size: 30rpx;
+    margin-top: 8rpx;
+}

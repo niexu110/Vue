@@ -1,0 +1,30 @@
+<!--pages/forget/forget.wxml-->
+<view class="container">
+    <!--登录图片-->
+    <view class="bannerMsg">
+        <image src="{{imgbanner}}"></image>
+    </view>
+    <!--登录表单-->
+    <form class="loginForm" bindsubmit="formSubmit">
+         <!--用户名-->
+        <view class="section ">
+            <image class="loginUser" src="{{img1}}"></image>
+            <input type="number"  id="userName" bindblur="userBlur" value="{{val}}" maxlength="11" placeholder="请输入手机号" placeholder-class="placeStyle"/>
+            
+        </view>
+         <!--验证码-->
+        <view class="section proofCode">
+            <image class="loginUser" src="{{img2}}"></image>
+            <input type="number"  id="yanzhengCode" bindblur="userBlur" value="{{val1}}" maxlength="6" placeholder="请输入验证码" placeholder-class="placeStyle"/>
+            <text bindtap="{{bindtap}}">{{textHtml}}</text>
+        </view>
+        <!--密码-->
+        <view class="section">
+            <image class="loginPassword" src="{{img3}}"></image>
+            <input password="true" bindblur="userBlur" id="password" value="{{val2}}" maxlength="18" placeholder="请输入密码" placeholder-class="placeStyle"/>
+        </view>
+        <!--确定按钮-->
+        <button form-type="submit">确定</button>
+    </form>
+</view>
+

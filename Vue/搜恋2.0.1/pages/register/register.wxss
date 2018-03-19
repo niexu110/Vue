@@ -1,0 +1,34 @@
+/* pages/register/register.wxss */
+/*验证码*/
+.proofCode{
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+}
+.proofCode text{
+    line-height: 90rpx;
+    text-align:center;
+    box-sizing: border-box;
+    font-size:26rpx;
+    margin-right:10rpx;
+    font-weight:blod; 
+    color:#888888;
+}
+/*用户协议*/
+.pact{
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: flex-start;
+    align-content: center
+}
+.pact image{
+    width:18rpx;
+    height:22rpx;
+    margin-right:5rpx;
+    align-self: center;
+}
+.pact text{
+    font-size: 24rpx;
+    color:#949494;
+}
+.pact text.pactText{color:#5793dd;}

@@ -1,0 +1,7 @@
+{
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "backgroundColor":"#ffffff",
+    "navigationBarTitleText": "联系红娘",
+    "enablePullDownRefresh":false
+}

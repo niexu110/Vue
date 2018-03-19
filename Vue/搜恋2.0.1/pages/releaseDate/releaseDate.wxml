@@ -1,0 +1,87 @@
+<!--pages/releaseDate/releaseDate.wxml-->
+<view class="releaseDate_container">
+    <view class="releaseDate_allText">    
+        <!--发布人基本信息-->
+        <view class="releaseDate_releasePeople" bindtap="clicktop">
+            <!--发布人头像-->
+            <view class="releaseDate_releaseImg">
+                <image src="{{releaseImg}}"></image>
+            </view>
+            <!--发布人信息-->
+            <view class="releaseDate_userInfo">
+                <view class="releaseDate_userInfo_first">
+                    <text class="releaseDate_usertitle">邀请人  </text>
+                    <text class="releaseDate_username">{{username}}</text>
+                </view>
+                <view class="releaseDate_userInfo_second">
+                    <!--按性别显示性别图标-->
+                    <image class="sexWoman" src="{{sexWomanImg}}" wx:if="{{sex==='女'}}"></image>
+                    <image class="sexman" src="{{sexManImg}}" wx:elif="{{sex==='男'}}"></image>
+                    <text class="releaseDate_userage">{{userage}}</text> 
+                    <text class="releaseDate_constellation">{{constellation}}</text>
+                    <text class="releaseDate_userstate">{{userstate}}</text>
+                </view>            
+            </view>
+            <view class="releaseDate_trustworthiness">
+                <view class="releaseDate_one">约会信用值</view>
+                <view class="releaseDate_two">{{trustworthiness}}
+                    <text>({{grade}})</text>
+                </view>
+            </view>
+        </view>
+        <!--约会宣言-->
+        <view class="releaseDate_declaration">
+            <view class="declaration_title">约会宣言:</view>
+            <view class="declaration_text">{{declaration}}</view>
+        </view>
+        <!--约会服务信息-->
+        <view class="releaseDate_body">
+            <view class="releaseDate_text">
+                <view class="releaseDate_textfirst">约会服务</view>
+                <view class="releaseDate_place">
+                    <text>{{placeName}}</text>
+                </view>
+                <view class="releaseDate_time">约会时间：{{timeOut}}</view>
+                <view class="releaseDate_pay">{{pay}}</view>
+                <view class="releaseDate_onlyBoy">
+                    <text class="onlyBoy">{{onlyBoy}}</text>
+                    <text class="shuttle">{{shuttle}}</text>
+                </view>
+            </view>
+            <view class="releaseDate_placeImg">
+                <image src="{{placeImg}}"></image>
+            </view>
+        </view>
+        <!--接受情况-->
+        <view class="releaseDate_situation">
+            <view class="releaseDate_number">已经接受该约会请求的人数：{{haveNum}}</view>
+            <view class="releaseDate_find" bindtap="findInfo">
+                查看服务详情
+                <text class="line"></text>
+            </view>
+        </view>
+        <!--系统提示-->
+        <view class="releaseDate_note">您是否心仪本次约会！~如果心仪的话，就和他约会吧！</view>
+        <!--申请约会按钮-->
+        <view class="releaseDate_button" bindtap="secondPage">
+            <button  class="girlbutton" wx:if="{{sex==='女'}}">我期待和她约会<text style="font-size:28rpx;"> {{zhifu}}</text></button>
+            <button  class="boybutton" wx:elif="{{sex==='男'}}">我期待和他约会<text style="font-size:28rpx;"> {{zhifu}}</text></button>
+        </view>
+    </view>
+    <view class="applyForPage"  wx:if="{{onClickButoon}}">
+        <view class="applyFor_window">
+            <view class="applyFor_circle"></view>
+            <view class="applyFor_icon">
+                <icon type="success" size="55" color="pink"/>
+            </view>
+            <view class="applyFor_appointment">接受约会</view>
+            <view class="applyFor_username">您已经同意了用户{{username}} 的约会请求</view>
+            <view class="applyFor_wait">等待对方确认约会的对象。</view>
+            <view class="applyFor_many">(约会信用度高，想和他约会的人就更多)</view>
+            <view class="applyFor_talk">邀请人确认完毕后，我们会消息通知您。</view>
+            <view class="applyFor_find" bindtap="onClickFind">
+                <view class="applyFor_view">查看详情</view>
+            </view>
+        </view>
+    </view>
+</view>

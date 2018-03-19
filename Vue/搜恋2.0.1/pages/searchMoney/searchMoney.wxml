@@ -1,0 +1,24 @@
+<!--pages/searchMoney/searchMoney.wxml-->
+<view class="container">
+  <view class="container_box">
+    <view class="box">
+      <text>搜恋币余额(个)</text>
+      <text class="money">{{money}}</text>
+    </view>
+  </view>
+  <view class="boxs">
+    <view class="text">兑换搜恋币</view>
+    <block wx:for="{{list}}">
+    <view class="boxs_money">
+         <view class="img" >
+          <image src="{{img}}" ></image>
+         </view>
+         <view class="slText">{{item.price}}搜恋币<text>{{item.txt}}</text></view>
+         <view class="box_right" catchtap="chong" id="{{item.money}}">
+         <image src="{{img1}}"></image>
+         ￥{{item.money}}
+         </view>
+      </view>
+      </block>
+  </view>
+</view>

@@ -1,0 +1,98 @@
+.d_blacklist{
+	margin-top: 0.9rem;
+}
+.d_goodF{
+	height: 1.5rem;
+	border-radius: 0.06rem;
+	border-bottom: solid 1px #E6E6E6;
+	margin-left: 0.4rem;
+}
+.d_goodF img {
+	float: left;
+	margin-top: 0.28rem;
+	margin-right: 0.2rem;
+	width: 1.04rem;
+	height:1.04rem;
+	border-radius: 0.06rem;
+}
+.d_goodFrigth{
+	float: left;
+	margin-top: 0.28rem;
+	width: 5.36rem;
+}
+.d_goodFcenter{
+	height: 1.04rem;
+	float: left;
+}
+.d_goodFcenter h2{
+	font-size: 0.32rem;
+	color: #333333;
+	line-height: 0.52rem;
+	font-weight: bold;
+}
+.d_goodFcenter p{
+	font-size: 0.24rem;
+	color: #999999;
+	line-height: 0.52rem;
+	width: 2.8rem;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.d_hint{
+	float: right;
+	margin-top: 0.4rem;
+	height:0.24rem;
+	width: 0.24rem;
+	border-radius: 50%;
+	background: #dd5757;
+	font-size: 0.14rem;
+	line-height: 0.24rem;
+	text-align: center;
+	color: #FFFFFF;
+}
+.d_goodFlist{
+	margin-top: 0;
+}
+.d_newgood{
+	height: 0.52rem;
+}
+.d_newgood h2{float: left;}
+.d_agesex{
+	margin-top: 0.12rem;
+	float: left;
+	margin-left: 0.16rem;
+	width: 0.66rem;
+	height: 0.24rem;
+	border-radius: 0.06rem;
+	background: #5793DD;
+}
+.d_agesex img{
+	margin-top: 0;
+	float: left;
+	width: 0.14rem;
+	height: 0.14rem;
+	margin-top: 0.05rem;
+	margin-left: 0.07rem;
+}
+.d_addimg{
+	background: #feb3c5;
+}
+.d_agesex span{
+	display: block;
+	float: right;
+	font-size: 0.14rem;
+	color: #FFFFFF;
+	line-height: 0.26rem;
+	margin-right: 0.07rem;
+}
+.d_jiechu{
+	float: right;
+	height: 1.5rem;
+	width: 1.6rem;
+	background: #5397DD;
+	color: #ffffff;
+	font-size: 0.34rem;
+	line-height: 1.5rem;
+	text-align: center;
+}

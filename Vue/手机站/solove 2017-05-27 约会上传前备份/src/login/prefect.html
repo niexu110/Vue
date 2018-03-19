@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>基本资料</title>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/mui.min.css">
+    <link href="../../css/mui.picker.css" rel="stylesheet" />
+    <link href="../../css/mui.poppicker.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../../css/login/prefect.css">
+    <script type="text/javascript" src="../../js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src='../../js/MD5.js'></script>
+    <script>
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+    </script>
+</head>
+<body>
+<div id="RE_fixed">
+    <span>&times;</span>
+    <h2></h2>
+</div>
+<!-- 头部 -->
+<div class="headTop">
+    <img src="../../img/icon/x_login_icon.png" class="imgs">
+    <div class="prefect"> <a href="../../index.html" class="pull-left" style="margin-left:0.4rem;">
+        <img src="../../img/icon/x_leftWhite_icon.png" class="IMG"></a>
+        基本资料
+    </div>
+    <div class="prefect_upImg">
+        <img src="../../img/icon/d_head.png" id="IMGUp">
+    </div>
+</div>
+<form method="post" id="formData">
+  <div class="prefect_box">
+      <span >昵称</span><input type="text" placeholder="请填写昵称4-8字符" minlength="4" maxlength="7" id="user">
+  </div>
+    <div class="prefect_box">
+        <span >性别</span>
+        <select name="sex" id="select">
+            <option value="1">男</option>
+            <option value="2">女</option>
+            <option value="0">不限</option>
+        </select>
+    </div>
+    <div class="prefect_box">
+        <span >生日</span>
+        <input type="date" value="1992-02-10" name="date" id="dates">
+    </div>
+    <div class="prefect_box" id='showCityPicker'>
+        <span >所在地</span> <em id="cityResult">选择城市</em>
+    </div>
+    <h2>注:性别和日期选定后不可修改</h2>
+    <button type="button" class="mui-btn-blue mui-btn btn" id="btns"> 下一步</button>
+</form>
+<script src="../../js/find/mui.min.js"></script>
+<script src="../../js/find/mui.picker.js"></script>
+<script src="../../js/find/mui.poppicker.js"></script>
+<script src="../../js/find/city.data.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/find/city.data-3.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="../../js/login/prefect.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+/* pages/fourtenet/fourtenet.wxss */
+.content{
+    padding: 0 40rpx;
+}
+.top{
+    display: inline-block;
+    line-height: 60rpx;
+    font-size: 36rpx;
+    color: black;
+    font-weight: bolder;
+}
+.text2{
+    line-height: 60rpx;
+    font-size: 36rpx;
+    color: black;
+}
+.title{
+    color: black;
+    font-weight: bolder;
+}

@@ -1,0 +1,7 @@
+{
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "已报名的人员",
+    "backgroundColor":"#ffffff",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh":false
+}

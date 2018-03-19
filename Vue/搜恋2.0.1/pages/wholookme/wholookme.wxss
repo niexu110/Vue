@@ -1,0 +1,72 @@
+/* pages/wholookme/wholookme.wxss */
+.click_nav{
+    height:90rpx;
+    width: 750rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 36rpx;
+    color:#121212;
+    border-bottom: solid 1px #e6e6e6;
+    position: fixed;
+    top:0;
+    background: #fff;
+}
+.contentBox{
+    margin-top: 92rpx;
+}
+.click_nav_1{
+    color:#93b6e0;
+    border-bottom:solid 1px #93b6e0;
+}
+/*中间内容部分*/
+.click_nav_content{
+    height:160rpx;
+    border-bottom:solid 1px #e6e6e6;
+    width:90%;
+    margin: 0 auto;
+}
+.centerbox{
+    margin-left:15rpx;
+    margin-top:40rpx;
+    width: 360rpx;
+}
+.hearsrc{
+    margin-top:30rpx;
+    border-radius:50%;
+    height:104rpx;
+    width: 104rpx;
+}
+/*内容中间*/
+.click_nav_content_center{
+    font-size: 30rpx;
+    color:#333333;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    margin-right:20rpx;
+}
+.ageClass{
+    font-size: 26rpx;
+    color:#ffffff;
+    border-radius:2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 12rpx;
+    padding-right: 12rpx;
+}
+.ageClass image{
+    height:20rpx;
+    width: 20rpx;
+}
+.timeClass{
+    width:100%;
+    margin-top:20rpx;
+    font-size: 28rpx;
+    color:#999999;
+}

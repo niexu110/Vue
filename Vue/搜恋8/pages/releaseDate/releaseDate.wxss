@@ -1,0 +1,247 @@
+/* pages/releaseDate/releaseDate.wxss */
+.releaseDate_container {
+    width: 100%;
+    height: 100%;
+    border-top:1px solid #e6e6e6;
+}
+.releaseDate_allText {
+    width: 95%;
+}
+.releaseDate_releasePeople {
+    width: 100%;
+    height: 160rpx;
+    margin-left: 20rpx;
+    border-bottom: 1px solid #e6e6e6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.releaseDate_releaseImg image{
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 5%;
+    margin-left: 20rpx;
+    margin-top: 20rpx;
+}
+.sexWoman {
+    width: 20rpx;
+    height: 20rpx;    
+}
+.sexman {
+    width: 20rpx;
+    height: 20rpx;        
+}
+.releaseDate_usertitle {
+    font-size: 30rpx;
+    font-weight: 800;
+}
+.releaseDate_username {
+    font-size: 30rpx;
+    font-weight: 800;    
+}
+.releaseDate_userInfo {
+    margin-left: -70rpx;
+}
+.releaseDate_userInfo_first {
+    margin-top: 35rpx;
+} 
+.releaseDate_userInfo_second {
+    margin-top: 20rpx;
+    font-size: 25rpx;
+}
+.releaseDate_userage {
+    margin-left: 10rpx;
+}
+.releaseDate_constellation {
+    margin-left: 47rpx;
+}
+.releaseDate_userstate {
+    margin-left: 17rpx;
+}
+.releaseDate_trustworthiness {
+    margin-top: 50rpx;
+    margin-right: 20rpx;
+    font-size: 25rpx;
+    color: #5793dd;
+    text-align: center;
+}
+.releaseDate_two {
+    margin-top: 10rpx;   
+}
+.releaseDate_declaration {
+    width: 100%;
+    height: 130rpx;
+    margin-left: 20rpx;
+    border-bottom: 1px solid #e6e6e6;
+    display: flex;
+    justify-content: flex-start;
+}
+.declaration_title {
+    font-size: 25rpx;
+    margin-left: 20rpx;
+    margin-top: 20rpx;
+    color: #5793dd;
+}
+.declaration_text {
+    font-size: 24rpx;
+    width: 75%;
+    margin-left: 20rpx;
+    margin-top: 20rpx;
+}
+.releaseDate_body {
+    width: 100%;
+    height: 280rpx;
+    margin-left: 20rpx;
+    border-bottom: 1px solid #e6e6e6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+}
+.onlyBoy {
+    font-size: 24rpx;
+    color: #5793dd;
+}
+.shuttle {
+    font-size: 24rpx;
+    color: #5793dd;
+    margin-left: 50rpx;
+}
+.releaseDate_situation {
+    width: 100%;
+    height: 85rpx;
+    margin-left: 20rpx;
+    border-bottom: 1px solid #e6e6e6;
+    display: flex;
+    justify-content: space-between;
+}
+.releaseDate_placeImg image{
+    width: 260rpx;
+    height: 195rpx;
+    border-radius: 5%;    
+    margin-right: 20rpx;
+    margin-top: 50rpx;
+}
+.releaseDate_text {
+    margin-left: 20rpx;
+    margin-top: 20rpx;
+}
+.releaseDate_textfirst {
+    font-size: 30rpx;
+    font-weight: 800;
+}
+.releaseDate_place {
+    font-size: 26rpx;   
+    margin-top: 10rpx; 
+}
+.releaseDate_placeGps {
+    margin-left: 10rpx;
+}
+.releaseDate_time {
+    font-size: 25rpx;   
+    margin-top: 10rpx;     
+}
+.releaseDate_pay {
+    font-size: 25rpx;   
+    line-height: 50rpx;
+}
+.releaseDate_number {
+    margin-left: 20rpx;    
+    font-size: 25rpx;   
+    line-height: 85rpx; 
+}
+.releaseDate_find {
+    font-size: 25rpx;  
+    color: #5793dd; 
+    line-height: 85rpx;
+    float: right;
+    margin-right: 20rpx;      
+}
+.line {
+    width:100%;
+    height:1px;
+    background-color: #4b85cc;
+    display: block;
+    margin-top: -25rpx;
+}
+.releaseDate_note {
+    color: #feb3c5;    
+    font-size: 25rpx;  
+    text-align: center;  
+    margin-top: 35rpx;
+}
+.releaseDate_button {
+    width: 95%;
+    margin-left: 40rpx;
+    margin-top: 125rpx;
+}
+.girlbutton {
+    color: #fff; 
+    background-color: #feb3c5; 
+}
+.boybutton {
+    color: #fff; 
+    background-color: #5793dd; 
+}
+.applyForPage {
+    position:absolute;
+    width:100%;
+    top:0;
+    left:0;
+    height:100%;
+    z-index:10;
+    background:rgba(0,0,0,.5);
+    display: flex;    
+}
+.applyFor_window {
+    width: 530rpx;
+    height: 585rpx;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 2%; 
+    text-align: center;    
+}
+.applyFor_circle {
+    width: 120rpx;
+    height: 120rpx;    
+    background-color: #fff;
+    margin-top: -60rpx;
+    margin-left: 205rpx;
+    border-top-left-radius:50%; 
+    border-top-right-radius:50%;
+}
+.applyFor_icon {
+    margin-top: -115rpx;
+}
+.applyFor_appointment {
+    margin-top: 40rpx;
+    font-size: 38rpx;
+    font-weight: 800;
+}
+.applyFor_username {
+    margin-top: 30rpx;
+    font-size: 28rpx;    
+}
+.applyFor_wait {
+    margin-top: 12rpx;
+    font-size: 28rpx;    
+}
+.applyFor_many {
+    margin-top: 12rpx;
+    font-size: 24rpx;   
+    color: #bfbfbf; 
+}
+.applyFor_talk {
+    margin-top: 12rpx;
+    font-size: 24rpx;    
+}
+.applyFor_find view{
+    margin-left: 190rpx;    
+    margin-top: 50rpx;
+}
+.applyFor_view {
+    font-size: 30rpx;
+    color: #feb3c5;
+    width: 150rpx;
+    border: 1px solid #feb3c5;
+    padding: 10rpx;
+}

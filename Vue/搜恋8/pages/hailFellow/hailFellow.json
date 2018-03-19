@@ -1,0 +1,7 @@
+{
+    "navigationBarBackgroundColor": "#f9f9f9",
+    "navigationBarTitleText": "我的好友",
+     "backgroundColor":"#ffffff",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh":true
+}

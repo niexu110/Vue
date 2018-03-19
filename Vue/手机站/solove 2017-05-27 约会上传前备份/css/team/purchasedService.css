@@ -1,0 +1,235 @@
+@charset "utf-8";
+.titleBar {
+	margin-top: .9rem;
+	position: fixed;
+	width: 7.5rem;
+	height: .9rem;
+	background: #FFFFFF;
+	border-bottom: 1px solid #E6E6E6;
+	z-index: 10;
+}
+
+.f_containers {
+	width: 7.5rem;
+	height: auto;
+	padding-top: 1.8rem;
+}
+
+.allContent,
+.toBePaid,
+.toUse,
+.alreadyUse,
+.refund {
+	line-height: .9rem;
+	font-size: .3rem;
+}
+
+.allContent {
+	float: left;
+	margin-left: .4rem;
+}
+
+.toBePaid {
+	float: left;
+	margin-left: .8rem;
+}
+
+.toUse {
+	float: left;
+	margin-left: .65rem;
+}
+
+.alreadyUse {
+	float: left;
+	margin-left: .7rem;
+}
+
+.refund {
+	float: right;
+	margin-right: .4rem;
+}
+
+.changeAllContent,
+.changeToBePaid,
+.changeToUse,
+.changeAlreadyUse,
+.changeRefund {
+	margin-top: -.2rem;
+}
+
+.f_toBePaid,
+.f_toUse,
+.f_alreadyUse,
+.f_refund {
+	display: none;
+}
+
+.changeToBePaid,
+.changeToUse,
+.changeAlreadyUse,
+.changeRefund {
+	display: none;
+}
+
+.f_allContent,
+.f_toBePaid,
+.f_toUse,
+.f_alreadyUse,
+.f_refund {
+	width: 7.26rem;
+	float: right;
+}
+
+.line {
+	width: 7.5rem;
+	height: 2rem;
+	border-bottom: 1px solid #E6E6E6;
+	margin-left: -.24rem;
+	padding-top: .3rem;
+	padding-bottom: .3rem;
+}
+
+.f_number {
+	width: 7.26rem;
+	margin-left: .24rem;
+}
+
+.f_number p {
+	font-size: .26rem;
+}
+
+.f_goodsInfo {
+	margin-top: .6rem;
+	margin-left: .24rem;
+}
+
+.f_left {
+	float: left;
+	width: 5.5rem;
+}
+.f_leftPic {
+	width: 1.5rem;
+	height: 1.4rem;	
+	border-radius: 4px;
+	overflow: hidden;
+	float: left;
+}
+.f_left_pic {
+	position: relative;
+	width: 2.5rem;
+	height: 100%;
+}
+
+.f_imgInfo {
+	width: 4rem;
+	margin-left: 1.7rem;
+	margin-top: .15rem;
+	line-height: .36rem;
+}
+
+.f_right {
+	float: right;
+	margin-right: .24rem;
+	text-align: center;
+	margin-top: .15rem;
+}
+
+.code {
+	width: 1rem;
+	font-size: .24rem;
+	color: #FFFFFF;
+	border-radius: 4px;
+	padding-top: .1rem;
+	padding-bottom: .1rem;
+	background-color: #5793DD;
+	margin-top: .2rem;
+}
+
+.f_name {
+	font-size: .32rem;
+	color: #333333;
+}
+
+.f_time,
+.f_money {
+	font-size: .24rem;
+	color: #666666;
+}
+
+.f_bgImg img {
+	position: fixed;
+	width: 5.73rem;
+	height: 6.74rem;
+	margin-top: 1.5rem;
+	margin-left: .4rem;
+}
+
+#allContent,
+#toBePaid,
+#toUse,
+#alreadyUse,
+#refund {
+	line-height: .6rem;
+	text-align: center;
+	color: #5793DD;
+	font-size: .3rem;
+	height: .6rem;
+}
+
+
+/*加载动画*/
+
+#allContent span,
+#toBePaid span,
+#toUse span,
+#alreadyUse span,
+#refund span {
+	width: .15rem;
+	height: .15rem;
+	margin-left: .05rem;
+	border-radius: 50%;
+	background: #5793DD;
+	display: inline-block;
+	-webkit-animation: load 1.04s ease infinite;
+}
+
+#allContent:last-child;
+#toBePaid:last-child;
+#toUse:last-child;
+#alreadyUse:last-child;
+#refund:last-child {
+	margin-right: 0px;
+}
+
+@-webkit-keyframes load {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+#allContent span:nth-child(1);
+#toBePaid span:nth-child(1);
+#toUse span:nth-child(1);
+#alreadyUse span:nth-child(1);
+#refund span:nth-child(1) {
+	-webkit-animation-delay: 0.13s;
+}
+
+#allContent span:nth-child(2);
+#toBePaid span:nth-child(2);
+#toUse span:nth-child(2);
+#alreadyUse span:nth-child(2);
+#refund span:nth-child(2) {
+	-webkit-animation-delay: 0.26s;
+}
+
+#allContent span:nth-child(3);
+#toBePaid span:nth-child(3);
+#toUse span:nth-child(3);
+#alreadyUse span:nth-child(3);
+#refund span:nth-child(3) {
+	-webkit-animation-delay: 0.39s;
+}

@@ -1,0 +1,101 @@
+/* pages/searchB/searchB.wxss */
+.remainder_container{
+    width:100%;
+    height:auto;
+}
+.remainder_top{
+    width:100%;
+    height:425rpx;
+    background:#FEB3C5;
+}
+.remainder_box{
+    width:90%;
+    height:300rpx;
+    margin:0 auto;
+}
+.remainder_title{
+    padding-top:80rpx;
+    width:100%;
+    height:140rpx;
+    color:#fff;
+}
+.remainder_text{
+  font-size:34rpx;
+  font-weight:600;
+}
+.remainder_marney{
+    margin-top:25rpx;
+    font-size:80rpx;
+}
+.remainder_detail{
+    width:100%;
+    height:125rpx;
+    background:#FE9EB5;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+}
+.remainder_cont{
+    flex: 1;
+    width:40%;
+    margin-top:10rpx;
+    height:105rpx;
+    color:#fff;
+    font-size:36rpx;
+    text-align: center;
+}
+.remainder_cont image{
+    padding-top:40rpx;
+    width:45rpx;
+    height:35rpx;
+}
+.remainder_banner{
+    width:90%;
+    margin:40rpx auto 0;
+}
+.remainder_banner_title{
+    width:100%;
+    height:auto;
+}
+.remainder_banner_content{
+    width:100%;
+    height:100rpx; 
+    border-bottom:1rpx solid #efefef;
+}
+.remainder_banner_title>text{
+    color:#101010;
+    font-size:32rpx;
+    font-weight:600;
+}
+.remainder_banner_left{
+    width:40%;
+    height:80rpx;
+    margin-top:20rpx;
+    float:left;
+}
+.remainder_banner_right{
+    width:60%;
+    height:80rpx;
+    float:right; 
+    text-align:right;
+}
+.remainder_banner_text{
+    display:inline-block; 
+    padding-top:20rpx;
+    font-size:32rpx;
+     color:#101010;
+}
+.remainder_date{
+    font-size:22rpx;
+    color:#A0A0A0;
+}
+.remainder_fund{
+    padding-top:20rpx;
+    font-size:26rpx;
+    color:#272727;
+}
+.remainder_funds{
+    font-size:32rpx;
+    font-weight: 600;
+    color:#FEADC0;
+}

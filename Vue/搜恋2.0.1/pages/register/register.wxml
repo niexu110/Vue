@@ -1,0 +1,34 @@
+<view class="container">
+    <!--注册图片-->
+    <view class="bannerMsg">
+        <image src="{{denglu}}"></image>
+    </view>
+    <!--注册表单-->
+    <form class="loginForm" bindsubmit="formSubmit">
+        <!--用户名-->
+        <view class="section">
+            <image class="loginUser" src="{{phoneImg}}"></image>
+            <input type="number" id="userName" bindblur="userBlur" value="" maxlength="11" placeholder="请输入手机号" placeholder-class="placeStyle"/>
+           
+        </view>
+         <!--验证码-->
+        <view class="section  proofCode">
+            <image class="loginUser" src="{{codeImg}}"></image>
+            <input type="number" id="yanzhengCode" bindblur="userBlur" value="" maxlength="6" placeholder="请输入验证码" placeholder-class="placeStyle"/>
+             <text bindtap="{{bindtap}}">{{textHtml}}</text>
+        </view>
+        <!--密码-->
+        <view class="section">
+            <image class="loginPassword" src="{{psdImg}}"></image>
+            <input password="true" bindblur="userBlur" id="password" value="" maxlength="18" placeholder="请设置密码6-18位" placeholder-class="placeStyle"/>
+        </view>
+        <!--注册按钮-->
+        <button form-type="submit" disabled="{{disabled}}">下一步</button>
+        <!--用户协议-->
+        <view class="pact">
+            <image src="{{image}}"></image>
+            <text>注册则表示您同意</text>
+            <text class="pactText" bindtap="sever">《搜恋用户协议》</text>
+        </view>
+    </form>
+</view>

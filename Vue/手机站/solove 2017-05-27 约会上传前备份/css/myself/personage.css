@@ -1,0 +1,374 @@
+@charset "utf-8";
+.d_personageBox{
+	width: 100%;
+	height: 100%;
+}
+p{font-size: 0.26rem;color:#666666;}
+/*内容*/
+.d_topBox{
+}
+.d_headImg{
+	margin-top: 0.9rem;
+	height: 1.2rem;
+	border-bottom: solid 1px #e6e6e6;
+	padding-right: 0.4rem;
+	margin-left: 0.4rem;
+}
+.d_text1{
+	float: left;
+	line-height: 1.2rem;
+}
+.d_inpImg{
+	float: right;
+	margin-top: 0.1rem;
+	width: 1.0rem;
+	height:1.0rem;
+	border-radius:50%;
+}
+.d_topinp{
+	height: 1.0rem;
+	border-bottom: solid 1px #e6e6e6;
+	padding-right: 0.4rem;
+	margin-left: 0.4rem;
+}
+.d_topinp p{
+	float: left;
+	line-height: 1.0rem;
+}
+.d_topinpRight{
+	float: right;
+	border:none;
+	text-align: right;
+}
+.d_rightHui{
+	float: right;
+	margin-top: 0.38rem;
+	height:0.24rem;
+	width: 0.14rem;
+	margin-left: 0.2rem;
+}
+.d_topinpRight span{
+	float: left;
+	display: inline-block;
+	line-height: 1.0rem;
+	width: 1.0rem;
+	text-align: right;
+	width: 3.2rem;
+	font-size: 0.26rem;
+	color:#bbbbbb;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+}
+.mui-btn{text-align: left !important;padding:0 !important;border:none !important;}
+.mui-btn-block{padding:0 !important;margin-bottom:0 !important;}
+/*相册*/
+.d_photoBox{
+	
+}
+.d_phototitle{
+	padding: 0 0.4rem;
+	min-height:1.0rem;
+}
+.d_phototitle p{
+	float: left;
+	line-height: 1.0rem;
+}
+.d_phototitle span{
+	float: right;
+	text-align: right;
+	color:#bbbbbb;
+	line-height: 1.0rem;
+}
+.d_photo{
+	padding: 0 0.3rem;
+	height: 1.7rem;
+	overflow: hidden;
+}
+.d_photo ul li{
+	float: left;
+	height:1.5rem;
+	width:1.5rem;
+	margin: 0 0.1rem 0.2rem 0.1rem;
+	position: relative;
+	overflow: hidden;
+}
+.d_firstphoto{
+	float: left;
+	height:1.5rem;
+	width:1.5rem;
+	margin: 0 0.1rem 0.2rem 0.1rem;
+}
+.d_photo li img{
+	position: absolute;
+	top:0;bottom:0;
+	left:0;right:0;
+	margin:auto;
+	display: block;
+	width: 2.0rem;
+	height:auto;
+}
+/*点击图片*/
+.content{
+	width:7.5rem;
+	height:100%;
+	position: relative;
+	overflow:hidden;
+}
+.img{
+	position: absolute;
+	top:0;
+	left:0;right:0;bottom:0;
+	margin:auto;
+	width:100%;
+	height:100%;
+	box-sizing: border-box;
+	padding:.2rem .2rem;
+}
+.img li{
+	width:1.5rem;
+	height:1.5rem;
+	border-radius: 4px;
+	float:left;
+	margin-left:.2rem;
+	overflow: hidden;
+	position: relative;
+}
+.img li img{
+	position: absolute;
+	top:0;left:0;bottom:0;right:0;
+	margin:auto;
+	display: block;
+	width:100%;
+	height:100%;
+}
+.mask{
+	display: none;
+	position: fixed;
+	top:0;
+	left:0;
+	margin:auto;
+	height: 14.0rem;
+	width: 100%;
+	background: rgba(0,0,0,.7);
+	z-index: 10;
+}
+.showImg{
+	display: none;
+	position: fixed;
+	top:0;left:0;bottom:0;right:0;
+	margin:auto;
+	overflow: hidden;
+	height:100%;
+	width:100%;
+	z-index: 15;
+}
+.showImg ul{
+	position: fixed;
+	top:0;left:0;
+	margin:auto;
+	width:100%;
+	height:100%;
+}
+.showImg ul li{
+	width:7.5rem;
+	height:100%;
+	float:left;
+	position: relative;
+}
+.showImg ul li img{
+	position: absolute;
+	display: block;
+	top:0;left:0;bottom:0;right:0;
+	margin:auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+/* 浮框*/
+.d_windowbg,.d_windowbg2,.d_windowbg3,.d_windowbg4,.d_windowbg5,.d_windowbg6,.d_windowbg7,.d_windowbg8,.d_windowbg9,.d_windowbg10,.d_windowbg11,.d_windowbg12,.d_windowbg13{
+	display: none;
+	width: 100%;
+	top:0;
+	left: 0;
+	height: 15.0rem;
+	position: fixed;
+	background:rgba(50,50,50,0.5);
+	z-index: 50;
+}
+.d_window{
+	position: fixed;
+	height:2.5rem;
+	width: 5.0rem;
+	top:4.5rem;
+	left:1.25rem;
+	background: #fff;
+	align-items: center;
+	border-radius: 0.06rem;
+	z-index: 2;
+	text-align: center;
+}
+.d_window b{
+	font-size: 0.24rem;
+	line-height: 0.6rem;
+	color:#121212;
+}
+.d_window h3{
+	font-size: 0.22rem;
+	color:#333333
+}
+.d_window input{
+	font-size: 0.22rem;
+	color:#666666;
+	line-height: 0.8rem;
+	border: none;
+	text-align: center;
+	outline:medium;
+}
+.d_click{
+	width: 5.0rem;
+	border-top: solid 1px #e6e6e6;
+}
+.d_click>div{
+	float: left;
+	height: 1.0rem;
+	width: 50%;
+	text-align: center;
+	line-height: 0.8rem;
+	font-size: 0.28rem;
+	color:#5793DD;
+}
+.d_click>p{
+	float: right;
+	height: 1.0rem;
+	width: 50%;
+	text-align: center;
+	line-height: 0.8rem;
+	font-size: 0.28rem;
+	color:#5793DD;
+}
+/* 下方显示*/
+.d_windowmin,.d_windowmin2,.d_windowmin3,.d_windowmin4,.d_windowmin5,.d_windowmin6,.d_windowmin7{
+	width: 7.0rem;
+	position: fixed;
+	bottom: 1.1rem;
+	left:0.25rem;
+	max-height:10.0rem;
+	overflow: auto;
+}
+.d_windowson{
+	font-size: 0.26rem;
+	color: #333333;
+	text-align: center;
+	line-height: 0.8rem;
+	border-radius:0.06rem;
+	height:0.8rem;
+	background: #fff;
+	border-bottom: solid 1px #e6e6e6;
+}
+.d_selected{
+	background: #E6E6E6;
+}
+.d_calloff{
+	margin-top: 0.2rem;
+	width: 7.0rem;
+	font-size: 0.26rem;
+	color: #5793DD;
+	text-align: center;
+	line-height: 0.8rem;
+	border-radius:0.06rem;
+	height:0.8rem;
+	background: #fff;
+	position: fixed;
+	bottom: 0.1rem;
+	left:0.25rem;
+}
+/*上传图片*/
+.d_setimg{
+	float: left;
+	position: relative;
+	height:1.5rem;
+	width: 1.5rem;
+	margin-right: 0.2rem;
+}
+#d_btn{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height:1.5rem;
+	width: 1.5rem;
+	z-index: 2;
+	filter:alpha(opacity:0);
+	opacity: 0;
+}
+.d_firstphoto{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/*兴趣爱好，我喜欢的异性类*/
+.d_like,.d_opposite{
+	display: none;
+	background: rgba(50,50,50,0.5);
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 800;
+}
+.d_likeBox,.d_oppositeBox{
+	background: #ffffff;
+	width: 90%;
+	height: 85%;
+	position: fixed;
+	top:10%;
+	left: 5%;
+}
+.d_liketop,.d_oppositetop{
+	height: 1.0rem;
+	margin: 0 0.4rem;
+	border-bottom: solid 1px #E6E6E6;
+}
+.d_likep,.d_oppositep{
+	float: left;
+	font-size: 0.28rem;
+	color: #666666;
+	line-height: 1.0rem;
+}
+.d_likep span,.d_oppositep span{
+	font-size: 0.2rem;
+	color: #5397DD;
+}
+.d_likespan,.d_oppositespan{
+	float: right;
+	font-size: 0.4rem;
+	line-height: 1.0rem;
+	color: #111111;
+}
+.d_likecontent,.d_oppositecontent{
+	clear: both;
+	padding: 0 0.4rem;
+	height: 80%;
+	overflow: auto;
+}
+.d_likebottom,.d_oppositebottom{
+	height: 0.9rem;
+	width: 90%;
+	background: #5397DD;
+	font-size: 0.34rem;
+	color: #ffffff;
+	line-height: 0.9rem;
+	text-align: center;
+	position: fixed;
+	bottom: 5%;
+	left: 5%;
+}
+.d_liketel,.d_oppositetel{
+	float: left;
+	padding: 0.2rem;
+	font-size: 0.22rem;
+	color: #999999;
+	border: solid 1px #E6E6E6;
+	margin: 0.15rem 0.2rem;
+	border-radius: ;
+}

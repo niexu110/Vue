@@ -1,0 +1,123 @@
+html,body{
+	height: 100%;
+	padding-bottom:1rem;
+}
+header{
+	width: 7.5rem;
+	height: .9rem;
+	background: #f9f9f9;
+	border-bottom: 1px solid #e6e6e6;
+	text-align: center;
+	line-height: .9rem;
+}
+.head a{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: .24rem;
+}
+.headMiddle{
+	font-size: .34rem;
+	font-weight: bold;
+}
+.content{
+	padding: 0rem .24rem .24rem;
+	border-bottom: 1px solid #e6e6e6;
+}
+.content p{
+	font-size: .32rem;
+	font-weight: bold;
+}
+.content div{
+	margin-top: .24rem;
+	padding-left: .3rem;
+	height: .94rem;
+	border-radius: 3px;
+}
+.content div p{
+	float: left;
+}
+.content div p:first-child{
+	width: .4rem;
+	height: .4rem;
+	margin-top: .27rem;
+}
+.content div p:first-child img{
+	width: 100%;
+}
+.content div p:last-child{
+	line-height: .94rem;
+	padding-left: .3rem;
+	font-size: .3rem;
+	font-weight: normal;
+}
+.content h6{
+	font-size: .32rem;
+	color: #333;
+	margin-top: .25rem;
+}
+.content div:nth-of-type(1){
+	background: #e9f6fe;
+}
+.content div:nth-of-type(2){
+	background: #fdf4e5;
+}
+.content div:nth-of-type(3){
+	background: #fde5fc;
+}
+.content div:nth-of-type(4){
+	background: #e9f8f3;
+}
+.content div:nth-of-type(5){
+	background: #f8e9e9;
+}
+.content div:nth-of-type(1) p:last-child{
+	color: #5793dd;
+}
+.content div:nth-of-type(2) p:last-child{
+	color: #f2a44e;
+}
+.content div:nth-of-type(3) p:last-child{
+	color: #f33aeb;
+}
+.content div:nth-of-type(4) p:last-child{
+	color: #07a670;
+}
+.content div:nth-of-type(5) p:last-child{
+	color: #d61a1a;
+}
+.info{
+	margin-left: .24rem;
+	width: 7.26rem;
+}
+.info div{
+	height: 1.2rem;
+	line-height: 1.2rem;
+	border-bottom: 1px solid #e6e6e6;
+}
+.info div p{
+	float: left;
+}
+.info div p:first-child{
+	width: 60%;
+	text-align: left;
+}
+.info div p:last-child{
+	box-sizing: border-box;
+	padding-right: .24rem;
+	width: 40%;
+	text-align: right;
+	color: #5397dd;
+}
+input[type="button"]{
+	display: block;
+	background: #5793dd;
+	border-radius: 3px;
+	border: none;
+	width: 7.02rem;
+	height: .94rem;
+	margin: .3rem auto;
+	font-size: .32rem;
+	color: #fff;
+	outline: none;
+}

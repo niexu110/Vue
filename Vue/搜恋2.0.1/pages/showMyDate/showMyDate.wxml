@@ -1,0 +1,52 @@
+<!--pages/showMyDate/showMyDate.wxml-->
+<view class="showMyDat_container">
+    <form bindsubmit="formSubmit">
+        <view class="showMyDat_head"> 
+            <!--场地信息-->
+            <view class="showMyDat_placeInfo">
+                <view class="showMyDat_placeImg">
+                    <image src="{{placeImg}}"></image>
+                </view>
+                <view class="showMyDat_information">
+                    <view class="showMyDat_placeName">{{placeName}}</view>
+                    <view class="showMyDat_gps">
+                        <image src="{{gpsImg}}"></image>
+                        <text>{{location}}</text>
+                    </view>
+                    <view class="showMyDat_money">价格：{{money}}搜恋币</view>
+                </view>
+            </view>
+            <!--星级,评价-->
+            <view class="showMyDat_appraise">
+                <view class="showMyDat_first">约会满意度</view>
+                <view class="showMyDat_second">
+                    <block wx:for="{{stars}}">
+                        <image class="star-image" style="left: {{item*150}}rpx" src="{{key > item ?selectedSrc : normalSrc}}">
+                            <view class="item" data-key="{{item+1}}" bindtap="selectRight"></view>
+                        </image>   
+                    </block>
+                </view>
+            </view>
+            <view class="myText" >
+                <textarea name="myText" placeholder-style="font-size:24rpx;" placeholder="约会进行的怎么样啊?服务周到吗？商家环境如何？献上你20字的评价吧！"/>
+            </view>
+            <!--上传照片-->       
+            <view class="showMyDat_upload">
+                <view class="img-add" bindlongtap="editImage" wx:for="{{uploadimgs}}" id="{{index}}">
+                    <icon class="icon" type="clear" size="20" color="#5793dd" id="{{index}}" bindtap="deleteImg"/>
+                    <image class="img-css" src="{{item}}" mode="aspectFill"></image>
+                </view>
+                <view class="img-add">
+                    <image src="http://img.qinyikou.cc/icons/n_updown.png"  bindtap="chooseImage"></image>
+                </view>
+                <view class="img-max">
+                    <text>最多可上传6张</text>
+                </view>
+            </view>
+        </view>
+        <!--按钮-->
+        <view class="showMyDat_button">
+            <button class="button" formType="submit">发\n布</button>
+        </view>
+    </form>
+</view>

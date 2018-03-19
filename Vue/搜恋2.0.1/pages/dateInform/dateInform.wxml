@@ -1,0 +1,27 @@
+<!--pages/dateInform/dateInform.wxml-->
+<view>
+    <view class="listBox" wx:for="{{datelist}}">
+        <view class="timeClass"><text>{{item.time}}</text></view>
+        <view class="contentBox">
+            <view class="contentTop">
+                <text>{{item.username}}</text>
+            </view>
+            <view class="contentContent">
+                <text>{{item.content}}</text>
+            </view>
+            <view class="contentCenter">
+                <image src="{{item.img}}"></image>
+                <view>
+                    <text>{{item.title}}</text>
+                    <view class="dataTime">
+                        <text>{{item.dataTime}}</text>
+                    </view>
+                </view>
+            </view>
+            <view class="chakan">
+                <text>点击查看</text>
+            </view>
+        </view>
+        
+    </view>
+</view>

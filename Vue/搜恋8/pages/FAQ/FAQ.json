@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText":"常见问题",
+    "navigationBarBackgroundColor": "#f9f9f9",
+    "backgroundColor":"#f9f9f9",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh":false
+}

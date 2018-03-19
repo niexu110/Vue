@@ -1,0 +1,43 @@
+<!--pages/oneparty/oneparty.wxml-->
+<view class="oneparty_container">
+    <view class="oneparty_nav">
+        <view bindtap="clicknav1" class="{{navclass1}}">最新发布</view>
+        <view bindtap="clicknav3"  class="{{navclass3}}">价格最低</view>
+    </view>
+    <view wx:if="{{box1}}" class="contentBox">
+        <block wx:for="{{content1}}" >
+            <view class="content">
+                <image mode="aspectFill" bindtap="{{item.imgload}}" data-id="{{item.id}}" data-name="{{item.name}}" class="titleimg" id="{{index}}"  src="{{item.images}}" ></image>
+                <view class="titletext">{{item.name}}</view>
+                <view class="addressbox">
+                    <image class="timeimg" mode="aspectFit" src="{{item.photo1}}"></image>
+                    <text class="timetext">{{item.date_time}}</text>
+                </view>
+                <view class="addressbox">
+                    <image class="siteimg" mode="aspectFit" src="{{item.photo2}}"></image>
+                    <text class="sitetext">{{item.address}}</text>
+                </view>
+                <view class="moneyClass">
+                    <text class="moneytext">{{item.price}}元</text>/人
+                </view>
+            </view>
+        </block>
+    </view>
+    <view wx:else class="contentBox">
+        <view class="content" wx:for="{{content3}}" >
+            <image mode="aspectFill" bindtap="{{item.imgload}}" data-id="{{item.id}}" data-name="{{item.name}}" class="titleimg" id="{{index}}"  src="{{item.images}}" ></image>
+            <view class="titletext">{{item.name}}</view>
+            <view class="addressbox">
+                <image class="timeimg" mode="aspectFit" src="{{item.photo1}}"></image>
+                <text class="timetext">{{item.date_time}}</text>
+            </view>
+            <view class="addressbox">
+                <image class="siteimg" mode="aspectFit" src="{{item.photo2}}"></image>
+                <text class="sitetext">{{item.address}}</text>
+            </view>
+            <view class="moneyClass">
+                <text class="moneytext">{{item.price}}元</text>/人
+            </view>
+        </view>
+    </view>
+</view>

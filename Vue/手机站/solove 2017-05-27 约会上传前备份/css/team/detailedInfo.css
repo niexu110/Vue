@@ -1,0 +1,187 @@
+@charset "utf-8";
+.t_containers {
+	width: 7.5rem;
+	height: auto;
+	padding-bottom: 1rem;
+}
+
+.t_bigPic {
+	width: 7.5rem;
+	height: 3.9rem;
+	background-color: #FFFFFF;
+}
+
+.t_rightIcon {
+	position: absolute;
+	width: .18rem;
+	height: .32rem;
+	margin-top: .3rem;
+	margin-left: .4rem;
+}
+
+.t_bigPic_pic {
+	width: 7.5rem;
+	height: 3.9rem;
+}
+
+.t_name {
+	width: 100%;
+	height: 1.4rem;
+	line-height: 1.4rem;
+	text-align: center;
+	background-color: #FFFFFF;
+}
+
+.t_name p {
+	font-size: .36rem;
+	color: #666666;
+}
+
+.t_peoplePic {
+	width: 7.5rem;
+	height: 1rem;
+	background-color: #FFFFFF;
+	text-align: center;
+}
+
+.t_peoplePic ul {
+	height: 1rem;
+}
+
+.t_goIcon {
+	width: .14rem;
+	height: .24rem;
+	margin-left: .1rem;
+	margin-bottom: .15rem;
+}
+
+.t_img {
+	width: .6rem;
+	height: .6rem;
+	border-radius: 50%;
+}
+
+.t_visitNum {
+	width: 100%;
+	height: .63rem;
+	background-color: #FFFFFF;
+	border-bottom: .2rem solid #f9f9f9;
+}
+
+.t_boy {
+	margin-left: 1.7rem;
+}
+
+.t_boy,
+.t_girl {
+	float: left;
+	margin-top: .05rem;
+	width: .18rem;
+	height: .18rem;
+}
+
+.t_boyNum {
+	float: left;
+	font-size: .24rem;
+	color: #5793dd;
+	margin-left: .1rem;
+	margin-right: .2rem;
+}
+
+.t_girlNum {
+	float: left;
+	margin-left: .1rem;
+	font-size: .24rem;
+	color: #FEB3C5;
+}
+
+.t_everyNum,
+.t_alreadyNum {
+	float: left;
+	font-size: .24rem;
+	color: #999999;
+	margin-left: .2rem;
+}
+
+.t_wordList {
+	width: 7.5rem;
+	background-color: #FFFFFF;
+}
+
+.lineInfo {
+	float: right;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	padding-right: .4rem;
+	width: 6.7rem;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.lineInfo_icon,
+.lineInfo_last_icon {
+	width: .28rem;
+	height: .28rem;
+	border-radius: 50%;
+	float: left;
+	margin-top: .03rem;
+}
+
+.lineInfo_rightIcon {
+	width: .15rem;
+	height: .25rem;
+	float: right;
+	margin-top: -.28rem;
+}
+
+.lineInfo p {
+	font-size: .28rem;
+	color: #666666;
+	margin-left: .6rem;
+}
+
+.lineInfo_other {
+	float: right;
+	padding-top: .5rem;
+	padding-right: .4rem;
+	padding-bottom: 1.3rem;
+	width: 6.7rem;
+}
+
+.lineInfo_p {
+	margin-left: .6rem;
+}
+
+.t_visitButton {
+	width: 7.5rem;
+	height: 1rem;
+	position: fixed;
+	bottom: 0%;
+	background-color: #5793dd;
+	font-size: .34rem;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 1rem;
+}
+
+.t_advice {
+	display: none;
+	text-align: center;
+	background-color: rgba(50,50,50,.5);
+	border-radius: 4px;
+	position: fixed;
+	width: 3.5rem;
+	height: 1.8rem;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	margin-top: 7rem;
+	margin-left: 2.3rem;
+}
+.t_advice span {
+	color: red;
+	font-size: .7rem;
+	border-radius: 50%;
+}
+.t_message {
+	color: #FFFFFF;
+}

@@ -1,0 +1,4 @@
+<!--pages/qidong/qidong.wxml-->
+<view>
+    <image src="{{img}}"></image>
+</view>

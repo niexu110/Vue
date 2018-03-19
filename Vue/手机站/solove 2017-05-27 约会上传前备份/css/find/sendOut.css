@@ -1,0 +1,108 @@
+/*发红包*/
+html,body{
+	height: 100%;
+	background: #fff;
+}
+s{
+	text-decoration: none;
+	color: #aaa;
+}
+.IMG{
+	padding-top: .28rem;
+	margin-left: -.5rem
+}
+.sendOut{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: .9rem;
+	bottom: 0;
+	background: url(../../img/h_hongbaoBg.png) no-repeat left top;
+	background-size: 7.5rem 12.4rem;
+}
+input[type="text"],input[type="number"]{
+	width: 5.3rem;
+	height: .4rem;
+	border: none;
+	font-size: .3rem;
+	text-align: right;
+	padding-right: 0.1rem;
+	color:#333333;
+	line-height: .4rem;
+	outline:none;
+}
+ul li p{
+	margin: 0;
+	padding: 0;
+}
+ul li p img{
+	width: .33rem;
+	height: .4rem;
+}
+ul li{
+	width: 7.26rem;
+	height: 1.1rem;
+	border-bottom: 1px solid #e6e6e6;
+	padding: .41rem .24rem .41rem 0;
+	margin-left: .24rem;
+	box-sizing: border-box;
+}
+ul li:first-child{
+	height: 1.9rem;
+}
+ul li p span:last-child{
+	float: right;
+	height: .39rem;
+	color:#3333;
+}
+ul li:first-child span:first-child img{
+	vertical-align: middle;
+	margin-right: .1rem;
+}
+ul li span:first-child{
+	color: #111111;
+	line-height: .4rem;
+	font-size: .3rem;
+}
+ul li:first-child em{
+	display: block;
+	font-size: .3rem;
+	margin-top: .26rem;
+	color: #aaa;
+}
+.sendOut .text{
+	margin-top: 1.1rem;
+	text-align: center;
+	font-size: 1rem;
+	color: #000;
+}
+input[type="button"]{
+	display: block;
+	width: 6.7rem;
+	height: .9rem;
+	margin: .6rem auto .5rem;
+	background: #ff504f;
+	color: #fff;
+	font-size: .34rem;
+	border: none;
+}
+h6{
+	display: block;
+	text-align: center;
+	font-size: .28rem;
+	color: #5397dd;
+}
+/*弹框*/
+.d_popupbox{
+	display: none;
+	width: 4.0rem;
+	padding: 0.2rem;
+	border-radius: 0.06rem;
+	font-size: 0.26rem;
+	color: #fff;
+	position: fixed;
+	bottom:10%;
+	left: 1.75rem;
+	background: rgba(50,50,50,0.5);
+	text-align: center;
+}

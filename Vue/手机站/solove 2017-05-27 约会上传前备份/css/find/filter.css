@@ -1,0 +1,128 @@
+@charset "utf-8";
+html,body{height:100%;background: #ffffff;}
+.head{
+	width:6.7rem;
+	margin:0 auto;
+	position: relative;
+}
+.headLeft{
+	height:.9rem;
+}
+.headMiddle{
+	width:2rem;
+	margin:auto;
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	text-align: center;
+}
+/*遮罩层*/
+.mask{
+	display: none;
+	width:7.5rem;
+	height:100%;
+	background: rgba(0,0,0,.4);
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 999;
+}
+/*筛选弹窗*/
+.filter{
+	display: block;
+	width:6.7rem;
+	height:100%;
+	background: #ffffff;
+	margin:.9rem auto 0;
+	box-sizing: border-box;
+	padding:.4rem .2rem 0;
+}
+.filterC{
+	width:6.3rem;
+	margin:0 auto;
+}
+.filterC h2{
+	padding-bottom:.2rem;
+	border-bottom:1px solid #e6e6e6;
+	font-size:.26rem;
+	color:#444444;
+}
+.sexChoice{
+	padding-top:.4rem;
+	margin-bottom:.36rem;
+}
+.sexChoice span{
+	display: inline-block;
+	margin-left:.2rem;
+	width:1.76rem;
+	height:.6rem;
+	text-align: center;
+	font-size:.3rem;
+	border-radius: 4px;
+	line-height: .6rem;
+}
+.sexChoice span.all{
+	border:1px solid #cfcfcf;
+	color:#ffffff;
+	background: #a6a6a6;
+}
+.sexChoice span.boys{
+	border:1px solid #5793dd;
+	color:#5793dd;
+}
+.sexChoice span.girls{
+	border:1px solid #feb3c5;
+	color:#feb3c5;
+}
+/*筛选条件*/
+.filterFactor{
+	
+}
+.filterFactor li{
+	height:.9rem;
+	line-height: .9rem;
+	font-size:.3rem;
+	color:#a6a6a6;
+	border-bottom:1px solid #e6e6e6;
+}
+.filterFactor li s{
+	float:right;
+	text-decoration: none;
+	padding-right:.35rem;
+	background: url('../../img/icon/d_rightHui.jpg') no-repeat;
+	background-position: right center;
+	background-size: .14rem .24rem;
+}
+/*弹窗*/
+.filterargument{
+	display: none;
+	position: absolute;
+	bottom:0;
+	left:0;right:0;
+	margin:0 auto;
+	width:6.7rem;
+	z-index: 9999;
+}
+.filterargument ul{border-radius: 4px;}
+.filterargument p{
+	height:.8rem;
+	line-height: .8rem;
+	text-align: center;
+	color:#feb3c5;
+	margin-top:.2rem;
+	background:#ffffff;
+		border-radius: 4px;
+}
+.filterargument li{
+	text-align: center;
+	height:.7rem;
+	line-height: .7rem;
+	font-size: .34rem;
+	color:#333333;
+	background: #ffffff;
+	border-bottom:1px solid #e6e6e6;
+}
+/*.mui-btn{text-align: left !important;padding:0 !important;border:none !important;}
+.mui-btn-block{padding:0 !important;margin-bottom:0 !important;}*/

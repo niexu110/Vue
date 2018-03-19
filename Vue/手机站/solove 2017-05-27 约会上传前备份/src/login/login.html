@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+	<meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../../css/headerFoot.css">
+	<link rel="stylesheet" type="text/css" href="../../css/login/login.css">
+    <script type="text/javascript" src='../../js/jquery-2.1.4.min.js'></script>
+    <script type="text/javascript" src='../../js/MD5.js'></script>
+    <script>
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+    </script>
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="headTop">
+		<img src="../../img/icon/x_login_icon.png" alt="">
+		<header>
+			<div class="head">
+				<div class="headLeft">
+					<a  href="javascript:history.go(-1);"></a>  
+				</div>
+				<div class="headMiddle">
+					登录
+				</div>
+				<div class="headRight">
+					<span></span>
+				</div>
+			</div>	
+		</header>
+	</div>
+	<!-- 登陆表单 -->
+	<div class="loginForm">
+	<!-- /action="http://m.solian.cc/index.php/Home/Index/login" -->
+		<form  method="post" accept-charset="utf-8">
+			<!-- 手机号 -->
+			<div class="userPhone">
+				<span></span>
+				<input id="userPhone" type="number" name="username" value='' placeholder="请输入手机号">
+			</div>
+			<!-- 密码 -->
+			<div class="userCode">
+				<span></span>
+				<input id="userCode" type="password" name="password" value='' placeholder="请输入密码">
+			</div>
+			<div class="allow">
+				还没有搜恋账号？
+				<a class="register" href="prefect.html">立即注册</a>
+				<a class="forget" href="modify.html">忘记密码？</a>
+			</div>
+
+			<button type="button" id="submitBtn">登&nbsp;&nbsp;录</button>
+		</form>
+	</div>
+	<!-- 错误弹窗 -->
+	<p class="error"></p>
+</body>
+<script type="text/javascript" src='../../js/login/login.js'></script>
+</html>

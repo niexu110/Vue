@@ -1,0 +1,54 @@
+/* pages/intercalate/intercalate.wxss */
+.intercalate_container{
+    width:100%;
+    background:#f9f9f9;
+    border-top: 1rpx solid #e6e6e6;
+}
+.intercalate_boxs{
+    width:100%;
+    height:auto;
+    background:#ffffff;
+}
+.intercalate_box{
+    width:90%;
+    height:auto;
+    margin:0 auto;
+    font-size: 28rpx;
+    color:#888888;
+}
+.intercalate_title{
+    width:100%;
+    height:100rpx;
+    line-height:100rpx;
+    border-bottom:1rpx solid #e6e6e6;
+}
+.intercalate_title_rights {
+    float: right
+}
+.intercalate_title_left_one{
+    font-weight:500;
+}
+.intercalate_title_left_two{
+    float:right;
+    font-weight:500;
+}
+.intercalate_title_right{
+    float:right;
+    width:30rpx;
+    height:30rpx;
+    margin-top:35rpx;
+}
+.btn{
+    width:90%;
+    height:90rpx;
+    margin-top:40rpx;
+    line-height:90rpx;
+    font-size:30rpx;
+    font-weight:bold;
+    background:#5893DD;
+    color:#ffffff;
+}
+.intercalates{
+    background:#5893DD;
+    color:#ffffff;
+}

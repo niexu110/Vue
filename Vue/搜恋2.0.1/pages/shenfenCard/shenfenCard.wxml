@@ -1,0 +1,15 @@
+<!--pages/shenfenCard/shenfenCard.wxml-->
+<form bindsubmit="formSubmit">
+    <view class="banner">
+        <image src="{{image}}"></image>
+    </view>
+    <view class="contentBox">
+        <text>姓名</text>
+        <input name="input" placeholder="请输入真实姓名" />
+    </view>
+     <view class="contentBox">
+        <text>身份证号</text>
+        <input name="input2" placeholder="请输入18位身份证号" />
+    </view>
+    <button class="button" formType="submit">认证</button>
+</form>

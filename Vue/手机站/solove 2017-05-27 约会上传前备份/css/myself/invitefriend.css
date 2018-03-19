@@ -1,0 +1,96 @@
+@charset "utf-8";
+header{
+    width:7.5rem;
+    height:0.9rem;
+    text-align: center;
+    line-height: .9rem;
+    font-size:.34rem;
+    color:#333;
+    font-weight:bold;
+}
+.content{
+    position: relative;
+    width:7.5rem;
+    height:12.44rem;
+    background: url("../../img/x_yaoqing_bj.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.erCode{
+    position: absolute;
+    top:3.4rem;
+    left:0;
+    right:0;
+    margin:0 auto;
+    width:5.6rem;
+    height:4.65rem;
+    background: #fff;
+    border-radius: .2rem .2rem 0 0;
+    padding:.4rem 0 .3rem 0;
+    box-sizing:border-box;
+}
+.code{
+    width:3.4rem;
+    height:3.4rem;
+    position: relative;
+    margin:.4rem auto;
+    border:2px solid #bbbbbb;
+}
+.code h1{
+    position: absolute;
+    top:-.2rem;
+    left:0;right:0;
+    margin:auto;
+    width:1.5rem;
+    height:.4rem;
+    line-height: .4rem;
+    text-align: center;
+    font-size:.24rem;
+    font-weight:bold;
+    background: #fff;
+    color:#333;
+}
+.code img{
+    display: block;
+    width:2.6rem;
+    height:2.6rem;
+    margin:.4rem auto 0;
+}
+.fenge{
+    position: absolute;
+    top:8rem;
+    left:0;
+    right:0;
+    margin:0 auto;
+    width:5.6rem;
+    height:.34rem;
+    background: url("../../img/x_fenge.png") no-repeat;
+    background-size: 100%;
+}
+.explainText{
+    padding:.2rem 0;
+    position: absolute;
+    top:8.34rem;
+    left:0;
+    right:0;
+    margin:0 auto;
+    width:5.6rem;
+    height:2.6rem;
+    background: #fff;
+    border-radius:0 0 .2rem .2rem;
+}
+.explainText li{
+    text-align: left;
+    box-sizing: border-box;
+    padding:0 .3rem;
+}
+#jiathis_weixin_modal{
+	margin: auto!important;
+	width: 6.5rem!important;
+	min-height: 7.0rem!important;
+	padding-bottom:.3rem!important;
+	position: fixed;
+	left:0!important;
+	bottom:0!important;
+	right:0!important;
+	top:0!important;
+}

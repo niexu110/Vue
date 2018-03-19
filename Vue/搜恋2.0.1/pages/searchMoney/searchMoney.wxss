@@ -1,0 +1,75 @@
+/* pages/searchMoney/searchMoney.wxss */
+.container{
+    width:100%;
+    height:auto;
+}
+.container_box{
+    width:100%;
+    height:220rpx;
+    background:#FEB3C5;
+}
+.boxs,.box{
+    width:90%;
+    margin:0 auto;
+}
+.box text{
+    display: block;
+    color:#fff;
+    font-size:34rpx;
+    padding-top:38rpx;
+}
+.box .money{
+    font-size:80rpx;
+    padding-top:30rpx;
+}
+.text{
+    color:#101010;
+    font-size:32rpx;
+    height:180rpx;
+    line-height:180rpx;
+    border-bottom:1px solid #EFEFEF;
+}
+.boxs_money{
+    width:100%;
+    height:120rpx;
+    line-height:120rpx;
+    border-bottom:1px solid #ECECEC;
+}
+.img{
+    float:left;
+    padding-top:20rpx;
+    width:60rpx;
+    height:60rpx;
+}
+.img image{
+    width:60rpx;
+    height:60rpx;
+}
+.slText{
+    float:left;
+    margin-left:30rpx;
+    font-size: 30rpx;
+    text-align: center;
+    height:120rpx;
+    color:#747474;
+    line-height: 120rpx;
+}
+.slText>text{
+    color:#BBBBBB;
+}
+.box_right{
+    margin-top:30rpx;
+    float:right;
+    width:140rpx;
+    height:65rpx;
+    font-size:32rpx;
+    line-height:65rpx;
+    color:#fff;
+    font-weight:bold;
+    padding-left:35rpx;
+    background:#FF9AB2; 
+}
+.box_right>image{
+    width:35rpx;
+    height:32rpx;
+}

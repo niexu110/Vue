@@ -1,0 +1,135 @@
+/*pages/giftgains/giftgains.wxml*/
+.my_container {
+    padding:0;
+    margin:0;
+    width:100%;
+    height:auto;
+}
+.giftgains_top {
+    background-color:#5793dd;
+    width:100%;
+    height:350rpx;
+    position:absolute;
+}
+.giftgains_first {
+    margin-top: 40rpx;
+}
+.giftgains_get {
+    text-align: center;
+    font-size: 35rpx;
+    color: #ffffff;  
+}
+.giftgains_num {
+    margin-top: 35rpx;
+    text-align: center;
+    font-size: 60rpx;
+    color: #ffffff;
+}
+.giftgains_gains {
+    float: left;
+    margin-top:40rpx;
+    width:100%;
+    height: 90rpx;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: center;
+}
+.giftgains_gains :last-child{
+    border:none;
+}
+.giftgains_red {
+    color:#fff;
+    font-size:30rpx;
+    text-align: center;
+    flex:1;  
+    border-right:1rpx solid #fff; 
+}
+.giftgains_red  .giftgains_money{
+    padding-top:10rpx;
+    display: block;
+    font-size:30rpx;
+}
+
+.giftgains_banner {
+    margin-top:350rpx;
+    width:100%;
+    height: 200rpx;
+    position:absolute;
+}
+.giftgains_content {
+    width: 100%;
+    height: 100rpx;
+}
+.giftgains_icon{
+    margin-top: 30rpx;
+    float:left;
+    width:40rpx;
+    height:38rpx;
+    margin-left: 40rpx;
+    border-radius: 10rpx;
+}
+.giftgains_box {
+    float: right;
+    width: 90%;
+    height: 50rpx;
+    border-bottom: 1rpx solid #e6e6e6;
+}
+.giftgains_txt {
+    font-size: 30rpx;
+    margin-left: 80rpx;
+    margin-top: -30rpx;
+}
+.giftgains_right {   
+    float:right;
+    margin-right: 40rpx;
+    margin-top: -35rpx;
+}
+.giftgains_right image{
+
+    width:14rpx;
+    height:24rpx;
+}
+.giftgains_withdraw {
+    margin-top:620rpx;
+    margin-left: 39rpx;
+    background-color:#5793dd; 
+    width:90%;
+    height: 90rpx;
+    position:absolute;
+    border-radius: 10rpx;
+    text-align: center;
+
+}
+.giftgains_withdraw_text {
+    color: #ffffff;
+    margin:25rpx auto; 
+    letter-spacing:20rpx;
+}
+.giftgains_settlement {
+    margin-top: 740rpx;
+    width:100%;
+    position:absolute; 
+    font-size: 24rpx;
+}
+.giftgains_settlement text {
+    font-size: 24rpx;
+    margin-left: 17rpx;
+    color:#666666;
+}
+.giftgains_importent {
+    float:left;
+    width:24rpx;
+    height:24rpx;
+    margin-left: 39rpx;
+    border-radius: 10rpx;
+}
+.giftgains_explain {
+    margin-top:795rpx;
+    margin-left: 39rpx;
+    width:90%;
+    height: 200rpx;
+    position:absolute;
+    font-size: 22rpx;
+    line-height: 35rpx;
+}
+    

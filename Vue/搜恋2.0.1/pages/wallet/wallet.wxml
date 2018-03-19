@@ -1,0 +1,53 @@
+<!--pages/wallet/wallet.wxml-->
+<view class="wallet_container">
+    <view class="wallet_box">
+        <view class="wallet_user_title">
+            <view class="wallet_user_img">
+                <image src="{{image}}"></image>
+            </view>
+            <view class="wallet_user_name">
+                <text class="wallet_user_nick">{{nickname}}的钱包</text>
+               <!-- <view class="wallet_user_wallet_icon">
+                    <image src="http://img.qinyikou.cc/icons/nopwd.png" wx:if="{{pwd==='1'}}"></image>
+                    <image src="http://img.qinyikou.cc/icons/changepwd.png" wx:if="{{pwd==='2'}}"></image>
+                    <text wx:if="{{pwd==='0'}}">尚未设置支付密码</text>
+                    <text wx:if="{{pwd==='1'}}" style="color:#5793dd">支付密码已设置</text>
+                    <text></text>
+                </view>-->
+            </view>
+            <!--<view class="wallet_user_right">
+                <text bindtap="appPayment" wx:if="{{pwd==='0'}}">去设置</text>
+                <text bindtap="setPassword" wx:if="{{pwd==='1'}}">更改密码</text>
+                <image src="{{imgRight}}"></image>
+            </view>-->
+        </view>
+    </view>
+ <view class="box">
+    <view class="wallet_banner_box">
+        <view class="wallet_banner_box2 line" bindtap="searchB">
+            <view class="wallet_banner_content">
+                <image src="{{img}}" class="wallet_icon"></image>
+                <view class="wallet_banner_content_title">
+                    <text>搜恋币</text>
+                    <view>
+                        <text>￥{{soul}}</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+       <view class="wallet_banner_box">
+        <view class="wallet_banner_box2" bindtap="coupon">
+            <view class="wallet_banner_content">
+                <image src="{{img1}}" class="wallet_icon"></image>
+                <view class="wallet_banner_content_title">
+                    <text>优惠券</text>
+                    <view>
+                        <text>{{txt}}</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+  </view>
+</view>

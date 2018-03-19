@@ -1,0 +1,21 @@
+<view class="incomeInfo_container">
+    <!--日期，总价值，收益-->
+    <view class="incomeInfo_header">
+        <view class="incomeInfo_data">日期</view>
+        <view class="incomeInfo_sum">总价值
+            <image src="{{phopo1}}"></image>
+        </view>
+        <view class="incomeInfo_income">收益
+             <image src="{{phopo2}}"></image>   
+        </view>
+    </view>
+    <view class="incomeInfo_content">
+        <block wx:for="{{incomeInfoList}}">
+            <view class="incomeInfo_content_list">
+                <view class="incomeInfo_content_date">{{item.times}}</view>
+                <view class="incomeInfo_content_sum">{{item.money}}</view>
+                <view class="incomeInfo_content_income">{{item.k_money}}</view>
+            </view>
+        </block>
+    </view>
+</view>

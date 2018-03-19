@@ -1,0 +1,133 @@
+/* pages/removeAppointments/removeAppointments.wxss */
+.removeAppointments_container {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+.removeAppointments_head {
+    height: 70rpx;
+    line-height: 70rpx;
+    color: #5793dd;
+    background-color: #d5e8ff;
+    font-size: 24rpx;
+    text-align: center;
+}
+.removeAppointments_body {
+    width: 94%;
+    float: right;
+}
+.removeAppointments_content {
+    margin-right: 40rpx;
+    margin-top: 30rpx;
+    display: flex;
+    justify-content: space-between;
+}
+.removeAppointments_word {
+    float: left;
+    line-height: 50rpx;
+}
+.removeAppointments_picture {
+    float: right;
+}
+.removeAppointments_picture image{
+    width: 250rpx;
+    height: 170rpx;
+    border-radius: 5%;
+}
+.removeAppointments_restaurant {
+    font-size: 30rpx;
+}
+.removeAppointments_restaurantPlace {
+    margin-left: 10rpx;
+}
+.removeAppointments_times {
+    font-size: 24rpx;
+}
+.removeAppointments_number {
+    font-size: 24rpx;    
+}
+.removeAppointments_remark {
+    color: #5793dd;
+    font-size: 24rpx;
+}
+.removeAppointments_remark text {
+    padding-right: 40rpx;
+}
+.removeAppointments_money {
+    float: right;
+    width: 100%;
+    height: 90rpx;
+    line-height: 90rpx;
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 30rpx;
+}
+.removeAppointments_money image {
+    width: 30rpx;
+    height: 30rpx;
+    border-radius: 50%;
+    float: right;
+    margin-top: 30rpx;
+    margin-right: 10rpx;
+}
+.removeAppointments_money text {
+    font-size: 24rpx;
+    color: #feb3c5;
+    float: right;
+    margin-right: 40rpx;
+}
+.removeAppointments_method {
+    float: right;
+    width: 100%;
+    height: 90rpx;
+    line-height: 90rpx;
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 30rpx;    
+}
+.removeAppointments_method text{
+    font-size: 24rpx;
+    color: #5793dd;
+}
+.removeAppointments_reason {
+    float: right;
+    width: 100%;
+    height: 90rpx;
+    line-height: 90rpx;
+    font-size: 30rpx;        
+}
+.removeAppointments_reason text {
+    font-size: 24rpx;
+    color: #5793dd;    
+}
+.removeAppointments_reason textarea{
+    border: 1px solid #e6e6e6;
+    height: 145rpx;
+    width: 94%;
+}
+.removeAppointments_radio {
+    float: right;
+    width: 100%;
+    height: 90rpx;
+    line-height: 90rpx;
+    font-size: 30rpx;     
+    margin-top: 160rpx;
+}
+.css_radio {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e6e6e6;  
+}
+.css_radio_radio {
+    margin-right: 40rpx;
+}
+.removeAppointments_button {
+    width: 94%;
+    position: absolute;
+    margin-top: 885rpx;
+    margin-left: -20rpx;
+    margin-right: 20rpx;
+}
+.buttonBg {
+    background-color: #5793dd;
+    color: #ffffff;
+    font-size: 30rpx;
+}

@@ -1,0 +1,27 @@
+<!--pages/historicalActivities/historicalActivities.wxml-->
+<view class="container">
+  <view  class="banner">
+    <block wx:for="{{list}}">
+    <view bindtap="{{item.click}}" data-id="{{item.id}}" data-content="{{item.content}}" class="box">
+        <view class="box_left lt">
+        <image mode="aspectFill" src="{{item.img}}" class="img"></image>
+        </view>
+        <view class="box_totle rt">
+          <view>
+          <text class="box_title"><text class="line">{{item.content}}</text>|{{item.site}}</text>
+          </view>
+          <view>
+            <text class="text lt text1">{{item.date}}</text>
+            <text class="text rt">[人数限定{{item.str}}人]</text>
+          </view>
+          <view>
+            <text class="text text2 lt">{{item.title}}</text>
+            <text class="text text2 rt">{{item.price}}元</text>
+            <image src="{{image}}" class="image rt"></image>
+            
+          </view>
+        </view>
+      </view>
+      </block>
+  </view>
+</view>

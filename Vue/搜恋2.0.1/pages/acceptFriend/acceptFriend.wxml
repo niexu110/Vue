@@ -1,0 +1,44 @@
+<!--pages/addFriend/addFriend.wxml-->
+<!--pages/filter/filter.wxml-->
+<view class="container">
+        <view class="choiceSex">
+            <view class="banner">
+            <!--全部-->
+               <block wx:for="{{lists}}">
+                <view class="banner_box"> 
+                  <view class="banner_box_left">
+                    <image src="{{item.image}}" class="icon" catchtap="look"></image>
+                     <view class="banner_box_container">
+                        <view class="nick_name">
+                         <text>{{item.nickname}}</text>
+                        </view>
+                        <view class="ages" wx:if="{{item.sex==='1'}}" >
+                        <image src="{{bboy}} " class="girls"></image>
+                         <text>{{item.age}}</text>
+                        </view>
+                          <view class="age" wx:if="{{item.sex==='2'}}">
+                        <image src="{{ggirl}}" class="girls"></image>
+                         <text>{{item.age}}</text>
+                        </view>
+                        <view class="glamour" wx:if="{{item.sex==='1'}}" >
+                        <image src="{{img1}}" class="girl"></image>
+                        <text >{{item.glamour}}</text>
+                        </view>
+                         <view class="glamour" wx:if="{{item.sex==='2'}}">
+                        <image src="{{img2}}" class="girl"></image>
+                        <text >{{item.glamour}}</text>
+                        </view>
+                        <view class="range">
+                         <text>{{item.myideal}}</text>
+                        </view>
+                     </view>
+                  </view>
+                  <view class="banner_box_right rt">
+                     <view class="{{item.className}}" catchtap="acceptFriend" id="{{index}}" data-uid="{{item.uid}}">{{item.btn}}</view> 
+                  </view>
+                </view>
+               </block>
+            </view>
+        </view>  
+</view>
+

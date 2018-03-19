@@ -1,0 +1,28 @@
+<!--pages/coupon/coupon.wxml-->
+<view class="coupon_container">
+    <view class="coupon_box">
+        <view class="main">
+            <view class="notuse" wx:if="{{notuseCloss}}">
+                <block wx:for="{{image}}">
+                    <view class="main_content">
+                        <image src="{{youhuiimg}}"></image>
+                        <view class="coupon_content">
+                            <view class="coupon_left">
+                                <view class="coupon_price"><text style="font-size: 40rpx;">￥</text>{{item.price}}</view>
+                                <view class="coupon_condition">满{{item.condition}}元可使用</view>
+                            </view>
+                            <view class="coupon_right">
+                                <view class="coupon_name">{{item.name}}</view>
+                                <view class="coupon_time">{{item.start_time}}-{{item.end_time}}</view>
+                                <view class="coupon_word">此券仅供指定商家{{item.name}}内使用</view>
+                            </view>
+                        </view>
+                    </view>
+                </block>
+            </view>
+        </view>
+    </view>
+    <view wx:if="{{nullCoupon}}">
+        <image class="null" mode="aspectFit" src="{{zanwuimg}}"></image>
+    </view>
+</view>

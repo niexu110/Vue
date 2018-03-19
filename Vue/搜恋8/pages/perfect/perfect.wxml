@@ -1,0 +1,49 @@
+<!--pages/perfect/perfect.wxml-->
+<view class="container">
+    <form class="dataForm" bindsubmit="dataForm">
+           <!--头像上传-->
+           <view class="headPortrait">
+                <image src="{{photo1}}"></image>
+                <view class="upload">
+                    <image src="{{img}}" bindtap="uploadImg"></image>
+                    
+                </view>
+           </view>
+           <!--信息列表-->
+           <view class="messageList">
+                <!--昵称-->
+                <view class="list">
+                    <text>昵称</text>
+                    <input placeholder="昵称4-8字符"  name="nickname"  maxlength="8"  value="{{nickname}}" placeholder-class="textColor" />
+                </view>
+                <!--性别-->
+                <view class="list">
+                    <text>性别</text>
+                    <picker name="sex" value="{{sexIndex}}+1" range="{{sexs}}" bindchange="change">
+                        <text>{{sexs[sexIndex]}}</text>
+                    </picker>
+                </view>
+                 <view class="list">
+                    <text>生日</text>
+                    <picker mode="date" name="birthday" value="{{date}}" start="1975-01-01" end="1999-12-31" bindchange="DateChange" name="birthday">
+                     <text>{{date}}</text>
+                    </picker>
+                </view>
+                <!--所在地-->
+                <view class="list">
+                    <text>所在地</text>
+                <picker bindchange="provinceChange" value="{{province}}" name="province" range="{{provinces}}" class="province">
+                   <text>{{provinces[province]}}</text>
+                </picker>
+                <picker bindchange="cityChange"  value="{{city}}" name="city" range="{{citys}}" class="province">
+                  <text>{{citys[city]}}</text>
+                </picker>   
+                </view>
+           </view>
+           <view class="zs"><text>
+            注:性别日期选定后不可修改
+           </text></view>
+           <!--确定按钮-->
+           <button class="submitBtn" formType="submit" >确定</button>
+    </form>
+</view>

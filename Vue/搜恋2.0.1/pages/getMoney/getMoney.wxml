@@ -1,0 +1,21 @@
+<view class="getMoney_container">
+    <!--日期，提现，余额-->
+    <view class="getMoney_header">
+        <view class="getMoney_data">日期</view>
+        <view class="getMoney_sum">提现
+            <image src="{{phopo1}}"></image>
+        </view>
+        <view class="getMoney_income">余额
+            <image src="{{phopo2}}"></image>
+        </view>
+    </view>
+    <view class="getMoney_content">
+        <block wx:for="{{getMoneyList}}">
+            <view class="getMoney_content_list">
+                <view class="getMoney_content_date">{{item.date}}</view>
+                <view class="getMoney_content_sum">{{item.sum}}</view>
+                <view class="getMoney_content_income">{{item.income}}</view>
+            </view>
+        </block>
+    </view>
+</view>

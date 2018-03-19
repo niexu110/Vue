@@ -1,0 +1,7 @@
+{
+     "navigationBarBackgroundColor": "#f9f9f9",
+    "navigationBarTextStyle": "black",
+    "backgroundColor":"#ffffff",
+    "navigationBarTitleText": "搜恋历史活动",
+    "enablePullDownRefresh":true
+}

@@ -1,0 +1,480 @@
+/* pages/find/find.wxss */
+.header{
+    width: 100%;
+    height: 90rpx;
+    display: flex;
+    flex:row nowrap;
+    justify-content:space-between;
+    border-top:1px solid #eee;
+    background-color: #fff;
+    position: fixed;
+    top:0;
+    z-index: 2;
+}
+.headerLeft{
+    width:80rpx;
+}
+.headerMiddle{
+    width:324rpx;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+    margin-top: 30rpx;
+    text-align: center;
+}
+.headerMiddle view{
+    flex:1;
+    font-size:30rpx;
+    color:#121212;
+}
+.headerRight {
+    margin-top: 30rpx;
+    width:90rpx;
+    font-size:30rpx;
+    color:#4b85cc;
+    border-radius:5rpx; 
+}
+.line{
+    width:70%;
+    height:2px;
+    background-color: #4b85cc;
+    display: block;
+    margin:3px auto 0;
+}
+.headerMiddle .nearName,.headerMiddle .sunName,.headerMiddle .proposeName{color:#4b85cc;}
+/*banner*/
+.banner{
+    padding-top: 100rpx;
+    width:100%;
+    height:260rpx;
+    margin-bottom:20rpx;
+}
+.banner image{
+    display: block;
+    width:100%;
+    height:100%;
+}
+/*内容展示区域*/
+.main{
+    position: relative;
+    width:100%;
+}
+/*推荐*/
+.propose{
+    width:100%;
+    height:260rpx;
+    position: absolute;
+    top:0;
+}
+/*用户列表*/
+.proposeList{
+    width:686rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin:10rpx auto 20rpx;
+    line-height: 40rpx;
+}
+/*用户头像*/
+.proposeLeft image{
+    width:240rpx;
+    height:240rpx; 
+    border-radius:10rpx; 
+}
+/*右边信息部分*/
+.proposeRight{
+    display: flex;
+    flex-direction: column;
+    margin-left:34rpx;
+}
+/*昵称*/
+.proposeNicky{
+    font-size:34rpx;
+    color:#111111;
+    font-weight:bold;
+}
+.proposeMsg {
+    margin-top: 20rpx;
+}
+/*性别性别/年纪/星座*/
+.proposeAge {
+    font-size:24rpx;
+    color:#333333;
+}
+.proposeAge image {
+    width:22rpx;
+    height:22rpx;
+    margin-right:26rpx;
+}
+.proposeAge text {
+    margin-right:20rpx;     
+}
+/*魅力值*/
+.glamourAge{
+    font-size:24rpx;
+    color:#333333;
+}
+.glamourAge image{
+    width:28rpx;
+    height:25rpx;
+    align-self: center;
+    margin-right:26rpx;
+}
+/*距离*/
+.Distance{
+    font-size:24rpx;
+    color:#333333;
+}
+.Distance image{
+    width:22rpx;
+    height:22rpx;
+    margin-right:34rpx;
+}
+/*爱情宣言*/
+.proposeMessage{
+    font-size:24rpx;
+    color:#666666;
+    line-height: 30rpx;
+}
+
+/*附近*/
+.nearly{
+    width:100%;
+    position: absolute;
+    top:0;
+}
+/*用户列表*/
+.nearlyList{
+    width:702rpx;
+    background:#FCFCFC;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    margin:0 auto 40rpx;
+}
+/*用户头像*/
+.nearlyLeft{
+    width:160rpx;
+    height:160rpx;
+}
+.nearlyLeft image{
+    display: block;
+    width:100%;
+    height:100%;
+    border-radius:6rpx;
+}
+/*右边信息*/
+.nearlyRight{
+    margin-left:24rpx;
+    padding-top:20rpx;
+    flex:1;
+    border-bottom:1rpx solid #efefef;
+}
+.nearlyMessage{
+    display: flex;
+    width:100%;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+}
+.nearlyMessage text{
+    flex:1;
+}
+/*昵称和距离*/
+.nearlyNicky{
+    font-size:34rpx;
+    color:#111111;
+    font-weight:bold;
+}
+.nearlyDistance{
+    text-align: right;
+    font-size:20rpx;
+    color:#a6a6a6;
+}
+/*年龄/性别/星座星座/魅力值*/
+.nearlyAge{
+    display: flex;
+    line-height: 24rpx;
+    flex-flow:row nowrap;
+    justify-content:flex-start;
+    margin-top:15rpx;
+}
+.age{
+    display: flex;
+    width:56rpx;
+    height:24rpx;
+    flex-flow:row nowrap;
+    align-content: center;
+    justify-content: space-around;
+    border-radius:6rpx;
+    padding:2rpx;
+}
+.age image{
+    width:20rpx;
+    height:20rpx;
+    align-self: center;
+}
+.age text{
+    color:#ffffff;
+    font-size:20rpx;
+    line-height: 24rpx;
+}
+.nearlyAsterism,.nearlyGlamour{
+    font-size:22rpx;
+    color:#555555;
+    margin-left:15rpx;
+    line-height: 28rpx;
+}
+/*爱情宣言*/
+.nearlyMsg{
+    margin-top:5rpx;
+}
+.nearlyMsg text{
+    font-size:24rpx;
+    color:#a6a6a6;
+}
+.girls{background-color: #feb3c5;}
+.boys{background-color: #5a98e4;}
+
+/*晒单*/
+.sunny{
+  width:100%;
+  height:auto;
+}
+.sunny_box{
+    width:90%;
+    margin:0 auto;
+    height:auto;
+}
+.sunny_box_top{
+    width:100%;
+    margin-top:40rpx;
+    height:255rpx;
+}
+.box_left{
+    width:35%;
+    height:220rpx;
+}
+.box_right{
+    width:65%;
+    height:220rpx;
+}
+.urlImg{
+    width:220rpx;
+    height:220rpx;
+    border-radius:6rpx; 
+}
+.right_title{
+    margin-top:20rpx;
+    font-size:30rpx;
+    font-weight:bold;
+}
+.right_count{
+    margin-top:20rpx;
+    font-size:24rpx;
+    color:#5a98e4; 
+}
+.right_price{
+    font-size:24rpx;
+    margin-top:20rpx;
+    color:#999; 
+}
+.img{
+    width:28rpx;
+    height:35rpx;
+}
+/*用户资料*/
+.sunny_user{
+    width:100%;
+    height:310rpx;
+}
+.user_img{
+    width:100%;
+    height:60rpx;
+}
+.user_left{
+    width:75%;
+    font-size:24rpx;
+}
+.user_right{
+    width:25%;
+    font-size:24rpx;
+    color:#999;
+    text-align:right; 
+}
+.userImg{
+    width:42rpx;
+    height:42rpx;
+    border-radius:50%; 
+}
+.user{
+    margin-left:20rpx;
+    padding-top:5rpx;
+    color:#333;
+}
+.img_box{
+    margin-left:20rpx;
+    margin-top:5rpx;
+    width:110rpx;
+}
+.user_star{
+    width:18rpx;
+    height:18rpx;
+}
+.user_assess{
+    width:100%;
+    height:65rpx;
+    font-size:24rpx;
+    color:#999;
+}
+.user_image{
+    width:100%;
+    height:auto;
+}
+.image_box{
+    width:25%;
+    float:left;
+    height:auto;
+    border-bottom:1rpx solid #e6e6e6;
+}
+.image_box image{
+  margin:20rpx 20rpx 10rpx 0;
+  width:150rpx;
+  height:150rpx;
+  border-radius:6rpx; 
+}
+/*筛选功能*/
+.formFilter {
+    position:fixed;
+    width:100%;
+    top:0;
+    height:100%;
+    z-index:10;
+    background:rgba(0,0,0,.5);
+    display: flex;
+    align-items: center;
+}
+.bgColor {
+    width: 675rpx;
+    height: 850rpx;
+    margin: auto;
+    border-radius: 6rpx; 
+    background-color: #ffffff;
+}
+.icon {
+    margin-top: 20rpx;
+    float: right;
+}
+.bgSize {
+    width: 92%;
+    height: 100%;
+    margin: auto;
+}
+.titleText{
+    display: block;
+    width:100%;
+    color:#444444;
+    height:86rpx;
+    line-height: 116rpx;
+    border-bottom:1px solid #e6e6e6;
+}
+.titleText image{
+    display:inline-block;
+    vertical-align: middle;
+    width:30rpx;
+    height:12rpx;
+    margin-left:15rpx;
+}
+#hideInput{display: block;width:0;min-height:0;max-height:0;}
+.choiceSex {
+    width: 100%;
+    font-size: 30rpx;
+    padding-top: 50rpx;
+}
+/*想看的用户*/
+.choiceItem{
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    margin-top:40rpx;
+}
+.choiceItem text{
+    width:180rpx;
+    height:70rpx;
+    line-height: 70rpx;
+    text-align:center;
+    border:1px solid #eee;
+    border-radius:4rpx;
+    color:#a6a6a6;
+    letter-spacing: 5px;
+}
+.choiceItem text.all{
+    border:1px solid #5793dd;
+    color:#5793dd;
+}
+.choiceItem text.boy{
+    color:#fff;
+    background-color: #5793dd;
+}
+.choiceItem text.girl{
+    color:#fff;
+    background-color: #feb3c5;
+}
+/*按条件筛选*/
+.fCondition{
+    width:100%;
+    font-size: 26rpx;
+}
+.choiceList{
+    width:100%;
+    height:auto;
+    float:left;
+    font-size: 30rpx;
+}
+/*筛选列表*/
+.changeGps {
+    float: right;
+    width: 100%;
+    height: 95rpx;
+    border-bottom: 1px solid #e6e6e6;
+    font-size:30rpx; 
+    line-height: 95rpx;   
+}
+.changeGps_left{
+    width:97%;
+    height:95rpx;
+    float:left
+}
+.gps_right{
+    width:80%;
+    text-align:right; 
+    float:right;
+}
+.province, .city{
+   width:20%;
+   text-align:right;
+   display:inline-block;  
+   line-height: 95rpx;
+}
+.heiNo {
+     font-size: 30rpx;
+    margin-right: 20rpx;
+    float: right;
+    margin-top: -95rpx;
+}
+.changeGps image , .changeStature image, .changeAge image{
+    float: right;
+    width: 15rpx;
+    height: 30rpx;
+    margin-top:30rpx;
+}
+/*确定按钮*/
+.button {
+    margin-top: 350rpx;
+}
+.changeSubmit {
+    width: 100%;
+    background-color: #5793dd;
+    color: #ffffff;
+} 

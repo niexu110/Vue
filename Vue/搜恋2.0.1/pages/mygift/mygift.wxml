@@ -1,0 +1,101 @@
+<view class="mygift_container">
+    <!--收到的礼物,送出的礼物，我的贡献榜-->
+    <view class="mygift_header">
+        <view class="{{gettergift}}" catchtap="chociegetter">
+            收到的礼物
+            <text class="line" wx:if="{{getter}}"></text>
+        </view>
+        <view class="{{givegift}}" catchtap="chociegive">
+            送出的礼物
+            <text class="line" wx:if="{{give}}"></text>
+        </view>
+        <!--<view class="{{myoffergift}}" catchtap="chocieoffer" bindtap="filter" data-sort="money">
+            我的贡献榜
+            <text class="line" wx:if="{{myoffer}}"></text>
+        </view>-->
+    </view>
+    <!--内容显示-->
+    <view class="mygift_text">
+        <!--收到的礼物-->
+        <view class="mygift_getgift" wx:if="{{getterClose}}">
+                <!--日期显示-->
+            <!--<view class="mygift_menu">
+                <image class="mygift_image" src="{{dateImg1}}"  bindtap="click1"></image>    
+                <text class="mygift_today">{{today}}</text>      
+            </view>-->
+            <block wx:for="{{getterMsg}}" bindtap="{{item.anchor}}">
+                <!--用户列表-->
+                <view class="mygift_give_list">
+                    <view class="mygift_all">
+                        <!--礼物图片-->
+                        <view class="mygift_head_sculpture"><image src="{{item.gift_photo}}"></image></view>
+                        <!--右边文字信息-->
+                        <view class="mygift_give_information">
+                            <view class="mygift_up">
+                                <view class="mygift_give_name">{{item.gift_name}}</view>
+                                <view class="mygift_give_myname">{{item.nickname}}</view>
+                            </view>
+                            <view class="mygift_half">
+                                <view class="mygift_give_giftnum">×{{item.number}}</view>
+                                <view class="mygift_give_Charm">魅力值+{{item.money}}</view>
+                            </view>
+                            <view class="mygift_down">
+                                <view class="mygift_give_date">{{item.times}}</view>
+                                <view class="mygift_give_sum">￥{{item.money}}</view>
+                            </view>
+                        </view>
+                    </view>  
+                </view>
+            </block>
+        </view>
+        <!--送出的礼物-->
+        <view class="mygift_givegift" wx:if="{{giveClose}}">
+                <!--日期显示-->
+            <!--<view class="mygift_menu">
+                <image class="mygift_image" src="{{dateImg1}}"  bindtap="click1"></image>          
+                <text class="mygift_today">{{today}}</text>-->
+                <!--礼物收益-->
+                <!--<text class="mygift_word" bindtap="gains">{{word}}</text>-->
+            <!--</view>-->
+            <block wx:for="{{giveMsg}}" bindtap="{{item.anchor}}">
+                <!--用户列表-->
+                <view class="mygift_give_list">
+                    <view class="mygift_all">
+                        <!--用户头像-->
+                        <view class="mygift_head_sculpture"><image src="{{item.gift_photo}}"></image></view>
+                        <!--右边文字信息-->
+                        <view class="mygift_give_information">
+                            <view class="mygift_up">
+                                <view class="mygift_give_name">{{item.gift_name}}</view>
+                                <view class="mygift_give_myname">{{item.nickname}}</view>
+                            </view>
+                            <view class="mygift_half">
+                                <view class="mygift_give_giftnum">×{{item.number}}</view>
+                                <view class="mygift_give_Charm">魅力值+{{item.money}}</view>
+                            </view>
+                            <view class="mygift_down">
+                                <view class="mygift_give_date">{{item.times}}</view>
+                                <view class="mygift_give_sum">￥{{item.money}}</view>
+                            </view>
+                        </view>
+                    </view>  
+                </view>
+            </block>
+        </view>
+        <!--我的贡献榜-->
+        <!--<view class="mygift_myoffer" wx:if="{{myofferClose}}">
+            <view class="mygift_center">
+                <text class="mygift_center_word" bindtap="gains">{{word}}</text>
+            </view>
+            <block wx:for="{{myofferMsg}}" bindtap="{{item.anchor}}">
+                <view class="mygift_myoffer_packge">
+                    <text class="mygift_myoffer_number">{{index+1}}</text>                   
+                    <image class="mygift_myoffer_sculpture" src="{{item.image}}" bindtap="{{item.clickthis}}" data-uid="{{item.uid}}" data-nickname="{{item.nickname}}"  ></image>
+                    <text class="mygift_myoffer_name">{{item.nickname}}</text>
+                    <text class="mygift_myoffer_sum">{{item.money}}</text>
+                    <image class="mygift_myoffer_photo" src="http://img.qinyikou.cc/icons/my_b.png"></image>
+                </view>
+            </block>
+        </view>-->
+    </view>
+</view>

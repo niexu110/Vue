@@ -1,0 +1,57 @@
+<!--pages/removeAppointments/removeAppointments.wxml-->
+<view class="removeAppointments_container">
+    <view class="removeAppointments_head">取消约会后，相应的约会信用值将被扣除</view>
+    <form class="removeAppointments_body" bindsubmit="formSubmit" bindreset="formReset">
+        <view class="removeAppointments_content">
+            <view class="removeAppointments_word">
+                <view class="removeAppointments_restaurant">
+                    <text class="removeAppointments_restaurantName">{{restaurant}}</text>
+                    <text class="removeAppointments_restaurantPlace">({{place}})</text>
+                </view>
+                <view class="removeAppointments_times">约会时间：{{times}}</view>
+                <view class="removeAppointments_number">已经接受该约会请求的人数：{{num}}</view>
+                <view class="removeAppointments_remark">
+                    <text>{{only}}</text>
+                    <text>{{forDo}}</text>
+                </view>
+            </view>
+            <view class="removeAppointments_picture">
+                <image src="{{picture}}"></image>
+            </view>
+        </view>
+        <!--退款金额-->
+        <view class="removeAppointments_money">
+            退款金额
+            <text>{{money}}搜恋币</text>
+            <image src="{{moneyIcon}}"></image>
+        </view>
+        <!--退款方式-->
+        <view class="removeAppointments_method">
+            退款方式
+            <text>（{{backTimes}}）</text>
+        </view>
+        <!--取消原因-->
+        <view class="removeAppointments_reason">
+            取消原因
+            <text>（{{must}}）</text>
+            <textarea name="reason" placeholder="{{reasonM}}" />
+        </view>
+        <!--备用选择-->
+        <view class="removeAppointments_radio">
+            <radio-group name="radio" class="radio-group" bindchange="radioChange">
+                <label class="radio" wx:for="{{items}}">
+                    <view class="css_radio">
+                        <view>{{item.value}}</view>
+                        <view class="css_radio_radio">
+                            <radio value="{{item.name}}" color="#5793dd"/>
+                        </view>
+                    </view>
+                </label>
+            </radio-group>
+        </view>
+        <!--确认按钮-->
+        <view class="removeAppointments_button">
+            <button class="buttonBg" size="default" formType="submit">确认取消</button>
+        </view>
+    </form>
+</view>

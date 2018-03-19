@@ -1,0 +1,211 @@
+/* pages/hailFellow/hailFellow.wxss */
+.container{
+    background-color: #fff;
+}
+/*选择好友/我喜欢/喜欢我*/
+.choice{
+    border-top:1px solid #e6e6e6;
+    position: fixed;
+    width:100%;
+    top: 0;
+    background: #fff;
+}
+.choiceList{
+    width:670rpx;
+    margin:0 auto;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding:0 
+}
+.choiceList view{
+    padding-top:30rpx;
+    flex:1;
+    height:90rpx;
+    text-align: center;
+    color:#111111;
+    font-size:30rpx;
+    box-sizing:border-box;
+}
+.choiceList view.addColor{
+    color:#4b85cc;
+}
+.line{
+    display: block;
+    width:120rpx;
+    height:2px;
+    margin:10rpx auto 0;
+    background-color: #4b85cc;
+}
+/*搜索/添加好友/新的好友*/
+.goodFriend{
+    width:100%;
+    margin-top: 100rpx;
+}
+/*搜索/添加*/
+.searchAdd{
+    width:670rpx;
+    margin:0 auto;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    height:90rpx;
+    line-height: 90rpx;
+    border-bottom:1px solid #e6e6e6;
+}
+.search{
+    width:360rpx;
+    height:100%;
+    margin:0 auto;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+}
+.search image{
+    width:28rpx;
+    height:30rpx;
+    margin-right:20rpx;
+    align-self: center;
+}
+.search input{
+    flex:1;
+    height:100%;
+    box-sizing: border-box;
+    padding-left:4rpx;
+}
+.place{
+    color:#bbbbbb;
+    font-size:24rpx;
+}
+/*新的好友*/
+.newFriend{
+    width:670rpx;
+    height:160rpx;
+    box-sizing:border-box;
+    padding:26rpx 0;
+    display: flex;
+    margin:0 auto;
+    align-items: center;
+    border-bottom:1px solid #e6e6e6;
+}
+.tops{
+    margin-top:100rpx;
+}
+.left{
+    width:104rpx;
+    height:104rpx;
+    border-radius:4rpx;
+    overflow: hidden;
+}
+.left image{
+    display: block;
+    width:100%;
+    height: 100%;
+}
+.middle{
+    width:512rpx;
+    margin-left:30rpx;
+}
+.middle text{
+    color:#999999;
+    font-size:24rpx;
+}
+.middle .nicky{
+    display: block;
+    font-size:34rpx;
+    color:#333333;
+    font-weight:bold;
+    margin:10rpx 0 8rpx;
+}
+.right{
+    width:34rpx;
+    height:34rpx;
+    border-radius:50%;
+    background-color: #dd5757;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right text{
+    color:#ffffff;
+    font-size:20rpx;
+}
+/*好友列表*/
+.friendList{
+    width:100%;
+}
+.list{
+    width:670rpx;
+    height:160rpx;
+    padding:26rpx 0;
+    margin:0 auto;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    box-sizing:border-box;
+    border-bottom:1px solid #e6e6e6;
+}
+.listLeft{
+    width:104rpx;
+    height:104rpx;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.listLeft image{
+    display: block;
+    width:100%;
+    height:100%;
+}
+.listRight{
+    width:530rpx;
+    margin-left:30rpx;
+}
+.nickyName{
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: flex-start;
+    line-height: 65rpx;
+}
+.nicks{
+    font-size: 34rpx;
+    color:#333333;
+    font-weight:bold;
+}
+.nickyName view{
+    height:24rpx;
+    padding:5rpx 10rpx;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: flex-start;
+    line-height: 24rpx;
+    text-align: center;
+    border-radius:4rpx;
+    margin-left:15rpx;
+    align-self: center;
+}
+.nickyName view image{
+    width:16rpx;
+    height:16rpx;
+    align-self: center;
+    margin-right:8rpx;
+}
+.nickyName view text{
+    color:#fff;
+    font-size: 18rpx;
+}
+.nickyName view.boy{
+    background: #5a98e4;
+}
+.nickyName view.girl{
+    background: #feb3c5;
+}
+.rightText{
+    display: block;
+    width:100%;
+    color:#999999;
+    font-size:26rpx;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;  
+}

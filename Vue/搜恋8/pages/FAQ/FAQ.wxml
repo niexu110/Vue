@@ -1,0 +1,20 @@
+<!--pages/FAQ/FAQ.wxml-->
+<view class="content">
+    <!--banner-->
+    <view class="faq_bj">
+        <image src="{{bcsrc}}"></image>
+    </view>
+    <!--问题-->
+    <view wx:for="{{questuin}}" class="faq_listBox">
+        <view class="faq_list" data-id="{{item.id}}" data-title="{{item.title}}" bindtap="clickquestuin">
+            <view>
+                <text>{{item.title}}</text>
+            </view>
+            <view>
+                <text>></text>
+            </view>
+        </view>
+    </view>
+    
+   
+</view>

@@ -1,0 +1,172 @@
+@charset "utf-8";
+.d_invitemeBox{
+	width: 100%;
+	height: 100%;
+}
+.d_topBox{
+	margin:0 0.4rem;
+	margin-top: 0.9rem;
+	height:1.6rem;
+	border-bottom: solid 1px #E6E6E6;
+}
+.d_headimg{
+	float: left;
+	margin-top: 0.2rem;
+	width: 1.2rem;
+	height:1.2rem;
+	margin-right: 0.2rem;
+	border-radius: 0.06rem;
+}
+.d_topcenterBox{
+	float: left;
+	padding-top: 0.2rem;
+	width: 4.0rem;
+}
+.d_topcenterBox>p{
+	font-size: 0.28rem;
+	color: #333333;
+	line-height: 0.6rem;
+}
+.d_topcenter img{
+	float: left;
+	margin-top: 0.2rem;
+	height: 0.17rem;
+	width: 0.17rem;
+	margin-right: 0.1rem;
+}
+.d_topcenter{
+	height: 0.6rem;
+	line-height: 0.6rem;
+}
+.d_topcenter p{
+	float: left;
+	margin-left: 0.3rem;
+	font-size: 0.22rem;
+	color: #666666;
+}
+.d_topcenter span{
+	float: left;
+	font-size: 0.22rem;
+	color: #666666;
+}
+.d_topbottom{
+	float: left;
+	padding-top: 0.4rem;
+	font-size: 0.22rem;
+	color: #5793DD;
+	text-align: center;
+}
+.d_contenttitle{
+	height: 0.7rem;
+	margin: 0 0.4rem;
+	font-size: 0.28rem;
+	color:#333333;
+	line-height: 0.7rem;
+}
+.d_contentBox{
+	height: 2.1rem;
+	margin: 0 0.4rem;
+	border-bottom: solid 1px #E6E6E6;
+}
+.d_left{
+	float: left;
+	max-width: 3.4rem;
+}
+.d_left p{
+	font-size: 0.24rem;
+	color: #333333;
+	line-height: 0.48rem;
+}
+.d_left span{
+	display: inline-block;
+	max-width: 3.4rem;
+	font-size: 0.22rem;
+	color: #666666;
+	line-height: 0.44rem;
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+}
+.d_left .d_spanClass{
+	color: #5793DD;
+}
+.d_contentBox img{
+	float: right;
+	height:1.9rem;
+	width: 2.6rem;
+	border-radius: 0.06rem;
+}
+.d_tishi{
+	margin: 0 0.4rem;
+	height: 0.88rem;
+	font-size: 0.22rem;
+	border-bottom: solid 1px #E6E6E6;
+	line-height: 0.88rem;
+}
+.d_tishi p{
+	color: #333333;
+	float: left;
+}
+.d_tishi span{
+	color: #5793DD;
+	float: right;
+}
+.d_datet{
+	margin: 0 0.4rem;
+	height: 0.88rem;
+	font-size: 0.28rem;
+	color: #333333;
+	border-bottom: solid 1px #E6E6E6;
+}
+.d_datet p{
+	float: left;
+	line-height: 0.88rem;
+}
+.d_box{
+	float: right;
+	font-size: 0.22rem;
+	color: #FFFFFF;
+}
+.d_box p{
+	float: left;
+	height: 0.5rem;
+	width: 1.0rem;
+	margin-top: 0.17rem;
+	line-height: 0.5rem;
+	text-align: center;
+	background: #feb3c5;
+	border-radius: 0.06rem;
+	margin-right: 0.2rem;
+}
+.d_zhuangtai{
+	padding-left: 0.3rem;
+	font-size: 0.22rem;
+	color: #5793DD;
+}
+.d_okpay{
+	font-size: 0.22rem;
+	color: #feb3c5;
+	line-height: 0.88rem;
+}
+.d_dateclear{
+	height: 0.54rem;
+	width: 1.2rem;
+	margin-top: 0.17rem;
+	text-align: center;
+	line-height: 0.54rem;
+	background: #5793DD;
+	border-radius: 0.06rem;
+}
+.d_bottom{
+	margin: 0.4rem;
+	min-height: 1.3rem;
+}
+.d_bottom h3{
+	font-size: 0.24rem;
+	color: #5793DD;
+}
+.d_bottom p{
+	font-size: 0.2rem;
+	color: #666666;
+	line-height: 0.38rem;
+}

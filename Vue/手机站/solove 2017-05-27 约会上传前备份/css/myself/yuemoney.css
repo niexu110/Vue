@@ -1,0 +1,83 @@
+@charset "utf-8";
+.d_soulovemoneyBox{
+	width: 100%;
+	height: 100%;
+}
+.d_topmoney{
+	margin-top: 0.9rem;
+	height:3.14rem;
+	background: #5793DD;
+	padding: 0 0.4rem;
+}
+.d_topmoney span{
+	display: block;
+	font-size: 0.3rem;
+	color: #FFFFFF;
+	padding-top: 0.8rem;
+}
+.d_topmoney p{
+	font-size: 0.6rem;
+	color: #FFFFFF;
+	padding-top: 0.5rem;
+}
+.d_center{
+	height:0.86rem;
+	background: #3d7dcb;
+	padding-left: 3.0rem;
+	padding-top: 0.4rem;
+}
+.d_center img{
+	display: inline-block;
+	height: 0.32rem;
+	width: 0.40rem;
+	margin-right: 0.14rem;
+}
+.d_center p{
+	display: inline-block;
+	font-size: 0.34rem;
+	color: #FFFFFF;
+}
+.d_contentbox p{
+	padding: 0 0.4rem;
+	height: 1.0rem;
+	font-size: 0.28rem;
+	color: #111111;
+	line-height: 1.0rem;
+	font-weight: bold;
+	border-bottom: solid 1px #E6E6E6;
+}
+.d_contentlist{
+	height:1.2rem;
+	border-bottom: solid 1px #E6E6E6;
+	padding-right: 0.4rem;
+	margin-left: 0.4rem;
+}
+.d_content1{
+	height:0.6rem;
+	line-height: 0.6rem;
+}
+.d_content2{
+	height:0.6rem;
+	line-height: 0.6rem;
+}
+.d_content1 strong{
+	float: left;
+	font-size: 0.3rem;
+	color: #111111;
+}
+.d_content2 strong{
+	float: left;
+	font-size: 0.26rem;
+	color: #111111;
+}
+.d_content1 span{
+	float: right;
+	font-size: 0.24rem;
+	color: #999999;
+}
+.d_content2 span{
+	float: right;
+	font-size: 0.28rem;
+	color: #fe9eb5;
+	font-weight: bold;
+}

@@ -1,0 +1,81 @@
+html,body{
+	height: 100%;
+	background: #f9f9f9;
+}
+header{
+	height: .9rem;
+	text-align: center;
+	line-height: .9rem;
+	border-bottom: 1px solid #e6e6e6;
+}
+.head{
+	width: 100%;
+}
+.headMiddle{
+	font-size: .34rem;
+	font-weight: bold;
+}
+.head a img{
+	position: absolute;
+	left: .24rem;
+	display: block;
+	top: .1rem;
+}
+/*举报条件*/
+.list{
+	width: 100%;
+	background: #fff;
+}
+.list ul{
+	margin-left: .24rem;
+	width: 7.26rem;
+}
+.list ul li{
+	height: 1rem;
+	line-height: 1rem;
+	padding-right: .24rem;
+	border-bottom: 1px solid #e6e6e6;
+}
+.list ul li:last-child{
+	border-bottom: none;
+}
+.list ul li p:first-child{
+	float: left;
+	margin: 0;
+	font-size: .28rem;
+	color: #666;
+}
+.list ul li .report{
+	float: right;
+	width: .36rem;
+	height: .36rem;
+	padding-top: .05rem;
+	display: none;
+}
+.list ul li .report img{
+	width: 100%;
+}
+input[type="button"]{
+	width: 7.02rem;
+	height: .94rem;
+	margin: .4rem .24rem;
+	background: #5793dd;
+	border: none;
+	font-size: .36rem;
+	color: #fff;
+	font-weight: 600;
+}
+/*弹框*/
+.bomb{
+	display: none;
+	width: 4.0rem;
+	padding: 0.2rem;
+	border-radius: 0.06rem;
+	font-size: 0.26rem;
+	color: #fff;
+	position: fixed;
+	bottom:20%;
+	left: 1.75rem;
+	background: rgba(50,50,50,0.5);
+	text-align: center;
+}

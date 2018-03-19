@@ -1,0 +1,123 @@
+/* pages/my/my.wxss */
+
+.my_container{
+    padding:0;
+    margin:0;
+    width:100%;
+    height:auto;
+}
+.my_user_top{
+    width:100%;
+    height:412rpx;
+    position:relative;
+}
+.my_img{
+    width:100%;
+    height:402rpx;
+    z-index:0;
+}
+.fixed{
+    position:absolute;
+    top:20rpx;right:40rpx;
+    width:34rpx;height:34rpx;
+    z-index:100;
+}
+.my_user_box{
+    width:100%;
+    height:340rpx;
+    position:absolute;
+    top:20rpx;
+    left:0;
+}
+.my_user_icon{
+    margin:25rpx auto 0;
+    width:140rpx;
+    height:140rpx;
+    position:relative;
+}
+.my_user_icon image {
+    float:right;
+    width:140rpx;
+    height:140rpx;
+    border-radius:6rpx;
+}
+.my_user_title{
+    position:absolute;
+    right:-60rpx;
+    top:40rpx;
+    width:40rpx;
+    height:40rpx;
+}
+.my_user_box .my_edit{
+    width:40rpx;
+    height:40rpx;
+}
+.my_user_lable{
+    width:590rpx;
+    min-height:80rpx;
+    margin:30rpx auto 0;
+}
+.my_user_lable .my_user_lable_title{
+     width:300rpx;
+     margin:0 auto;
+     font-size: 28rpx;
+     text-align:center; 
+     color:#f0f0f0;
+}
+.my_user_lable .my_user_lable_lable{
+  width:100%;
+  margin-top:10rpx;
+  color:#aaa;
+  text-align: center;
+  font-size:24rpx;
+} 
+.my_user_container{
+    margin-top:10rpx;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+ }
+.my_user_container view{
+    flex:1;
+    height:60rpx;
+    line-height:60rpx;
+    border-right:1px solid #666; 
+    text-align: center;
+    color:#ffffff;
+    font-size:28rpx;
+}
+.my_user_container :last-child{
+   border:none;
+}
+.my_user_banner{
+    width:90%;
+    min-height:500rpx;
+    margin:0 auto;
+}
+.my_user_content{
+    width:100%;
+    height:100rpx;
+    border-bottom:solid 1px #e6e6e6;
+    display: flex;
+    align-items: center;
+}
+.my_user_content_icon{
+    float:left;
+    width:50rpx;
+    height:46rpx;
+}
+.my_user_content_txt{
+   font-size:30rpx;
+   width:86%;
+   color:#666;
+   margin-left: 30rpx;
+}
+.my_user_content_icon_right{
+    width:20rpx;
+    height:20rpx;
+    float:right;
+}
+.my_user_hover{
+    background:#aaa;
+    color:#333;
+}

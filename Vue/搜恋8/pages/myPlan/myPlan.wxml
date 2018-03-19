@@ -1,0 +1,121 @@
+<!--pages/myPlan/myPlan.wxml-->
+<view class="myPlan_container">
+    <view class="myPlan_head">
+        <!--约会服务-->
+        <view class="myPlan_headSize">
+            <!--约会服务详情-->
+            <view class="myPlan_info">
+                <view class="myPlan_title">约会服务</view>
+                <view class="myPlan_place">{{goods.goods_name}}</view>
+                <view class="myPlan_times">约会时间：{{engagement.add_time}}</view>
+                <view class="myPlan_service">
+                    <text wx:if="{{engagement.sex==='0'}}">男女不限</text>
+                    <text wx:if="{{engagement.sex==='1'}}">只限男士</text>
+                    <text wx:if="{{engagement.sex==='2'}}">只限女士</text>
+                    <text wx:if="{{engagement.pick==='1'}}">负责接送</text>
+                </view>
+                <view class="myPlan_say" bindtap="findInfo">查看服务详情</view>
+            </view>
+            <!--约会场地照片-->
+            <view class="myPlan_placeImg">
+                <view><image src="{{goods.mobileimg}}"></image></view>
+            </view>
+        </view>
+        <!--约会宣言-->
+        <view class="myPlan_declaration">
+            <view class="declaration_title">约会宣言:</view>
+            <view class="declaration_say">{{engagement.mood}}</view>
+        </view>
+        <!--已接受人数-->
+        <view class="myPlan_acceptNum" wx:if="{{changeInfo}}">
+            <!--选择确认-->
+            <view class="myPlan_acceptChange">
+                <view class="myPlan_acceptOperate">
+                    <text>目前共有</text>
+                    <text class="acceptOperate_light">{{agreeNum}}人</text>
+                    <text>接受了您的约会请求，请选择您的约会对象</text>
+                </view>
+                <view class="myPlan_acceptOk">
+                    <view bindtap="changeOk">确认</view>
+                </view>
+            </view>
+            <!--已接受人头像-->
+            <view class="myPlan_acceptPhoto">
+                <block wx:for="{{list}}">
+                    <image bindtap="clickHeadImg" data-uid="{{item.uid}}"  id="{{index}}" src="{{item.image}}"></image>
+                    <icon class="icon" wx:if="{{item.hidden}}" type="success" size="15" color="#5793dd"></icon>
+                    <text bindtap="lookCare" id="{{item.uid}}" data-uid="{{item.uid}}" data-user="{{item.nickname}}" class="word" wx:if="{{item.hidden}}">查看名片</text>
+                </block>
+            </view>
+        </view>
+        <!--选择的对象的个人信息，点击确认后出现-->
+        <view wx:if="{{changeAgree}}">
+            <view class="myDecide" >我选择的约会对象</view>
+            <view class="eatAgreeOrRefuse_releasePeople">
+                <!--发布人头像-->
+                <view class="eatAgreeOrRefuse_releaseImg">
+                    <image src="{{listTrue.image}}"></image>
+                </view>
+                <!--发布人信息-->
+                <view class="eatAgreeOrRefuse_userInfo">
+                    <view class="eatAgreeOrRefuse_userInfo_first">
+                        <text class="eatAgreeOrRefuse_usertitle">接受邀请人</text>
+                        <text class="eatAgreeOrRefuse_username">{{listTrue.nickname}}</text>
+                    </view>
+                    <view class="eatAgreeOrRefuse_userInfo_second">
+                        <!--按性别显示性别图标-->
+                        <image class="sexWoman" src="{{sexWomanImg}}" wx:if="{{sex==='2'}}"></image>
+                        <image class="sexman" src="{{sexManImg}}" wx:elif="{{sex==='1'}}"></image>
+                        <text class="eatAgreeOrRefuse_userage">{{listTrue.age}}</text> 
+                        <text class="eatAgreeOrRefuse_userstate">{{listTrue.marry}}</text>
+                        <text class="eatAgreeOrRefuse_constellation" wx:if="{{listTrue.type=='1'}}">身份已认证</text>
+                        <text class="eatAgreeOrRefuse_constellation" wx:if="{{listTrue.type=='0'}}">身份未认证</text>
+                    </view>            
+                </view>
+                <view class="eatAgreeOrRefuse_trustworthiness">
+                    <view class="eatAgreeOrRefuse_one">约会信用值</view>
+                    <view class="eatAgreeOrRefuse_two">{{listTrue.charm}}
+                        <text>({{grade}})</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+        
+        <!--约会进度-->
+        <!--<view class="myPlan_schedule">
+            <text class="schedule_left">约会进度</text>
+            <text class="schedule_center">倒计时:{{hour}}:{{min}}:{{sec}}</text>
+            <text class="schedule_right" bindtap="cancelAppointment">取消约会</text>
+        </view>-->
+        <!--温馨提示-->
+        <view class="myPlan_prompt">
+            温馨提示：
+            <view>请双方在约会前提前沟通好，约会前2小时双方都可取消约会。已经冻结的额费用，返还支付账户，但取消方会扣除相应的约会信用值。</view>
+        </view>
+        <!--<view class="eatAgreeOrRefuse_schedule" wx:if="{{changeAgree}}">
+            <view class="eatAgreeOrRefuse_cancel" wx:if="{{status==='2'}}">
+                <view class="eatAgreeOrRefuse_circle" style="background-color: {{status==='2'?blue:''}}; width:{{status==='2'?width:''}}; height:{{status==='2'?height:''}};border-radius:{{status==='2'?radius:''}};"></view>
+                <view class="eatAgreeOrRefuse_text" style="color:{{status==='2'?blue:''}}">约会时间还有2个小时就到了，{{username}}由于临时有事取消了本次约会，很遗憾，本次约会已经结束。</view>
+                <view class="eatAgreeOrRefuse_times" style="color:{{status==='2'?blue:''}}">{{lastTimes}}</view>
+            </view>
+            <view class="eatAgreeOrRefuse_contact" wx:if="{{onclickOk}}">
+                <view class="eatAgreeOrRefuse_second" style="background-color: {{status==='1'?blue:''}}; width:{{status==='1'?width:''}}; height:{{status==='1'?height:''}};border-radius:{{status==='1'?radius:''}};"></view>
+                <view class="eatAgreeOrRefuse_second_text" style="color:{{status==='1'?blue:''}}">
+                    约会意向达成，祝约会成功！为了约会更顺畅,您可提前与对方进行联系，确认约会细节及接送问题。
+                    <text class="heOrShe" style="color:{{status==='1'?blue:''}}">{{heOrShe}}</text>
+                </view>
+                <view class="eatAgreeOrRefuse_times" style="color:{{status==='1'?blue:''}}">{{secondTimes}}</view>
+            </view>
+            <view class="eatAgreeOrRefuse_agree" wx:if="{{onclickOk}}">
+                <view class="eatAgreeOrRefuse_third"></view>
+                <view class="eatAgreeOrRefuse_third_text">您决定和{{username}} 进行亲密的约会。</view>
+                <view class="eatAgreeOrRefuse_times">{{thirdTimes}}</view>
+            </view>
+            <view class="eatAgreeOrRefuse_invite">
+                <view class="eatAgreeOrRefuse_last" style="background-color: {{status==='0'?blue:''}}; width:{{status==='0'?width:''}}; height:{{status==='0'?height:''}};border-radius:{{status==='0'?radius:''}};"></view>
+                <view class="eatAgreeOrRefuse_last_text" style="color:{{status==='0'?blue:''}}">您通过陌生人约会发出了约会邀请，并支付了本次约会的费用。（目前有{{haveNum}}人愿意和您约会）</view>
+                <view class="eatAgreeOrRefuse_times" style="color:{{status==='0'?blue:''}}">{{oneTimes}}</view>    
+            </view>
+        </view>-->
+    </view>
+</view>

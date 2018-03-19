@@ -1,0 +1,26 @@
+<view class="pay_container">
+    <view class="pay_title">
+        <text class="pay_title_text">{{title}}</text>
+        <text class="pay_title_soulianB">{{price}}元</text>
+        <image src="{{priceImg}}"></image>
+    </view>
+    <view class="pay_body">
+        <view class="pay_placeInfo">
+            <view class="pay_placeInfo_img">
+                <image src="{{placeImg}}"></image>
+                <view class="pay_placeInfo_text">
+                    <text class="pay_placeInfo_placeName">{{placeName}}</text>
+                    <text class="pay_placeInfo_placeWhere">{{placeWhere}}</text>
+                </view>
+            </view>
+            <view class="pay_placeInfo_placeNo">订单编号：{{placeNo}}</view>
+        </view>
+        <view class="pay_needMoney">
+            <text class="pay_needMoney_prompt">您本次需支付元</text>
+            <text class="pay_needMoney_howMoney">{{howMoney}}元</text>
+        </view>
+    </view>
+    <view class="pay_button_size">
+        <button class="pay_button" bindtap="showToast">确认支付</button>  
+    </view>
+</view>

@@ -1,0 +1,36 @@
+<!--pages/orderDetails/orderDetails.wxml-->
+<view class="container">
+  <view class="box">
+     <view class="box_title ">
+       <text class="lt">{{title}}</text>
+       <view class="text rt"><image src="{{img}}"></image> {{price}}元</view>
+     </view>
+     <view class="box_banner lt">
+      <view class="banner_img lt">
+      <image src="{{image}}"></image>
+      </view>
+      <view class="banner_right rt">
+        <view class="banner_title">
+         <text>{{name}}|{{site}}</text>
+        </view>
+        <view class="banner_time">
+         <text>{{date}}</text>
+        </view>
+        <view class="banner_time">
+         <text>订单编号:{{order}}</text>
+        </view>
+      </view>
+     </view>
+     <view class="box_code lt">
+       <view class="code_title">
+          <text>请将以下验证码输入展示给商家</text>
+       </view>
+       <view class="code">
+          <text>{{code}}</text>
+       </view>
+       <view class="code_text">
+          <text>该服务有效期:{{end}}</text>
+       </view>
+     </view>
+  </view>
+</view>

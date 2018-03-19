@@ -1,0 +1,263 @@
+<!--pages/basic/basic.wxml-->
+<view class="basic_container">
+ <form class="basicForm" bindsubmit="formSubmit">
+    <view class="basic_information">
+    <view class="basic_left">
+      <view class="basic_left_name">
+       <text>头像</text>
+      </view>
+       <view class="basic_right_info">
+       <image src="{{userImg}}" class="basic_headPortrait" bindtap="imgurl" mode="aspectFill" ></image>
+      </view>
+      </view>
+   </view>
+   <view class="basic_information">
+    <view class="basic_left">
+      <view class="basic_left_name">
+       <text>昵称</text>
+      </view>
+       <view class="basic_right_info">
+        <input type="text" maxlength="16" name="nickname" placeholder="设置昵称" placeholder-class="placeStyle" value="{{val}}"/>
+      </view>
+      </view>
+     <view class="basic_right">
+          <image src="{{img}}" class="basic_right_icon"></image>
+          </view>
+   </view>
+        <view class="basic_information">
+    <view class="basic_left">
+      <view class="basic_left_name">
+       <text>个性签名</text>
+      </view>
+       <view class="basic_right_info">
+        <input type="text" name="textarea"placeholder="个性签名" placeholder-class="placeStyle" value="{{textarea}}"/>
+      </view>
+      </view>
+     <view class="basic_right">
+          <image src="{{img}}" class="basic_right_icon"></image>
+          </view>
+   </view>
+   <view class="basic_information">
+    <view class="basic_left">
+      <view class="basic_left_name">
+       <text>性别</text>
+      </view>
+       <view class="basic_left_title">
+       <text>(选定后不得修改)</text>
+      </view>
+      <view class="basic_right_info">
+      <input type="text" maxlength="16" name="sex" placeholder="设置昵称" placeholder-class="placeStyle" value="{{index}}" disabled="true"/>
+      </view>
+     </view>
+     <view class="basic_right">
+          <image src="{{img}}" class="basic_right_icon"></image>
+     </view>
+   </view>
+   <view class="basic_information  basic_in">
+    <view class="basic_left">
+      <view class="basic_left_name">
+       <text>我的相册</text>
+      </view>
+      <view class="basic_right_info">
+            <text class="basic_right_text" catchtap="{{openImg}}">{{txt}}</text>  
+      </view>
+     </view>
+     <view class="basic_right">
+          <image src="{{zhankai}}" class="basic_right_icon"></image>
+     </view>
+   </view>
+      <view class="basic_box_image">
+            <view class="basic_image">
+             <image src="{{updown}}" catchtap="upload" mode="aspectFill"></image>
+            </view>
+               <block wx:for="{{images}}">
+                <view class="basic_image">
+                <image src="{{item}}"bindtap="clickImg" id="{{index}}" mode="aspectFill"></image>
+                </view>
+               </block>
+      </view>
+  <view class="basic_information">
+    <view class="basic_left">
+      <view class="basic_left_name">
+       <text>生日</text>
+       </view>
+       <view class="basic_left_title">
+       <text>(选定后不得修改)</text>
+      </view>
+      <view class="basic_right_info">
+      <input type="text" maxlength="16" name="date" placeholder="生日选择" placeholder-class="placeStyle" value="{{date}}" disabled="true"/>
+   </view>
+   </view>
+   <view class="basic_right">
+         <image src="{{img}}" class="basic_right_icon"></image>
+   </view> 
+</view>
+   <view class="basic_information">
+    <view class="basic_left">
+      <view class="basic_left_name">
+       <text>星座</text>
+      </view>
+      <view class="basic_right_info">
+         <input type="text" maxlength="16" name="constellation" placeholder="" placeholder-class="placeStyle" value="{{constellation}}" disabled="true"/>
+      </view>
+     </view>
+     <view class="basic_right">
+          <image src="{{img}}" class="basic_right_icon"></image>
+          </view>
+   </view>
+   <view class="basic_information">
+    <view class="basic_left">
+      <view class="basic_left_name">
+       <text>身份</text>
+      </view>
+      <view class="basic_right_info">
+  <picker bindchange="Change2" value="{{shenfen}}" name="status" range="{{status}}">
+      <text class="basic_right_text">{{status[index2]}}</text>  
+  </picker>
+      </view>
+     </view>
+     <view class="basic_right">
+          <image src="{{img}}" class="basic_right_icon"></image>
+          </view>
+   </view>
+    <view class="basic_information">
+    <view class="basic_left">
+      <view class="basic_left_name">
+       <text>身高</text>
+      </view>
+      <view class="basic_right_info">
+       <picker bindchange="Change3" value="{{heigth2}}" name="heights"  range="{{heights}}">
+        <text class="basic_right_text">{{heights[index3]}}CM</text>  
+      </picker>
+      </view>
+     </view>
+     <view class="basic_right">
+          <image src="{{img}}" class="basic_right_icon"></image>
+          </view>
+   </view>
+   <view class="basic_information">
+    <view class="basic_left">
+      <view class="basic_left_name">
+       <text>体重</text>
+      </view>
+      <view class="basic_right_info">
+       <picker bindchange="Change4" value="{{index4}}" name="weights" range="{{weights}}">
+       <text class="basic_right_text">{{weights[index4]}}KG</text>  
+       </picker>
+      </view>
+     </view>
+     <view class="basic_right" >
+          <image src="{{img}}" class="basic_right_icon"></image>
+          </view>
+   </view>
+   <view class="basic_information">
+    <view class="basic_left">
+      <view class="basic_left_name">
+       <text>住房</text>
+      </view>
+      <view class="basic_right_info">
+       <picker bindchange="Change5" value="{{index5}}" name="loding" range="{{loding}}">
+        <text class="basic_right_text">{{loding[index5]}}</text>  
+       </picker>
+      </view>
+     </view>
+     <view class="basic_right">
+          <image src="{{img}}" class="basic_right_icon"></image>
+          </view>
+   </view>
+   <view class="basic_information">
+    <view class="basic_left">
+      <view class="basic_left_name">
+       <text>常住地</text>
+      </view>
+      <view class="basic_right_info">
+      <picker bindchange="provinceChange" value="{{province}}" name="province" range="{{provinces}}" class="province">
+        <text class="basic_right_text">{{provinces[province]}}</text>
+      </picker>
+      <picker bindchange="cityChange"  value="{{city}}" name="city" range="{{citys}}" class="city">
+        <text class="basic_right_text">{{citys[city]}}</text>
+      </picker>   
+      </view>
+     </view>
+     <view class="basic_right">
+          <image src="{{img}}" class="basic_right_icon"></image>
+          </view>
+   </view>
+   <view class="basic_information">
+    <view class="basic_left">
+      <view class="basic_left_name">
+       <text>私家车</text>
+      </view>
+      <view class="basic_right_info">
+       <picker bindchange="Change7" value="{{index7}}" name="car"  range="{{car}}">
+        <text class="basic_right_text">{{car[index7]}}</text>  
+       </picker>
+      </view>
+     </view>
+     <view class="basic_right">
+          <image src="{{img}}" class="basic_right_icon"></image>
+          </view>
+   </view>
+   <view class="basic_information">
+    <view class="basic_left">
+      <view class="basic_left_name">
+       <text>职业</text>
+      </view>
+      <view class="basic_right_info">
+       <picker bindchange="Change8"  value="{{index8}}" name="vocation" range="{{vocation}}">
+        <text class="basic_right_text">{{vocation[index8]}}</text>  
+       </picker>
+      </view>
+     </view>
+     <view class="basic_right">
+          <image src="{{img}}" class="basic_right_icon"></image>
+          </view>
+   </view>
+      <view class="basic_information">
+    <view class="basic_left">
+      <view class="basic_left_name">
+       <text>收入</text>
+      </view>
+      <view class="basic_right_info">
+       <picker bindchange="Change6" value="{{index6}}" name="income"  range="{{array}}">
+        <text class="basic_right_text">{{array[index6]}}</text>  
+       </picker>
+      </view>
+     </view>
+     <view class="basic_right">
+          <image src="{{img}}" class="basic_right_icon"></image>
+          </view>
+   </view>
+   <view class="basic_information">
+    <view class="basic_left">
+      <view class="basic_left_name">
+       <text>民族</text>
+      </view>
+      <view class="basic_right_info">
+       <picker bindchange="Change9"  value="{{index9}}" name="nation" range="{{volk}}">
+        <text class="basic_right_text">{{volk[index9]}}</text>  
+       </picker>
+      </view>
+     </view>
+     <view class="basic_right">
+          <image src="{{img}}" class="basic_right_icon"></image>
+          </view>
+   </view>
+   <view class="basic_information">
+    <view class="basic_left">
+      <view class="basic_left_name">
+       <text>信仰</text>
+      </view>
+      <view class="basic_right_info">
+       <picker bindchange="Change10"  value="{{index10}}" name="faith" range="{{faith}}">
+        <text class="basic_right_text">{{faith[index10]}}</text>  
+       </picker>
+      </view>
+     </view>
+     <view class="basic_right">
+          <image src="{{img}}" class="basic_right_icon"></image>
+          </view>
+   </view>
+   <button form-type="submit"  class="basic_btn">确定</button>
+   </form>
+</view>

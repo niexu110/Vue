@@ -1,0 +1,13 @@
+/* pages/about/about.wxss */
+.about_container{
+    width:100%;
+    height:auto;
+}
+.about_header{
+    width:100%;
+    height:auto;
+}
+.about_header>image{
+    width:100%;
+    height:1200rpx;
+}

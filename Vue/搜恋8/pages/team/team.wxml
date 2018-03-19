@@ -1,0 +1,75 @@
+<view class="team_container">
+    <!--选择栏-->
+    <view class="team_changePage">
+        <view class="team_package">
+            <view class="newList" catchtap="changeNew">
+                最新发布
+                <text class="line" wx:if="{{clickNew}}"></text>
+            </view>
+            <view class="cheapList" catchtap="changeCheap">
+                价格最低
+                <text class="line" wx:if="{{clickCheap}}"></text>
+            </view> 
+        </view>
+    </view>
+    <!--主要内容-->
+    <view class="team_body">
+        <!--最新发布的内容-->
+        <view class="team_new_content" wx:if="{{newClose}}">
+            <block wx:for="{{newMsg}}">
+                <view class="team_new_list">
+                    <view class="team_new_company">
+                        <image src="{{image}}"></image>
+                        <text class="team_new_contentName">陕西西安搜恋科技有限公司</text>
+                        <text class="team_new_companyNewDate">{{item.abort_time}}</text>
+                    </view>
+                    <view class="team_new_Pictures">
+                        <image src="{{item.images}}" bindtap="{{item.clickOtherPage}}" data-id="{{item.id}}" data-name="{{item.name}}"></image>
+                    </view>
+                    <view class="team_new_note">
+                        <text class="team_new_title">{{item.name}}</text>
+                        <text class="team_new_univalent">{{item.price}}元/人</text>
+                    </view>
+                </view>
+            </block>     
+        </view>
+        <!--价格最低的内容-->
+        <view class="team_cheap_content" wx:if="{{cheapClose}}">
+            <block wx:for="{{cheapMsg}}">
+                <view class="team_new_list">
+                    <view class="team_new_company">
+                        <image src="{{image}}"></image>
+                        <text class="team_new_contentName">西安搜恋科技有限公司</text>
+                        <text class="team_new_companyNewDate">{{item.abort_time}}</text>
+                    </view>
+                    <view class="team_new_Pictures">
+                        <image src="{{item.images}}" bindtap="{{item.clickOtherPage}}" data-id="{{item.id}}" data-name="{{item.name}}"></image>
+                    </view>
+                    <view class="team_new_note">
+                        <text class="team_new_title">{{item.name}}</text>
+                        <text class="team_new_univalent">{{item.price}}元/人</text>
+                    </view>
+                </view>
+            </block>     
+        </view>
+        <!--离我最近的内容-->
+        <view class="team_near_content" wx:if="{{nearClose}}">
+            <block wx:for="{{nearMsg}}">
+                <view class="team_new_list">
+                    <view class="team_new_company">
+                        <image src="{{item.images}}"></image>
+                        <text class="team_new_contentName">西安搜恋科技有限公司</text>
+                        <text class="team_new_companyNewDate">{{item.date_time}}</text>
+                    </view>
+                    <view class="team_new_Pictures">
+                        <image src="{{item.images}}" bindtap="{{item.clickOtherPage}}" data-id="{{item.id}}" data-name="{{item.name}}"></image>
+                    </view>
+                    <view class="team_new_note">
+                        <text class="team_new_title">{{item.name}}</text>
+                        <text class="team_new_univalent">{{item.price}}元/人</text>
+                    </view>
+                </view>
+            </block> 
+        </view>
+    </view>
+</view>

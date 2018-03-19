@@ -1,0 +1,10 @@
+/* pages/giftstate/giftstate.wxss */
+.content{
+    padding: 0 40rpx;
+}
+.top{
+    display: inline-block;
+    line-height: 60rpx;
+    font-size: 36rpx;
+    color: black;
+}

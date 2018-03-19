@@ -1,0 +1,164 @@
+<!--pages/mynamecard/mynamecard.wxml-->
+<view class="contentbox">
+    <view class="top1" style="background: url('{{backgroundimg}}') ;background-size: 100%;background-repeat:no-repeat;background-position-y: center;background-position-x: center">
+        <view class="top2">
+            <view class="headimg">
+                <image src="{{src}}" class="lt"></image>
+                <image bindtap="clickedit" class="edit lt" title="修改资料" src="{{photo1}}"></image>
+            </view>
+            <view class="headline">
+                <view class="goods">
+                    <text>{{myname}}</text>
+                </view>
+            </view>
+            <view class="headlist">
+                <view class="list list1">
+                    <view>约会信用值</view>
+                    <text class="list1text">{{credit}}</text>
+                </view>
+                <view class="list">
+                    <view>魅力值</view>
+                    <text>{{charm}}</text>
+                </view>
+                <view class="list list4">
+                    <view>喜欢</view>
+                    <text>{{like}}</text>
+                </view>
+                <!--<view class="list list4">
+                    <view>{{love}}</view>
+                    <image  src="{{loveImg}}" class="love"  bindtap="clickLoves"></image>
+                </view>-->
+            </view>
+        </view>
+    </view>
+    <!-- 年龄 星座 情况 -->
+    <view>
+         <!-- 女 -->
+        <view wx:if="{{gender=='女'}}" class="agelistbox">
+            <view class="agelist">
+                <image src="{{photo2}}"></image>
+                <text>{{age}}</text>
+            </view>
+            <view class="agelist">
+                <text>{{star}}</text>
+            </view>
+            <view class="agelist">
+                <text>{{rank}}</text>
+            </view>
+        </view>
+        <!-- 男 -->
+        <view wx:else class="agelistbox2">
+            <view class="agelist">
+                <image src="{{photo3}}"></image>
+                <text>{{age}}</text>
+            </view>
+            <view class="agelist">
+                <text>{{star}}</text>
+            </view>
+            <view class="agelist">
+                <text>{{rank}}</text>
+            </view>
+        </view>
+    </view>
+    <!-- 个性签名、职业、居住地 -->
+    <view class="content1">
+        <view><text class="content1-1">个性签名</text></view>
+        <text>{{sign}}</text>
+    </view>
+    <view class="content1">
+        <view><text class="content1-1">职 业</text></view>
+        <text>{{career}}</text>
+    </view>
+    <view class="content1">
+        <view><text class="content1-1">居住地</text></view>
+        <text>{{city}}</text>
+    </view>
+    <!-- 我的相册 -->
+    <view class="photoBox">
+        <view class="myphoto">
+            <text>我的相册</text>
+            <text bindtap="clicklookmore" wx:if="{{hidden}}" class="morephoto">{{lookmore}}</text>
+        </view>
+        <view wx:if="{{photoHidden}}">
+            <view wx:if="{{lookmore=='查看更多'}}" class="photo phonemore">
+                <view wx:for="{{srclist}}">
+                    <image mode="aspectFill" bindtap="clickImg" id="{{index}}" src="{{item}}"></image>
+                </view>
+            </view>
+            <view wx:else  class="photo" >
+                <view wx:for="{{srclist}}">
+                    <image mode="aspectFill" bindtap="clickImg" id="{{index}}" src="{{item}}"></image>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 基本资料 -->
+    <view class="message">
+        <text class="messagetitle">基本资料</text>
+        <view class="messagecontent">
+            <view class="message1">
+                <text>身份：{{rank}}</text>
+                <text>身高：{{high}}</text>
+                <text>民族：{{nation}}</text>
+            </view>
+            <view class="message1">
+                <text>收入：{{earing}}</text>
+                <text>体重：{{weight}}</text>
+                <text>信仰：{{belief}}</text>
+            </view>
+        </view>
+    </view>
+    <!-- 兴趣爱好、我的认证 -->
+    <view class="content1">
+        <view><text class="content1-1">兴趣爱好</text></view>
+        <text>{{}}</text>
+    </view>
+    <!--认证-->
+    <view class="content1">
+        <view><text class="content1-1">我的认证</text></view>
+        <view class="renzheng">
+            <image src="{{photo4}}" mode="aspectFit"></image>
+            <text >手机号已认证</text>
+            <image src="{{renzheng}}" mode="aspectFit" class="renzhengImg"></image>
+            <text >身份{{status}}</text>
+        </view>
+    </view>
+    <!-- 收到的礼物 -->
+    <view class="getGiftBox" bindtap="clickliwu">
+        <view class="getGift1">
+            <view>
+                我收到的礼物×
+                <text class="gift">{{giftnum}}</text>
+            </view>
+            <text >></text>
+        </view>
+        <view class="getGift2">
+            <text>极致之选，倾心以载。至上之选，以礼倾城</text>
+            <text>最好的礼物给最好的你！</text>
+            <text>送她礼物真表情！</text>
+        </view>
+    </view>
+    <!-- 我喜欢的异性类 -->
+    <view class="likeSetBox">
+        <text class="likeSet">我喜欢的异性类</text>
+        <!-- 男 -->
+        <view wx:if="{{gender=='女'}}" class="kindlistBox">
+            <view class="kindlist" wx:for="{{kindlist}}">
+                <text>{{item}}</text>
+            </view>
+        </view>
+        <!-- 女 -->
+        <view wx:else class="kindlistBox2">
+            <view class="kindlist" wx:for="{{kindlist}}">
+                <text>{{item}}</text>
+            </view>
+        </view>
+    </view>
+    <!-- 其他 -->
+    <!--<view class="elseBox">
+        <text class="else">其他</text>
+        <view>
+            关系：{{concern}}
+        </view>
+    </view>-->
+</view>

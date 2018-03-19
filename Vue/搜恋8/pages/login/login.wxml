@@ -1,0 +1,32 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+    <!--登录图片-->
+    <view class="bannerMsg">
+        <image src="{{image1}}"></image>
+    </view>
+    <!--登录表单-->
+    <form class="loginForm" bindsubmit="formSubmit">
+        <!--用户名-->
+        <view class="section">
+            <image class="loginUser" src="{{image2}}"></image>
+            <input type="number" id="userName" maxlength="11" bindblur="userBlur" value="{{val}}" placeholder="请输入手机号" placeholder-class="placeStyle"/>
+        </view>
+        <!--密码-->
+        <view class="section">
+            <image class="loginPassword" src="{{image3}}"></image>
+            <input password="true" bindblur="userBlur" id="password" value="{{val1}}" maxlength="18" placeholder="请输入密码" placeholder-class="placeStyle"/>
+        </view>
+        <!--注册和忘记密码-->
+        <view class="resgister">
+            <view class="resgisterLeft">
+                还没有搜恋账号？<text bindtap="register">立即注册</text>
+            </view>
+            <view class="resgisterRight" bindtap="forgetPassword">
+                忘记密码？
+            </view>
+        </view>
+        <!--登录按钮-->
+        <button form-type="submit" class="btn">登录</button>
+        <!--微信登陆-->
+    </form>
+</view>

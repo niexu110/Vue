@@ -1,0 +1,81 @@
+@charset "utf-8";
+header{
+	width:7.5rem;
+	height:.9rem;
+	line-height: .9rem;
+	font-size:.3rem;
+	position: fixed;
+	top:0;
+	background: #f9f9f9;
+	z-index: 99;
+	border-bottom: 1px solid #E6E6E6;
+}
+.head{
+	width:6.7rem;
+	height:.9rem;
+	margin:0 auto;
+	position: relative;
+	height:.9rem;
+}
+.headLeft{width:.8rem;float:left;height:.9rem;}
+.headLeft a{
+	display: block;
+	width:.27rem;
+	height:100%;
+	background: url('../img/icon/d_leftboult.png') no-repeat;
+	background-size: .18rem .32rem;
+	background-position: left center;
+}
+.headMiddle{
+	width:5rem;
+	height:.9rem;
+	margin:auto;
+	font-size:.34rem;
+	color:#333333;
+	font-weight: bold;
+	position: absolute;
+	top:0;left:0;right:0;bottom:0;
+	text-align: center;
+	line-height: .9rem;
+}
+
+.headRight{
+	float:right;
+	width:.8rem;
+	color:#5793dd;
+}
+
+footer{
+	width:7.5rem;
+	background: #ffffff;
+	position: fixed;
+	bottom:0;
+	left:0;
+	border-top:1px solid #ccc;
+}
+footer ul{
+	overflow: hidden;
+}
+footer li{
+	width:1.875rem;
+	height:1.1rem;
+	float:left;
+	padding:2px 0;
+	box-sizing: border-box;
+}
+footer li a{
+	display: block;
+	color:#888888;
+	font-size:.2rem;
+	text-align: center;
+}
+footer li a img{
+	display: block;
+	width:.6rem;
+	height:auto;
+	margin:0 auto;
+}
+footer li a p{margin-top:3px;}
+.choiceColor{
+	color:#5793dd;
+}

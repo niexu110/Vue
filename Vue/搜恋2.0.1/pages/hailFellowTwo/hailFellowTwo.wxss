@@ -1,0 +1,129 @@
+/* pages/hailFellowTwo/hailFellowTwo.wxss */
+.container{
+    background-color: #fff;
+}
+/*搜索/添加*/
+.searchAdd{
+    width:670rpx;
+    margin:0 auto;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height:90rpx;
+    line-height: 90rpx;
+    border-bottom:1px solid #e6e6e6;
+}
+.search{
+    width:360rpx;
+    height:100%;
+    margin:0 auto;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+}
+.search image{
+    width:28rpx;
+    height:30rpx;
+    margin-right:20rpx;
+    align-self: center;
+}
+.search input{
+    flex:1;
+    height:100%;
+    box-sizing: border-box;
+    padding-left:4rpx;
+}
+.place{
+    color:#bbbbbb;
+    font-size:24rpx;
+}
+.sureClass{
+    color:#fff;
+    font-size: 32rpx;
+    width:120rpx;
+    height:50rpx;
+    line-height: 50rpx;
+    text-align: center;
+    border-radius:2px;
+}
+/*好友列表*/
+.friendList{
+    width:100%;
+    padding: 0 40rpx;
+}
+.list{
+    width:670rpx;
+    height:160rpx;
+    padding:26rpx 0;
+    margin:0 auto;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    box-sizing:border-box;
+    border-bottom:1px solid #e6e6e6;
+}
+.listLeft{
+    width:104rpx;
+    height:104rpx;
+    border-radius:4rpx;
+    overflow: hidden;
+}
+.listLeft image{
+    display: block;
+    width:100%;
+    height:100%;
+}
+.listRight{
+    width:530rpx;
+    margin-left:30rpx;
+}
+.nickyName{
+    margin-top:8rpx;
+    margin-bottom:20rpx;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: flex-start;
+}
+.nicks{
+    font-size: 34rpx;
+    color:#333333;
+    font-weight:bold;
+}
+.nickyName view{
+    height:24rpx;
+    padding:5rpx 10rpx;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: flex-start;
+    line-height: 24rpx;
+    text-align: center;
+    border-radius:4rpx;
+    margin-left:15rpx;
+    align-self: center;
+}
+.nickyName view image{
+    width:16rpx;
+    height:16rpx;
+    align-self: center;
+    margin-right:8rpx;
+}
+.nickyName view text{
+    color:#fff;
+    font-size: 18rpx;
+}
+.nickyName view.boy{
+    background: #5a98e4;
+}
+.nickyName view.girl{
+    background: #feb3c5;
+}
+.rightText{
+    display: block;
+    width:400rpx;
+    color:#999999;
+    font-size:26rpx;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;  
+}

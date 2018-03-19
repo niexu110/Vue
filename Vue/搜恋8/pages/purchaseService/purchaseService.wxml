@@ -1,0 +1,170 @@
+<!--pages/purchaseService/purchaseService.wxml-->
+<view class="container">
+  <view class="nav">
+            <view bindtap="addLine" class="{{all==true?'addColor':''}}">
+                <text id="all">全部</text>
+                <text class="line"  wx:if="{{all==true}}"></text>
+            </view>
+            <view bindtap="addLine"  class="{{pay==true?'addColor':''}}">
+                <text id="pay">待支付</text>
+                <text class="line" wx:if="{{pay==true}}"></text>
+            </view>
+            <view bindtap="addLine" class="{{apply==true?'addColor':''}}">
+                <text id="apply">待使用</text>
+                <text class="line"  wx:if="{{apply==true}}"></text>
+            </view> 
+            <view bindtap="addLine" class="{{bestow==true?'addColor':''}}">
+                <text id="bestow">已使用</text>
+                <text class="line"  wx:if="{{bestow==true}}"></text>
+            </view> 
+            <view bindtap="addLine" class="{{drawback==true?'addColor':''}}">
+                <text id="drawback">退款</text>
+                <text class="line"  wx:if="{{drawback==true}}"></text>
+            </view> 
+  </view>
+   <view class="banner">
+   <!--全部-->
+    <block wx:for="{{list}}">
+     <view class="box" wx:if="{{alls}}">
+        <view class="banner_box">
+            <view class="box_top">
+              <text class="lt">订单号:{{item.ordernumber}}</text>
+              <text class="text rt">{{item.state}}</text>
+            </view>
+            <view class="box_content">
+              <view class="content_left lt">
+              <image src="{{item.images}}" class="img"></image>
+              </view>
+              <view class="content_right lt">
+               <view class="content_title">
+                <text>{{item.name}}</text>
+               </view>
+               <view class="content_time">
+                <text>{{item.time}}</text>
+               </view>
+               <view class="content_price">
+                 <text class="lt">￥{{item.money}}元</text>
+                 <text class="rt content_text" bindtap="{{item.bind}}" wx:if="{{item.hidden}}" data-id="{{item.id}}">{{item.shop}}</text>
+               </view>
+              </view>
+            </view>
+        </view>
+     </view>
+    </block>
+    <!--待支付-->
+     <block wx:for="{{pay1}}">
+        <view class="box" wx:if="{{pays}}">
+         <view class="banner_box">
+            <view class="box_top">
+              <text class="lt">订单号:{{item.ordernumber}}</text>
+              <text class="text rt">{{item.state}}</text>
+            </view>
+            <view class="box_content">
+              <view class="content_left lt">
+              <image src="{{item.images}}" class="img"></image>
+              </view>
+              <view class="content_right lt">
+               <view class="content_title">
+                <text>{{item.name}}</text>
+               </view>
+               <view class="content_time">
+                <text>{{item.time}}</text>
+               </view>
+               <view class="content_price">
+                 <text class="lt">￥{{item.money}}元</text>
+                 <text class="rt content_text" bindtap="{{item.bind}}" wx:if="{{item.hidden}}" data-id="{{item.id}}">{{item.shop}}</text>
+               </view>
+              </view>
+            </view>
+        </view>
+     </view>
+    </block>
+     <!--待使用-->
+      <block wx:for="{{apply1}}">
+        <view class="box" wx:if="{{applys}}">
+         <view class="banner_box">
+            <view class="box_top">
+              <text class="lt">订单号:{{item.ordernumber}}</text>
+              <text class="text rt">{{item.state}}</text>
+            </view>
+            <view class="box_content">
+              <view class="content_left lt">
+              <image src="{{item.images}}" class="img"></image>
+              </view>
+              <view class="content_right lt">
+               <view class="content_title">
+                <text>{{item.name}}</text>
+               </view>
+               <view class="content_time">
+                <text>{{item.time}}</text>
+               </view>
+               <view class="content_price">
+                 <text class="lt">￥{{item.money}}元</text>
+                 <text class="rt content_text" bindtap="{{item.bind}}" wx:if="{{item.hidden}}" data-id="{{item.id}}">{{item.shop}}</text>
+               </view>
+              </view>
+            </view>
+        </view>
+     </view>
+    </block>
+      <!--已使用-->
+       <block wx:for="{{bestow1}}">
+        <view class="box" wx:if="{{bestows}}">
+         <view class="banner_box">
+            <view class="box_top">
+              <text class="lt">订单号:{{item.ordernumber}}</text>
+              <text class="text rt">{{item.state}}</text>
+            </view>
+            <view class="box_content">
+              <view class="content_left lt">
+              <image src="{{item.images}}" class="img"></image>
+              </view>
+              <view class="content_right lt">
+               <view class="content_title">
+                <text>{{item.name}}</text>
+               </view>
+               <view class="content_time">
+                <text>{{item.time}}</text>
+               </view>
+               <view class="content_price">
+                 <text class="lt">￥{{item.money}}元</text>
+                 <text class="rt content_text" bindtap="{{item.bind}}" wx:if="{{item.hidden}}">{{item.shop}}</text>
+               </view>
+              </view>
+            </view>
+        </view>
+     </view>
+    </block>
+       <!--退款-->
+        <block wx:for="{{drawback1}}">
+        <view class="box" wx:if="{{drawbacks}}">
+         <view class="banner_box">
+            <view class="box_top">
+              <text class="lt">订单号:{{item.ordernumber}}</text>
+              <text class="text rt">{{item.state}}</text>
+            </view>
+            <view class="box_content">
+              <view class="content_left lt">
+              <image src="{{item.images}}" class="img"></image>
+              </view>
+              <view class="content_right lt">
+               <view class="content_title">
+                <text>{{item.name}}</text>
+               </view>
+               <view class="content_time">
+                <text>{{item.time}}</text>
+               </view>
+               <view class="content_price">
+                 <text class="lt">￥{{item.money}}元</text>
+                 <text class="rt content_text" bindtap="{{item.bind}}" wx:if="{{item.hidden}}">{{item.shop}}</text>
+               </view>
+              </view>
+            </view>
+        </view>
+     </view>
+    </block>
+   </view>
+   <view wx:if="{{dabaokiu}}">
+    <image mode="aspectFit" class="dabaokiu" src="{{photo1}}"></image>
+   </view>
+</view>

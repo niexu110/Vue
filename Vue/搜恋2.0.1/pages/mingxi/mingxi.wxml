@@ -1,0 +1,22 @@
+<!--pages/mingxi/mingxi.wxml-->
+<view class="fixed">
+  搜恋币明细
+</view>
+<view class="remainder_banner">
+   <block wx:for="{{msg}}">
+    <view class="remainder_banner_content">
+       <view class="remainder_banner_left">
+       <text class="remainder_banner_text" wx:if="{{item.type==='0'}}">充值</text>
+         <text class="remainder_banner_text" wx:if="{{item.type==='1'}}">团约</text>
+          <text class="remainder_banner_text" wx:if="{{item.type==='2'}}">个人约</text>
+          <text class="remainder_banner_text" wx:if="{{item.type==='3'}}">提现</text>
+       </view>
+       <view class="remainder_banner_right">
+         <text class="remainder_date">{{item.times}}</text>
+           <view class="remainder_funds">
+            {{item.money}}搜恋币
+         </view>
+       </view>
+    </view>
+    </block>
+ </view>

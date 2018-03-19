@@ -1,0 +1,84 @@
+@charset "utf-8";
+.d_settingBox{
+	width: 100%;
+	height: 100%;
+}
+/*内容区*/
+.d_contentbox{
+	margin-top: 0.9rem;
+}
+p{font-size: 0.26rem;color:#666666;}
+.d_minbox{
+	margin-left: 0.4rem;
+	padding-right: 0.4rem;
+	border-bottom: solid 1px #E6E6E6;
+	height:1.0rem;
+}
+.d_minbox p{
+	float: left;
+	line-height: 1.0rem;
+}
+.d_rightHui{
+	float: right;
+	margin-top: 0.38rem;
+	height:0.24rem;
+	width: 0.14rem;
+}
+.d_minbox span{
+	float: right;
+	font-size: 0.24rem;
+	color: #BBBBBB;
+	line-height: 1.0rem;
+}
+.d_button{
+	height:0.9rem;
+	font-size: 0.26rem;
+	background: #5793DD;
+	color: #FFFFFF;
+	margin:0.4rem;
+	text-align: center;
+	line-height: 0.9rem;
+	border-radius: 0.06rem;
+}
+.d_box{
+	display: none;
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(50,50,50,0.5);
+	z-index: 50;
+}
+.d_tankuang{
+	position: fixed;
+	top: 40%;
+	left: 1.75rem;
+	width: 4.0rem;
+	height: 2.0rem;
+	background: #FFFFFF;
+	border: solid 1px #E6E6E6;
+	border-radius: 0.06rem;
+	z-index: 3;
+}
+.d_tankuangTop{
+	height: 1.4rem;
+	font-size: 0.3rem;
+	color:#666666;
+	text-align: center;
+	line-height: 1.4rem;
+	border-bottom: solid 1px #E6E6E6;
+}
+.d_tankuangBottom{
+	
+}
+.d_tankuangBottom p{
+	float: left;
+	width: 1.96rem;
+	text-align: center;
+	line-height: 0.6rem;
+	font-size: 0.26rem;
+	color: #5793DD;
+	font-weight: bold;
+	border-left: solid 1px #E6E6E6;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>约见记录</title>
+	<meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/vip/dateRecord.css" />
+
+    <script type="text/javascript" src="../../js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src='../../js/MD5.js'></script>
+    <script>
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+    </script>
+</head>
+<body>
+	<header>
+		<a href="../../src/myself/mypage.html"></a>
+		<p>约见记录</p>
+	</header>
+	<!-- 我约见的、约见我的、已完成的 -->
+	<div class="totalItem">
+		<span class="addColor send"><s class="borderShow"></s>我发起的</span>
+		<span class="tome"><s></s>约见我的</span>
+		<span class="com"><s></s>已完成的</span>
+	</div>
+	<!-- 我发起的 -->
+	<div class="mySend">
+		<ul></ul>
+	</div>
+	<!-- 约见我的 -->
+	<div class="sendToMe">
+		<ul></ul>
+	</div>
+	<!-- 已完成的 -->
+	<div class="completed">
+		<ul></ul>
+	</div>
+	<h6 class="more">数据加载中....</h6>
+
+	<!-- 评价弹窗 -->
+	<div class="d_bgcolor">
+		<div class="d_minwindow">
+			<div class="d_minwindowbox">
+				<img src="../../img/icon/d_min_window.png" />
+				<div class="d_min_content">
+					<p class="d_title">请填写反馈信息</p>
+					<div class="d_manyibox">
+						<p class="d_ptext1">是否满意约会对象：</p>
+						<div class="d_changeimg">
+							<div class="d_ok"><img src="../../img/icon/d_changelan.png" /></div>
+							<p>满意</p>
+							<div class="d_nook"><img src="../../img/icon/d_changelan.png" /></div><p>不满意</p>
+						</div>
+					</div>
+					<p class="d_ptext2">请留下您的想法，以便我们更好的为您服务！</p>
+					<textarea placeholder="请输入您的想法"></textarea>
+					<div class="d_submitter">提交</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="d_bottom">
+		<div>
+			<a href="vipindex.html">
+			<img src="../../img/icon/d_homeland.png" />
+			<p>爱的家园</p></a>
+		</div>
+		<div>
+			<a href="#">
+			<img src="../../img/icon/d_records.png" />
+			<p style="color: #5793DD;">约见记录</p></a>
+		</div>
+		<div>
+			<a href="singleMoney.html">
+			<img src="../../img/icon/d_safe.png" />
+			<p>单身保障金</p></a>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src='../../js/vip/dateRecord1.js'></script>
+</html>

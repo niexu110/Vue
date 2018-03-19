@@ -1,0 +1,29 @@
+@charset "utf-8";
+.d_faqBox{
+	width: 100%;
+	height: 100%;
+}
+.d_banner{
+	margin-top: 0.9rem;
+}
+.d_banner img{
+	width: 100%;
+}
+.d_contentlist{
+	height:1.0rem;
+	margin-left: 0.4rem;
+	padding-right: 0.4rem;
+	border-bottom: solid 1px #E6E6E6;
+}
+.d_contentlist p{
+	font-size: 0.26rem;
+	color: #666666;
+	float: left;
+	line-height: 1.0rem;
+}
+.d_contentlist img{
+	height:0.24rem;
+	width: 0.14rem;
+	float: right;
+	margin-top: 0.38rem;
+}

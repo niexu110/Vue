@@ -1,0 +1,25 @@
+<!--pages/thirdStepDate/thirdStepDate.wxml-->
+<form bindsubmit="formSubmit">
+    <view class="title">
+        <text>妹子都喜欢听用心编写的诗篇！展现你口才的机会到了!</text>
+    </view>
+    <view class="empty"></view>
+    <view class="date_content">
+        <text class="dateHeart">约会心情</text>
+        <text class="dataState">(将显示到约会主页,请认真选择或填写,打动对方的心)</text>
+        <view class="dataState_text">
+            <textarea name="textarea" class="dateSay" value="{{value2}}" bindinput="bindinput" maxlength="50"/>
+            <view class="count"><text>{{numLength}}/50</text></view>
+        </view>
+            <text class="date_contenttext" bindtap="clicktext7">{{text7}}</text>
+            <text class="date_contenttext" bindtap="clicktext8">{{text8}}</text>
+            <text class="date_contenttext" bindtap="clicktext9">{{text9}}</text>
+    </view>
+    <view class="state_content">
+        <text>好啦，准备工作完成啦，赶紧给女神/男身发布约会吧！</text>
+    </view>
+    <!-- 下一步 -->
+    <button formType="submit" bindtap="nextstep" class="content_bottom">
+        <text>下一步</text>
+    </button>
+</form>

@@ -1,0 +1,39 @@
+<!--pages/searchB/searchB.wxml-->
+<view class="remainder_container">
+ <view class="remainder_top">
+       <view class="remainder_box">
+         <view class="remainder_title">
+           <text class="remainder_text">搜恋币余额(个)</text>
+            <view class="remainder_marney"> {{money}}</view>
+         </view>
+       </view>
+     <view class="remainder_detail">
+        <view class="remainder_cont" bindtap="recharge">
+          <image src="{{image}}"></image>
+          <text>充值</text>
+        </view>
+     </view>
+ </view>
+ <view class="remainder_banner">
+    <view class="remainder_banner_title">
+      <text style="display:inline-block;width:50%;text-align:left;">搜恋币近期明细</text>
+      <text style="display:inline-block;width:50%;font-size:26rpx; color:#5793DD; text-align:right;" bindtap="lookB">更多明细</text>
+    </view>
+   <block wx:for="{{msg}}">
+    <view class="remainder_banner_content">
+       <view class="remainder_banner_left">
+       <text class="remainder_banner_text" wx:if="{{item.type==='0'}}">充值</text>
+         <text class="remainder_banner_text" wx:if="{{item.type==='1'}}">团约</text>
+          <text class="remainder_banner_text" wx:if="{{item.type==='2'}}">个人约</text>
+          <text class="remainder_banner_text" wx:if="{{item.type==='3'}}">提现</text>
+       </view>
+       <view class="remainder_banner_right">
+         <text class="remainder_date">{{item.times}}</text>
+           <view class="remainder_funds">
+            {{item.money}}搜恋币
+         </view>
+       </view>
+    </view>
+    </block>
+ </view>
+</view>

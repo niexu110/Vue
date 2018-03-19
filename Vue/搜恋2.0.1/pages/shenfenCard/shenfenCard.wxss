@@ -1,0 +1,27 @@
+/* pages/shenfenCard/shenfenCard.wxss */
+.banner image{
+    height:320rpx;
+    width:100%;
+}
+.contentBox{
+    margin-left: 40rpx;
+    padding-right: 40rpx;
+    padding-top: 40rpx;
+    height:60rpx;
+    line-height: 60rpx;
+    display: flex;
+    justify-content: flex-start;
+    color:#666;
+    border-bottom: solid 1px #e6e6e6;
+    font-size: 36rpx;
+}
+.contentBox input{
+    width: 500rpx;
+    text-align: center
+}
+.button{
+    background: #5793dd;
+    color: #fff;
+    margin:80rpx 40rpx;
+    height:90rpx; 
+}

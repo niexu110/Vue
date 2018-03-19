@@ -1,0 +1,89 @@
+{
+  "pages":[
+    "pages/qidong/qidong",
+    "pages/find/find",
+    "pages/wholookme/wholookme",
+    "pages/wallet/wallet",
+    "pages/traveller/traveller",
+    "pages/register/register", 
+    "pages/giftstate/giftstate",
+    "pages/login/login",
+    "pages/my/my",
+    "pages/hailFellow/hailFellow",
+    "pages/myPlan/myPlan",
+    "pages/regulations/regulations",
+    "pages/perfect/perfect",
+    "pages/participatingMission/participatingMission",
+    "pages/missionDetail/missionDetail",
+    "pages/eatAgreeOrRefuse/eatAgreeOrRefuse",
+    "pages/mingxi/mingxi",
+    "pages/searchB/searchB",
+    "pages/apply/apply",
+    "pages/coupon/coupon",
+    "pages/FAQ/FAQ",
+    "pages/shenfenCard/shenfenCard",
+    "pages/fourtenet/fourtenet",
+    "pages/hongNiang/hongNiang",
+    "pages/forget/forget",  
+    "pages/questuin/questuin",
+    "pages/about/about",
+    "pages/personalAppointment/personalAppointment",
+    "pages/basic/basic",
+    "pages/namecard/namecard",
+    "pages/groupDate/groupDate",
+    "pages/intercalate/intercalate",
+    "pages/mynamecard/mynamecard",
+    "pages/purchaseService/purchaseService",
+    "pages/releaseDate/releaseDate",
+    "pages/fineFood/fineFood",
+    "pages/mygift/mygift",
+    "pages/team/team",
+    "pages/giftGiving/giftGiving",
+    "pages/eatFriendOne/eatFriendOne",
+    "pages/acceptFriend/acceptFriend",
+    "pages/myDate/myDate",
+    "pages/firstStepDate/firstStepDate",
+    "pages/eatFriend/eatFriend",
+    "pages/oneparty/oneparty",
+    "pages/historicalActivities/historicalActivities"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle":"black",
+    "backgroundColor":"#eeeeee",
+    "enablePullDownRefresh":"true"
+  },
+  "tabBar": {
+    "color":"#e2e2e2",
+    "selectedColor":"#5389cb",
+    "borderStyle":"white",
+    "backgroundColor":"#252525",
+    "list": [
+      {
+        "pagePath": "pages/find/find",
+        "text": "发现",
+        "iconPath": "img/x_faxian_icon.png",
+        "selectedIconPath": "img/x_faxian_icons.png"
+      },
+      {
+        "pagePath": "pages/personalAppointment/personalAppointment",
+        "text": "单约",
+        "iconPath": "img/x_person_icon.png",
+        "selectedIconPath": "img/x_person_icons.png"
+      },
+      {
+        "pagePath": "pages/groupDate/groupDate",
+        "text": "团约",
+        "iconPath": "img/x_team_icon.png",
+        "selectedIconPath": "img/x_team_icons.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "img/x_my_icon.png",
+        "selectedIconPath": "img/x_my_icons.png"
+      }
+    ]
+  }
+}

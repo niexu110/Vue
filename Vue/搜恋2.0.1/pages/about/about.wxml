@@ -1,0 +1,7 @@
+<!--pages/about/about.wxml-->
+<view class="about_container">
+<view class="about_header">
+  <image src="{{img}}"></image>
+</view>
+</view>
+

@@ -1,0 +1,47 @@
+<!--pages/giftgains/giftgains.wxml-->
+<view class="giftgains_container">
+    <!--可提现金额-->
+    <view class="giftgains_top">
+        <view class="giftgains_first">
+            <view class="giftgains_get">可提现金额(元)</view>
+            <view class="giftgains_num">{{count}}</view>
+        </view>
+        <!-- 礼物总收益，收益可提现-->
+        <view class="giftgains_gains">
+         <view class="giftgains_red">
+            <text class="giftgains_name">礼物总收益(元)</text>
+            <text class="giftgains_money">{{gainsInfo}}</text>
+         </view>
+        <view class="giftgains_red">
+            <text class="giftgains_name">收益可提现(元)</text>
+            <text class="giftgains_money">{{redInfo}}</text>
+        </view>
+      </view>  
+    </view>
+    <!--收益明细，提现记录-->
+    <view class="giftgains_banner">
+         <block wx:for="{{msg}}">
+            <view class="giftgains_content" bindtap="{{item.anchor}}">
+                <image src="{{item.titleImg}}" class="giftgains_icon"></image>
+                <view class="giftgains_box">
+                    <view class="giftgains_txt">
+                        <text>{{item.text}}</text>
+                    </view>
+                    <view class="giftgains_right">
+                        <image src="{{imgRight}}"></image>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </view>    
+    <!--<view class="giftgains_withdraw" >
+        <block wx:for="{{other}}">
+            <view class="giftgains_withdraw_text" bindtap="{{item.anchor}}">{{withdrow}}</view>
+        </block>
+    </view>-->
+    
+    <!--<view class="giftgains_settlement ">
+        <image src="http://img.qinyikou.cc/icons/x_xieyi_icon.jpg" class="giftgains_importent"></image><text>{{settlement}}</text>
+    </view>
+    <view class="giftgains_explain"><text>{{explain}}</text></view>-->
+</view>

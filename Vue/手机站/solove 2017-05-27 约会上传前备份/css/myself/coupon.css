@@ -1,0 +1,75 @@
+@charset "utf-8";
+.d_couponBox{
+	width: 100%;
+	height: 100%;
+}
+.d_contentBox{
+	margin-top: 1.3rem;
+}
+.d_noyouhui{
+	width: 4.0rem;
+	margin-left: 1.75rem;
+	margin-top: 2.0rem;
+}
+.d_couponlist{
+	margin:0 0.4rem;
+	margin-top: 0.4rem;
+	height:2.0rem;
+	position: relative;
+}
+.d_couponlist img{
+	width: 100%;
+}
+.d_content{
+	height: 2.0rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.d_contentleft{
+	float: left;
+	width: 2.4rem;
+	margin-right: 0.4rem;
+}
+.d_contentleftson{
+	margin-top: 0.5rem;
+	padding-left: 0.7rem;
+}
+.d_tishi{
+	clear: both;
+	font-size: 0.2rem;
+	color:#FFFFFF;
+	line-height: 0.6rem;
+	text-align: center;
+}
+.d_contentleft p{
+	float: left;
+	font-size: 0.52rem;
+	color: #FFFFFF;
+}
+.d_contentleft span{
+	float: left;
+	display: block;
+	padding-top: 0.2rem;
+	font-size: 0.3rem;
+	color: #FFFFFF;
+}
+.d_contentright{
+	float: right;
+}
+.d_contentright h3{
+	margin-top: 0.3rem;
+	font-size: 0.28rem;
+	color: #333333;
+	font-weight: bold;
+	line-height: 0.7rem;
+}
+.d_contentright h4{
+	font-size: 0.16rem;
+	color: #666666;
+}
+.d_contentright p{
+	font-size: 0.16rem;
+	color: #666666;
+	line-height: 0.5rem;
+}

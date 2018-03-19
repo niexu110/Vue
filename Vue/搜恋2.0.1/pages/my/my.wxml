@@ -1,0 +1,37 @@
+<view class="my_container">
+    <view class="my_user_top">
+        <image src="{{photo1}}" class="fixed" bindtap="myHove"></image>
+        <image src="{{img}}" class="my_img"></image>
+        <view class="my_user_box">
+        <!--顶部头像-->
+            <view class="my_user_icon">
+                <image src="{{image}}" mode="aspectFill"></image>
+                <view class="my_user_title" > 
+                    <image src="{{photo2}}" class="my_edit" bindtap="myBasic"></image>
+                </view>
+            </view>
+            <!--个人昵称和签名-->
+            <view class="my_user_lable">
+                <view class="my_user_lable_title">{{nickname}}</view>
+                <view class="my_user_lable_lable">{{myhobby}}</view>
+            </view>
+                <!--好友 钱包 认证 礼物-->
+            <view class="my_user_container">
+                <block wx:for="{{userContent}}">
+                    <view>
+                        <text bindtap="{{item.anchor}}">{{item.txt}}</text>
+                    </view>
+                </block>
+            </view>
+        </view>
+    </view>
+    <view class="my_user_banner">
+        <block wx:for="{{msg}}">
+            <view class="my_user_content" bindtap="{{item.anchor}}">
+                <image class="my_user_content_icon" src="{{item.titleImg}}"></image>
+                <view class="my_user_content_txt"><text>{{item.text}}</text></view>
+                <image class="my_user_content_icon_right" src="{{imgRight}}"></image>
+            </view>
+        </block>
+    </view>
+</view>

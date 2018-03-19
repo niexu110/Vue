@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="UTF-8">
+    <title>已购服务</title>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/headerFoot.css" />
+    <link rel="stylesheet" href="../../css/team/purchasedService.css" />
+    <script type="text/javascript" src="../../js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src='../../js/MD5.js'></script>
+    <script>
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+    </script>
+	</head>
+	<body>
+		<header>
+			<div class="head">
+				<div class="headLeft">
+					<a  href="javascript:void(0)" onclick="javascript:history.go(-1);" ><img src=""/></a>
+				</div>
+				<div class="headMiddle">
+					已购服务
+				</div>
+				<div class="headRight">
+					<span></span>
+				</div>
+			</div>	
+		</header>
+		<div class="titleBar" id="title">
+			<div class="allContent" style="color: #4b85cc;">全部<hr class="changeAllContent" color="#4b85cc"></hr></div>
+			<div class="toBePaid" style="color: #333333;">待支付<hr class="changeToBePaid" color="#4b85cc"></hr></div>
+			<div class="toUse" style="color: #333333;">待使用<hr class="changeToUse" color="#4b85cc"></hr></div>
+			<div class="alreadyUse" style="color: #333333;">已使用<hr class="changeAlreadyUse" color="#4b85cc"></hr></div>
+			<div class="refund" style="color: #333333;">退款<hr class="changeRefund" color="#4b85cc"></hr></div>
+		</div>
+		<div class="f_containers" id="contenty">
+			<div class="f_allContent"><ul></ul><h5 id="allContent"></h5></div><!--全部-->
+			<div class="f_toBePaid"><ul></ul><h5 id="toBePaid"></h5></div><!--待支付-->
+			<div class="f_toUse"><ul></ul><h5 id="toUse"></h5></div><!--待使用-->
+			<div class="f_alreadyUse"><ul></ul><h5 id="alreadyUse"></h5></div><!--已使用-->
+			<div class="f_refund"><ul></ul><h5 id="refund"></h5></div><!--退款-->
+		</div> 
+	</body>
+	<script type="text/javascript" src='../../js/team/purchasedService.js'></script>
+</html>

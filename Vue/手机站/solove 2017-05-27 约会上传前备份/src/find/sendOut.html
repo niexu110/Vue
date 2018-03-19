@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>发红包</title>
+	<meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+	<link href="../../css/mui.picker.css" rel="stylesheet" />
+	<link href="../../css/mui.poppicker.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="../../css/headerFoot.css">
+	<link rel="stylesheet" type="text/css" href="../../css/find/sendOut.css">
+    <script type="text/javascript" src='../../js/jquery-2.1.4.min.js'></script>
+    <script type="text/javascript" src='../../js/MD5.js'></script>
+    <script>
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+    </script>
+</head>
+<body>
+	<header>
+		<div class="head">
+		   	<a href="javascript:history.go(-1);" class="pull-left" style="margin-left:0.4rem;">
+				<img src="../../img/icon/d_leftboult.png" class="IMG">
+			</a>
+			<div class="headMiddle">
+				发红包
+			</div>
+		</div>	
+	</header>
+	<!--发红包-->
+	<div class="sendOut">
+		<ul>
+			<li>
+				<p>
+					<span>
+						<img src="../../img/h_textFa.png"/>金额
+					</span>
+					<span>
+						<input class="money" type="number" placeholder="0.00" /><s>元</s>
+					</span>
+				</p>
+				<em>每人抢到的金额随机</em>
+			</li>
+			<li>
+				<p>
+					<span>
+						红包个数
+					</span>
+					<span>
+						<input class="num" type="number" placeholder="填写个数" /><s>个</s>
+					</span>
+				</p>
+			</li>
+			<li>
+				<p>
+					<span>
+						约恋留言
+					</span>
+					<span>
+						<input class="words" type="text" placeholder="恭喜发财，我们来约" />
+					</span>
+				</p>
+			</li>
+		</ul>
+		<p class="text">¥<em id="money">0.00</em></p>
+		<!--<button class="btn">发红包</button>-->
+		<input type="button" class="btn" value="发红包" />
+		<h6>让更多的人关注到你哦！</h6>
+	</div>
+	<form class="d_form" action="http://back.qinyikou.cc/index.php/Mobile/lsit_index" method="post">
+		<input type="hidden" class="order_number" name="order_number" value="" />
+	</form>
+	<div class="d_popupbox"></div>
+	<script src="../../js/find/sendOut.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

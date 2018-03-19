@@ -1,0 +1,105 @@
+<!--pages/strangerSdating/strangerSdating.wxml-->
+<!--pages/participatingMission/participatingMission.wxml-->
+<view class="container">
+  <view class="container_box">
+    <view class="nav">
+       <view class="nav_left lt">
+         <image src="{{image}}" class="nav_img it"></image>
+         <view class="nav_content rt">
+          <view class="nav_title">
+           <text>邀请人 {{nickname}}</text>
+           </view>
+          <view class="nav_name">
+           <view class="lt age">
+           <image src="{{girl}}" class="icon" wx:if="{{sex==='2'}}"></image>
+           <image src="{{boy}}" class="icon" wx:if="{{sex==='1'}}"></image>
+            <text>{{age}}</text>
+           </view>
+           <text class="lt">单身</text>
+           <text class="rt">已通过身份认证</text>
+          </view>
+         </view>
+       </view>
+       <view class="nav_right rt">
+         <view class="nav_val">
+          <text class="nav_text">约会信用值</text>
+          <text>85(高)</text>
+        </view>
+       </view>
+    </view>
+    <!--主体-->
+    <view class="banner">
+    <!--顶部-->
+     <view class="banner_top">
+       <view class="banner_top_left lt">
+        <view class="banner_left_title">
+         <text>约会服务</text>
+        </view>
+         <view class="banner_left_address">
+         <text>{{site}}</text>
+        </view>
+         <view class="banner_left_time">
+         <text>约会时间:{{date_time}}</text>
+        </view>
+         <view class="banner_left_time">
+         <text>约会宣言:{{text}}</text>
+        </view>
+         <view class="banner_left_men">
+         <text>{{people}}</text>
+         <text>{{shuttle}}</text>
+        </view>
+       </view>
+        <view class="banner_top_right rt">
+        <image src="{{images}}"></image>
+       </view>
+     </view>
+     <!--状态-->
+     <view class="banner_line">
+       <text class="lt">已经接受该约会请求的人数:{{num}}人</text>
+       <text class="rt text" bindtap='look'>查看服务详情</text>
+     </view>
+     <view class="banner_line">
+      <text class="lt bg">约会进度</text>
+      <text class="lt texts">倒计时{{hour}}:{{min}}:{{sec}}</text>
+      <text class="rt btn" bindtap="{{bind}}">{{affair}}</text>
+     </view>
+     <view class="banner_lines">
+      <text class="bgs">温馨提示:</text>
+      <text class="loding">请双方在约会前提前沟通好好,约会前2小时双方都可以取消约会.取消后会返回您的搜恋币,但会扣除您的信用值.</text>
+     </view>
+     
+     <!--底部-->
+       <view class="banner_foot">
+         <view class="foot_box">
+           <view class="foot_circle"></view>
+             <view class="{{Class1}}">
+               <text>约会时间到了大家愉快的的HAPPY吧！约会完了别忘记晒单领取搜恋币和信用值哦哦~~！</text>
+               <text class="foot_time">{{date}}</text>
+             </view>
+         </view>
+         <view class="foot_box">
+           <view class="circle"></view>
+            <view class="{{Class}}">
+               <text>约会时间到了大家愉快的的HAPPY吧！</text>
+               <text class="foot_time">{{date}}</text>
+             </view>
+         </view>
+         <view class="foot_box">
+           <view class="circle"></view>
+            <view class="{{Class}}">
+               <text>约会时间到了大家愉快的的HAPPY吧！</text>
+               <text class="foot_time">{{date}}</text>
+             </view>
+         </view>
+         <view class="foot_box">
+           <view class="circle"></view>
+            <view class="{{Class}}">
+               <text>约会时间到了大家愉快的的HAPPY吧！</text>
+               <text class="foot_time">{{date}}</text>
+             </view>
+         </view>
+       </view>
+    </view>
+   </view>
+</view>
+

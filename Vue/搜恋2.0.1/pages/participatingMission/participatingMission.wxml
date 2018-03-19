@@ -1,0 +1,95 @@
+<!--pages/participatingMission/participatingMission.wxml-->
+<view class="container">
+  <view class="container_box">
+    <view class="nav">
+       <view class="nav_left lt">
+         <image src="{{images}}" class="nav_img it"></image>
+         <view class="nav_content rt">
+          <view class="nav_title">
+           <text>{{name}}</text>
+           </view>
+          <view class="nav_name">
+           <text class="lt">{{goods_name}}</text>
+           <text class="rt">已通过身份认证</text>
+          </view>
+         </view>
+       </view>
+       <view class="nav_right rt">
+         <view class="nav_val">
+          <text class="nav_text">约会信用值</text>
+          <text>85(高)</text>
+        </view>
+       </view>
+    </view>
+    <!--主体-->
+    <view class="banner">
+    <!--顶部-->
+     <view class="banner_top">
+       <view class="banner_top_left lt">
+        <view class="banner_left_title">
+         <text>约会服务</text>
+        </view>
+         <view class="banner_left_address">
+         <text>{{list.name}}</text>
+        </view>
+         <view class="banner_left_time">
+         <text>约会时间:{{list.date_time}}</text>
+        </view>
+         <view class="banner_left_men">
+         <text>{{people}}</text>
+        </view>
+       </view>
+        <view class="banner_top_right rt">
+        <image src="{{list.images}}"></image>
+       </view>
+     </view>
+     <!--状态-->
+     <view class="banner_line">
+       <text class="lt">已经接受该约会请求的人数:{{list.count}}人</text>
+       <text class="rt text"  bindtap="findInfo">查看服务详情</text>
+     </view>
+     <!--<view class="banner_line">
+      <text class="lt bg">约会进度</text>
+      <text class="lt texts">倒计时{{hour}}:{{min}}:{{sec}}</text>
+      <text class="rt btn" bindtap="{{bind}}">取消约会</text>
+     </view>
+       <view class="banner_foot">
+         <view class="foot_box" wx:if="{{hour==='00'&&min==='00'&&sec==='00'}}">
+           <view class="foot_circle"></view>
+             <view class="{{Class1}}">
+               <text>约会时间到了大家愉快的的HAPPY吧！</text>
+               <text class="foot_time">{{date}}</text>
+             </view>
+         </view>
+         <view class="foot_box" wx:if="{{status==='2'}}">
+           <view class="circle" style="background-color: {{status==='2'?blue:''}}; width:{{status==='2'?width:''}}; height:{{status==='2'?height:''}};border-radius:{{status==='2'?radius:''}};"></view>
+            <view class="{{Class}}" style="color:{{status==='3'?blue:''}}">
+               <text>由于约会人数没有达到要求,本次活动自动结束，已经扣除的费用将会返还给大家。</text>
+               <text class="foot_time">{{abort_time}}</text>
+             </view>
+         </view>
+         <view class="foot_box" wx:if="{{hour<'02'&status==='1'}}">
+           <view class="circle" style="background-color: {{blue}}; width:{{width}}; height:{{height}};border-radius:{{radius}};"></view>
+            <view class="{{Class}}" style="color:{{blue}}">
+               <text style="color:{{blue}}">约会时间还有两小时就要到了,大家准备好了吗？</text>
+               <text class="foot_time" style="color:{{blue}}">{{date}}</text>
+             </view>
+         </view>
+         <view class="foot_box">
+           <view class="circle" style="background-color: {{status==='1'?blue:''}}; width:{{status==='1'?width:''}}; height:{{status==='1'?height:''}};border-radius:{{status==='1'?radius:''}};"></view>
+            <view class="{{Class}}" style="color:{{status==='1'?blue:''}}">
+               <text>您已经报名并支付了本次费用.</text>
+               <text class="foot_time" style="color:{{status==='1'?blue:''}}">{{bm_dae}}</text>
+             </view>
+         </view>
+         <view class="foot_box">
+           <view class="circle" style="background-color: {{status==='0'?blue:''}}; width:{{status==='0'?width:''}}; height:{{status==='0'?height:''}};border-radius:{{status==='0'?radius:''}};"></view>
+            <view class="{{Class}}" style="color:{{status==='0'?blue:''}}">
+               <text style="color:{{status==='0'?blue:''}}">{{name}}发布了本次团体活动。</text>
+               <text class="foot_time" style="color:{{status==='0'?blue:''}}">{{time}}</text>
+            </view>
+         </view>
+       </view>-->
+    </view>
+   </view>
+</view>

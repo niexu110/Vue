@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>退还保证金</title>
+	<meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../../css/vip/giveBack.css" />
+    <script type="text/javascript" src='../../js/jquery-2.1.4.min.js'></script>
+    <script src="../../js/vip/giveBack.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src='../../js/MD5.js'></script>
+    <script>
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+    </script>
+</head>
+<body>
+	<header>
+		<div class="head">
+		   	<a href="javascript:history.go(-1);">
+				<img src="../../img/icon/t_leftIcon.png" class="IMG">
+			</a>
+			<div class="headMiddle">
+				退还保证金
+			</div>
+		</div>
+		<div class="content">
+			<p>保证金只有在脱离单身后，将结婚证附件上传至搜恋平台进行审核，审核成功后，保证金将返还给支付账户,一旦保证金返还，将会失去VIP资格，不能再进入VIP家园</p>
+			<h6>如有疑问，请咨询电话：029-6235520</h6>
+		</div>
+	</header>
+	<form id="form" class="d_set" enctype="multipart/form-data">
+		<div class="main">
+			<p><span>请上传您的结婚证附件</span><em>(后台审核使用，绝不对外展示)</em></p>
+			<div class="photo">
+				<div class="upload">
+					<input type="file" name="image" class="filepath" value="" accept="image/jpeg,image/jpg,image/png" />
+					<img src="../../img/icon/h_upload.png" class="img1"/>
+					<img src="" class="img2"/>
+				</div>
+				<div class="slPhoto">
+					<img src="../../img/h_photo.png" />
+				</div>
+				<div class="uploadCover">
+					<span>点击删除</span>
+				</div>
+				<div class="slPhotoCover">
+					<span>请按示例上传证件<br />否则将不通过</span>
+				</div>
+			</div>
+			<div class="phone">
+				<span>联系方式</span>
+				<input class="tel" name="phone" value="" type="tel" placeholder="15522556699" maxlength="11" required="required"/>
+			</div>
+			<div class="explain">
+				<span>备注说明</span>
+				<textarea name="other" value="" class="text" rows="4" placeholder="请填写备注说明"></textarea>
+			</div>
+			<input type="hidden" class="uid" name="uid" value=""  />
+			<input type="hidden" class="token" name="token" value=""  />
+		</div>
+		<input type="button" id="btn" value="提交申请" />
+	</form>
+	<div class="d_popupbox"></div>
+</body>
+
+</html>

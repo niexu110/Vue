@@ -1,0 +1,236 @@
+/*pages/giftGiving/giftGiving.wxml*/
+.giftGiving_container {
+    width: 100%;
+    height: 100%;
+}
+/*头部对象栏*/
+.giftGiving_header {
+    width: 100%;
+    height: 300rpx;   
+}
+.giftGiving_header_first {
+    width: 100%;
+    height: 190rpx;
+    background-color: #ffffff;
+}
+.giftGiving_header_photo {
+    text-align: center;
+    margin-top: 45rpx;
+}
+.giftGiving_header_photo image {
+    width: 120rpx;
+    height: 120rpx;
+}
+.giftGiving_header_info {
+   float: right;
+   margin-right: 40rpx; 
+   margin-top: -143rpx;
+}
+.giftGiving_header_info text {
+   font-size: 25rpx;
+   color: #5793dd;
+}
+.giftGiving_header_explain {
+    float: right;
+    margin-right: 145rpx;
+    margin-top: -95rpx;
+}
+.giftGiving_header_explain image {
+    width: 25rpx;
+    height: 25rpx;
+    border-radius: 50%;
+}
+.giftGiving_header_text {
+    float: right;
+    margin-right: 40rpx;
+    margin-top: -100rpx;    
+}
+.giftGiving_header_text text {
+    font-size: 25rpx;
+    color: #8c8c8c;
+}
+.giftGiving_header_second {
+    text-align: center;
+    margin-top: -50rpx;
+}
+.giftGiving_header_second text {
+    font-size: 30rpx;
+    font-weight: 800;
+}
+.giftGiving_header_love {
+    color: #5793dd;
+}
+.giftGiving_header_name {
+    color: #feadc1;
+}
+.giftGiving_header_addcharm {
+    text-align: center;
+    font-size: 25rpx;
+    margin-top: 15rpx;
+}
+.giftGiving_header_charm {
+    text-align: center;
+    font-size: 25rpx;
+    margin-top: 15rpx;   
+}
+.giftGiving_header_soulian {
+    font-size: 25rpx;
+}
+.giftGiving_header_number{
+    font-size: 25rpx;
+    color: #feadc1;
+}
+.giftGiving_header_goplay {
+    font-size: 25rpx;
+    color: #5793dd;    
+}
+/*礼物选取栏*/
+.giftGiving_body {
+    width: 100%;
+    min-height: 500rpx;
+    padding-bottom: 100rpx;
+}
+.giftInfo {
+    width: 220rpx;
+    height: 220rpx;   
+    position: absolute;
+    margin-left: 10rpx;
+    margin-top: 10rpx;
+    text-align: center;
+    box-shadow:inset 0rpx -20rpx 200rpx black;
+}
+.unitPrice {
+    margin-top: 145rpx;
+    font-size: 24rpx;
+    color: #feadc1;
+}
+.charm {
+    font-size: 24rpx;
+    color: #ffffff;
+}
+.giftGiving_body_change {
+    width:30%;
+    display:inline-block;
+    margin-left:2%;
+}
+.giftGiving_body_change image {
+    width: 220rpx;
+    height: 220rpx;
+    padding: 10rpx;
+}
+.giftGiving_body_success {
+    position: absolute;
+    margin-top: -220rpx;
+    margin-left: 170rpx;
+
+}
+/*尾部提交栏*/
+.giftGiving_end {
+    width: 100%;
+    height: 100rpx;
+    background-color: #ffffff;
+    position:fixed;
+    bottom:0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.giftGiving_end image {
+    width: 20rpx;
+    height: 30rpx;   
+    margin-left: 20rpx;
+    margin-top: 38rpx; 
+    position: absolute;
+}
+.giftGiving_end_num {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 30rpx;
+    font-size: 30rpx;
+    line-height: 100rpx;
+}
+.giftGiving_end_red {
+    margin-right: 30rpx;
+    float: right;
+    background-color: #5793dd;
+    padding: 10rpx 60rpx;
+    margin-top: 17rpx;
+    color: #ffffff;
+    border-radius: 5%;
+}
+.giftText{
+    height:40rpx;
+    color:#333;
+    font-size: 30rpx;
+    width: 220rpx;
+    text-align: center;
+    font-weight: bold;
+    line-height: 40rpx;
+}
+.success {
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    height:100%;
+    z-index:10;
+    background:rgba(0,0,0,.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.keynote {
+    width: 530rpx;
+    height: 450rpx;
+    margin: auto;
+    border-radius: 2%; 
+    background-color: #fff;
+    text-align: center;
+}
+.circle {
+    width: 150rpx;
+    height: 150rpx; 
+    margin-top: -75rpx;
+    background-color: #fff;
+    border-top-left-radius:50%;
+    border-top-right-radius: 50%;
+    margin-left: 190rpx;
+}
+.icon {
+    margin-top: -147rpx;
+}
+.paySuccess_success {
+    margin-top: 60rpx;
+    font-size: 38rpx;
+    font-weight: bold;
+}
+.paySuccess_money {
+    margin-top: 60rpx;
+    font-size: 28rpx;
+}
+.paySuccess_jump {
+    margin-top: 40rpx;
+    display: flex;
+    justify-content: space-around;
+    color: #5793dd;    
+    font-size: 30rpx;  
+}
+.paySuccess_backUp {
+    padding: 15rpx 30rpx;
+    background-color: #feadc1;
+    color: #ffffff;
+}
+.paySuccess_my {
+    padding: 15rpx 30rpx;
+    border:1rpx solid #feadc1;
+    color: #feadc1;
+}
+.add{
+    display: inline-block;
+    width: 50rpx;
+    text-align: center;
+    font-size: 36rpx;
+    font-weight: bolder;
+    color:#5793dd;
+}

@@ -1,0 +1,194 @@
+/* pages/strangerSdating/strangerSdating.wxss */
+.container{
+    width:100%;
+    height:auto;
+}
+.container_box{
+    width:90%;
+    height:auto;
+    margin:0 auto;
+}
+.nav{
+   margin-top:20rpx;
+   width:100%;
+   height:140rpx; 
+}
+.nav_left{
+    width:70%;
+    height:140rpx;
+}
+.nav_right{
+    width:29%;
+    height:140rpx;
+}
+.nav_img{
+    width:123rpx;
+    height:123rpx;
+    border-radius:10rpx; 
+}
+.nav_content{
+    width:70%;
+    height:123rpx;
+}
+.nav_title{
+    margin-top:20rpx;
+    font-size:30rpx;
+    font-weight:bold; 
+}
+.nav_name{
+    margin-top:20rpx;
+    font-size:24rpx;
+    color:#666;
+}
+.nav_val{
+    width:100%;
+    text-align:center; 
+    font-size:24rpx;
+    color:#5793DD; 
+}
+.nav_text{
+    padding-top:30rpx;
+    display:block; 
+}
+.banner{
+    width:100%;
+    height:410rpx;
+    border-top:1rpx solid #E6E6E6;
+    border-bottom:1rpx solid #E6E6E6;
+}
+.banner_top{
+    width:100%;
+    height:210rpx;
+    margin-top:20rpx;
+}
+.banner_top_left{
+    width:60%;
+    height:190rpx;
+}
+.banner_left_title{
+    font-size:30rpx;
+    font-weight:bold;
+}
+.banner_left_address{
+    margin-top:10rpx;
+    font-size:26rpx;
+    color:#111; 
+}
+.banner_left_time{
+    margin-top:10rpx;
+    font-size:24rpx;
+    color:#666;
+}
+.banner_left_men{
+    margin-top:10rpx;
+    font-size:24rpx;
+    color:#5793DD;
+}
+.banner_lines{
+    width:100%;
+    height:150rpx;
+    border-bottom:1rpx solid #E6E6E6;
+}
+.banner_lines text{
+  margin-top:10rpx;
+}
+.loding{
+    font-size:24rpx;
+    display:block; 
+    color:#666;
+}
+.banner_left_men text{
+    margin-right:30rpx;
+}
+.banner_top_right{
+    width:39%;
+    height:190rpx;
+}
+.banner_top_right>image{
+    width:260rpx;
+    height:190rpx;
+}
+.banner_line{
+    border-top:1rpx solid #E6E6E6;
+    width:100%;
+    height:89rpx;
+    line-height:89rpx;
+    font-size:24rpx; 
+}
+.age{
+    width:60rpx;
+    height:20rpx;
+}
+.icon{
+    margin-right:8rpx;
+    width:18rpx;
+    height:18rpx;
+}
+.text{
+    color:#5793DD;
+}
+.texts{
+    color:#5793DD;
+    margin-left:100rpx;
+}
+.bg{
+    font-size:30rpx;
+    font-weight:bold;
+}
+.bgs{
+    font-size:24rpx;
+    color:#5793DD;
+}
+.btn{
+    margin-top:17rpx;
+    width:120rpx;
+    height:55rpx;
+    text-align:center;
+    line-height:55rpx;  
+    background:#5793DD;
+    color:#fff;
+}
+.banner_foot{
+    margin-top:30rpx;
+    width:100%;
+    height:auto;
+}
+.foot_box{
+    width:100%;
+    height:130rpx;
+    position:relative;
+    border-left:1rpx solid #C1C1C1;
+}
+.circle{
+    position:absolute;
+    top:0;
+    left:-8rpx;
+    width:15rpx;
+    height:15rpx;
+    border-radius:50%;
+    background:#C1C1C1; 
+}
+.foot_circle{
+    position:absolute;
+    top:0;
+    left:-10rpx;
+    width:20rpx;
+    height:20rpx;
+    border-radius:50%;
+    background:#5793DD; 
+}
+
+.foot_title{
+    font-size:24rpx;
+    padding-left:20rpx;
+    color:#5793DD;
+}
+.foot_time{
+    display:block;
+    margin-top:20rpx; 
+}
+.foot_titles{
+     font-size:24rpx;
+     color:#666;
+     padding-left:20rpx;
+}

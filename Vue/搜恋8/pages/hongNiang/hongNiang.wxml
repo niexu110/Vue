@@ -1,0 +1,6 @@
+<!--pages/hongNiang/hongNiang.wxml-->
+<view>
+    <view>
+        <image class="banner" src="{{imgbox}}"></image>
+    </view>
+</view>

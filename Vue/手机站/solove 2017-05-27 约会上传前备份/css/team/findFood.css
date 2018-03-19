@@ -1,0 +1,223 @@
+@charset "utf-8";
+.f_containers {
+	width: 7.5rem;
+	height: auto;
+}
+
+.f_banner img {
+	width: 100%;
+	height: 2.6rem;
+	margin-top: .9rem;
+}
+
+#f_classify {
+	width: 7.5rem;
+	height: .9rem;
+	line-height: .9rem;
+	border-bottom: 1px solid #e6e6e6;
+	z-index: 10;
+	background: #FFFFFF;
+}
+
+.new {
+	float: left;
+	margin-left: 1rem;
+	color: #5793DD;
+}
+
+.cheap {
+	float: right;
+	margin-right: 1rem;
+}
+
+.new,
+.cheap {
+	font-size: .3rem;
+	line-height: .9rem;
+}
+
+.changeNew,
+.changeCheap {
+	color: #4b85cc;
+	margin-top: -.2rem;
+}
+
+.changeCheap {
+	display: none;
+}
+
+.f_cheapList {
+	display: none;
+}
+
+.f_newList,
+.f_cheapList {
+	width: 7.02rem;
+	height: auto;
+	padding: 0 .24rem;
+}
+
+.f_bigPic {
+	width: 7.02rem;
+	height: 2.6rem;
+	margin-top: .2rem;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.f_bigPic_pic {
+	position: relative;
+	width: 9.02rem;
+	top: -.5rem;
+	left: -1rem;
+	border-radius: 4px;
+}
+
+.f_info {
+	width: 7.02rem;
+	margin-top: .15rem;
+}
+
+.f_infoPho img {
+	width: .8rem;
+	height: .8rem;
+	float: left;
+	border-radius: 50%;
+}
+
+.f_infoWord {
+	float: left;
+	margin-left: .2rem;
+	margin-top: .05rem;
+}
+
+.pirce {
+	color: #feb3c5;
+}
+
+.f_price {
+	float: right;
+}
+
+.f_price p {
+	float: left;
+}
+
+.f_bigWord {
+	font-size: .36rem;
+	color: #333333;
+}
+
+.f_smallWord {
+	font-size: .24rem;
+	color: #333333;
+}
+
+.f_time {
+	width: 7.5rem;
+	height: .5rem;
+	margin-left: -.24rem;
+	margin-top: 1.1rem;
+	border-bottom: 1px solid #E6E6E6;
+}
+
+.f_img {
+	float: left;
+	margin-left: .24rem;
+	width: .22rem;
+	height: .22rem;
+	border-radius: 50%;
+	margin-top: .05rem;
+}
+
+.f_time p {
+	float: left;
+	margin-left: .24rem;
+	font-size: .26rem;
+}
+
+.f_visit {
+	float: right;
+	margin-right: .24rem;
+	font-size: .3rem;
+}
+
+.f_visit img,
+.f_visit p {
+	float: left;
+}
+
+.img {
+	width: .22rem;
+	height: .22rem;
+	margin-top: .05rem;
+	margin-right: -.2rem;
+}
+
+.img2 {
+	width: .22rem;
+	height: .22rem;
+	margin-left: .2rem;
+	margin-top: .05rem;
+	margin-right: -.2rem;
+}
+
+.boyNum {
+	color: #5d9ae2;
+}
+
+.girlNum {
+	color: #feb3c5;
+}
+
+#newLoading,
+#cheapLoading {
+	line-height: .6rem;
+	text-align: center;
+	color: #5793DD;
+	font-size: .3rem;
+	height: .6rem;
+}
+
+
+/*加载动画*/
+
+#newLoading span,
+#cheapLoading span {
+	width: .15rem;
+	height: .15rem;
+	margin-left: .05rem;
+	border-radius: 50%;
+	background: #5793DD;
+	display: inline-block;
+	-webkit-animation: load 1.04s ease infinite;
+}
+
+#newLoading:last-child;
+#cheapLoading:last-child {
+	margin-right: 0px;
+}
+
+@-webkit-keyframes load {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+#newLoading span:nth-child(1);
+#cheapLoading span:nth-child(1) {
+	-webkit-animation-delay: 0.13s;
+}
+
+#newLoading span:nth-child(2);
+#cheapLoading span:nth-child(2) {
+	-webkit-animation-delay: 0.26s;
+}
+
+#newLoading span:nth-child(3);
+#cheapLoading span:nth-child(3) {
+	-webkit-animation-delay: 0.39s;
+}

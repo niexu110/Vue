@@ -1,0 +1,83 @@
+<!--pages/eatAgreeOrRefuse/eatAgreeOrRefuse.wxml-->
+<view class="eatAgreeOrRefuse_container">
+    <view class="eatAgreeOrRefuse_allText">    
+        <!--发布人基本信息-->
+        <view class="eatAgreeOrRefuse_releasePeople">
+            <!--发布人头像-->
+            <view class="eatAgreeOrRefuse_releaseImg">
+                <image src="{{list.image}}"></image>
+            </view>
+            <!--发布人信息-->
+            <view class="eatAgreeOrRefuse_userInfo">
+                <view class="eatAgreeOrRefuse_userInfo_first">
+                    <text class="eatAgreeOrRefuse_usertitle">邀请人</text>
+                    <text class="eatAgreeOrRefuse_username">  {{list.nickname}}</text>
+                </view>
+                <view class="eatAgreeOrRefuse_userInfo_second">
+                    <!--按性别显示性别图标-->
+                    <image class="sexWoman" src="{{sexWomanImg}}" wx:if="{{list.sex==='2'}}"></image>
+                    <image class="sexman" src="{{sexManImg}}" wx:elif="{{list.sex==='1'}}"></image>
+                    <text class="eatAgreeOrRefuse_userage">{{list.age}}</text> 
+                    <text class="eatAgreeOrRefuse_constellation">{{list.marry}}</text>
+                    <text class="eatAgreeOrRefuse_userstate" wx:if="{{list.old_uid==='0'}}">身份证未认证</text>
+                    <text class="eatAgreeOrRefuse_userstate" wx:if="{{list.old_uid==='1'}}" style="color:blue">身份证已认证</text>
+                </view>            
+            </view>
+            <view class="eatAgreeOrRefuse_trustworthiness">
+                <view class="eatAgreeOrRefuse_one">约会信用值</view>
+                <view class="eatAgreeOrRefuse_two" wx:if="{{trustworthiness<=30}}">{{list.charm}}（低）</view>
+                <view class="eatAgreeOrRefuse_two" wx:if="{{trustworthiness>30 && grade<=30}}">{{list.charm}}（中）</view>
+                <view class="eatAgreeOrRefuse_two" wx:if="{{trustworthiness>50}}">{{list.charm}}（高）</view>
+            </view>
+        </view>
+        <!--约会服务信息-->
+        <view class="eatAgreeOrRefuse_body">
+            <view class="eatAgreeOrRefuse_text">
+                <view class="eatAgreeOrRefuse_textfirst">约会服务</view>
+                <view class="eatAgreeOrRefuse_place">
+                    <text>{{goods.goods_name}}</text>
+                </view>
+                <view class="eatAgreeOrRefuse_time">约会时间：{{engagement.mood_time}}</view>
+                <view class="eatAgreeOrRefuse_pay">约会宣言：{{engagement.mood}}</view>
+                <view class="eatAgreeOrRefuse_onlyBoy">
+                    <text class="onlyBoy" wx:if="{{engagement.sex==='0'}}">男女不限</text>
+                    <text class="onlyBoy" wx:if="{{engagement.sex==='1'}}">仅限男生</text>
+                    <text class="onlyBoy" wx:if="{{engagement.sex==='2'}}">仅限女生</text>
+                    <text class="shuttle" wx:if="{{engagement.pick==='0'}}">不负责接送</text>
+                    <text class="shuttle" wx:if="{{engagement.pick==='1'}}">负责接送</text>
+                    <text class="shuttle" wx:if="{{engagement.pick==='2'}}">负责接送</text>
+                </view>
+            </view>
+            <view class="eatAgreeOrRefuse_placeImg">
+                <image src="{{goods.mobileimg}}"></image>
+            </view>
+        </view>
+        <!--接受情况-->
+        <view class="eatAgreeOrRefuse_situation">
+            <view class="eatAgreeOrRefuse_number">已经接受该约会请求的人数：{{count}}</view>
+            <view class="eatAgreeOrRefuse_find" bindtap="findInfo">
+                <text>查看服务详情</text>
+            </view>
+        </view>
+        <!--同意或者拒绝-->
+        <view class="eatAgreeOrRefuse_agreeOrRefuse" wx:if="{{engagement.fb_type=='1'}}">
+            <text class="ask">您是否同意本次约会</text>
+            <button class="refuse" size="mini" disabled="{{disabledRefuse}}" bindtap="refuse" wx:if="{{engagement.stty!='2'}}" >拒绝</button>
+            <text class="agree" style="color:red;font-size:28rpx;background:#fff;line-height:60rpx;" wx:if="{{engagement.stty=='2'}}">已拒绝</text>
+            <button class="agree" size="mini" disabled="{{disabledAgree}}" bindtap="agree" wx:if="{{engagement.stty=='0'}}">同意</button>
+            <text class="agree" style="color:red;font-size:28rpx;background:#fff;line-height:60rpx;" wx:if="{{engagement.stty=='1'}}">已同意</text>       
+        </view>
+        <view class="eatAgreeOrRefuse_jindu">
+         <!--wx:if="{{engagement.stty=='1'}}"-->
+            <view class="yuehui">约会进度</view>
+            <view class="daojishi">倒计时:{{daojishi}}</view>
+            <view class="exit" bindtap="exitApp">取消约会</view>
+        </view>
+        <!--温馨提示-->
+        <view class="eatAgreeOrRefuse_prompt">
+            <view class="prompt">温馨提示：</view>
+            <view class="promptText">{{promptText}}</view>
+        </view>
+    </view>
+</view>
+

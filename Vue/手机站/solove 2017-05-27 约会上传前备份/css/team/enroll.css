@@ -1,0 +1,151 @@
+.f_containers {
+	width: 7.5rem;
+	height: auto;
+}
+
+.f_List {
+	margin-top: .9rem;
+	width: 7.1rem;
+	float: right;
+}
+
+.f_list_content {
+	width: 7.1rem;
+	height: 1.6rem;
+	border-bottom: 1px solid #E6E6E6;
+}
+
+.f_list_content_img {
+	width: 1.04rem;
+	height: 1.04rem;
+	border-radius: 50%;
+	margin-top: .3rem;
+	float: left;
+}
+
+.f_right {
+	width: 5.7rem;
+	float: right;
+	margin-top: .3rem;
+}
+
+.f_up {
+	overflow: hidden;
+	height: .35rem;
+	line-height: .35rem;
+}
+
+.f_up p {
+	float: left;
+}
+
+.f_up img {
+	float: left;
+	color: #333333;
+}
+
+.f_icon,
+.f_age {
+	width: .16rem;
+	height: .16rem;
+	margin-top: .03rem;
+	vertical-align: middle;
+}
+.f_icon {
+	margin-left: .1rem;
+	padding: .05rem .03rem .05rem .1rem;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
+.f_age {
+	padding: .05rem .15rem .05rem .03rem;
+	font-size: .16rem;
+	line-height: .2rem;
+	color: #FFFFFF;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+.f_name {
+	float: left;
+	font-size: .34rem;
+	color: #333333;
+}
+
+.f_charm {
+	margin-left: .15rem;
+	margin-top: .02rem;
+	width: .26rem;
+	height: .24rem;
+}
+
+.f_charm_p {
+	margin-left: .05rem;
+	font-size: .18rem;
+	color: #666666;
+	margin-top: .02rem;
+}
+
+.f_down {
+	margin-top: -.1rem;
+}
+
+.f_down p {
+	font-size: .26rem;
+	color: #666666;
+}
+
+#noMore {
+	height: .6rem;
+	line-height: .6rem;
+	text-align: center;
+	color: #5793DD;
+	font-size: .3rem;
+}
+
+
+/*加载动画*/
+
+/*#noMore span {
+	width: .15rem;
+	height: .15rem;
+	margin-left: .05rem;
+	border-radius: 50%;
+	background: #5793DD;
+	display: inline-block;
+	-webkit-animation: load 1.04s ease infinite;
+}
+
+#noMore:last-child {
+	margin-right: 0px;
+}
+
+@-webkit-keyframes load {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+#noMore span:nth-child(1) {
+	-webkit-animation-delay: 0.13s;
+}
+
+#noMore span:nth-child(2) {
+	-webkit-animation-delay: 0.26s;
+}
+
+#noMore span:nth-child(3) {
+	-webkit-animation-delay: 0.39s;
+}
+
+#noMore:nth-child(4) {
+	-webkit-animation-delay: 0.52s;
+}
+
+#noMore:nth-child(5) {
+	-webkit-animation-delay: 0.65s;
+}*/

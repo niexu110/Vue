@@ -1,0 +1,23 @@
+/* pages/forget/forget.wxss */
+/*验证码*/
+.proofCode{
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+}
+.proofCode text{
+    line-height: 90rpx;
+    text-align:center;
+    box-sizing: border-box;
+    font-size:26rpx;
+    font-weight:blod; 
+    color:#888888;
+}
+.proofCode .textCode{
+    text-align:center;
+    font-size:26rpx;
+    border-radius:5rpx; 
+    font-weight:blod; 
+    background:#5793dd;
+    color:#fff; 
+}
