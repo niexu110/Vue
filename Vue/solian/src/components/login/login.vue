@@ -49,6 +49,7 @@
 </template>
 <script>
 import { checkPhone, checkPsd,showEl,setLoc } from '../../assets/js/fn.js'
+import { mapState,mapActions} from 'vuex'
      export default{
          name:'login',
          data(){
@@ -152,26 +153,37 @@ import { checkPhone, checkPsd,showEl,setLoc } from '../../assets/js/fn.js'
                   console.log('发送ajax')
                }
             },
+            ...mapActions(['_setLogin','_setReiger']),
             // 登陆
             login(){
                if(this.isLogin){
-                 showEl('登陆成功',1500);
-                 setLoc('isLogin',1)
-                     setTimeout(() => {
-                       this.$router.push('/index')
-                     }, 2000);
+                  // 想在这块调用actions方法修改状态
+                  this._setLogin({
+                    ops:this.loginSen,
+                    isType:1,
+                    callBack:()=>{
+                          showEl('登录成功',2000)
+                          this.$router.push('/index')
+                    }
+                  })
+                 
                }else{
-                 return;
+                 showEl('请完善登陆信息',2000)
                }
             },
             // 注册
             reigter(){
               if(this.isReigter){
-                showEl('注册成功',1500);
-                setLoc('isLogin',1)
-                  setTimeout(() => {
-                       this.$router.push('/index')
-                     }, 2000);
+                 this._setReiger({
+                    ops:this.reigterSen,
+                    isType:1,
+                    callBack:()=>{
+                          showEl('注册成功',2000)
+                          this.$router.push('/index')
+                    }
+                  })
+              }else{
+                showEl('请完善资料',2000)
               }
             } 
          },

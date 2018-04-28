@@ -23,7 +23,7 @@
                return{
                     isFind:true,
                     isMsg:false,
-                    isMy:false
+                    isMy:true
                }
           },
           methods:{

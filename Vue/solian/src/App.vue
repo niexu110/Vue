@@ -4,8 +4,10 @@
     <router-view name='bottom' class='footer'/>
   </div>
 </template>
+<style lang='less'>
+@import 'assets/less/index.less';
+</style>
 <script>
-
 export default {
   name: 'App',
   data(){
@@ -13,11 +15,11 @@ export default {
     }
   },
   created:function(){
-    if(this.$store.store.state.userInfo==0){
-        this.$router.push('/login')
-    }else{
-        this.$router.push('/index')
-    }
+    // if(this.$store.store.state.userInfo==0){
+    //     this.$router.push('/login')
+    // }else{
+    //     this.$router.push('/index')
+    // }
   }
 }
 </script>

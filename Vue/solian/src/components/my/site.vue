@@ -13,7 +13,7 @@
 </template>
 <script>
 import top from '../common/top'
-import {clearKey} from '../../assets/js/fn.js'
+import { mapMutations,mapActions} from 'vuex'
      export default{
           name:'site',
           data(){
@@ -24,8 +24,10 @@ import {clearKey} from '../../assets/js/fn.js'
              } 
           },
           methods:{
+             ...mapMutations(['_loginOut']),
                out(){
-                clearKey();location.reload()
+                 this._loginOut();
+                 this.$router.push('/login');
                }
           },
           components:{top}

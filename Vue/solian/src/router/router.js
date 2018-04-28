@@ -9,8 +9,8 @@ import housekeeper from '@/components/message/housekeeper'
 import my from '@/components/my/my'
 import site from '@/components/my/site'
 
-const router=[
-     {
+const routers=[
+    {
           path: '/index',
           name: 'index',
           components: {
@@ -18,9 +18,18 @@ const router=[
                bottom: bottom
           },
           meta: {
-               title: '发现'
+               title: '发现',  
           }
-     }, {
+     },
+    {
+        path: '/login',
+        name: 'login',
+        component: login,
+        meta: {
+            title: '登录/注册', 
+        }
+     },
+      {
           path: '/message',
           name: 'message',
           components: {
@@ -38,19 +47,14 @@ const router=[
                bottom: bottom
           },
           meta: {
-               title: '个人中心'
+               title: '个人中心',
+               
+
           }
      }, {
           path: '/bottom',
           name: 'bottom',
           component: bottom
-     }, {
-          path: '/login',
-          name: 'login',
-          component: login,
-          meta: {
-               title: '登录/注册'
-          }
      },
      {
           path: '/visitingCard',
@@ -85,4 +89,4 @@ const router=[
           }
      }
 ]
-export default router
+export default routers
