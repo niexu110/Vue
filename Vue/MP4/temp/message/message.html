@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <meta charset="utf-8">
+     <title>消息</title>
+     <meta http-equiv="pragma" content="no-cache">
+     <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+     <meta http-equiv="expires" content="-1">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+     <meta name="apple-mobile-web-app-capable" content="yes">
+     <meta name="apple-mobile-web-app-status-bar-style" content="white">
+     <meta name="format-detection" content="telephone=no">
+     <link rel="stylesheet" href="../../css/common.css">
+     <link rel="stylesheet" href="../../css/message/message.css">
+     <script src="../../js/jquery-3.2.1.min.js"></script>
+     <script src="../../js/common.js"></script>
+</head>
+
+<body>
+     <div class="nav3">
+          <span>消息</span>
+     </div>
+    <div class="view">
+     <div class="container">
+          <a href="#" class="msg-box">
+               <img src="../../image/icon/system.png" class=" lt msg-title-img">
+               <div class="msg-content lt">
+                    <h2>系统消息</h2>   
+               </div>
+          </a>
+          <a href="#" class="msg-box">
+               <img src="../../image/icon/looks.png" class=" lt msg-title-img">
+               <div class="msg-content lt">
+                    <h2>微信添加消息</h2>
+               </div>
+          </a>
+          <div class="msg-box chat-download">
+               <img src="../../image/demo.png" class=" lt msg-title-img">
+               <div class="msg-content lt">
+                    <h1>小可爱</h1>
+                    <p>您好！可以聊聊吗？</p>
+               </div>
+               <span class="msg-hint rt">
+                    <img src="../../image/icon/lock.png" alt="">解锁聊天</span>
+          </div>
+     </div>
+    </div>
+     <div id="footer">
+          <div class="foot-box">
+               <a href="../index/index.html" class="tab-link ">
+                    <i class="icon icon-img-1"></i>
+                    <p class="size">首页</p>
+               </a>
+               <a href="javascript:void(0);" class="tab-link ">
+                    <i class="icon icon-img-2 "></i>
+                    <p class="size">发现</p>
+               </a>
+               <a href="javascript:void(0);" class="tab-link active">
+                    <i class="icon icon-img-3 "></i>
+                    <p class="active">消息</p>
+               </a>
+               <a href="../my/myIndex.html" class="tab-link ">
+                    <i class="icon icon-img-4"></i>
+                    <p class="size">我的</p>
+               </a>
+          </div>
+     </div>
+     <div class='hint'></div>
+     <div class='pop'>
+          <div class="pop-box">
+               <h1>下载APP</h1>
+               <p>聊天约会需要下载APP,</p>
+               <p>让你的幸福之路更顺畅</p>
+               <span class="btn">确定</span>
+          </div>
+     </div>
+</body>
+<script>
+     $(function () {
+          $(".chat-download").click(function () {
+               $(".pop").show();
+          })
+          $(".btn").click(function () { $(".pop").hide(); })
+     })
+</script>
+</html>

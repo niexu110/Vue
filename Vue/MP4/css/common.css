@@ -1,0 +1,49 @@
+*{margin:0;padding:0;box-sizing: border-box;}
+html{overflow-y: scroll;}
+body{  background:#fff; color:#333;font-size:14px; font-family: Microsoft Yahei; -webkit-text-size-adjust:none;  }
+ol,ul {list-style: none;}
+h1,h2,h3,h4,h5,h6 {  font-weight:normal;  font-size:100%;  }
+address,i,em,strong {  font-style:normal;  font-weight:normal;  }
+a{ color:#555; text-decoration:none;}
+input,textarea,select,button {  font:14px Microsoft Yahei,Verdana,Helvetica,Arial,sans-serif;  border:none;  outline: none;  }
+.lt{float: left;}  .rt{float: right;}  .clear{clear: both;}
+  /*主色调与渐变色调*/
+.shade{background:linear-gradient(to right,#ff6f4f,#fd2f63);}
+.pullUp{width:7.5rem;height:.4rem;text-align:center;line-height: .4rem;;color:#999;font-size:.3rem;}
+/*头部*/
+.nav{ width:7.5rem;height:0.9rem;line-height:0.9rem;background:#fff;text-align:center;position: fixed;top:0;left:0;font-weight:bold ; font-size:0.34rem;border-bottom:1px solid #ECECEC; color:#333;z-index:100;  }
+.nav2{ width:7.5rem;height:0.9rem;  line-height:0.9rem;background:rgba(0,0,0,0);text-align:center;position: fixed;top:0;left:0;font-weight:bold ;font-size:0.34rem;color:#333;z-index:100;}
+.back{width:0.18rem;padding-top:.2rem;}
+.back-1{margin-left:.3rem;}
+.title{display: inline-block;margin-right:.5rem;}
+.nav3{ width:7.5rem;height:0.9rem;line-height:0.9rem;background:#fff;position: fixed;top:0;left:0; font-size:0.58rem; color:#111;z-index:100;}
+.nav3 span{padding-left:.3rem;}
+#footer{width:7.5rem;height:1.1rem;background:#fff;position: fixed;bottom:0;left:0;z-index:100;overflow: hidden;border-top:1px solid #D2D2D2; }
+/*底栏*/
+.foot-box{width:6.9rem;height:1.1rem;margin:0 auto;}
+.tab-link{float: left;width:1.725rem;height:100%;}
+.tab-link-2{float:left;width:2.3rem;height:100%;}
+.icon{display:block;margin:.1rem auto .05rem;width:.5rem;height:.55rem;}
+.size{font-size:.26rem;color:#999;text-align: center;}
+ p.active{font-size:.26rem;color:#FF7051;text-align: center;}
+.icon-img-1{background:url("../image/icon/find.png")no-repeat center;background-size: 100%;}
+.icon-img-2{background:url("../image/icon/tuijian.png")no-repeat center;background-size: 100%;}
+.icon-img-3{background:url("../image/icon/message.png")no-repeat center;background-size: 100%;}
+.icon-img-4{background:url("../image/icon/my.png")no-repeat center;background-size: 100%;}
+.active .icon-img-1{background:url("../image/icon/finds.png")no-repeat center;background-size: 100%;}
+.active .icon-img-2{background:url("../image/icon/tuijians.png")no-repeat center;background-size: 100%;}
+.active .icon-img-3{background:url("../image/icon/messages.png")no-repeat center;background-size: 100%;}
+.active .icon-img-4{background:url("../image/icon/mys.png")no-repeat center;background-size: 100%;}
+.line{width:7.5rem;height:.6rem; line-height:.6rem;background:#F3F3F3;color:#666;font-size:.24rem;padding-left:.3rem; }
+.tab-label{display: block; height:.5rem;width:auto;text-align: center;color:#5C5C5C;}
+.view{width:7.5rem;height:100%;padding:.9rem 0 1.1rem 0;}
+/*弹窗*/
+.pop{z-index:110;position: fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.8);display: none;}
+/*提示弹窗*/
+.hint{width:3rem;padding:.2rem;background:rgba(0,0,0,.7);color:#fff;text-align: center;font-size:.26rem; position: fixed;top:7rem;left:2.25rem;display:none;z-index:400;}
+/*分享底部按钮*/
+.share{width:7.5rem;position: fixed;bottom:0;left:0;background:#fff; height: 1.8rem;}
+.share a{display: block;border-radius:40px;text-align:center;color:#fff;font-size:.32rem;height:.9rem;line-height:.9rem;   }
+.share a.active{background: linear-gradient(to right,#ff6f4f,#fd2f63);color: #fff;}
+
+
